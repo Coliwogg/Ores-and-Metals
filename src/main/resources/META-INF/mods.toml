@@ -1,0 +1,43 @@
+modLoader="javafml"
+
+loaderVersion="[31,)"
+
+#issueTrackerURL="https://github.com/Coliwogg"
+
+[[mods]]
+
+modId="oresandmetals"
+
+version="1.0"
+
+displayName="Ores and Metals"
+
+#updateJSONURL=""
+
+displayURL="https://www.curseforge.com/members/coliwogg/projects"
+
+#logoFile="logo.png"
+
+credits="Thanks to YOU for downloading this mod!"
+
+authors="Coliwogg"
+
+description='''
+This mod adds different kinds of ores and metals to the game of Minecraft.
+'''
+
+
+
+[[dependencies.oresandmetals]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.oresandmetals]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
