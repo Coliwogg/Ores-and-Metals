@@ -10,11 +10,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("oresandmetals")
 public class OresandMetals {
+	
+	public static final String MODID = "oresandmetals";
+	public static OresandMetals instance;
 
-    public OresandMetals() {
+    public OresandMetals() {    	
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-
+        
+    	instance = this;
         MinecraftForge.EVENT_BUS.register(this);
     }
 
