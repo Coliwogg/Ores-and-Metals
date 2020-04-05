@@ -1,6 +1,7 @@
 package com.coliwogg.oresandmetals;
 
 import com.coliwogg.oresandmetals.init.ItemInit;
+import com.coliwogg.oresandmetals.world.gen.OreGeneration;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -8,12 +9,15 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("oresandmetals")
+@Mod.EventBusSubscriber(modid=OresandMetals.MODID, bus=Bus.MOD)
 public class OresandMetals {
 	
 	public static final String MODID = "oresandmetals";
@@ -38,6 +42,11 @@ public class OresandMetals {
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
 
+    }
+    
+    @SubscribeEvent
+    public static void loadComplete(FMLLoadCompleteEvent event) {
+    	OreGeneration.generateOre();
     }
     
     public static class OresandMetalsItemGroup extends ItemGroup {
