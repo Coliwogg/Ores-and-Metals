@@ -15,9 +15,15 @@ import net.minecraftforge.registries.ObjectHolder;
 public class ItemInit {
 	
 	public static final Item BRONZE_INGOT = null;
-	
+	public static final Item COPPER_INGOT = null;
+	public static final Item TIN_INGOT = null;
+	public static final Item STEEL_INGOT = null;
+
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_ingot"));
+		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("copper_ingot"));
+		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("tin_ingot"));
+		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_ingot"));
 	}
 }

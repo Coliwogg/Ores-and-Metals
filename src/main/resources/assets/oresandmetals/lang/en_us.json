@@ -1,5 +1,8 @@
 {
 	"item.oresandmetals.bronze_ingot": "Bronze Ingot",
+	"item.oresandmetals.copper_ingot": "Copper Ingot",
+	"item.oresandmetals.tin_ingot": "Tin Ingot",
+	"item.oresandmetals.steel_ingot": "Steel Ingot",
 	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",

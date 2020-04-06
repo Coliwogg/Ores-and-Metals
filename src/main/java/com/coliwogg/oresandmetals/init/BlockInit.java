@@ -22,7 +22,7 @@ public class BlockInit {
 
 	public static final Block COPPER_ORE = null;
 	public static final Block TIN_ORE = null;
-	
+
 	@SubscribeEvent
 	public static void registerBlocks(final RegistryEvent.Register<Block> event) {
 		event.getRegistry().register(new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F).harvestLevel(1).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)).setRegistryName("copper_ore"));
