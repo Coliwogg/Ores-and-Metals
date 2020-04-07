@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oresandmetals:tin_ore"
+          "name": "oresandmetals:tin_fragments"
         }
       ],
       "conditions": [

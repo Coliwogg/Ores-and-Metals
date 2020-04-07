@@ -1,8 +1,8 @@
 {
+	"item.oresandmetals.copper_fragments": "Copper Fragments",
+	"item.oresandmetals.tin_fragments": "Tin Fragments",
+	"item.oresandmetals.bronze_chunk": "Bronze Chunk",
 	"item.oresandmetals.bronze_ingot": "Bronze Ingot",
-	"item.oresandmetals.copper_ingot": "Copper Ingot",
-	"item.oresandmetals.tin_ingot": "Tin Ingot",
-	"item.oresandmetals.steel_ingot": "Steel Ingot",
 	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",

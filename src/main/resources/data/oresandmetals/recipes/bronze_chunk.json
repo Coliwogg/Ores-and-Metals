@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oresandmetals:copper_fragments"
+    },
+    {
+      "item": "oresandmetals:tin_fragments"
+    }
+  ],
+  "result": {
+    "item": "oresandmetals:bronze_chunk"
+  }
+}

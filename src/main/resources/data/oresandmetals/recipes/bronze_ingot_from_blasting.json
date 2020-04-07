@@ -1,9 +1,9 @@
 {
   	"type": "minecraft:blasting",
   	"ingredient": {
-    	"item": "oresandmetals:copper_ore"
+    	"item": "oresandmetals:bronze_chunk"
   	},
-  	"result": "oresandmetals:copper_ingot",
+  	"result": "oresandmetals:bronze_ingot",
   	"experience": 0.7,
   	"cookingtime": 100
 }

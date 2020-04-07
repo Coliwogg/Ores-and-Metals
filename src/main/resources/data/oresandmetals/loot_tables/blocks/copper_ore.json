@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oresandmetals:copper_ore"
+          "name": "oresandmetals:copper_fragments"
         }
       ],
       "conditions": [
