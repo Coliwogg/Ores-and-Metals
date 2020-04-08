@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "oresandmetals:mithril_chunk"
+	},
+	"result": "oresandmetals:mithril_ingot",
+	"experience": 0.8,
+	"cookingtime": 200
+}
