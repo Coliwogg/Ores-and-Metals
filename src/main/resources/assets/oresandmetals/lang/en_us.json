@@ -15,10 +15,15 @@
 	"item.oresandmetals.adamantite_chunk": "Adamantite Chunk",
 	"item.oresandmetals.adamantite_ingot": "Adamantite Ingot",
 	
+	"item.oresandmetals.runite_fragments": "Runite Fragments",
+	"item.oresandmetals.runite_chunk": "Runite Chunk",
+	"item.oresandmetals.runite_ingot": "Runite Ingot",
+	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",
 	"block.oresandmetals.mithril_ore": "Mithril Ore",
 	"block.oresandmetals.adamantite_ore": "Adamantite Ore",
+	"block.oresandmetals.runite_ore": "Runite Ore",	
 	
 	"itemGroup.oresandmetalstab": "Ores and Metals"
 }

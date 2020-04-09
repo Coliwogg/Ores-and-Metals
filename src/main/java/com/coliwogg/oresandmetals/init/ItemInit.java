@@ -29,6 +29,10 @@ public class ItemInit {
 	public static final Item ADAMANTITE_FRAGMENTS = null;
 	public static final Item ADAMANTITE_CHUNK = null;
 	public static final Item ADAMANTITE_INGOT = null;
+	
+	public static final Item RUNITE_FRAGMENTS = null;
+	public static final Item RUNITE_CHUNK = null;
+	public static final Item RUNITE_INGOT = null;
 
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
@@ -47,5 +51,9 @@ public class ItemInit {
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_fragments"));
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_chunk"));
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_ingot"));
+		
+		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_fragments"));
+		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_chunk"));
+		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_ingot"));
 	}
 }

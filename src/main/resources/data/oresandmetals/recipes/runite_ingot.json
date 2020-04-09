@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": {
+		"item": "oresandmetals:runite_chunk"
+	},
+	"result": "oresandmetals:runite_ingot",
+	"experience": 1.0,
+	"cookingtime": 200
+}
