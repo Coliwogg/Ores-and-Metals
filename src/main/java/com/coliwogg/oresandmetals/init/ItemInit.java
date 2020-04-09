@@ -5,8 +5,13 @@ import java.util.function.Supplier;
 import com.coliwogg.oresandmetals.OresandMetals;
 import com.coliwogg.oresandmetals.OresandMetals.OresandMetalsItemGroup;
 
+import net.minecraft.item.AxeItem;
+import net.minecraft.item.HoeItem;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.SwordItem;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import net.minecraftforge.event.RegistryEvent;
@@ -67,6 +72,12 @@ public class ItemInit {
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_fragments"));
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_chunk"));
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_ingot"));
+		
+		event.getRegistry().register(new AxeItem(ModItemTier.BRONZE, 6.5F, -3.15F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_axe"));
+		event.getRegistry().register(new HoeItem(ModItemTier.BRONZE, -1.5F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_hoe"));
+		event.getRegistry().register(new PickaxeItem(ModItemTier.BRONZE, 1, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_pickaxe"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.BRONZE, 1.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_shovel"));
+		event.getRegistry().register(new SwordItem(ModItemTier.BRONZE, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_sword"));
 
 	}
 	
