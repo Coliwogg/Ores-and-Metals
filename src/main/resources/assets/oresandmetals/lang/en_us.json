@@ -31,6 +31,24 @@
 	"item.oresandmetals.steel_shovel": "Steel Shovel",
 	"item.oresandmetals.steel_sword": "Steel Sword",
 	
+	"item.oresandmetals.mithril_axe": "Mithril Axe",
+	"item.oresandmetals.mithril_hoe": "Mithril Hoe",
+	"item.oresandmetals.mithril_pickaxe": "Mithril Pickaxe",
+	"item.oresandmetals.mithril_shovel": "Mithril Shovel",
+	"item.oresandmetals.mithril_sword": "Mithril Sword",
+	
+	"item.oresandmetals.adamantite_axe": "Adamantite Axe",
+	"item.oresandmetals.adamantite_hoe": "Adamantite Hoe",
+	"item.oresandmetals.adamantite_pickaxe": "Adamantite Pickaxe",
+	"item.oresandmetals.adamantite_shovel": "Adamantite Shovel",
+	"item.oresandmetals.adamantite_sword": "Adamantite Sword",
+	
+	"item.oresandmetals.runite_axe": "Runite Axe",
+	"item.oresandmetals.runite_hoe": "Runite Hoe",
+	"item.oresandmetals.runite_pickaxe": "Runite Pickaxe",
+	"item.oresandmetals.runite_shovel": "Runite Shovel",
+	"item.oresandmetals.runite_sword": "Runite Sword",
+	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",
 	"block.oresandmetals.mithril_ore": "Mithril Ore",

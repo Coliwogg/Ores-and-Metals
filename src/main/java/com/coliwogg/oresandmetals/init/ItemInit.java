@@ -72,6 +72,13 @@ public class ItemInit {
 	public static final Item ADAMANTITE_SHOVEL = null;
 	public static final Item ADAMANTITE_SWORD = null;
 	
+	// Runite Tools
+	public static final Item RUNITE_AXE = null;
+	public static final Item RUNITE_HOE = null;
+	public static final Item RUNITE_PICKAXE = null;
+	public static final Item RUNITE_SHOVEL = null;
+	public static final Item RUNITE_SWORD = null;
+	
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("copper_fragments"));
@@ -117,6 +124,12 @@ public class ItemInit {
 		event.getRegistry().register(new PickaxeItem(ModItemTier.ADAMANTITE, 2, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_pickaxe"));
 		event.getRegistry().register(new ShovelItem(ModItemTier.ADAMANTITE, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_shovel"));
 		event.getRegistry().register(new SwordItem(ModItemTier.ADAMANTITE, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_sword"));
+		
+		event.getRegistry().register(new AxeItem(ModItemTier.RUNITE, 7.0F, -2.9F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_axe"));
+		event.getRegistry().register(new HoeItem(ModItemTier.RUNITE, 1.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_hoe"));
+		event.getRegistry().register(new PickaxeItem(ModItemTier.RUNITE, 3, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_pickaxe"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.RUNITE, 3.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_shovel"));
+		event.getRegistry().register(new SwordItem(ModItemTier.RUNITE, 5, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_sword"));
 
 	}
 	
@@ -125,7 +138,7 @@ public class ItemInit {
 		STEEL(375, 6.5F, 1.25F, 2, 14, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT); }),
 		MITHRIL(525, 7.0F, 1.5F, 2, 12, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT); }),
 		ADAMANTITE(600, 7.5F, 1.75F, 2, 11, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
-		RUNITE(1750, 10.0F, 1.5F, 3, 10, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
+		RUNITE(1750, 10.0F, 2.0F, 3, 10, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
 
 		private final int maxUses;
 		private final float efficiency;
