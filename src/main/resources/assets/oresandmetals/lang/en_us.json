@@ -3,15 +3,22 @@
 	"item.oresandmetals.tin_fragments": "Tin Fragments",
 	"item.oresandmetals.bronze_chunk": "Bronze Chunk",
 	"item.oresandmetals.bronze_ingot": "Bronze Ingot",
+	
 	"item.oresandmetals.steel_chunk": "Steel Chunk",
 	"item.oresandmetals.steel_ingot": "Steel Ingot",
+	
 	"item.oresandmetals.mithril_fragments": "Mithril Fragments",
 	"item.oresandmetals.mithril_chunk": "Mithril Chunk",
 	"item.oresandmetals.mithril_ingot": "Mithril Ingot",
 	
+	"item.oresandmetals.adamantite_fragments": "Adamantite Fragments",
+	"item.oresandmetals.adamantite_chunk": "Adamantite Chunk",
+	"item.oresandmetals.adamantite_ingot": "Adamantite Ingot",
+	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",
 	"block.oresandmetals.mithril_ore": "Mithril Ore",
+	"block.oresandmetals.adamantite_ore": "Adamantite Ore",
 	
 	"itemGroup.oresandmetalstab": "Ores and Metals"
 }

@@ -18,11 +18,17 @@ public class ItemInit {
 	public static final Item TIN_FRAGMENTS = null;
 	public static final Item BRONZE_CHUNK = null;
 	public static final Item BRONZE_INGOT = null;
+	
 	public static final Item STEEL_CHUNK = null;
 	public static final Item STEEL_INGOT = null;
+	
 	public static final Item MITHRIL_FRAGMENTS = null;
 	public static final Item MITHRIL_CHUNK = null;
 	public static final Item MITHRIL_INGOT = null;
+	
+	public static final Item ADAMANTITE_FRAGMENTS = null;
+	public static final Item ADAMANTITE_CHUNK = null;
+	public static final Item ADAMANTITE_INGOT = null;
 
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
@@ -37,5 +43,9 @@ public class ItemInit {
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_fragments"));
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_chunk"));
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_ingot"));
+		
+		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_fragments"));
+		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_chunk"));
+		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_ingot"));
 	}
 }

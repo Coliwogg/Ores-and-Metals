@@ -23,7 +23,8 @@ public class OreGeneration {
 	*/
 	private static final CountRangeConfig COPPER = new CountRangeConfig(15, 5, 0, 128);
 	private static final CountRangeConfig TIN = new CountRangeConfig(15, 5, 0, 128);
-	private static final CountRangeConfig MITHRIL = new CountRangeConfig(6, 5, 0, 20);
+	private static final CountRangeConfig MITHRIL = new CountRangeConfig(4, 5, 0, 20);
+	private static final CountRangeConfig ADAMANTITE = new CountRangeConfig(3, 5, 0, 16);
 	
 	static ConfiguredPlacement<CountRangeConfig> customConfig = null;
 
@@ -43,7 +44,12 @@ public class OreGeneration {
 			
 			customConfig = Placement.COUNT_RANGE.configure(MITHRIL);
 			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-				  	.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.MITHRIL_ORE.getDefaultState(), MathHelper.nextInt(new Random(), 5, 10)))
+				  	.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.MITHRIL_ORE.getDefaultState(), MathHelper.nextInt(new Random(), 5, 6)))
+					.withPlacement(customConfig));
+			
+			customConfig = Placement.COUNT_RANGE.configure(ADAMANTITE);
+			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
+				  	.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.ADAMANTITE_ORE.getDefaultState(), MathHelper.nextInt(new Random(), 4, 5)))
 					.withPlacement(customConfig));
 			
 		}
