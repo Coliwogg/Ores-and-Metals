@@ -78,15 +78,21 @@ public class ItemInit {
 		event.getRegistry().register(new PickaxeItem(ModItemTier.BRONZE, 1, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_pickaxe"));
 		event.getRegistry().register(new ShovelItem(ModItemTier.BRONZE, 1.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_shovel"));
 		event.getRegistry().register(new SwordItem(ModItemTier.BRONZE, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_sword"));
+		
+		event.getRegistry().register(new AxeItem(ModItemTier.STEEL, 7.0F, -3.075F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_axe"));
+		event.getRegistry().register(new HoeItem(ModItemTier.STEEL, -0.75F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_hoe"));
+		event.getRegistry().register(new PickaxeItem(ModItemTier.STEEL, 2, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_pickaxe"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.STEEL, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_shovel"));
+		event.getRegistry().register(new SwordItem(ModItemTier.STEEL, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_sword"));
 
 	}
 	
 	public enum ModItemTier implements IItemTier {
 		BRONZE(200, 5.0F, 1.5F, 1, 15, () -> { return Ingredient.fromItems(ItemInit.BRONZE_INGOT); }),
-		STEEL(350, 6.5F, 2.5F, 2, 14, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT); }),
-		MITHRIL(525, 7.0F, 2.625F, 2, 12, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT); }),
-		ADAMANTITE(600, 7.5F, 2.75F, 2, 11, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
-		RUNITE(1750, 10.0F, 4.0F, 3, 10, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
+		STEEL(350, 6.5F, 1.25F, 2, 14, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT); }),
+		MITHRIL(525, 7.0F, 1.5F, 2, 12, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT); }),
+		ADAMANTITE(600, 7.5F, 1.5F, 2, 11, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
+		RUNITE(1750, 10.0F, 1.5F, 3, 10, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
 
 		private final int maxUses;
 		private final float efficiency;

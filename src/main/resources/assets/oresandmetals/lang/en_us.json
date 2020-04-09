@@ -25,6 +25,12 @@
 	"item.oresandmetals.bronze_shovel": "Bronze Shovel",
 	"item.oresandmetals.bronze_sword": "Bronze Sword",
 	
+	"item.oresandmetals.steel_axe": "Steel Axe",
+	"item.oresandmetals.steel_hoe": "Steel Hoe",
+	"item.oresandmetals.steel_pickaxe": "Steel Pickaxe",
+	"item.oresandmetals.steel_shovel": "Steel Shovel",
+	"item.oresandmetals.steel_sword": "Steel Sword",
+	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",
 	"block.oresandmetals.mithril_ore": "Mithril Ore",
