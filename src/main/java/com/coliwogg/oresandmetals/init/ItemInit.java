@@ -65,6 +65,13 @@ public class ItemInit {
 	public static final Item MITHRIL_SHOVEL = null;
 	public static final Item MITHRIL_SWORD = null;
 	
+	// Adamantite Tools
+	public static final Item ADAMANTITE_AXE = null;
+	public static final Item ADAMANTITE_HOE = null;
+	public static final Item ADAMANTITE_PICKAXE = null;
+	public static final Item ADAMANTITE_SHOVEL = null;
+	public static final Item ADAMANTITE_SWORD = null;
+	
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("copper_fragments"));
@@ -99,11 +106,17 @@ public class ItemInit {
 		event.getRegistry().register(new ShovelItem(ModItemTier.STEEL, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_shovel"));
 		event.getRegistry().register(new SwordItem(ModItemTier.STEEL, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_sword"));
 		
-		event.getRegistry().register(new AxeItem(ModItemTier.MITHRIL, 6.5F, -3.025F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_axe"));
-		event.getRegistry().register(new HoeItem(ModItemTier.MITHRIL, -0.75F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_hoe"));
+		event.getRegistry().register(new AxeItem(ModItemTier.MITHRIL, 6.5F, -3.050F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_axe"));
+		event.getRegistry().register(new HoeItem(ModItemTier.MITHRIL, -0.50F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_hoe"));
 		event.getRegistry().register(new PickaxeItem(ModItemTier.MITHRIL, 2, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_pickaxe"));
 		event.getRegistry().register(new ShovelItem(ModItemTier.MITHRIL, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_shovel"));
 		event.getRegistry().register(new SwordItem(ModItemTier.MITHRIL, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_sword"));
+		
+		event.getRegistry().register(new AxeItem(ModItemTier.ADAMANTITE, 6.25F, -3.025F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_axe"));
+		event.getRegistry().register(new HoeItem(ModItemTier.ADAMANTITE, -0.25F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_hoe"));
+		event.getRegistry().register(new PickaxeItem(ModItemTier.ADAMANTITE, 2, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_pickaxe"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.ADAMANTITE, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_shovel"));
+		event.getRegistry().register(new SwordItem(ModItemTier.ADAMANTITE, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_sword"));
 
 	}
 	
