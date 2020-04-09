@@ -22,6 +22,7 @@ public class BlockInit {
 
 	public static final Block COPPER_ORE = null;
 	public static final Block TIN_ORE = null;
+	public static final Block SILVER_ORE = null;
 	public static final Block MITHRIL_ORE = null;
 	public static final Block ADAMANTITE_ORE = null;
 
@@ -30,6 +31,7 @@ public class BlockInit {
 	public static void registerBlocks(final RegistryEvent.Register<Block> event) {
 		event.getRegistry().register(new ModOre(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F).harvestLevel(1).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)).setRegistryName("copper_ore"));
 		event.getRegistry().register(new ModOre(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F).harvestLevel(1).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)).setRegistryName("tin_ore"));
+		event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)).setRegistryName("silver_ore"));
 		event.getRegistry().register(new ModOre(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)).setRegistryName("mithril_ore"));
 		event.getRegistry().register(new ModOre(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)).setRegistryName("adamantite_ore"));
 	}
@@ -38,6 +40,7 @@ public class BlockInit {
 	public static void registerBlockItems(final RegistryEvent.Register<Item> event) {
 		event.getRegistry().register(new BlockItem(COPPER_ORE, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("copper_ore"));
 		event.getRegistry().register(new BlockItem(TIN_ORE, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("tin_ore"));
+		event.getRegistry().register(new BlockItem(SILVER_ORE, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("silver_ore"));
 		event.getRegistry().register(new BlockItem(MITHRIL_ORE, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_ore"));
 		event.getRegistry().register(new BlockItem(ADAMANTITE_ORE, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_ore"));
 	}

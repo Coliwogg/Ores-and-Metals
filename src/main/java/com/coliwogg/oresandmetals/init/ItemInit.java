@@ -19,6 +19,8 @@ public class ItemInit {
 	public static final Item BRONZE_CHUNK = null;
 	public static final Item BRONZE_INGOT = null;
 	
+	public static final Item SILVER_INGOT = null;
+	
 	public static final Item STEEL_CHUNK = null;
 	public static final Item STEEL_INGOT = null;
 	
@@ -36,6 +38,8 @@ public class ItemInit {
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("tin_fragments"));
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_chunk"));
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_ingot"));
+		
+		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("silver_ingot"));
 		
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_chunk"));
 		event.getRegistry().register(new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_ingot"));

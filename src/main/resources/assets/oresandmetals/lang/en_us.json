@@ -4,6 +4,8 @@
 	"item.oresandmetals.bronze_chunk": "Bronze Chunk",
 	"item.oresandmetals.bronze_ingot": "Bronze Ingot",
 	
+	"item.oresandmetals.silver_ingot": "Silver Ingot",
+	
 	"item.oresandmetals.steel_chunk": "Steel Chunk",
 	"item.oresandmetals.steel_ingot": "Steel Ingot",
 	
@@ -17,6 +19,7 @@
 	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",
+	"block.oresandmetals.silver_ore": "Silver Ore",
 	"block.oresandmetals.mithril_ore": "Mithril Ore",
 	"block.oresandmetals.adamantite_ore": "Adamantite Ore",
 	
