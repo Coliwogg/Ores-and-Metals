@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "oresandmetals:block/adamantite_block"
+	}
+}

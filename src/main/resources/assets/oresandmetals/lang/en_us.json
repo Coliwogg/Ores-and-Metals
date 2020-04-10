@@ -60,5 +60,11 @@
 	"block.oresandmetals.adamantite_ore": "Adamantite Ore",
 	"block.oresandmetals.runite_ore": "Runite Ore",	
 	
+	"block.oresandmetals.bronze_block": "Block of Bronze",
+	"block.oresandmetals.steel_block": "Block of Steel",
+	"block.oresandmetals.mithril_block": "Block of Mithril",
+	"block.oresandmetals.adamantite_block": "Block of Adamantite",
+	"block.oresandmetals.runite_block": "Block of Runite",
+	
 	"itemGroup.oresandmetalstab": "Ores and Metals"
 }

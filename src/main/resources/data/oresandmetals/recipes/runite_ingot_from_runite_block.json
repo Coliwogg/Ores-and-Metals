@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "runite_ingot",
+  "ingredients": [
+    {
+      "item": "oresandmetals:runite_block"
+    }
+  ],
+  "result": {
+    "item": "oresandmetals:runite_ingot",
+    "count": 9
+  }
+}

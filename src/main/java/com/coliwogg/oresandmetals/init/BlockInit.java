@@ -25,7 +25,12 @@ public class BlockInit {
 	public static final Block MITHRIL_ORE = null;
 	public static final Block ADAMANTITE_ORE = null;
 	public static final Block RUNITE_ORE = null;
-
+	
+	public static final Block BRONZE_BLOCK = null;
+	public static final Block STEEL_BLOCK = null;
+	public static final Block MITHRIL_BLOCK = null;
+	public static final Block ADAMANTITE_BLOCK = null;
+	public static final Block RUNITE_BLOCK = null;
 
 	@SubscribeEvent
 	public static void registerBlocks(final RegistryEvent.Register<Block> event) {
@@ -34,6 +39,12 @@ public class BlockInit {
 		event.getRegistry().register(new ModOre(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)).setRegistryName("mithril_ore"));
 		event.getRegistry().register(new ModOre(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)).setRegistryName("adamantite_ore"));
 		event.getRegistry().register(new ModOre(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F).harvestLevel(3).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)).setRegistryName("runite_ore"));
+	
+		event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).harvestLevel(1).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL)).setRegistryName("bronze_block"));
+		event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).harvestLevel(1).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL)).setRegistryName("steel_block"));
+		event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL)).setRegistryName("mithril_block"));
+		event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL)).setRegistryName("adamantite_block"));
+		event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(5.0F, 6.0F).harvestLevel(3).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL)).setRegistryName("runite_block"));
 	}
 	
 	@SubscribeEvent
@@ -43,5 +54,11 @@ public class BlockInit {
 		event.getRegistry().register(new BlockItem(MITHRIL_ORE, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_ore"));
 		event.getRegistry().register(new BlockItem(ADAMANTITE_ORE, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_ore"));
 		event.getRegistry().register(new BlockItem(RUNITE_ORE, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_ore"));
+		
+		event.getRegistry().register(new BlockItem(BRONZE_BLOCK, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_block"));
+		event.getRegistry().register(new BlockItem(STEEL_BLOCK, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_block"));
+		event.getRegistry().register(new BlockItem(MITHRIL_BLOCK, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_block"));
+		event.getRegistry().register(new BlockItem(ADAMANTITE_BLOCK, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_block"));
+		event.getRegistry().register(new BlockItem(RUNITE_BLOCK, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_block"));
 	}
 }
