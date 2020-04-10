@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "oresandmetals:adamantite_ingot"
+    }
+  },
+  "result": {
+    "item": "oresandmetals:adamantite_axe"
+  }
+}
