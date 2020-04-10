@@ -49,6 +49,11 @@
 	"item.oresandmetals.runite_shovel": "Runite Shovel",
 	"item.oresandmetals.runite_sword": "Runite Sword",
 	
+	"item.oresandmetals.bronze_helmet": "Bronze Helmet",
+	"item.oresandmetals.bronze_chestplate": "Bronze Chestplate",
+	"item.oresandmetals.bronze_leggings": "Bronze Leggings",
+	"item.oresandmetals.bronze_boots": "Bronze Boots",
+	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",
 	"block.oresandmetals.mithril_ore": "Mithril Ore",
