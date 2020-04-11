@@ -37,11 +37,11 @@
 	"item.oresandmetals.mithril_shovel": "Mithril Shovel",
 	"item.oresandmetals.mithril_sword": "Mithril Sword",
 	
-	"item.oresandmetals.adamantite_axe": "Adamantite Axe",
-	"item.oresandmetals.adamantite_hoe": "Adamantite Hoe",
-	"item.oresandmetals.adamantite_pickaxe": "Adamantite Pickaxe",
-	"item.oresandmetals.adamantite_shovel": "Adamantite Shovel",
-	"item.oresandmetals.adamantite_sword": "Adamantite Sword",
+	"item.oresandmetals.adamant_axe": "Adamant Axe",
+	"item.oresandmetals.adamant_hoe": "Adamant Hoe",
+	"item.oresandmetals.adamant_pickaxe": "Adamant Pickaxe",
+	"item.oresandmetals.adamant_shovel": "Adamant Shovel",
+	"item.oresandmetals.adamant_sword": "Adamant Sword",
 	
 	"item.oresandmetals.runite_axe": "Runite Axe",
 	"item.oresandmetals.runite_hoe": "Runite Hoe",
@@ -53,6 +53,26 @@
 	"item.oresandmetals.bronze_chestplate": "Bronze Chestplate",
 	"item.oresandmetals.bronze_leggings": "Bronze Leggings",
 	"item.oresandmetals.bronze_boots": "Bronze Boots",
+	
+	"item.oresandmetals.steel_helmet": "Steel Helmet",
+	"item.oresandmetals.steel_chestplate": "Steel Chestplate",
+	"item.oresandmetals.steel_leggings": "Steel Leggings",
+	"item.oresandmetals.steel_boots": "Steel Boots",
+	
+	"item.oresandmetals.mithril_helmet": "Mithril Helmet",
+	"item.oresandmetals.mithril_chestplate": "Mithril Chestplate",
+	"item.oresandmetals.mithril_leggings": "Mithril Leggings",
+	"item.oresandmetals.mithril_boots": "Mithril Boots",
+	
+	"item.oresandmetals.adamant_helmet": "Adamant Helmet",
+	"item.oresandmetals.adamant_chestplate": "Adamant Chestplate",
+	"item.oresandmetals.adamant_leggings": "Adamant Leggings",
+	"item.oresandmetals.adamant_boots": "Adamant Boots",
+	
+	"item.oresandmetals.runite_helmet": "Runite Helmet",
+	"item.oresandmetals.runite_chestplate": "Runite Chestplate",
+	"item.oresandmetals.runite_leggings": "Runite Leggings",
+	"item.oresandmetals.runite_boots": "Runite Boots",
 	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",

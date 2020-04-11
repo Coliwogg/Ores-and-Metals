@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "X",
-    "X",
-    "#"
+    "XXX",
+    " # ",
+    " # "
   ],
   "key": {
     "#": {
@@ -14,6 +14,6 @@
     }
   },
   "result": {
-    "item": "oresandmetals:adamantite_sword"
+    "item": "oresandmetals:adamant_pickaxe"
   }
 }

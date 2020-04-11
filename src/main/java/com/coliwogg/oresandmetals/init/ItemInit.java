@@ -73,12 +73,12 @@ public class ItemInit {
 	public static final Item MITHRIL_SHOVEL = null;
 	public static final Item MITHRIL_SWORD = null;
 	
-	// Adamantite Tools
-	public static final Item ADAMANTITE_AXE = null;
-	public static final Item ADAMANTITE_HOE = null;
-	public static final Item ADAMANTITE_PICKAXE = null;
-	public static final Item ADAMANTITE_SHOVEL = null;
-	public static final Item ADAMANTITE_SWORD = null;
+	// Adamant Tools
+	public static final Item ADAMANT_AXE = null;
+	public static final Item ADAMANT_HOE = null;
+	public static final Item ADAMANT_PICKAXE = null;
+	public static final Item ADAMANT_SHOVEL = null;
+	public static final Item ADAMANT_SWORD = null;
 	
 	// Runite Tools
 	public static final Item RUNITE_AXE = null;
@@ -133,11 +133,11 @@ public class ItemInit {
 		event.getRegistry().register(new ShovelItem(ModItemTier.MITHRIL, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_shovel"));
 		event.getRegistry().register(new SwordItem(ModItemTier.MITHRIL, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_sword"));
 		
-		event.getRegistry().register(new AxeItem(ModItemTier.ADAMANTITE, 6.25F, -3.025F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_axe"));
-		event.getRegistry().register(new HoeItem(ModItemTier.ADAMANTITE, -0.25F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_hoe"));
-		event.getRegistry().register(new PickaxeItem(ModItemTier.ADAMANTITE, 2, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_pickaxe"));
-		event.getRegistry().register(new ShovelItem(ModItemTier.ADAMANTITE, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_shovel"));
-		event.getRegistry().register(new SwordItem(ModItemTier.ADAMANTITE, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamantite_sword"));
+		event.getRegistry().register(new AxeItem(ModItemTier.ADAMANT, 6.25F, -3.025F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_axe"));
+		event.getRegistry().register(new HoeItem(ModItemTier.ADAMANT, -0.25F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_hoe"));
+		event.getRegistry().register(new PickaxeItem(ModItemTier.ADAMANT, 2, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_pickaxe"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.ADAMANT, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_shovel"));
+		event.getRegistry().register(new SwordItem(ModItemTier.ADAMANT, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_sword"));
 		
 		event.getRegistry().register(new AxeItem(ModItemTier.RUNITE, 7.0F, -2.9F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_axe"));
 		event.getRegistry().register(new HoeItem(ModItemTier.RUNITE, 1.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_hoe"));
@@ -149,14 +149,33 @@ public class ItemInit {
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_chestplate"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_leggings"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_boots"));
-
+		
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_helmet"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_chestplate"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_leggings"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("steel_boots"));
+		
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_helmet"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_chestplate"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_leggings"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("mithril_boots"));
+		
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_helmet"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_chestplate"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_leggings"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_boots"));
+		
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNITE, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_helmet"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNITE, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_chestplate"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNITE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_leggings"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNITE, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_boots"));
 	}
 	
 	public enum ModItemTier implements IItemTier {
 		BRONZE(200, 5.0F, 1.5F, 1, 15, () -> { return Ingredient.fromItems(ItemInit.BRONZE_INGOT); }),
 		STEEL(375, 6.5F, 1.25F, 2, 14, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT); }),
 		MITHRIL(525, 7.0F, 1.5F, 2, 12, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT); }),
-		ADAMANTITE(600, 7.5F, 1.75F, 2, 11, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
+		ADAMANT(600, 7.5F, 1.75F, 2, 11, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
 		RUNITE(1750, 10.0F, 2.0F, 3, 10, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
 
 		private final int maxUses;
@@ -209,7 +228,7 @@ public class ItemInit {
 			BRONZE(10, new int[] { 1, 4, 5, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":bronze", 0.0F, () -> { return Ingredient.fromItems(ItemInit.BRONZE_INGOT); }),
 			STEEL(20, new int[] { 2, 6, 7, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":steel", 0.0F, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT); }),
 			MITHRIL(25, new int[] { 3, 6, 8, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":mithril", 1.0F, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT); }),
-			ADAMANTITE(30, new int[] { 2, 7, 8, 3 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":adamantite", 1.0F, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
+			ADAMANT(30, new int[] { 2, 7, 8, 3 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":adamant", 1.5F, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
 			RUNITE(40, new int[] { 4, 7, 9, 4 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":runite", 3.0F, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
 
 			private static final int[] MAX_DAMAGE_ARRAY = new int[] {16, 16, 16, 16};
