@@ -1,6 +1,6 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "oresandmetals:item/runite_shovel"
+		"layer0": "oresandmetals:item/rune_hoe"
 	}
 }

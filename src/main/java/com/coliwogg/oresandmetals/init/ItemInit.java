@@ -80,18 +80,42 @@ public class ItemInit {
 	public static final Item ADAMANT_SHOVEL = null;
 	public static final Item ADAMANT_SWORD = null;
 	
-	// Runite Tools
-	public static final Item RUNITE_AXE = null;
-	public static final Item RUNITE_HOE = null;
-	public static final Item RUNITE_PICKAXE = null;
-	public static final Item RUNITE_SHOVEL = null;
-	public static final Item RUNITE_SWORD = null;
+	// Rune Tools
+	public static final Item RUNE_AXE = null;
+	public static final Item RUNE_HOE = null;
+	public static final Item RUNE_PICKAXE = null;
+	public static final Item RUNE_SHOVEL = null;
+	public static final Item RUNE_SWORD = null;
 	
 	// Bronze Armor
 	public static final Item BRONZE_HELMET = null;
 	public static final Item BRONZE_CHESTPLATE = null;
 	public static final Item BRONZE_LEGGINGS = null;
 	public static final Item BRONZE_BOOTS = null;
+	
+	// Steel Armor
+	public static final Item STEEL_HELMET = null;
+	public static final Item STEEL_CHESTPLATE = null;
+	public static final Item STEEL_LEGGINGS = null;
+	public static final Item STEEL_BOOTS = null;
+	
+	// Mithril Armor
+	public static final Item MITHRIL_HELMET = null;
+	public static final Item MITHRIL_CHESTPLATE = null;
+	public static final Item MITHRIL_LEGGINGS = null;
+	public static final Item MITHRIL_BOOTS = null;
+	
+	// Adamant Armor
+	public static final Item ADAMANT_HELMET = null;
+	public static final Item ADAMANT_CHESTPLATE = null;
+	public static final Item ADAMANT_LEGGINGS = null;
+	public static final Item ADAMANT_BOOTS = null;
+	
+	// Rune Armor
+	public static final Item RUNE_HELMET = null;
+	public static final Item RUNE_CHESTPLATE = null;
+	public static final Item RUNE_LEGGINGS = null;
+	public static final Item RUNE_BOOTS = null;
 	
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
@@ -139,11 +163,11 @@ public class ItemInit {
 		event.getRegistry().register(new ShovelItem(ModItemTier.ADAMANT, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_shovel"));
 		event.getRegistry().register(new SwordItem(ModItemTier.ADAMANT, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_sword"));
 		
-		event.getRegistry().register(new AxeItem(ModItemTier.RUNITE, 7.0F, -2.9F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_axe"));
-		event.getRegistry().register(new HoeItem(ModItemTier.RUNITE, 1.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_hoe"));
-		event.getRegistry().register(new PickaxeItem(ModItemTier.RUNITE, 3, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_pickaxe"));
-		event.getRegistry().register(new ShovelItem(ModItemTier.RUNITE, 3.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_shovel"));
-		event.getRegistry().register(new SwordItem(ModItemTier.RUNITE, 5, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_sword"));
+		event.getRegistry().register(new AxeItem(ModItemTier.RUNE, 7.0F, -2.9F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("rune_axe"));
+		event.getRegistry().register(new HoeItem(ModItemTier.RUNE, 1.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("rune_hoe"));
+		event.getRegistry().register(new PickaxeItem(ModItemTier.RUNE, 3, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("rune_pickaxe"));
+		event.getRegistry().register(new ShovelItem(ModItemTier.RUNE, 3.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("rune_shovel"));
+		event.getRegistry().register(new SwordItem(ModItemTier.RUNE, 5, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("rune_sword"));
 		
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_helmet"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("bronze_chestplate"));
@@ -165,10 +189,10 @@ public class ItemInit {
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_leggings"));
 		event.getRegistry().register(new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("adamant_boots"));
 		
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNITE, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_helmet"));
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNITE, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_chestplate"));
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNITE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_leggings"));
-		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNITE, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("runite_boots"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("rune_helmet"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("rune_chestplate"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("rune_leggings"));
+		event.getRegistry().register(new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)).setRegistryName("rune_boots"));
 	}
 	
 	public enum ModItemTier implements IItemTier {
@@ -176,7 +200,7 @@ public class ItemInit {
 		STEEL(375, 6.5F, 1.25F, 2, 14, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT); }),
 		MITHRIL(525, 7.0F, 1.5F, 2, 12, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT); }),
 		ADAMANT(600, 7.5F, 1.75F, 2, 11, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
-		RUNITE(1750, 10.0F, 2.0F, 3, 10, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
+		RUNE(1750, 10.0F, 2.0F, 3, 10, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
 
 		private final int maxUses;
 		private final float efficiency;
@@ -229,7 +253,7 @@ public class ItemInit {
 			STEEL(20, new int[] { 2, 6, 7, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":steel", 0.0F, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT); }),
 			MITHRIL(25, new int[] { 3, 6, 8, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":mithril", 1.0F, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT); }),
 			ADAMANT(30, new int[] { 2, 7, 8, 3 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":adamant", 1.5F, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
-			RUNITE(40, new int[] { 4, 7, 9, 4 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":runite", 3.0F, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
+			RUNE(40, new int[] { 4, 7, 9, 4 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":rune", 3.0F, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
 
 			private static final int[] MAX_DAMAGE_ARRAY = new int[] {16, 16, 16, 16};
 			private final int durability;

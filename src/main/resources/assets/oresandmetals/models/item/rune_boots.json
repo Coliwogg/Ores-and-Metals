@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "oresandmetals:item/runite_leggings"
+        "layer0": "oresandmetals:item/rune_boots"
     }
 }

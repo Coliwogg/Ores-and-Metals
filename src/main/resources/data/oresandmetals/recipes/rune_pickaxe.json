@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XX",
-    "X#",
-    " #"
+    "XXX",
+    " # ",
+    " # "
   ],
   "key": {
     "#": {
@@ -14,6 +14,6 @@
     }
   },
   "result": {
-    "item": "oresandmetals:runite_axe"
+    "item": "oresandmetals:rune_pickaxe"
   }
 }

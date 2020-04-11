@@ -1,19 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "X",
-    "#",
-    "#"
+    "X X",
+    "X X"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
     "X": {
       "item": "oresandmetals:runite_ingot"
     }
   },
   "result": {
-    "item": "oresandmetals:runite_shovel"
+    "item": "oresandmetals:rune_boots"
   }
 }

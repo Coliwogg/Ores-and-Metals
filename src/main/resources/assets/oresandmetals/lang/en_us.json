@@ -43,11 +43,11 @@
 	"item.oresandmetals.adamant_shovel": "Adamant Shovel",
 	"item.oresandmetals.adamant_sword": "Adamant Sword",
 	
-	"item.oresandmetals.runite_axe": "Rune Axe",
-	"item.oresandmetals.runite_hoe": "Rune Hoe",
-	"item.oresandmetals.runite_pickaxe": "Rune Pickaxe",
-	"item.oresandmetals.runite_shovel": "Rune Shovel",
-	"item.oresandmetals.runite_sword": "Rune Sword",
+	"item.oresandmetals.rune_axe": "Rune Axe",
+	"item.oresandmetals.rune_hoe": "Rune Hoe",
+	"item.oresandmetals.rune_pickaxe": "Rune Pickaxe",
+	"item.oresandmetals.rune_shovel": "Rune Shovel",
+	"item.oresandmetals.rune_sword": "Rune Sword",
 	
 	"item.oresandmetals.bronze_helmet": "Bronze Helmet",
 	"item.oresandmetals.bronze_chestplate": "Bronze Chestplate",
@@ -69,10 +69,10 @@
 	"item.oresandmetals.adamant_leggings": "Adamant Leggings",
 	"item.oresandmetals.adamant_boots": "Adamant Boots",
 	
-	"item.oresandmetals.runite_helmet": "Rune Helmet",
-	"item.oresandmetals.runite_chestplate": "Rune Chestplate",
-	"item.oresandmetals.runite_leggings": "Rune Leggings",
-	"item.oresandmetals.runite_boots": "Rune Boots",
+	"item.oresandmetals.rune_helmet": "Rune Helmet",
+	"item.oresandmetals.rune_chestplate": "Rune Chestplate",
+	"item.oresandmetals.rune_leggings": "Rune Leggings",
+	"item.oresandmetals.rune_boots": "Rune Boots",
 	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",
