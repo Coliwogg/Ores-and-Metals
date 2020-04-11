@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "oresandmetals:adamantite_ingot"
+    }
+  },
+  "result": {
+    "item": "oresandmetals:adamant_chestplate"
+  }
+}
