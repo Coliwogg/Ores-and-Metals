@@ -2,7 +2,7 @@ modLoader="javafml"
 
 loaderVersion="[31,)"
 
-#issueTrackerURL="https://github.com/Coliwogg"
+#issueTrackerURL="https://github.com/Coliwogg/Ores-and-Metals/issues"
 
 [[mods]]
 
@@ -16,7 +16,7 @@ displayName="Ores and Metals"
 
 displayURL="https://www.curseforge.com/members/coliwogg/projects"
 
-#logoFile="logo.png"
+logoFile="logo.png"
 
 credits="Thanks to YOU for downloading this mod!"
 

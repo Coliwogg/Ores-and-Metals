@@ -23,8 +23,8 @@ public class OreGeneration {
 	*/
 	private static final CountRangeConfig COPPER = new CountRangeConfig(15, 5, 0, 128);
 	private static final CountRangeConfig TIN = new CountRangeConfig(15, 5, 0, 128);
-	private static final CountRangeConfig MITHRIL = new CountRangeConfig(4, 5, 0, 20);
-	private static final CountRangeConfig ADAMANTITE = new CountRangeConfig(3, 5, 0, 16);
+	private static final CountRangeConfig MITHRIL = new CountRangeConfig(4, 5, 0, 28);
+	private static final CountRangeConfig ADAMANTITE = new CountRangeConfig(3, 5, 0, 24);
 	private static final CountRangeConfig RUNITE = new CountRangeConfig(2, 4, 0, 12);
 	
 	static ConfiguredPlacement<CountRangeConfig> customConfig = null;
