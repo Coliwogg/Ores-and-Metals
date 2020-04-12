@@ -4,7 +4,6 @@ import java.util.function.Supplier;
 
 import com.coliwogg.oresandmetals.OresandMetals;
 import com.coliwogg.oresandmetals.OresandMetals.OresandMetalsItemGroup;
-import com.coliwogg.oresandmetals.init.ItemInit.ModItemTier.ModArmorMaterial;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
@@ -247,68 +246,69 @@ public class ItemInit {
 		public Ingredient getRepairMaterial() {
 			return this.repairMaterial.getValue();
 		}
+	}
 		
-		public enum ModArmorMaterial implements IArmorMaterial {
-			BRONZE(10, new int[] { 1, 4, 5, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":bronze", 0.0F, () -> { return Ingredient.fromItems(ItemInit.BRONZE_INGOT); }),
-			STEEL(20, new int[] { 2, 6, 7, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":steel", 0.0F, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT); }),
-			MITHRIL(25, new int[] { 3, 6, 8, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":mithril", 1.0F, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT); }),
-			ADAMANT(30, new int[] { 2, 7, 8, 3 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":adamant", 1.5F, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
-			RUNE(40, new int[] { 4, 7, 9, 4 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":rune", 3.0F, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
+	public enum ModArmorMaterial implements IArmorMaterial {
+		BRONZE(10, new int[] { 1, 4, 5, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":bronze", 0.0F, () -> { return Ingredient.fromItems(ItemInit.BRONZE_INGOT); }),
+		STEEL(20, new int[] { 2, 6, 7, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":steel", 0.0F, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT); }),
+		MITHRIL(25, new int[] { 3, 6, 8, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":mithril", 1.0F, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT); }),
+		ADAMANT(30, new int[] { 2, 7, 8, 3 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":adamant", 1.5F, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT); }),
+		RUNE(40, new int[] { 4, 7, 9, 4 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":rune", 3.0F, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT); });
 
-			private static final int[] MAX_DAMAGE_ARRAY = new int[] {16, 16, 16, 16};
-			private final int durability;
-			private final int[] damageReductionAmount;
-			private final int enchantability;
-			private final String soundEvent;
-			private final LazyValue<Ingredient> repairMaterial;
-			private final String name;
-			private final float toughness;
-			
-			private ModArmorMaterial(int durability, int[] damageReductionAmount, int enchantability, String soundEvent, String name, float toughness, Supplier<Ingredient> repairMaterial) {
-				this.durability = durability;
-				this.damageReductionAmount = damageReductionAmount;
-				this.enchantability = enchantability;
-				this.soundEvent = soundEvent;
-				this.name = name;
-				this.toughness = toughness;
-				this.repairMaterial = new LazyValue<>(repairMaterial);
-			}
-
-			@Override
-			public int getDurability(EquipmentSlotType slotIn) {
-				return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.durability;
-			}
-
-			@Override
-			public int getDamageReductionAmount(EquipmentSlotType slotIn) {
-				return this.damageReductionAmount[slotIn.getIndex()];
-			}
-
-			@Override
-			public int getEnchantability() {
-				return this.enchantability;
-			}
-
-			@Override
-			public SoundEvent getSoundEvent() {
-				return new SoundEvent(new ResourceLocation(this.soundEvent));
-			}
-			
-			@OnlyIn(Dist.CLIENT)
-			@Override
-			public String getName() {
-				return this.name;
-			}
-
-			@Override
-			public float getToughness() {
-				return this.toughness;
-			}
-
-			@Override
-			public Ingredient getRepairMaterial() {
-				return this.repairMaterial.getValue();
-			}
+		private static final int[] MAX_DAMAGE_ARRAY = new int[] {16, 16, 16, 16};
+		private final int durability;
+		private final int[] damageReductionAmount;
+		private final int enchantability;
+		private final String soundEvent;
+		private final LazyValue<Ingredient> repairMaterial;
+		private final String name;
+		private final float toughness;
+		
+		private ModArmorMaterial(int durability, int[] damageReductionAmount, int enchantability, String soundEvent, String name, float toughness, Supplier<Ingredient> repairMaterial) {
+			this.durability = durability;
+			this.damageReductionAmount = damageReductionAmount;
+			this.enchantability = enchantability;
+			this.soundEvent = soundEvent;
+			this.name = name;
+			this.toughness = toughness;
+			this.repairMaterial = new LazyValue<>(repairMaterial);
 		}
+
+		@Override
+		public int getDurability(EquipmentSlotType slotIn) {
+			return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.durability;
+		}
+
+		@Override
+		public int getDamageReductionAmount(EquipmentSlotType slotIn) {
+			return this.damageReductionAmount[slotIn.getIndex()];
+		}
+
+		@Override
+		public int getEnchantability() {
+			return this.enchantability;
+		}
+
+		@Override
+		public SoundEvent getSoundEvent() {
+			return new SoundEvent(new ResourceLocation(this.soundEvent));
+		}
+		
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public String getName() {
+			return this.name;
+		}
+
+		@Override
+		public float getToughness() {
+			return this.toughness;
+		}
+
+		@Override
+		public Ingredient getRepairMaterial() {
+			return this.repairMaterial.getValue();
+		}
+		
 	}
 }

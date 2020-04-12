@@ -15,12 +15,7 @@ import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class OreGeneration {
-	/* CountRangeConfig(count (Number of ores in a vein),
-						bottomOffset (How high from the bottom of the world can the ore spawn),
-						topOffset (Adjusting from the max (keep zero)),
-						max (Maximum height ore can spawn)
-					   	);
-	*/
+	
 	private static final CountRangeConfig COPPER = new CountRangeConfig(15, 5, 0, 128);
 	private static final CountRangeConfig TIN = new CountRangeConfig(15, 5, 0, 128);
 	private static final CountRangeConfig MITHRIL = new CountRangeConfig(4, 5, 0, 28);
@@ -28,7 +23,6 @@ public class OreGeneration {
 	private static final CountRangeConfig RUNITE = new CountRangeConfig(2, 4, 0, 12);
 	
 	static ConfiguredPlacement<CountRangeConfig> customConfig = null;
-
 	
 	public static void generateOre() {
 		for(Biome biome : ForgeRegistries.BIOMES) {
