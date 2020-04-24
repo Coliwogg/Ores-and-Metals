@@ -8,7 +8,7 @@ loaderVersion="[31,)"
 
 modId="oresandmetals"
 
-version="1.0"
+version="1.0.1"
 
 displayName="Ores and Metals"
 
@@ -22,9 +22,7 @@ credits="Thanks to YOU for downloading this mod!"
 
 authors="Coliwogg"
 
-description='''
-This mod adds different kinds of ores and metals to the game of Minecraft.
-'''
+description='''This mod adds different kinds of ores and metals inspired by the game "RuneScape" to Minecraft.'''
 
 
 
