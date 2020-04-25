@@ -31,35 +31,35 @@ public class OreGeneration {
 			if(OreGenConfig.generate_copper.get()) {
 				customConfig = Placement.COUNT_RANGE.configure(COPPER);
 				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-						.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.COPPER_ORE.getDefaultState(), MathHelper.nextInt(new Random(), 10, 15)))
+						.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.COPPER_ORE.get().getDefaultState(), MathHelper.nextInt(new Random(), 10, 15)))
 						.withPlacement(customConfig));
 			}
 
 			if(OreGenConfig.generate_tin.get()) {
 				customConfig = Placement.COUNT_RANGE.configure(TIN);
 				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-						.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.TIN_ORE.getDefaultState(), MathHelper.nextInt(new Random(), 10, 15)))
+						.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.TIN_ORE.get().getDefaultState(), MathHelper.nextInt(new Random(), 10, 15)))
 						.withPlacement(customConfig));
 			}
 
 			if(OreGenConfig.generate_mithril.get()) {
 				customConfig = Placement.COUNT_RANGE.configure(MITHRIL);
 				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-						.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.MITHRIL_ORE.getDefaultState(), MathHelper.nextInt(new Random(), 5, 6)))
+						.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.MITHRIL_ORE.get().getDefaultState(), MathHelper.nextInt(new Random(), 5, 6)))
 						.withPlacement(customConfig));
 			}
 
 			if(OreGenConfig.generate_adamantite.get()) {
 				customConfig = Placement.COUNT_RANGE.configure(ADAMANTITE);
 				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-						.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.ADAMANTITE_ORE.getDefaultState(), MathHelper.nextInt(new Random(), 4, 5)))
+						.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.ADAMANTITE_ORE.get().getDefaultState(), MathHelper.nextInt(new Random(), 4, 5)))
 						.withPlacement(customConfig));
 			}
 
 			if(OreGenConfig.generate_runite.get()) {
 				customConfig = Placement.COUNT_RANGE.configure(RUNITE);
 				biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-						.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.RUNITE_ORE.getDefaultState(), MathHelper.nextInt(new Random(), 3, 4)))
+						.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockInit.RUNITE_ORE.get().getDefaultState(), MathHelper.nextInt(new Random(), 3, 4)))
 						.withPlacement(customConfig));
 			}
 		}
