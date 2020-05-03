@@ -2,13 +2,13 @@ modLoader="javafml"
 
 loaderVersion="[31,)"
 
-#issueTrackerURL="https://github.com/Coliwogg/Ores-and-Metals/issues"
+issueTrackerURL="https://github.com/Coliwogg/Ores-and-Metals/issues"
 
 [[mods]]
 
 modId="oresandmetals"
 
-version="1.0.2"
+version="1.1.1"
 
 displayName="Ores and Metals"
 

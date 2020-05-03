@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "oresandmetals:rune_pickaxe"
+    },
+    {
+      "item": "oresandmetals:rune_shovel"
+    },
+    {
+      "item": "oresandmetals:rune_axe"
+    },
+    {
+      "item": "oresandmetals:rune_hoe"
+    },
+    {
+      "item": "oresandmetals:rune_sword"
+    },
+    {
+      "item": "oresandmetals:rune_helmet"
+    },
+    {
+      "item": "oresandmetals:rune_chestplate"
+    },
+    {
+      "item": "oresandmetals:rune_leggings"
+    },
+    {
+      "item": "oresandmetals:rune_boots"
+    }
+  ],
+  "result": "oresandmetals:runite_nugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

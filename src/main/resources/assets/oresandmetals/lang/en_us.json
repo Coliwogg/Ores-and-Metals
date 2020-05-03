@@ -3,88 +3,100 @@
 	"item.oresandmetals.tin_fragments": "Tin Fragments",
 	"item.oresandmetals.bronze_chunk": "Bronze Chunk",
 	"item.oresandmetals.bronze_ingot": "Bronze Ingot",
-		
+	"item.oresandmetals.bronze_nugget": "Bronze Nugget",
+
 	"item.oresandmetals.steel_chunk": "Steel Chunk",
 	"item.oresandmetals.steel_ingot": "Steel Ingot",
-	
+	"item.oresandmetals.steel_nugget": "Steel Nugget",
+
 	"item.oresandmetals.mithril_fragments": "Mithril Fragments",
 	"item.oresandmetals.mithril_chunk": "Mithril Chunk",
 	"item.oresandmetals.mithril_ingot": "Mithril Ingot",
-	
+	"item.oresandmetals.mithril_nugget": "Mithril Nugget",
+
 	"item.oresandmetals.adamantite_fragments": "Adamantite Fragments",
 	"item.oresandmetals.adamantite_chunk": "Adamantite Chunk",
 	"item.oresandmetals.adamantite_ingot": "Adamantite Ingot",
-	
+	"item.oresandmetals.adamantite_nugget": "Adamantite Nugget",
+
 	"item.oresandmetals.runite_fragments": "Runite Fragments",
 	"item.oresandmetals.runite_chunk": "Runite Chunk",
 	"item.oresandmetals.runite_ingot": "Runite Ingot",
-	
+	"item.oresandmetals.runite_nugget": "Runite Nugget",
+
 	"item.oresandmetals.bronze_axe": "Bronze Axe",
 	"item.oresandmetals.bronze_hoe": "Bronze Hoe",
 	"item.oresandmetals.bronze_pickaxe": "Bronze Pickaxe",
 	"item.oresandmetals.bronze_shovel": "Bronze Shovel",
 	"item.oresandmetals.bronze_sword": "Bronze Sword",
-	
+
 	"item.oresandmetals.steel_axe": "Steel Axe",
 	"item.oresandmetals.steel_hoe": "Steel Hoe",
 	"item.oresandmetals.steel_pickaxe": "Steel Pickaxe",
 	"item.oresandmetals.steel_shovel": "Steel Shovel",
 	"item.oresandmetals.steel_sword": "Steel Sword",
-	
+
 	"item.oresandmetals.mithril_axe": "Mithril Axe",
 	"item.oresandmetals.mithril_hoe": "Mithril Hoe",
 	"item.oresandmetals.mithril_pickaxe": "Mithril Pickaxe",
 	"item.oresandmetals.mithril_shovel": "Mithril Shovel",
 	"item.oresandmetals.mithril_sword": "Mithril Sword",
-	
+
 	"item.oresandmetals.adamant_axe": "Adamant Axe",
 	"item.oresandmetals.adamant_hoe": "Adamant Hoe",
 	"item.oresandmetals.adamant_pickaxe": "Adamant Pickaxe",
 	"item.oresandmetals.adamant_shovel": "Adamant Shovel",
 	"item.oresandmetals.adamant_sword": "Adamant Sword",
-	
+
 	"item.oresandmetals.rune_axe": "Rune Axe",
 	"item.oresandmetals.rune_hoe": "Rune Hoe",
 	"item.oresandmetals.rune_pickaxe": "Rune Pickaxe",
 	"item.oresandmetals.rune_shovel": "Rune Shovel",
 	"item.oresandmetals.rune_sword": "Rune Sword",
-	
+
 	"item.oresandmetals.bronze_helmet": "Bronze Helmet",
 	"item.oresandmetals.bronze_chestplate": "Bronze Chestplate",
 	"item.oresandmetals.bronze_leggings": "Bronze Leggings",
 	"item.oresandmetals.bronze_boots": "Bronze Boots",
-	
+
 	"item.oresandmetals.steel_helmet": "Steel Helmet",
 	"item.oresandmetals.steel_chestplate": "Steel Chestplate",
 	"item.oresandmetals.steel_leggings": "Steel Leggings",
 	"item.oresandmetals.steel_boots": "Steel Boots",
-	
+
 	"item.oresandmetals.mithril_helmet": "Mithril Helmet",
 	"item.oresandmetals.mithril_chestplate": "Mithril Chestplate",
 	"item.oresandmetals.mithril_leggings": "Mithril Leggings",
 	"item.oresandmetals.mithril_boots": "Mithril Boots",
-	
+
 	"item.oresandmetals.adamant_helmet": "Adamant Helmet",
 	"item.oresandmetals.adamant_chestplate": "Adamant Chestplate",
 	"item.oresandmetals.adamant_leggings": "Adamant Leggings",
 	"item.oresandmetals.adamant_boots": "Adamant Boots",
-	
+
 	"item.oresandmetals.rune_helmet": "Rune Helmet",
 	"item.oresandmetals.rune_chestplate": "Rune Chestplate",
 	"item.oresandmetals.rune_leggings": "Rune Leggings",
 	"item.oresandmetals.rune_boots": "Rune Boots",
+
+	"item.oresandmetals.bronze_arrow": "Bronze Arrow",
+	"item.oresandmetals.iron_arrow": "Iron Arrow",
+	"item.oresandmetals.steel_arrow": "Steel Arrow",
+	"item.oresandmetals.mithril_arrow": "Mithril Arrow",
+	"item.oresandmetals.adamant_arrow": "Adamant Arrow",
+	"item.oresandmetals.rune_arrow": "Rune Arrow",
 	
 	"block.oresandmetals.copper_ore": "Copper Ore",
 	"block.oresandmetals.tin_ore": "Tin Ore",
 	"block.oresandmetals.mithril_ore": "Mithril Ore",
 	"block.oresandmetals.adamantite_ore": "Adamantite Ore",
-	"block.oresandmetals.runite_ore": "Runite Ore",	
-	
+	"block.oresandmetals.runite_ore": "Runite Ore",
+
 	"block.oresandmetals.bronze_block": "Block of Bronze",
 	"block.oresandmetals.steel_block": "Block of Steel",
 	"block.oresandmetals.mithril_block": "Block of Mithril",
 	"block.oresandmetals.adamantite_block": "Block of Adamantite",
 	"block.oresandmetals.runite_block": "Block of Runite",
-	
+
 	"itemGroup.oresandmetalstab": "Ores and Metals"
 }

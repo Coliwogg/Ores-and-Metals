@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "oresandmetals:bronze_ingot"
+		}
+	],
+	"result": {
+		"item": "oresandmetals:bronze_nugget",
+		"count": 9
+	}
+}

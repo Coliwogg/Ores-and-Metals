@@ -2,6 +2,7 @@ package com.coliwogg.oresandmetals.init;
 
 import com.coliwogg.oresandmetals.OresandMetals;
 import com.coliwogg.oresandmetals.OresandMetals.OresandMetalsItemGroup;
+import com.coliwogg.oresandmetals.objects.items.*;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
@@ -79,31 +80,48 @@ public class ItemInit {
     public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register("bronze_helmet", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> BRONZE_CHESTPLATE = ITEMS.register("bronze_chestplate", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> BRONZE_LEGGINGS = ITEMS.register("bronze_leggings", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register("bronze_boots", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register("bronze_boots", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Steel Armor */
     public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet", () -> new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate", () -> new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings", () -> new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots", () -> new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots", () -> new ArmorItem(ModArmorMaterial.STEEL, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Mithril Armor */
     public static final RegistryObject<Item> MITHRIL_HELMET = ITEMS.register("mithril_helmet", () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> MITHRIL_CHESTPLATE = ITEMS.register("mithril_chestplate", () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> MITHRIL_LEGGINGS = ITEMS.register("mithril_leggings", () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> MITHRIL_BOOTS = ITEMS.register("mithril_boots", () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> MITHRIL_BOOTS = ITEMS.register("mithril_boots", () -> new ArmorItem(ModArmorMaterial.MITHRIL, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Adamant Armor */
     public static final RegistryObject<Item> ADAMANT_HELMET = ITEMS.register("adamant_helmet", () -> new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> ADAMANT_CHESTPLATE = ITEMS.register("adamant_chestplate", () -> new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> ADAMANT_LEGGINGS = ITEMS.register("adamant_leggings", () -> new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> ADAMANT_BOOTS = ITEMS.register("adamant_boots", () -> new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ADAMANT_BOOTS = ITEMS.register("adamant_boots", () -> new ArmorItem(ModArmorMaterial.ADAMANT, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Rune Armor */
     public static final RegistryObject<Item> RUNE_HELMET = ITEMS.register("rune_helmet", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> RUNE_CHESTPLATE = ITEMS.register("rune_chestplate", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> RUNE_LEGGINGS = ITEMS.register("rune_leggings", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> RUNE_BOOTS = ITEMS.register("rune_boots", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> RUNE_BOOTS = ITEMS.register("rune_boots", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+
+    /****************Update 1.1: Arrow Update****************/
+
+    /* Nuggets */
+    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ADAMANTITE_NUGGET = ITEMS.register("adamantite_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> RUNITE_NUGGET = ITEMS.register("runite_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+
+    /* Arrows */
+    public static final RegistryObject<Item> BRONZE_ARROW = ITEMS.register("bronze_arrow", () -> new BronzeArrow(new Item.Properties().group(OresandMetalsItemGroup.instance), 1.5F));
+    public static final RegistryObject<Item> IRON_ARROW = ITEMS.register("iron_arrow", () -> new IronArrow(new Item.Properties().group(OresandMetalsItemGroup.instance), 2.0F));
+    public static final RegistryObject<Item> STEEL_ARROW = ITEMS.register("steel_arrow", () -> new SteelArrow(new Item.Properties().group(OresandMetalsItemGroup.instance), 2.5F));
+    public static final RegistryObject<Item> MITHRIL_ARROW = ITEMS.register("mithril_arrow", () -> new MithrilArrow(new Item.Properties().group(OresandMetalsItemGroup.instance),3.0F));
+    public static final RegistryObject<Item> ADAMANT_ARROW = ITEMS.register("adamant_arrow", () -> new AdamantArrow(new Item.Properties().group(OresandMetalsItemGroup.instance),3.5F));
+    public static final RegistryObject<Item> RUNE_ARROW = ITEMS.register("rune_arrow", () -> new RuneArrow(new Item.Properties().group(OresandMetalsItemGroup.instance),4.0F));
 
     /* Tool Item Tiers */
     public enum ModItemTier implements IItemTier {
@@ -120,7 +138,7 @@ public class ItemInit {
         private final int enchantability;
         private final LazyValue<Ingredient> repairMaterial;
 
-        private ModItemTier(int maxUses, float efficiency, float attackDamage, int harvestLevel, int enchantability, Supplier<Ingredient> repairMaterial) {
+        ModItemTier(int maxUses, float efficiency, float attackDamage, int harvestLevel, int enchantability, Supplier<Ingredient> repairMaterial) {
             this.maxUses = maxUses;
             this.efficiency = efficiency;
             this.attackDamage = attackDamage;
@@ -177,7 +195,7 @@ public class ItemInit {
         private final String name;
         private final float toughness;
 
-        private ModArmorMaterial(int durability, int[] damageReductionAmount, int enchantability, String soundEvent, String name, float toughness, Supplier<Ingredient> repairMaterial) {
+        ModArmorMaterial(int durability, int[] damageReductionAmount, int enchantability, String soundEvent, String name, float toughness, Supplier<Ingredient> repairMaterial) {
             this.durability = durability;
             this.damageReductionAmount = damageReductionAmount;
             this.enchantability = enchantability;
@@ -222,6 +240,5 @@ public class ItemInit {
         public Ingredient getRepairMaterial() {
             return this.repairMaterial.getValue();
         }
-
     }
 }
