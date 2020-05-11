@@ -25,5 +25,4 @@ public class EntityInit {
             () -> EntityType.Builder.<AdamantArrowEntity>create(AdamantArrowEntity::new, EntityClassification.MISC).build(new ResourceLocation(OresandMetals.MODID, "adamant_arrow").toString()));
     public static final RegistryObject<EntityType<RuneArrowEntity>> RUNE_ARROW = ENTITY_TYPES.register("rune_arrow",
             () -> EntityType.Builder.<RuneArrowEntity>create(RuneArrowEntity::new, EntityClassification.MISC).build(new ResourceLocation(OresandMetals.MODID, "rune_arrow").toString()));
-
 }

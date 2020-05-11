@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/Coliwogg/Ores-and-Metals/issues"
 
 modId="oresandmetals"
 
-version="1.1.1"
+version="1.1.2"
 
 displayName="Ores and Metals"
 
@@ -23,8 +23,6 @@ credits="Thanks to YOU for downloading this mod!"
 authors="Coliwogg"
 
 description='''This mod adds different kinds of ores and metals inspired by the game "RuneScape" to Minecraft.'''
-
-
 
 [[dependencies.oresandmetals]]
     modId="forge"
