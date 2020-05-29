@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "oresandmetals:light_animica_ore"
+  },
+  "result": "oresandmetals:light_animica",
+  "experience": 0.4,
+  "cookingtime": 200
+}

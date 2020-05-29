@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "oresandmetals:elder_rune_ingot"
+    }
+  },
+  "result": {
+    "item": "oresandmetals:elder_rune_leggings"
+  }
+}

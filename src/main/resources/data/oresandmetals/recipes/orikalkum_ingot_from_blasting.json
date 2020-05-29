@@ -1,0 +1,9 @@
+{
+  	"type": "minecraft:blasting",
+  	"ingredient": {
+    	"item": "oresandmetals:orikalkum_chunk"
+  	},
+  	"result": "oresandmetals:orikalkum_ingot",
+  	"experience": 1.0,
+  	"cookingtime": 100
+}

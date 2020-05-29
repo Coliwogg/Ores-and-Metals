@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oresandmetals:necrite_ore"
+    },
+    {
+      "item": "oresandmetals:phasmatite"
+    }
+  ],
+  "result": {
+    "item": "oresandmetals:necronium_chunk"
+  }
+}

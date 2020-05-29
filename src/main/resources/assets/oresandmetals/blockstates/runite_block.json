@@ -1,5 +1,7 @@
 {
-	"variants": {
-		"": { "model": "oresandmetals:block/runite_block" }
-	}
+  "variants": {
+    "": {
+      "model": "oresandmetals:block/runite_block"
+    }
+  }
 }

@@ -1,5 +1,7 @@
 {
-	"variants": {
-		"": { "model": "oresandmetals:block/copper_ore" }
-	}
+  "variants": {
+    "": {
+      "model": "oresandmetals:block/copper_ore"
+    }
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "oresandmetals:orichalcite_ore"
+    },
+    {
+      "item": "oresandmetals:drakolith"
+    }
+  ],
+  "result": {
+    "item": "oresandmetals:orikalkum_chunk"
+  }
+}

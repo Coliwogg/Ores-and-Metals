@@ -24,6 +24,21 @@
 	"item.oresandmetals.runite_ingot": "Runite Ingot",
 	"item.oresandmetals.runite_nugget": "Runite Nugget",
 
+	"item.oresandmetals.drakolith": "Drakolith",
+	"item.oresandmetals.orikalkum_chunk": "Orikalkum Chunk",
+	"item.oresandmetals.orikalkum_ingot": "Orikalkum Ingot",
+
+	"item.oresandmetals.phasmatite": "Phasmatite",
+	"item.oresandmetals.necronium_chunk": "Necronium Chunk",
+	"item.oresandmetals.necronium_ingot": "Necronium Ingot",
+
+	"item.oresandmetals.banite_ingot": "Banite Ingot",
+
+	"item.oresandmetals.light_animica": "Light Animica",
+	"item.oresandmetals.dark_animica": "Dark Animica",
+	"item.oresandmetals.elder_rune_chunk": "Elder Rune Chunk",
+	"item.oresandmetals.elder_rune_ingot": "Elder Rune Ingot",
+
 	"item.oresandmetals.bronze_axe": "Bronze Axe",
 	"item.oresandmetals.bronze_hoe": "Bronze Hoe",
 	"item.oresandmetals.bronze_pickaxe": "Bronze Pickaxe",
@@ -54,6 +69,30 @@
 	"item.oresandmetals.rune_shovel": "Rune Shovel",
 	"item.oresandmetals.rune_sword": "Rune Sword",
 
+	"item.oresandmetals.orikalkum_axe": "Orikalkum Axe",
+	"item.oresandmetals.orikalkum_hoe": "Orikalkum Hoe",
+	"item.oresandmetals.orikalkum_pickaxe": "Orikalkum Pickaxe",
+	"item.oresandmetals.orikalkum_shovel": "Orikalkum Shovel",
+	"item.oresandmetals.orikalkum_sword": "Orikalkum Sword",
+
+	"item.oresandmetals.necronium_axe": "Necronium Axe",
+	"item.oresandmetals.necronium_hoe": "Necronium Hoe",
+	"item.oresandmetals.necronium_pickaxe": "Necronium Pickaxe",
+	"item.oresandmetals.necronium_shovel": "Necronium Shovel",
+	"item.oresandmetals.necronium_sword": "Necronium Sword",
+
+	"item.oresandmetals.banite_axe": "Banite Axe",
+	"item.oresandmetals.banite_hoe": "Banite Hoe",
+	"item.oresandmetals.banite_pickaxe": "Banite Pickaxe",
+	"item.oresandmetals.banite_shovel": "Banite Shovel",
+	"item.oresandmetals.banite_sword": "Banite Sword",
+
+	"item.oresandmetals.elder_rune_axe": "Elder Rune Axe",
+	"item.oresandmetals.elder_rune_hoe": "Elder Rune Hoe",
+	"item.oresandmetals.elder_rune_pickaxe": "Elder Rune Pickaxe",
+	"item.oresandmetals.elder_rune_shovel": "Elder Rune Shovel",
+	"item.oresandmetals.elder_rune_sword": "Elder Rune Sword",
+
 	"item.oresandmetals.bronze_helmet": "Bronze Helmet",
 	"item.oresandmetals.bronze_chestplate": "Bronze Chestplate",
 	"item.oresandmetals.bronze_leggings": "Bronze Leggings",
@@ -79,6 +118,26 @@
 	"item.oresandmetals.rune_leggings": "Rune Leggings",
 	"item.oresandmetals.rune_boots": "Rune Boots",
 
+	"item.oresandmetals.orikalkum_helmet": "Orikalkum Helmet",
+	"item.oresandmetals.orikalkum_chestplate": "Orikalkum Chestplate",
+	"item.oresandmetals.orikalkum_leggings": "Orikalkum Leggings",
+	"item.oresandmetals.orikalkum_boots": "Orikalkum Boots",
+
+	"item.oresandmetals.necronium_helmet": "Necronium Helmet",
+	"item.oresandmetals.necronium_chestplate": "Necronium Chestplate",
+	"item.oresandmetals.necronium_leggings": "Necronium Leggings",
+	"item.oresandmetals.necronium_boots": "Necronium Boots",
+
+	"item.oresandmetals.banite_helmet": "Banite Helmet",
+	"item.oresandmetals.banite_chestplate": "Banite Chestplate",
+	"item.oresandmetals.banite_leggings": "Banite Leggings",
+	"item.oresandmetals.banite_boots": "Banite Boots",
+
+	"item.oresandmetals.elder_rune_helmet": "Elder Rune Helmet",
+	"item.oresandmetals.elder_rune_chestplate": "Elder Rune Chestplate",
+	"item.oresandmetals.elder_rune_leggings": "Elder Rune Leggings",
+	"item.oresandmetals.elder_rune_boots": "Elder Rune Boots",
+
 	"item.oresandmetals.bronze_arrow": "Bronze Arrow",
 	"item.oresandmetals.iron_arrow": "Iron Arrow",
 	"item.oresandmetals.steel_arrow": "Steel Arrow",
@@ -91,12 +150,23 @@
 	"block.oresandmetals.mithril_ore": "Mithril Ore",
 	"block.oresandmetals.adamantite_ore": "Adamantite Ore",
 	"block.oresandmetals.runite_ore": "Runite Ore",
+	"block.oresandmetals.orichalcite_ore": "Orichalcite Ore",
+	"block.oresandmetals.drakolith_ore": "Drakolith Ore",
+	"block.oresandmetals.necrite_ore": "Necrite Ore",
+	"block.oresandmetals.phasmatite_ore": "Phasmatite Ore",
+	"block.oresandmetals.banite_ore": "Banite Ore",
+	"block.oresandmetals.light_animica_ore": "Light Animica Ore",
+	"block.oresandmetals.dark_animica_ore": "Dark Animica Ore",
 
 	"block.oresandmetals.bronze_block": "Block of Bronze",
 	"block.oresandmetals.steel_block": "Block of Steel",
 	"block.oresandmetals.mithril_block": "Block of Mithril",
 	"block.oresandmetals.adamantite_block": "Block of Adamantite",
 	"block.oresandmetals.runite_block": "Block of Runite",
+	"block.oresandmetals.orikalkum_block": "Block of Orikalkum",
+	"block.oresandmetals.necronium_block": "Block of Necronium",
+	"block.oresandmetals.banite_block": "Block of Banite",
+	"block.oresandmetals.elder_rune_block": "Block of Elder Rune",
 
 	"itemGroup.oresandmetalstab": "Ores and Metals"
 }

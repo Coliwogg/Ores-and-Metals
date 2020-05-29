@@ -1,5 +1,7 @@
 {
-	"variants": {
-		"": { "model": "oresandmetals:block/mithril_block" }
-	}
+  "variants": {
+    "": {
+      "model": "oresandmetals:block/mithril_block"
+    }
+  }
 }

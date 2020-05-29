@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "oresandmetals:dark_animica_ore"
+  },
+  "result": "oresandmetals:dark_animica",
+  "experience": 0.4,
+  "cookingtime": 100
+}

@@ -9,6 +9,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fml.RegistryObject;
@@ -20,12 +21,16 @@ import java.util.function.Supplier;
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, OresandMetals.MODID);
 
-    /* Fragments */
+    /* Ore Drops */
     public static final RegistryObject<Item> COPPER_FRAGMENTS = ITEMS.register("copper_fragments", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> TIN_FRAGMENTS = ITEMS.register("tin_fragments", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> MITHRIL_FRAGMENTS = ITEMS.register("mithril_fragments", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> ADAMANTITE_FRAGMENTS = ITEMS.register("adamantite_fragments", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> RUNITE_FRAGMENTS = ITEMS.register("runite_fragments", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> DRAKOLITH = ITEMS.register("drakolith", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> PHASMATITE = ITEMS.register("phasmatite", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> LIGHT_ANIMICA = ITEMS.register("light_animica", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> DARK_ANIMICA = ITEMS.register("dark_animica", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Chunks */
     public static final RegistryObject<Item> BRONZE_CHUNK = ITEMS.register("bronze_chunk", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
@@ -33,6 +38,17 @@ public class ItemInit {
     public static final RegistryObject<Item> MITHRIL_CHUNK = ITEMS.register("mithril_chunk", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> ADAMANTITE_CHUNK = ITEMS.register("adamantite_chunk", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> RUNITE_CHUNK = ITEMS.register("runite_chunk", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ORIKALKUM_CHUNK = ITEMS.register("orikalkum_chunk", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> NECRONIUM_CHUNK = ITEMS.register("necronium_chunk", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ELDER_RUNE_CHUNK = ITEMS.register("elder_rune_chunk", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+
+
+    /* Nuggets */
+    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ADAMANTITE_NUGGET = ITEMS.register("adamantite_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> RUNITE_NUGGET = ITEMS.register("runite_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Ingots */
     public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
@@ -40,6 +56,10 @@ public class ItemInit {
     public static final RegistryObject<Item> MITHRIL_INGOT = ITEMS.register("mithril_ingot", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> ADAMANTITE_INGOT = ITEMS.register("adamantite_ingot", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> RUNITE_INGOT = ITEMS.register("runite_ingot", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ORIKALKUM_INGOT = ITEMS.register("orikalkum_ingot", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> NECRONIUM_INGOT = ITEMS.register("necronium_ingot", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> BANITE_INGOT = ITEMS.register("banite_ingot", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ELDER_RUNE_INGOT = ITEMS.register("elder_rune_ingot", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Bronze Tools */
     public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register("bronze_axe", () -> new AxeItem(ModItemTier.BRONZE, 6.5F, -3.15F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
@@ -49,32 +69,60 @@ public class ItemInit {
     public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register("bronze_sword", () -> new SwordItem(ModItemTier.BRONZE, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Steel Tools */
-    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(ModItemTier.STEEL, 6.75F, -3.075F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(ModItemTier.STEEL, 5.75F, -3.075F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe", () -> new HoeItem(ModItemTier.STEEL, -0.75F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", () -> new PickaxeItem(ModItemTier.STEEL, 2, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel", () -> new ShovelItem(ModItemTier.STEEL, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () -> new SwordItem(ModItemTier.STEEL, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", () -> new PickaxeItem(ModItemTier.STEEL, 1, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel", () -> new ShovelItem(ModItemTier.STEEL, 1.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () -> new SwordItem(ModItemTier.STEEL, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Mithril Tools */
-    public static final RegistryObject<Item> MITHRIL_AXE = ITEMS.register("mithril_axe", () -> new AxeItem(ModItemTier.MITHRIL, 6.5F, -3.050F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> MITHRIL_HOE = ITEMS.register("mithril_hoe", () -> new HoeItem(ModItemTier.MITHRIL, -0.50F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> MITHRIL_PICKAXE = ITEMS.register("mithril_pickaxe", () -> new PickaxeItem(ModItemTier.MITHRIL, 2, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> MITHRIL_SHOVEL = ITEMS.register("mithril_shovel", () -> new ShovelItem(ModItemTier.MITHRIL, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> MITHRIL_SWORD = ITEMS.register("mithril_sword", () -> new SwordItem(ModItemTier.MITHRIL, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> MITHRIL_AXE = ITEMS.register("mithril_axe", () -> new AxeItem(ModItemTier.MITHRIL, 5.5F, -3.05F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> MITHRIL_HOE = ITEMS.register("mithril_hoe", () -> new HoeItem(ModItemTier.MITHRIL, -0.5F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> MITHRIL_PICKAXE = ITEMS.register("mithril_pickaxe", () -> new PickaxeItem(ModItemTier.MITHRIL, 1, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> MITHRIL_SHOVEL = ITEMS.register("mithril_shovel", () -> new ShovelItem(ModItemTier.MITHRIL, 1.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> MITHRIL_SWORD = ITEMS.register("mithril_sword", () -> new SwordItem(ModItemTier.MITHRIL, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Adamant Tools */
-    public static final RegistryObject<Item> ADAMANT_AXE = ITEMS.register("adamant_axe", () -> new AxeItem(ModItemTier.ADAMANT, 6.25F, -3.025F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ADAMANT_AXE = ITEMS.register("adamant_axe", () -> new AxeItem(ModItemTier.ADAMANT, 5.25F, -3.025F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> ADAMANT_HOE = ITEMS.register("adamant_hoe", () -> new HoeItem(ModItemTier.ADAMANT, -0.25F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> ADAMANT_PICKAXE = ITEMS.register("adamant_pickaxe", () -> new PickaxeItem(ModItemTier.ADAMANT, 2, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> ADAMANT_SHOVEL = ITEMS.register("adamant_shovel", () -> new ShovelItem(ModItemTier.ADAMANT, 2.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> ADAMANT_SWORD = ITEMS.register("adamant_sword", () -> new SwordItem(ModItemTier.ADAMANT, 4, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ADAMANT_PICKAXE = ITEMS.register("adamant_pickaxe", () -> new PickaxeItem(ModItemTier.ADAMANT, 1, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ADAMANT_SHOVEL = ITEMS.register("adamant_shovel", () -> new ShovelItem(ModItemTier.ADAMANT, 1.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ADAMANT_SWORD = ITEMS.register("adamant_sword", () -> new SwordItem(ModItemTier.ADAMANT, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Rune Tools */
-    public static final RegistryObject<Item> RUNE_AXE = ITEMS.register("rune_axe", () -> new AxeItem(ModItemTier.RUNE, 7.0F, -2.9F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> RUNE_HOE = ITEMS.register("rune_hoe", () -> new HoeItem(ModItemTier.RUNE, 1.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> RUNE_PICKAXE = ITEMS.register("rune_pickaxe", () -> new PickaxeItem(ModItemTier.RUNE, 3, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> RUNE_SHOVEL = ITEMS.register("rune_shovel", () -> new ShovelItem(ModItemTier.RUNE, 3.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> RUNE_SWORD = ITEMS.register("rune_sword", () -> new SwordItem(ModItemTier.RUNE, 5, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> RUNE_AXE = ITEMS.register("rune_axe", () -> new AxeItem(ModItemTier.RUNE, 5.0F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> RUNE_HOE = ITEMS.register("rune_hoe", () -> new HoeItem(ModItemTier.RUNE, 0.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> RUNE_PICKAXE = ITEMS.register("rune_pickaxe", () -> new PickaxeItem(ModItemTier.RUNE, 1, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> RUNE_SHOVEL = ITEMS.register("rune_shovel", () -> new ShovelItem(ModItemTier.RUNE, 1.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> RUNE_SWORD = ITEMS.register("rune_sword", () -> new SwordItem(ModItemTier.RUNE, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+
+    /* Orikalkum Tools */
+    public static final RegistryObject<Item> ORIKALKUM_AXE = ITEMS.register("orikalkum_axe", () -> new AxeItem(ModItemTier.ORIKALKUM, 4.75F, -2.9F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ORIKALKUM_HOE = ITEMS.register("orikalkum_hoe", () -> new HoeItem(ModItemTier.ORIKALKUM, 0.25F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ORIKALKUM_PICKAXE = ITEMS.register("orikalkum_pickaxe", () -> new PickaxeItem(ModItemTier.ORIKALKUM, 1, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ORIKALKUM_SHOVEL = ITEMS.register("orikalkum_shovel", () -> new ShovelItem(ModItemTier.ORIKALKUM, 1.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ORIKALKUM_SWORD = ITEMS.register("orikalkum_sword", () -> new SwordItem(ModItemTier.ORIKALKUM, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+
+    /* Necronium Tools */
+    public static final RegistryObject<Item> NECRONIUM_AXE = ITEMS.register("necronium_axe", () -> new AxeItem(ModItemTier.NECRONIUM, 4.5F, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> NECRONIUM_HOE = ITEMS.register("necronium_hoe", () -> new HoeItem(ModItemTier.NECRONIUM, 0.50F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> NECRONIUM_PICKAXE = ITEMS.register("necronium_pickaxe", () -> new PickaxeItem(ModItemTier.NECRONIUM, 1, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> NECRONIUM_SHOVEL = ITEMS.register("necronium_shovel", () -> new ShovelItem(ModItemTier.NECRONIUM, 1.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> NECRONIUM_SWORD = ITEMS.register("necronium_sword", () -> new SwordItem(ModItemTier.NECRONIUM, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+
+    /* Banite Tools */
+    public static final RegistryObject<Item> BANITE_AXE = ITEMS.register("banite_axe", () -> new AxeItem(ModItemTier.BANITE, 4.25F, -2.7F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> BANITE_HOE = ITEMS.register("banite_hoe", () -> new HoeItem(ModItemTier.BANITE, 0.75F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> BANITE_PICKAXE = ITEMS.register("banite_pickaxe", () -> new PickaxeItem(ModItemTier.BANITE, 1, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> BANITE_SHOVEL = ITEMS.register("banite_shovel", () -> new ShovelItem(ModItemTier.BANITE, 1.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> BANITE_SWORD = ITEMS.register("banite_sword", () -> new SwordItem(ModItemTier.BANITE, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+
+    /* Elder Rune Tools */
+    public static final RegistryObject<Item> ELDER_RUNE_AXE = ITEMS.register("elder_rune_axe", () -> new AxeItem(ModItemTier.ELDER_RUNE, 4.0F, -2.6F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ELDER_RUNE_HOE = ITEMS.register("elder_rune_hoe", () -> new HoeItem(ModItemTier.ELDER_RUNE, 1.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ELDER_RUNE_PICKAXE = ITEMS.register("elder_rune_pickaxe", () -> new PickaxeItem(ModItemTier.ELDER_RUNE, 1, -2.8F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ELDER_RUNE_SHOVEL = ITEMS.register("elder_rune_shovel", () -> new ShovelItem(ModItemTier.ELDER_RUNE, 1.5F, -3.0F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ELDER_RUNE_SWORD = ITEMS.register("elder_rune_sword", () -> new SwordItem(ModItemTier.ELDER_RUNE, 3, -2.4F, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Bronze Armor */
     public static final RegistryObject<Item> BRONZE_HELMET = ITEMS.register("bronze_helmet", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)));
@@ -106,45 +154,82 @@ public class ItemInit {
     public static final RegistryObject<Item> RUNE_LEGGINGS = ITEMS.register("rune_leggings", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
     public static final RegistryObject<Item> RUNE_BOOTS = ITEMS.register("rune_boots", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
-    /****************Update 1.1: Arrow Update****************/
+    /* Orikalkum Armor */
+    public static final RegistryObject<Item> ORIKALKUM_HELMET = ITEMS.register("orikalkum_helmet", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ORIKALKUM_CHESTPLATE = ITEMS.register("orikalkum_chestplate", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ORIKALKUM_LEGGINGS = ITEMS.register("orikalkum_leggings", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ORIKALKUM_BOOTS = ITEMS.register("orikalkum_boots", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
-    /* Nuggets */
-    public static final RegistryObject<Item> BRONZE_NUGGET = ITEMS.register("bronze_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> MITHRIL_NUGGET = ITEMS.register("mithril_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> ADAMANTITE_NUGGET = ITEMS.register("adamantite_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
-    public static final RegistryObject<Item> RUNITE_NUGGET = ITEMS.register("runite_nugget", () -> new Item(new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    /* Necronium Armor */
+    public static final RegistryObject<Item> NECRONIUM_HELMET = ITEMS.register("necronium_helmet", () -> new ArmorItem(ModArmorMaterial.NECRONIUM, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> NECRONIUM_CHESTPLATE = ITEMS.register("necronium_chestplate", () -> new ArmorItem(ModArmorMaterial.NECRONIUM, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> NECRONIUM_LEGGINGS = ITEMS.register("necronium_leggings", () -> new ArmorItem(ModArmorMaterial.NECRONIUM, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> NECRONIUM_BOOTS = ITEMS.register("necronium_boots", () -> new ArmorItem(ModArmorMaterial.NECRONIUM, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+
+    /* Banite Armor */
+    public static final RegistryObject<Item> BANITE_HELMET = ITEMS.register("banite_helmet", () -> new ArmorItem(ModArmorMaterial.BANITE, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> BANITE_CHESTPLATE = ITEMS.register("banite_chestplate", () -> new ArmorItem(ModArmorMaterial.BANITE, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> BANITE_LEGGINGS = ITEMS.register("banite_leggings", () -> new ArmorItem(ModArmorMaterial.BANITE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> BANITE_BOOTS = ITEMS.register("banite_boots", () -> new ArmorItem(ModArmorMaterial.BANITE, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+
+    /* Elder Rune Armor */
+    public static final RegistryObject<Item> ELDER_RUNE_HELMET = ITEMS.register("elder_rune_helmet", () -> new ArmorItem(ModArmorMaterial.ELDER_RUNE, EquipmentSlotType.HEAD, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ELDER_RUNE_CHESTPLATE = ITEMS.register("elder_rune_chestplate", () -> new ArmorItem(ModArmorMaterial.ELDER_RUNE, EquipmentSlotType.CHEST, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ELDER_RUNE_LEGGINGS = ITEMS.register("elder_rune_leggings", () -> new ArmorItem(ModArmorMaterial.ELDER_RUNE, EquipmentSlotType.LEGS, new Item.Properties().group(OresandMetalsItemGroup.instance)));
+    public static final RegistryObject<Item> ELDER_RUNE_BOOTS = ITEMS.register("elder_rune_boots", () -> new ArmorItem(ModArmorMaterial.ELDER_RUNE, EquipmentSlotType.FEET, new Item.Properties().group(OresandMetalsItemGroup.instance)));
 
     /* Arrows */
     public static final RegistryObject<Item> BRONZE_ARROW = ITEMS.register("bronze_arrow", () -> new BronzeArrow(new Item.Properties().group(OresandMetalsItemGroup.instance), 1.5F));
     public static final RegistryObject<Item> IRON_ARROW = ITEMS.register("iron_arrow", () -> new IronArrow(new Item.Properties().group(OresandMetalsItemGroup.instance), 2.0F));
     public static final RegistryObject<Item> STEEL_ARROW = ITEMS.register("steel_arrow", () -> new SteelArrow(new Item.Properties().group(OresandMetalsItemGroup.instance), 2.5F));
-    public static final RegistryObject<Item> MITHRIL_ARROW = ITEMS.register("mithril_arrow", () -> new MithrilArrow(new Item.Properties().group(OresandMetalsItemGroup.instance),3.0F));
-    public static final RegistryObject<Item> ADAMANT_ARROW = ITEMS.register("adamant_arrow", () -> new AdamantArrow(new Item.Properties().group(OresandMetalsItemGroup.instance),3.5F));
-    public static final RegistryObject<Item> RUNE_ARROW = ITEMS.register("rune_arrow", () -> new RuneArrow(new Item.Properties().group(OresandMetalsItemGroup.instance),4.0F));
+    public static final RegistryObject<Item> MITHRIL_ARROW = ITEMS.register("mithril_arrow", () -> new MithrilArrow(new Item.Properties().group(OresandMetalsItemGroup.instance), 3.0F));
+    public static final RegistryObject<Item> ADAMANT_ARROW = ITEMS.register("adamant_arrow", () -> new AdamantArrow(new Item.Properties().group(OresandMetalsItemGroup.instance), 3.5F));
+    public static final RegistryObject<Item> RUNE_ARROW = ITEMS.register("rune_arrow", () -> new RuneArrow(new Item.Properties().group(OresandMetalsItemGroup.instance), 4.0F));
 
     /* Tool Item Tiers */
     public enum ModItemTier implements IItemTier {
-        BRONZE(200, 5.0F, 1.5F, 1, 15, () -> { return Ingredient.fromItems(ItemInit.BRONZE_INGOT.get()); }),
-        STEEL(375, 6.5F, 1.25F, 2, 14, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT.get()); }),
-        MITHRIL(525, 7.0F, 1.5F, 2, 12, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT.get()); }),
-        ADAMANT(600, 7.5F, 1.75F, 2, 11, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT.get()); }),
-        RUNE(1750, 10.0F, 2.0F, 3, 10, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT.get()); });
+        BRONZE(1, 191, 5.0F, 1.5F, 13, () -> {
+            return Ingredient.fromItems(ItemInit.BRONZE_INGOT.get());
+        }),
+        STEEL(2, 302, 6.5F, 2.25F, 11, () -> {
+            return Ingredient.fromItems(ItemInit.STEEL_INGOT.get());
+        }),
+        MITHRIL(2, 453, 7.0F, 2.5F, 9, () -> {
+            return Ingredient.fromItems(ItemInit.MITHRIL_INGOT.get());
+        }),
+        ADAMANT(2, 708, 7.5F, 2.75F, 8, () -> {
+            return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT.get());
+        }),
+        RUNE(3, 1358, 8.0F, 3.0F, 10, () -> {
+            return Ingredient.fromItems(ItemInit.RUNITE_INGOT.get());
+        }),
+        ORIKALKUM(4, 1698, 9.5F, 3.25F, 9, () -> {
+            return Ingredient.fromItems(ItemInit.ORIKALKUM_INGOT.get());
+        }),
+        NECRONIUM(5, 1989, 11.0F, 3.5F, 8, () -> {
+            return Ingredient.fromItems(ItemInit.NECRONIUM_INGOT.get());
+        }),
+        BANITE(6, 2387, 12.5F, 3.75F, 7, () -> {
+            return Ingredient.fromItems(ItemInit.BANITE_INGOT.get());
+        }),
+        ELDER_RUNE(7, 2716, 14.0F, 4.0F, 6, () -> {
+            return Ingredient.fromItems(ItemInit.ELDER_RUNE_INGOT.get());
+        });
 
+        private final int harvestLevel;
         private final int maxUses;
         private final float efficiency;
         private final float attackDamage;
-        private final int harvestLevel;
         private final int enchantability;
         private final LazyValue<Ingredient> repairMaterial;
 
-        ModItemTier(int maxUses, float efficiency, float attackDamage, int harvestLevel, int enchantability, Supplier<Ingredient> repairMaterial) {
-            this.maxUses = maxUses;
-            this.efficiency = efficiency;
-            this.attackDamage = attackDamage;
-            this.harvestLevel = harvestLevel;
-            this.enchantability = enchantability;
-            this.repairMaterial = new LazyValue<>(repairMaterial);
+        ModItemTier(int harvestLevelIn, int maxUsesIn, float efficiencyIn, float attackDamageIn, int enchantabilityIn, Supplier<Ingredient> repairMaterialIn) {
+            this.harvestLevel = harvestLevelIn;
+            this.maxUses = maxUsesIn;
+            this.efficiency = efficiencyIn;
+            this.attackDamage = attackDamageIn;
+            this.enchantability = enchantabilityIn;
+            this.repairMaterial = new LazyValue<>(repairMaterialIn);
         }
 
         @Override
@@ -180,39 +265,62 @@ public class ItemInit {
 
     /* Armor Materials */
     public enum ModArmorMaterial implements IArmorMaterial {
-        BRONZE(10, new int[] { 1, 4, 5, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":bronze", 0.0F, () -> { return Ingredient.fromItems(ItemInit.BRONZE_INGOT.get()); }),
-        STEEL(20, new int[] { 2, 6, 7, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":steel", 0.0F, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT.get()); }),
-        MITHRIL(25, new int[] { 3, 6, 8, 2 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":mithril", 1.0F, () -> { return Ingredient.fromItems(ItemInit.MITHRIL_INGOT.get()); }),
-        ADAMANT(30, new int[] { 2, 7, 8, 3 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":adamant", 1.5F, () -> { return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT.get()); }),
-        RUNE(40, new int[] { 4, 7, 9, 4 }, 12, "item.armor.equip_iron", OresandMetals.MODID + ":rune", 3.0F, () -> { return Ingredient.fromItems(ItemInit.RUNITE_INGOT.get()); });
 
-        private static final int[] MAX_DAMAGE_ARRAY = new int[] {16, 16, 16, 16};
-        private final int durability;
-        private final int[] damageReductionAmount;
-        private final int enchantability;
-        private final String soundEvent;
-        private final LazyValue<Ingredient> repairMaterial;
+        BRONZE(OresandMetals.MODID + ":bronze", 10, new int[]{1, 2, 4, 2}, 13, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
+            return Ingredient.fromItems(ItemInit.BRONZE_INGOT.get());
+        }),
+        STEEL(OresandMetals.MODID + ":steel", 15, new int[]{2, 5, 7, 2}, 11, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
+            return Ingredient.fromItems(ItemInit.STEEL_INGOT.get());
+        }),
+        MITHRIL(OresandMetals.MODID + ":mithril", 20, new int[]{2, 6, 7, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> {
+            return Ingredient.fromItems(ItemInit.MITHRIL_INGOT.get());
+        }),
+        ADAMANT(OresandMetals.MODID + ":adamant", 25, new int[]{2, 6, 7, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.5F, () -> {
+            return Ingredient.fromItems(ItemInit.ADAMANTITE_INGOT.get());
+        }),
+        RUNE(OresandMetals.MODID + ":rune", 30, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, () -> {
+            return Ingredient.fromItems(ItemInit.RUNITE_INGOT.get());
+        }),
+        ORIKALKUM(OresandMetals.MODID + ":orikalkum", 35, new int[]{4, 6, 8, 3}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.5F, () -> {
+            return Ingredient.fromItems(ItemInit.ORIKALKUM_INGOT.get());
+        }),
+        NECRONIUM(OresandMetals.MODID + ":necronium", 40, new int[]{4, 6, 8, 4}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0F, () -> {
+            return Ingredient.fromItems(ItemInit.NECRONIUM_INGOT.get());
+        }),
+        BANITE(OresandMetals.MODID + ":banite", 45, new int[]{4, 6, 9, 4}, 7, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.5F, () -> {
+            return Ingredient.fromItems(ItemInit.BANITE_INGOT.get());
+        }),
+        ELDER_RUNE(OresandMetals.MODID + ":elder_rune", 50, new int[]{4, 7, 9, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0F, () -> {
+            return Ingredient.fromItems(ItemInit.ELDER_RUNE_INGOT.get());
+        });
+
+        private static final int[] MAX_DAMAGE_ARRAY = new int[]{16, 16, 16, 16};
         private final String name;
+        private final int maxDamageFactor;
+        private final int[] damageReductionAmountArray;
+        private final int enchantability;
+        private final SoundEvent soundEvent;
         private final float toughness;
+        private final LazyValue<Ingredient> repairMaterial;
 
-        ModArmorMaterial(int durability, int[] damageReductionAmount, int enchantability, String soundEvent, String name, float toughness, Supplier<Ingredient> repairMaterial) {
-            this.durability = durability;
-            this.damageReductionAmount = damageReductionAmount;
-            this.enchantability = enchantability;
-            this.soundEvent = soundEvent;
-            this.name = name;
-            this.toughness = toughness;
-            this.repairMaterial = new LazyValue<>(repairMaterial);
+        ModArmorMaterial(String nameIn, int maxDamageFactorIn, int[] damageReductionAmountsIn, int enchantabilityIn, SoundEvent equipSoundIn, float toughnessIn, Supplier<Ingredient> repairMaterialSupplier) {
+            this.name = nameIn;
+            this.maxDamageFactor = maxDamageFactorIn;
+            this.damageReductionAmountArray = damageReductionAmountsIn;
+            this.enchantability = enchantabilityIn;
+            this.soundEvent = equipSoundIn;
+            this.toughness = toughnessIn;
+            this.repairMaterial = new LazyValue<>(repairMaterialSupplier);
         }
 
         @Override
         public int getDurability(EquipmentSlotType slotIn) {
-            return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.durability;
+            return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.maxDamageFactor;
         }
 
         @Override
         public int getDamageReductionAmount(EquipmentSlotType slotIn) {
-            return this.damageReductionAmount[slotIn.getIndex()];
+            return this.damageReductionAmountArray[slotIn.getIndex()];
         }
 
         @Override
@@ -222,7 +330,12 @@ public class ItemInit {
 
         @Override
         public SoundEvent getSoundEvent() {
-            return new SoundEvent(new ResourceLocation(this.soundEvent));
+            return this.soundEvent;
+        }
+
+        @Override
+        public Ingredient getRepairMaterial() {
+            return this.repairMaterial.getValue();
         }
 
         @OnlyIn(Dist.CLIENT)
@@ -234,11 +347,6 @@ public class ItemInit {
         @Override
         public float getToughness() {
             return this.toughness;
-        }
-
-        @Override
-        public Ingredient getRepairMaterial() {
-            return this.repairMaterial.getValue();
         }
     }
 }

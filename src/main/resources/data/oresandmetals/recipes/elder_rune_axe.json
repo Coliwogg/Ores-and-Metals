@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "oresandmetals:elder_rune_ingot"
+    }
+  },
+  "result": {
+    "item": "oresandmetals:elder_rune_axe"
+  }
+}

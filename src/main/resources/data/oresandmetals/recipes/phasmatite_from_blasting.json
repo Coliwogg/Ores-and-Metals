@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "oresandmetals:phasmatite_ore"
+  },
+  "result": "oresandmetals:phasmatite",
+  "experience": 0.35,
+  "cookingtime": 100
+}

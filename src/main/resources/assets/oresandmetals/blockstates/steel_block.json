@@ -1,5 +1,7 @@
 {
-	"variants": {
-		"": { "model": "oresandmetals:block/steel_block" }
-	}
+  "variants": {
+    "": {
+      "model": "oresandmetals:block/steel_block"
+    }
+  }
 }

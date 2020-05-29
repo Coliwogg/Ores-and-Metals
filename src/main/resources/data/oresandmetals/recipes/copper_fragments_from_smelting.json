@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "oresandmetals:copper_ore"
+  },
+  "result": "oresandmetals:copper_fragments",
+  "experience": 0.1,
+  "cookingtime": 200
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "oresandmetals:item/elder_rune_boots"
+    }
+}

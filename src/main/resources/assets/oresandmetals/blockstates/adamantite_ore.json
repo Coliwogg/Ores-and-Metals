@@ -1,5 +1,7 @@
 {
-	"variants": {
-		"": { "model": "oresandmetals:block/adamantite_ore" }
-	}
+  "variants": {
+    "": {
+      "model": "oresandmetals:block/adamantite_ore"
+    }
+  }
 }

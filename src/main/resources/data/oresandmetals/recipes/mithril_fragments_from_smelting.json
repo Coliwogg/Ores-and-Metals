@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "oresandmetals:mithril_ore"
+  },
+  "result": "oresandmetals:mithril_fragments",
+  "experience": 0.15,
+  "cookingtime": 200
+}

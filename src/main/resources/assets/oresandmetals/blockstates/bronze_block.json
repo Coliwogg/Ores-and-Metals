@@ -1,5 +1,7 @@
 {
-	"variants": {
-		"": { "model": "oresandmetals:block/bronze_block" }
-	}
+  "variants": {
+    "": {
+      "model": "oresandmetals:block/bronze_block"
+    }
+  }
 }
