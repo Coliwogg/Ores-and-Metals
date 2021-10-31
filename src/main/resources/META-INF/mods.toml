@@ -1,6 +1,8 @@
 modLoader="javafml"
 
-loaderVersion="[31,)"
+loaderVersion="[37,)"
+
+license="All rights reserved"
 
 issueTrackerURL="https://github.com/Coliwogg/Ores-and-Metals/issues"
 
@@ -8,32 +10,32 @@ issueTrackerURL="https://github.com/Coliwogg/Ores-and-Metals/issues"
 
 modId="oresandmetals"
 
-version="1.2.0"
+version="1.17.1-0.1.0"
 
-displayName="Ores and Metals"
+displayName="Ores and Metals Mod"
 
-#updateJSONURL=""
+#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 
 displayURL="https://www.curseforge.com/minecraft/mc-mods/ores-and-metals"
 
 logoFile="logo.png"
 
-credits="Thanks to YOU for downloading this mod!"
+credits="Thank you for downloading this mod!"
 
 authors="Coliwogg"
 
-description='''This mod adds different kinds of ores, metals, tools, and armor inspired by the game RuneScape to Minecraft'''
+description='''This mod adds different kinds of ores, metals, tools, and armor inspired by the game RuneScape to Minecraft.'''
 
 [[dependencies.oresandmetals]]
     modId="forge"
     mandatory=true
-    versionRange="[31,)"
+    versionRange="[37,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.oresandmetals]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.17.1,1.18)"
     ordering="NONE"
     side="BOTH"

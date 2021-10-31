@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oresandmetals:raw_adamantite"
+    }
+  },
+  "result": {
+    "item": "oresandmetals:raw_adamantite_block"
+  }
+}

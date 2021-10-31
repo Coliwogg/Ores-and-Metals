@@ -1,9 +1,24 @@
 {
-	"type": "minecraft:smelting",
-	"ingredient": {
-		"item": "oresandmetals:mithril_chunk"
-	},
-	"result": "oresandmetals:mithril_ingot",
-	"experience": 0.8,
-	"cookingtime": 200
+  "type": "minecraft:crafting_shapeless",
+  "group": "mithril_ingot",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "item": "oresandmetals:mithril_scrap"
+    }
+  ],
+  "result": {
+    "item": "oresandmetals:mithril_ingot"
+  }
 }

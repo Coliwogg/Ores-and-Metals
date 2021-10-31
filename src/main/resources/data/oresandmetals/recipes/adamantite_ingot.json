@@ -1,9 +1,30 @@
 {
-	"type": "minecraft:smelting",
-	"ingredient": {
-		"item": "oresandmetals:adamantite_chunk"
-	},
-	"result": "oresandmetals:adamantite_ingot",
-	"experience": 0.8,
-	"cookingtime": 200
+  "type": "minecraft:crafting_shapeless",
+  "group": "adamantite_ingot",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "item": "oresandmetals:adamantite_scrap"
+    }
+  ],
+  "result": {
+    "item": "oresandmetals:adamantite_ingot"
+  }
 }

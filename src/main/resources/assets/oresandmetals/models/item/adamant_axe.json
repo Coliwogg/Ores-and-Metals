@@ -1,6 +1,6 @@
 {
-	"parent": "item/handheld",
-	"textures": {
-		"layer0": "oresandmetals:item/adamant_axe"
-	}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "oresandmetals:item/adamant_axe"
+  }
 }

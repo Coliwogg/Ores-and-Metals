@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "raw_runite",
+  "ingredients": [
+    {
+      "item": "oresandmetals:raw_runite_block"
+    }
+  ],
+  "result": {
+    "item": "oresandmetals:raw_runite",
+    "count": 9
+  }
+}

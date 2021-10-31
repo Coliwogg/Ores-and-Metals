@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oresandmetals:raw_mithril"
+    }
+  },
+  "result": {
+    "item": "oresandmetals:raw_mithril_block"
+  }
+}

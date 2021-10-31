@@ -1,9 +1,36 @@
 {
-	"type": "minecraft:smelting",
-	"ingredient": {
-		"item": "oresandmetals:runite_chunk"
-	},
-	"result": "oresandmetals:runite_ingot",
-	"experience": 1.0,
-	"cookingtime": 200
+  "type": "minecraft:crafting_shapeless",
+  "group": "runite_ingot",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "item": "oresandmetals:runite_scrap"
+    }
+  ],
+  "result": {
+    "item": "oresandmetals:runite_ingot"
+  }
 }

@@ -1,9 +1,13 @@
 {
-	"type": "minecraft:smelting",
-	"ingredient": {
-		"item": "oresandmetals:steel_chunk"
-	},
-	"result": "oresandmetals:steel_ingot",
-	"experience": 0.7,
-	"cookingtime": 200
+  "type": "minecraft:crafting_shapeless",
+  "group": "steel_ingot",
+  "ingredients": [
+    {
+      "item": "oresandmetals:steel_block"
+    }
+  ],
+  "result": {
+    "item": "oresandmetals:steel_ingot",
+    "count": 9
+  }
 }

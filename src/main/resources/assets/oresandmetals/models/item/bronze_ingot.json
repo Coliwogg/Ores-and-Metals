@@ -1,6 +1,7 @@
 {
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "oresandmetals:item/bronze_ingot"
-	}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "oresandmetals:item/bronze_ingot"
+  }
+
 }
