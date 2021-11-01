@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "oresandmetals:adamantite_ore"
-  },
-  "result": "oresandmetals:adamantite_fragments",
-  "experience": 0.2,
-  "cookingtime": 200
-}

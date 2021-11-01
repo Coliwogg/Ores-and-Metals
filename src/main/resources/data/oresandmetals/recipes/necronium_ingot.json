@@ -1,9 +1,0 @@
-{
-	"type": "minecraft:smelting",
-	"ingredient": {
-		"item": "oresandmetals:necronium_chunk"
-	},
-	"result": "oresandmetals:necronium_ingot",
-	"experience": 1.0,
-	"cookingtime": 200
-}

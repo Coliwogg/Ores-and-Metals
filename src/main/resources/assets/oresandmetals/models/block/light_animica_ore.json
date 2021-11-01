@@ -1,6 +1,0 @@
-{
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "oresandmetals:block/light_animica_ore"
-	}
-}

@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "oresandmetals:drakolith_ore"
-  },
-  "result": "oresandmetals:drakolith",
-  "experience": 0.3,
-  "cookingtime": 200
-}

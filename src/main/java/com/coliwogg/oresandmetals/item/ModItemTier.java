@@ -1,5 +1,6 @@
 package com.coliwogg.oresandmetals.item;
 
+import com.coliwogg.oresandmetals.config.ItemTierConfig;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -8,15 +9,15 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements Tier {
 
-    BRONZE(1, 250, 6.0F, 2.0F, 14, () ->
+    BRONZE(ItemTierConfig.bronze_level.get(), ItemTierConfig.bronze_uses.get(), ItemTierConfig.bronze_speed.get().floatValue(), ItemTierConfig.bronze_damage.get().floatValue(), ItemTierConfig.bronze_enchantment_value.get(), () ->
             Ingredient.of(ModItems.BRONZE_INGOT.get())),
-    STEEL(2, 521, 7.0F, 2.5F, 13, () ->
+    STEEL(ItemTierConfig.steel_level.get(), ItemTierConfig.steel_uses.get(), ItemTierConfig.steel_speed.get().floatValue(), ItemTierConfig.steel_damage.get().floatValue(), ItemTierConfig.steel_enchantment_value.get(), () ->
             Ingredient.of(ModItems.STEEL_INGOT.get())),
-    MITHRIL(2, 991, 7.5F, 2.5F, 12, () ->
+    MITHRIL(ItemTierConfig.mithril_level.get(), ItemTierConfig.mithril_uses.get(), ItemTierConfig.mithril_speed.get().floatValue(), ItemTierConfig.mithril_damage.get().floatValue(), ItemTierConfig.mithril_enchantment_value.get(), () ->
             Ingredient.of(ModItems.MITHRIL_INGOT.get())),
-    ADAMANT(3, 1251, 8.0F, 3.0F, 11, () ->
+    ADAMANT(ItemTierConfig.adamant_level.get(), ItemTierConfig.adamant_uses.get(), ItemTierConfig.adamant_speed.get().floatValue(), ItemTierConfig.adamant_damage.get().floatValue(), ItemTierConfig.adamant_enchantment_value.get(), () ->
             Ingredient.of(ModItems.ADAMANTITE_INGOT.get())),
-    RUNE(4, 1901, 8.5F, 4.0F, 15, () ->
+    RUNE(ItemTierConfig.rune_level.get(), ItemTierConfig.rune_uses.get(), ItemTierConfig.rune_speed.get().floatValue(), ItemTierConfig.rune_damage.get().floatValue(), ItemTierConfig.rune_enchantment_value.get(), () ->
             Ingredient.of(ModItems.RUNITE_INGOT.get()));
 
     private final int level;

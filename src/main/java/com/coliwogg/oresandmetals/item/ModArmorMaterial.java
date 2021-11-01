@@ -1,6 +1,7 @@
 package com.coliwogg.oresandmetals.item;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
+import com.coliwogg.oresandmetals.config.ArmorMaterialConfig;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
@@ -11,17 +12,66 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
-    BRONZE("bronze", 15, new int[]{1, 4, 5, 2}, 14, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () ->
-            Ingredient.of(ModItems.BRONZE_INGOT.get())),
-    STEEL("steel", 16, new int[]{2, 5, 6, 2}, 13, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () ->
-            Ingredient.of(ModItems.STEEL_INGOT.get())),
-    MITHRIL("mithril", 15, new int[]{2, 5, 6, 2}, 12, SoundEvents.ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () ->
-            Ingredient.of(ModItems.MITHRIL_INGOT.get())),
-    ADAMANT("adamant", 32, new int[]{3, 6, 8, 3}, 11, SoundEvents.ARMOR_EQUIP_GOLD, 1.0F, 0.0F, () ->
-            Ingredient.of(ModItems.ADAMANTITE_INGOT.get())),
-    RUNE("rune", 36, new int[]{3, 6, 8, 3}, 16, SoundEvents.ARMOR_EQUIP_NETHERITE, 2.5F, 0.1F, () ->
-            Ingredient.of(ModItems.RUNITE_INGOT.get()));
-
+    BRONZE("bronze",
+            ArmorMaterialConfig.bronze_durability_multiplier.get(),
+            new int[]{
+                    ArmorMaterialConfig.bronze_boots.get(),
+                    ArmorMaterialConfig.bronze_leggings.get(),
+                    ArmorMaterialConfig.bronze_chestplate.get(),
+                    ArmorMaterialConfig.bronze_helmet.get()},
+            ArmorMaterialConfig.bronze_enchantment_value.get(),
+            SoundEvents.ARMOR_EQUIP_IRON,
+            ArmorMaterialConfig.bronze_toughness.get().floatValue(),
+            ArmorMaterialConfig.bronze_knockback_resistance.get().floatValue(),
+            () -> Ingredient.of(ModItems.BRONZE_INGOT.get())),
+    STEEL("steel",
+            ArmorMaterialConfig.steel_durability_multiplier.get(),
+            new int[]{
+                    ArmorMaterialConfig.steel_boots.get(),
+                    ArmorMaterialConfig.steel_leggings.get(),
+                    ArmorMaterialConfig.steel_chestplate.get(),
+                    ArmorMaterialConfig.steel_helmet.get()},
+            ArmorMaterialConfig.steel_enchantment_value.get(),
+            SoundEvents.ARMOR_EQUIP_IRON,
+            ArmorMaterialConfig.steel_toughness.get().floatValue(),
+            ArmorMaterialConfig.steel_knockback_resistance.get().floatValue(),
+            () -> Ingredient.of(ModItems.STEEL_INGOT.get())),
+    MITHRIL("mithril",
+            ArmorMaterialConfig.mithril_durability_multiplier.get(),
+            new int[]{
+                    ArmorMaterialConfig.mithril_boots.get(),
+                    ArmorMaterialConfig.mithril_leggings.get(),
+                    ArmorMaterialConfig.mithril_chestplate.get(),
+                    ArmorMaterialConfig.mithril_helmet.get()},
+            ArmorMaterialConfig.mithril_enchantment_value.get(),
+            SoundEvents.ARMOR_EQUIP_GOLD,
+            ArmorMaterialConfig.mithril_toughness.get().floatValue(),
+            ArmorMaterialConfig.mithril_knockback_resistance.get().floatValue(),
+            () -> Ingredient.of(ModItems.MITHRIL_INGOT.get())),
+    ADAMANT("adamant",
+            ArmorMaterialConfig.adamant_durability_multiplier.get(),
+            new int[]{
+                    ArmorMaterialConfig.adamant_boots.get(),
+                    ArmorMaterialConfig.adamant_leggings.get(),
+                    ArmorMaterialConfig.adamant_chestplate.get(),
+                    ArmorMaterialConfig.adamant_helmet.get()},
+            ArmorMaterialConfig.adamant_enchantment_value.get(),
+            SoundEvents.ARMOR_EQUIP_GOLD,
+            ArmorMaterialConfig.adamant_toughness.get().floatValue(),
+            ArmorMaterialConfig.adamant_knockback_resistance.get().floatValue(),
+            () -> Ingredient.of(ModItems.ADAMANTITE_INGOT.get())),
+    RUNE("rune",
+            ArmorMaterialConfig.rune_durability_multiplier.get(),
+            new int[]{
+                    ArmorMaterialConfig.rune_boots.get(),
+                    ArmorMaterialConfig.rune_leggings.get(),
+                    ArmorMaterialConfig.rune_chestplate.get(),
+                    ArmorMaterialConfig.rune_helmet.get()},
+            ArmorMaterialConfig.rune_enchantment_value.get(),
+            SoundEvents.ARMOR_EQUIP_GOLD,
+            ArmorMaterialConfig.rune_toughness.get().floatValue(),
+            ArmorMaterialConfig.rune_knockback_resistance.get().floatValue(),
+            () -> Ingredient.of(ModItems.RUNITE_INGOT.get()));
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;
     private final int durabilityMultiplier;

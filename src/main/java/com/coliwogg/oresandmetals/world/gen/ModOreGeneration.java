@@ -37,16 +37,16 @@ public class ModOreGeneration {
                     OreConfiguration.target(OreConfiguration.Predicates.DEEPSLATE_ORE_REPLACEABLES, OreType.RUNITE.getDeepslateBlock().get().defaultBlockState()));
 
             ConfiguredFeature<?, ?> ORE_TIN =
-                    register(OreType.TIN.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_TIN_TARGET_LIST, 10))
-                            .rangeTriangle(VerticalAnchor.absolute(OreType.TIN.getMinHeight()), VerticalAnchor.absolute(OreType.TIN.getMaxHeight()))).squared().count(OreType.TIN.getVeinSize());
+                    register(OreType.TIN.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_TIN_TARGET_LIST, OreType.TIN.getVeinSize()))
+                            .rangeTriangle(VerticalAnchor.absolute(OreType.TIN.getMinHeight()), VerticalAnchor.absolute(OreType.TIN.getMaxHeight()))).squared().count(OreType.TIN.getOreCount());
             ConfiguredFeature<?, ?> ORE_MITHRIL =
-                    register(OreType.MITHRIL.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_MITHRIL_TARGET_LIST, 9))
-                            .rangeUniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(OreType.MITHRIL.getMaxHeight()))).squared().count(OreType.MITHRIL.getVeinSize());
+                    register(OreType.MITHRIL.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_MITHRIL_TARGET_LIST,  OreType.MITHRIL.getVeinSize()))
+                            .rangeUniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(OreType.MITHRIL.getMaxHeight()))).squared().count(OreType.MITHRIL.getOreCount());
             ConfiguredFeature<?, ?> ORE_ADAMANTITE =
-                    register(OreType.ADAMANTITE.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_ADAMANTITE_TARGET_LIST, 8))
-                            .rangeUniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(OreType.ADAMANTITE.getMaxHeight()))).squared().count(OreType.ADAMANTITE.getVeinSize());
+                    register(OreType.ADAMANTITE.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_ADAMANTITE_TARGET_LIST, OreType.ADAMANTITE.getVeinSize()))
+                            .rangeUniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(OreType.ADAMANTITE.getMaxHeight()))).squared().count(OreType.ADAMANTITE.getOreCount());
             ConfiguredFeature<?, ?> ORE_RUNITE =
-                    register(OreType.RUNITE.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_RUNITE_TARGET_LIST, 7))
+                    register(OreType.RUNITE.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_RUNITE_TARGET_LIST, OreType.ADAMANTITE.getVeinSize()))
                             .rangeUniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(OreType.RUNITE.getMaxHeight()))).squared();
 
             if (OreType.TIN.getGenerateOreToggle()) {

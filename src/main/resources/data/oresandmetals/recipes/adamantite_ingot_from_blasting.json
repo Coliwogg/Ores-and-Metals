@@ -1,9 +1,0 @@
-{
-  	"type": "minecraft:blasting",
-  	"ingredient": {
-    	"item": "oresandmetals:adamantite_chunk"
-  	},
-  	"result": "oresandmetals:adamantite_ingot",
-  	"experience": 0.85,
-  	"cookingtime": 100
-}

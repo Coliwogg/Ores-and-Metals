@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "oresandmetals:banite_ore"
-  },
-  "result": "oresandmetals:banite_ingot",
-  "experience": 1.0,
-  "cookingtime": 100
-}
