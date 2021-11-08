@@ -1,9 +1,11 @@
 package com.coliwogg.oresandmetals.item;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
+import com.coliwogg.oresandmetals.config.ArrowConfig;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fmllegacy.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -72,6 +74,13 @@ public class ModItems {
     public static final RegistryObject<Item> RUNE_CHESTPLATE;
     public static final RegistryObject<Item> RUNE_LEGGINGS;
     public static final RegistryObject<Item> RUNE_BOOTS;
+    public static final RegistryObject<Item> BRONZE_ARROW;
+    public static final RegistryObject<Item> IRON_ARROW;
+    public static final RegistryObject<Item> STEEL_ARROW;
+    public static final RegistryObject<Item> MITHRIL_ARROW;
+    public static final RegistryObject<Item> ADAMANT_ARROW;
+    public static final RegistryObject<Item> RUNE_ARROW;
+
 
     static {
         RAW_TIN = ITEMS.register("raw_tin", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
@@ -134,30 +143,13 @@ public class ModItems {
         RUNE_CHESTPLATE = ITEMS.register("rune_chestplate", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_LEGGINGS = ITEMS.register("rune_leggings", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_BOOTS = ITEMS.register("rune_boots", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.TAB)));
-
+        BRONZE_ARROW = ITEMS.register("bronze_arrow", () -> new BronzeArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.bronze_arrow_damage.get().floatValue()));
+        IRON_ARROW = ITEMS.register("iron_arrow", () -> new IronArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.iron_arrow_damage.get().floatValue()));
+        STEEL_ARROW = ITEMS.register("steel_arrow", () -> new SteelArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.steel_arrow_damage.get().floatValue()));
+        MITHRIL_ARROW = ITEMS.register("mithril_arrow", () -> new MithrilArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.mithril_arrow_damage.get().floatValue()));
+        ADAMANT_ARROW = ITEMS.register("adamant_arrow", () -> new AdamantArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.adamant_arrow_damage.get().floatValue()));
+        RUNE_ARROW = ITEMS.register("rune_arrow", () -> new RuneArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.rune_arrow_damage.get().floatValue()));
     }
-
-
-    //   public static final Item IRON_HELMET = registerItem("iron_helmet", new ArmorItem(ArmorMaterials.IRON, EquipmentSlot.HEAD, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //   public static final Item IRON_CHESTPLATE = registerItem("iron_chestplate", new ArmorItem(ArmorMaterials.IRON, EquipmentSlot.CHEST, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //   public static final Item IRON_LEGGINGS = registerItem("iron_leggings", new ArmorItem(ArmorMaterials.IRON, EquipmentSlot.LEGS, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //   public static final Item IRON_BOOTS = registerItem("iron_boots", new ArmorItem(ArmorMaterials.IRON, EquipmentSlot.FEET, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //
-    //   public static final Item DIAMOND_HELMET = registerItem("diamond_helmet", new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.HEAD, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //   public static final Item DIAMOND_CHESTPLATE = registerItem("diamond_chestplate", new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.CHEST, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //   public static final Item DIAMOND_LEGGINGS = registerItem("diamond_leggings", new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.LEGS, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //   public static final Item DIAMOND_BOOTS = registerItem("diamond_boots", new ArmorItem(ArmorMaterials.DIAMOND, EquipmentSlot.FEET, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //
-    //   public static final Item GOLDEN_HELMET = registerItem("golden_helmet", new ArmorItem(ArmorMaterials.GOLD, EquipmentSlot.HEAD, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //   public static final Item GOLDEN_CHESTPLATE = registerItem("golden_chestplate", new ArmorItem(ArmorMaterials.GOLD, EquipmentSlot.CHEST, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //   public static final Item GOLDEN_LEGGINGS = registerItem("golden_leggings", new ArmorItem(ArmorMaterials.GOLD, EquipmentSlot.LEGS, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //   public static final Item GOLDEN_BOOTS = registerItem("golden_boots", new ArmorItem(ArmorMaterials.GOLD, EquipmentSlot.FEET, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT)));
-    //
-    //   public static final Item NETHERITE_HELMET = registerItem("netherite_helmet", new ArmorItem(ArmorMaterials.NETHERITE, EquipmentSlot.HEAD, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
-    //   public static final Item NETHERITE_CHESTPLATE = registerItem("netherite_chestplate", new ArmorItem(ArmorMaterials.NETHERITE, EquipmentSlot.CHEST, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
-    //   public static final Item NETHERITE_LEGGINGS = registerItem("netherite_leggings", new ArmorItem(ArmorMaterials.NETHERITE, EquipmentSlot.LEGS, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
-    //   public static final Item NETHERITE_BOOTS = registerItem("netherite_boots", new ArmorItem(ArmorMaterials.NETHERITE, EquipmentSlot.FEET, (new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT).fireResistant()));
-    //
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

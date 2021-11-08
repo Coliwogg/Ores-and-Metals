@@ -40,7 +40,7 @@ public class ModOreGeneration {
                     register(OreType.TIN.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_TIN_TARGET_LIST, OreType.TIN.getVeinSize()))
                             .rangeTriangle(VerticalAnchor.absolute(OreType.TIN.getMinHeight()), VerticalAnchor.absolute(OreType.TIN.getMaxHeight()))).squared().count(OreType.TIN.getOreCount());
             ConfiguredFeature<?, ?> ORE_MITHRIL =
-                    register(OreType.MITHRIL.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_MITHRIL_TARGET_LIST,  OreType.MITHRIL.getVeinSize()))
+                    register(OreType.MITHRIL.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_MITHRIL_TARGET_LIST, OreType.MITHRIL.getVeinSize()))
                             .rangeUniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(OreType.MITHRIL.getMaxHeight()))).squared().count(OreType.MITHRIL.getOreCount());
             ConfiguredFeature<?, ?> ORE_ADAMANTITE =
                     register(OreType.ADAMANTITE.getBlock().get(), Feature.ORE.configured(new OreConfiguration(ORE_ADAMANTITE_TARGET_LIST, OreType.ADAMANTITE.getVeinSize()))

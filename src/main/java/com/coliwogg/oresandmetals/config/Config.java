@@ -16,6 +16,7 @@ public class Config {
         OreGenConfig.init(BUILDER);
         ItemTierConfig.init(BUILDER);
         ArmorMaterialConfig.init(BUILDER);
+        ArrowConfig.init(BUILDER);
 
         SPEC = BUILDER.build();
     }

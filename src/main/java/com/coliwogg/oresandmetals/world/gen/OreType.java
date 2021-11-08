@@ -9,7 +9,7 @@ public enum OreType {
     TIN(Lazy.of(ModBlocks.TIN_ORE), Lazy.of(ModBlocks.DEEPSLATE_TIN_ORE), OreGenConfig.tin_vein_size.get(), OreGenConfig.tin_min_height.get(), OreGenConfig.tin_max_height.get(), OreGenConfig.tin_count.get(), OreGenConfig.generate_tin.get()),
     MITHRIL(Lazy.of(ModBlocks.MITHRIL_ORE), Lazy.of(ModBlocks.DEEPSLATE_MITHRIL_ORE), OreGenConfig.mithril_vein_size.get(), OreGenConfig.mithril_min_height.get(), OreGenConfig.mithril_max_height.get(), OreGenConfig.mithril_count.get(), OreGenConfig.generate_mithril.get()),
     ADAMANTITE(Lazy.of(ModBlocks.ADAMANTITE_ORE), Lazy.of(ModBlocks.DEEPSLATE_ADAMANTITE_ORE), OreGenConfig.adamantite_vein_size.get(), OreGenConfig.adamantite_min_height.get(), OreGenConfig.adamantite_max_height.get(), OreGenConfig.adamantite_count.get(), OreGenConfig.generate_adamantite.get()),
-    RUNITE(Lazy.of(ModBlocks.RUNITE_ORE), Lazy.of(ModBlocks.DEEPSLATE_RUNITE_ORE),  OreGenConfig.runite_vein_size.get(), OreGenConfig.runite_min_height.get(), OreGenConfig.runite_max_height.get(), OreGenConfig.runite_count.get(), OreGenConfig.generate_runite.get());
+    RUNITE(Lazy.of(ModBlocks.RUNITE_ORE), Lazy.of(ModBlocks.DEEPSLATE_RUNITE_ORE), OreGenConfig.runite_vein_size.get(), OreGenConfig.runite_min_height.get(), OreGenConfig.runite_max_height.get(), OreGenConfig.runite_count.get(), OreGenConfig.generate_runite.get());
 
     private final Lazy<Block> block;
     private final Lazy<Block> deepslateBlock;
