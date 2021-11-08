@@ -80,7 +80,9 @@ public class ModItems {
     public static final RegistryObject<Item> MITHRIL_ARROW;
     public static final RegistryObject<Item> ADAMANT_ARROW;
     public static final RegistryObject<Item> RUNE_ARROW;
-
+    public static final RegistryObject<Item> RAW_DRAKOLITH;
+    public static final RegistryObject<Item> ORICHALCITE_SCRAP;
+    public static final RegistryObject<Item> ORIKALKUM_INGOT;
 
     static {
         RAW_TIN = ITEMS.register("raw_tin", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
@@ -89,15 +91,18 @@ public class ModItems {
         RAW_MITHRIL = ITEMS.register("raw_mithril", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RAW_ADAMANTITE = ITEMS.register("raw_adamantite", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RAW_RUNITE = ITEMS.register("raw_runite", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        RAW_DRAKOLITH = ITEMS.register("raw_drakolith", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB).fireResistant()));
         MITHRIL_SCRAP = ITEMS.register("mithril_scrap", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ADAMANTITE_SCRAP = ITEMS.register("adamantite_scrap", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNITE_SCRAP = ITEMS.register("runite_scrap", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        ORICHALCITE_SCRAP = ITEMS.register("orichalcite_scrap", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         TIN_INGOT = ITEMS.register("tin_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_INGOT = ITEMS.register("bronze_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         MITHRIL_INGOT = ITEMS.register("mithril_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ADAMANTITE_INGOT = ITEMS.register("adamantite_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNITE_INGOT = ITEMS.register("runite_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        ORIKALKUM_INGOT = ITEMS.register("orikalkum_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_SWORD = ITEMS.register("bronze_sword", () -> new SwordItem(ModItemTier.BRONZE, 2, -2.4F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_SHOVEL = ITEMS.register("bronze_shovel", () -> new ShovelItem(ModItemTier.BRONZE, 0.5F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe", () -> new PickaxeItem(ModItemTier.BRONZE, 0, -2.8F, new Item.Properties().tab(ModCreativeModeTab.TAB)));

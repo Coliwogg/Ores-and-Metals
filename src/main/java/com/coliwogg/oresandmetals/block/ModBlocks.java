@@ -46,6 +46,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> RUNITE_ORE;
     public static final RegistryObject<Block> DEEPSLATE_RUNITE_ORE;
 
+    public static final RegistryObject<Block> ORICHALCITE_DEBRIS;
+    public static final RegistryObject<Block> NETHER_DRAKOLITH_ORE;
+
+
     static {
         TIN_BLOCK = registerBlock("tin_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.SNOW).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
         BRONZE_BLOCK = registerBlock("bronze_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BROWN).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
@@ -69,6 +73,11 @@ public class ModBlocks {
         DEEPSLATE_ADAMANTITE_ORE = registerBlock("deepslate_adamantite_ore", () -> new OreBlock(BlockBehaviour.Properties.copy(ADAMANTITE_ORE.get()).color(MaterialColor.DEEPSLATE).strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE)));
         RUNITE_ORE = registerBlock("runite_ore", () -> new OreBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
         DEEPSLATE_RUNITE_ORE = registerBlock("deepslate_runite_ore", () -> new OreBlock(BlockBehaviour.Properties.copy(RUNITE_ORE.get()).color(MaterialColor.DEEPSLATE).strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE)));
+
+        //    public static final Block ANCIENT_DEBRIS = register("ancient_debris", new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).requiresCorrectToolForDrops().strength(30.0F, 1200.0F).sound(SoundType.ANCIENT_DEBRIS)));
+        //   public static final Block NETHER_GOLD_ORE = register("nether_gold_ore", new OreBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.NETHER).requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.NETHER_GOLD_ORE), UniformInt.of(0, 1)));
+        ORICHALCITE_DEBRIS = registerBlock("orichalcite_debris", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_RED).requiresCorrectToolForDrops().strength(30.0F, 12000.0F).sound(SoundType.ANCIENT_DEBRIS)));
+        NETHER_DRAKOLITH_ORE = registerBlock("nether_drakolith_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.NETHER).requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.NETHER_ORE)));
     }
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
