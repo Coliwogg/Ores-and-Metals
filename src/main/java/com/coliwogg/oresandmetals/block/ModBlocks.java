@@ -48,6 +48,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ORICHALCITE_DEBRIS;
     public static final RegistryObject<Block> NETHER_DRAKOLITH_ORE;
+    public static final RegistryObject<Block> RAW_DRAKOLITH_BLOCK;
+    public static final RegistryObject<Block> ORIKALKUM_BLOCK;
 
 
     static {
@@ -78,6 +80,9 @@ public class ModBlocks {
         //   public static final Block NETHER_GOLD_ORE = register("nether_gold_ore", new OreBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.NETHER).requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.NETHER_GOLD_ORE), UniformInt.of(0, 1)));
         ORICHALCITE_DEBRIS = registerBlock("orichalcite_debris", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_RED).requiresCorrectToolForDrops().strength(30.0F, 12000.0F).sound(SoundType.ANCIENT_DEBRIS)));
         NETHER_DRAKOLITH_ORE = registerBlock("nether_drakolith_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.NETHER).requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.NETHER_ORE)));
+        RAW_DRAKOLITH_BLOCK = registerBlock("raw_drakolith_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
+        ORIKALKUM_BLOCK = registerBlock("orikalkum_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NETHER).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
     }
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

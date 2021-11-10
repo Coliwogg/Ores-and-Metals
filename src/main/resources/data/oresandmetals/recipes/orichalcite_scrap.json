@@ -1,9 +1,9 @@
 {
-    "type": "minecraft:smelting",
-    "ingredient": {
-        "item": "oresandmetals:orichalcite_debris"
-    },
-    "result": "oresandmetals:orichalcite_scrap",
-    "experience": 2.0,
-    "cookingtime": 200
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "oresandmetals:orichalcite_debris"
+  },
+  "result": "oresandmetals:orichalcite_scrap",
+  "experience": 2.0,
+  "cookingtime": 200
 }

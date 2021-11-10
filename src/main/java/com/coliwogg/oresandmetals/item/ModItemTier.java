@@ -18,7 +18,10 @@ public enum ModItemTier implements Tier {
     ADAMANT(ItemTierConfig.adamant_level.get(), ItemTierConfig.adamant_uses.get(), ItemTierConfig.adamant_speed.get().floatValue(), ItemTierConfig.adamant_damage.get().floatValue(), ItemTierConfig.adamant_enchantment_value.get(), () ->
             Ingredient.of(ModItems.ADAMANTITE_INGOT.get())),
     RUNE(ItemTierConfig.rune_level.get(), ItemTierConfig.rune_uses.get(), ItemTierConfig.rune_speed.get().floatValue(), ItemTierConfig.rune_damage.get().floatValue(), ItemTierConfig.rune_enchantment_value.get(), () ->
-            Ingredient.of(ModItems.RUNITE_INGOT.get()));
+            Ingredient.of(ModItems.RUNITE_INGOT.get())),
+    ORIKALKUM(ItemTierConfig.orikalkum_level.get(), ItemTierConfig.orikalkum_uses.get(), ItemTierConfig.orikalkum_speed.get().floatValue(), ItemTierConfig.orikalkum_damage.get().floatValue(), ItemTierConfig.orikalkum_enchantment_value.get(), () ->
+            Ingredient.of(ModItems.ORIKALKUM_INGOT.get())),
+    ;
 
     private final int level;
     private final int uses;

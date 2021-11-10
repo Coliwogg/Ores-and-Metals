@@ -83,6 +83,16 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_DRAKOLITH;
     public static final RegistryObject<Item> ORICHALCITE_SCRAP;
     public static final RegistryObject<Item> ORIKALKUM_INGOT;
+    public static final RegistryObject<Item> ORIKALKUM_SWORD;
+    public static final RegistryObject<Item> ORIKALKUM_SHOVEL;
+    public static final RegistryObject<Item> ORIKALKUM_PICKAXE;
+    public static final RegistryObject<Item> ORIKALKUM_AXE;
+    public static final RegistryObject<Item> ORIKALKUM_HOE;
+    public static final RegistryObject<Item> RAW_PHASMATITE;
+    public static final RegistryObject<Item> NECRITE_SCRAP;
+    public static final RegistryObject<Item> NECRONIUM_INGOT;
+
+
 
     static {
         RAW_TIN = ITEMS.register("raw_tin", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
@@ -91,11 +101,13 @@ public class ModItems {
         RAW_MITHRIL = ITEMS.register("raw_mithril", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RAW_ADAMANTITE = ITEMS.register("raw_adamantite", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RAW_RUNITE = ITEMS.register("raw_runite", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
-        RAW_DRAKOLITH = ITEMS.register("raw_drakolith", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB).fireResistant()));
+        RAW_DRAKOLITH = ITEMS.register("raw_drakolith", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        RAW_PHASMATITE = ITEMS.register("raw_phasmatite", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         MITHRIL_SCRAP = ITEMS.register("mithril_scrap", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ADAMANTITE_SCRAP = ITEMS.register("adamantite_scrap", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNITE_SCRAP = ITEMS.register("runite_scrap", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ORICHALCITE_SCRAP = ITEMS.register("orichalcite_scrap", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRITE_SCRAP = ITEMS.register("necrite_scrap", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         TIN_INGOT = ITEMS.register("tin_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_INGOT = ITEMS.register("bronze_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
@@ -103,6 +115,7 @@ public class ModItems {
         ADAMANTITE_INGOT = ITEMS.register("adamantite_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNITE_INGOT = ITEMS.register("runite_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ORIKALKUM_INGOT = ITEMS.register("orikalkum_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRONIUM_INGOT = ITEMS.register("necronium_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_SWORD = ITEMS.register("bronze_sword", () -> new SwordItem(ModItemTier.BRONZE, 2, -2.4F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_SHOVEL = ITEMS.register("bronze_shovel", () -> new ShovelItem(ModItemTier.BRONZE, 0.5F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe", () -> new PickaxeItem(ModItemTier.BRONZE, 0, -2.8F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
@@ -123,11 +136,19 @@ public class ModItems {
         ADAMANT_PICKAXE = ITEMS.register("adamant_pickaxe", () -> new PickaxeItem(ModItemTier.ADAMANT, 1, -2.8F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ADAMANT_AXE = ITEMS.register("adamant_axe", () -> new AxeItem(ModItemTier.ADAMANT, 5.0F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ADAMANT_HOE = ITEMS.register("adamant_hoe", () -> new HoeItem(ModItemTier.ADAMANT, -3, 0.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+
         RUNE_SWORD = ITEMS.register("rune_sword", () -> new SwordItem(ModItemTier.RUNE, 3, -2.4F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_SHOVEL = ITEMS.register("rune_shovel", () -> new ShovelItem(ModItemTier.RUNE, 1.5F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_PICKAXE = ITEMS.register("rune_pickaxe", () -> new PickaxeItem(ModItemTier.RUNE, 1, -2.8F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_AXE = ITEMS.register("rune_axe", () -> new AxeItem(ModItemTier.RUNE, 5.0F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_HOE = ITEMS.register("rune_hoe", () -> new HoeItem(ModItemTier.RUNE, -4, 0.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+
+        ORIKALKUM_SWORD = ITEMS.register("orikalkum_sword", () -> new SwordItem(ModItemTier.ORIKALKUM, 3, -2.4F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        ORIKALKUM_SHOVEL = ITEMS.register("orikalkum_shovel", () -> new ShovelItem(ModItemTier.ORIKALKUM, 1.5F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        ORIKALKUM_PICKAXE = ITEMS.register("orikalkum_pickaxe", () -> new PickaxeItem(ModItemTier.ORIKALKUM, 1, -2.8F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        ORIKALKUM_AXE = ITEMS.register("orikalkum_axe", () -> new AxeItem(ModItemTier.ORIKALKUM, 5.0F, -2.9F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        ORIKALKUM_HOE = ITEMS.register("orikalkum_hoe", () -> new HoeItem(ModItemTier.ORIKALKUM, -4, 0.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+
         BRONZE_HELMET = ITEMS.register("bronze_helmet", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_CHESTPLATE = ITEMS.register("bronze_chestplate", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_LEGGINGS = ITEMS.register("bronze_leggings", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.TAB)));

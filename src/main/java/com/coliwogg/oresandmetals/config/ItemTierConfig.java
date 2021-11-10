@@ -28,7 +28,11 @@ public class ItemTierConfig {
     public static ForgeConfigSpec.ConfigValue<Double> rune_speed;
     public static ForgeConfigSpec.ConfigValue<Double> rune_damage;
     public static ForgeConfigSpec.ConfigValue<Integer> rune_enchantment_value;
-
+    public static ForgeConfigSpec.ConfigValue<Integer> orikalkum_level;
+    public static ForgeConfigSpec.ConfigValue<Integer> orikalkum_uses;
+    public static ForgeConfigSpec.ConfigValue<Double> orikalkum_speed;
+    public static ForgeConfigSpec.ConfigValue<Double> orikalkum_damage;
+    public static ForgeConfigSpec.ConfigValue<Integer> orikalkum_enchantment_value;
     public static void init(ForgeConfigSpec.Builder builder) {
         builder.comment("Bronze Item Tier");
 
@@ -119,6 +123,24 @@ public class ItemTierConfig {
         rune_enchantment_value = builder
                 .comment("Enchantment Value of Rune Tools. Default value is 15.")
                 .defineInRange("item_tier.rune.rune_enchantment_value", 15, 0, 1000);
+
+        builder.comment("Orikalkum Item Tier");
+
+        orikalkum_level = builder
+                .comment("Harvest Level of Orikalkum Tools. Default value is 4.")
+                .defineInRange("item_tier.orikalkum.orikalkum_level", 4, 0, 4);
+        orikalkum_uses = builder
+                .comment("Max Uses of Orikalkum Tools. Default value is 2231.")
+                .defineInRange("item_tier.orikalkum.orikalkum_uses", 2231, 0, 10000);
+        orikalkum_speed = builder
+                .comment("Mining Speed of Orikalkum Tools. Default value is 9.5.")
+                .defineInRange("item_tier.orikalkum.orikalkum_speed", 9.5, 0.0, 1000.0);
+        orikalkum_damage = builder
+                .comment("Attack Damage of Orikalkum Tools. Default value is 4.5.")
+                .defineInRange("item_tier.orikalkum.orikalkum_damage", 4.5, 0.0, 1000.0);
+        orikalkum_enchantment_value = builder
+                .comment("Enchantment Value of Orikalkum Tools. Default value is 16.")
+                .defineInRange("item_tier.orikalkum.orikalkum_enchantment_value", 16, 0, 1000);
 
     }
 }
