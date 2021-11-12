@@ -88,10 +88,15 @@ public class ModItems {
     public static final RegistryObject<Item> ORIKALKUM_PICKAXE;
     public static final RegistryObject<Item> ORIKALKUM_AXE;
     public static final RegistryObject<Item> ORIKALKUM_HOE;
+    public static final RegistryObject<Item> ORIKALKUM_HELMET;
+    public static final RegistryObject<Item> ORIKALKUM_CHESTPLATE;
+    public static final RegistryObject<Item> ORIKALKUM_LEGGINGS;
+    public static final RegistryObject<Item> ORIKALKUM_BOOTS;
+
+
     public static final RegistryObject<Item> RAW_PHASMATITE;
     public static final RegistryObject<Item> NECRITE_SCRAP;
     public static final RegistryObject<Item> NECRONIUM_INGOT;
-
 
 
     static {
@@ -136,19 +141,16 @@ public class ModItems {
         ADAMANT_PICKAXE = ITEMS.register("adamant_pickaxe", () -> new PickaxeItem(ModItemTier.ADAMANT, 1, -2.8F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ADAMANT_AXE = ITEMS.register("adamant_axe", () -> new AxeItem(ModItemTier.ADAMANT, 5.0F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ADAMANT_HOE = ITEMS.register("adamant_hoe", () -> new HoeItem(ModItemTier.ADAMANT, -3, 0.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
-
         RUNE_SWORD = ITEMS.register("rune_sword", () -> new SwordItem(ModItemTier.RUNE, 3, -2.4F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_SHOVEL = ITEMS.register("rune_shovel", () -> new ShovelItem(ModItemTier.RUNE, 1.5F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_PICKAXE = ITEMS.register("rune_pickaxe", () -> new PickaxeItem(ModItemTier.RUNE, 1, -2.8F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_AXE = ITEMS.register("rune_axe", () -> new AxeItem(ModItemTier.RUNE, 5.0F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_HOE = ITEMS.register("rune_hoe", () -> new HoeItem(ModItemTier.RUNE, -4, 0.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
-
         ORIKALKUM_SWORD = ITEMS.register("orikalkum_sword", () -> new SwordItem(ModItemTier.ORIKALKUM, 3, -2.4F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ORIKALKUM_SHOVEL = ITEMS.register("orikalkum_shovel", () -> new ShovelItem(ModItemTier.ORIKALKUM, 1.5F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ORIKALKUM_PICKAXE = ITEMS.register("orikalkum_pickaxe", () -> new PickaxeItem(ModItemTier.ORIKALKUM, 1, -2.8F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ORIKALKUM_AXE = ITEMS.register("orikalkum_axe", () -> new AxeItem(ModItemTier.ORIKALKUM, 5.0F, -2.9F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ORIKALKUM_HOE = ITEMS.register("orikalkum_hoe", () -> new HoeItem(ModItemTier.ORIKALKUM, -4, 0.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
-
         BRONZE_HELMET = ITEMS.register("bronze_helmet", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_CHESTPLATE = ITEMS.register("bronze_chestplate", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_LEGGINGS = ITEMS.register("bronze_leggings", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.TAB)));
@@ -169,6 +171,10 @@ public class ModItems {
         RUNE_CHESTPLATE = ITEMS.register("rune_chestplate", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_LEGGINGS = ITEMS.register("rune_leggings", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         RUNE_BOOTS = ITEMS.register("rune_boots", () -> new ArmorItem(ModArmorMaterial.RUNE, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        ORIKALKUM_HELMET = ITEMS.register("orikalkum_helmet", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        ORIKALKUM_CHESTPLATE = ITEMS.register("orikalkum_chestplate", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        ORIKALKUM_LEGGINGS = ITEMS.register("orikalkum_leggings", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        ORIKALKUM_BOOTS = ITEMS.register("orikalkum_boots", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_ARROW = ITEMS.register("bronze_arrow", () -> new BronzeArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.bronze_arrow_damage.get().floatValue()));
         IRON_ARROW = ITEMS.register("iron_arrow", () -> new IronArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.iron_arrow_damage.get().floatValue()));
         STEEL_ARROW = ITEMS.register("steel_arrow", () -> new SteelArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.steel_arrow_damage.get().floatValue()));

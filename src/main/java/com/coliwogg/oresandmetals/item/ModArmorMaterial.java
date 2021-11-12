@@ -71,7 +71,15 @@ public enum ModArmorMaterial implements ArmorMaterial {
             SoundEvents.ARMOR_EQUIP_GOLD,
             ArmorMaterialConfig.rune_toughness.get().floatValue(),
             ArmorMaterialConfig.rune_knockback_resistance.get().floatValue(),
-            () -> Ingredient.of(ModItems.RUNITE_INGOT.get()));
+            () -> Ingredient.of(ModItems.RUNITE_INGOT.get())),
+    ORIKALKUM("orikalkum", 38, new int[]{4, 7, 9, 4}, 16, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.2F, () -> {
+        return Ingredient.of(ModItems.ORIKALKUM_INGOT.get());
+    })
+    ;
+
+    //NETHERITE("netherite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
+    //      return Ingredient.of(Items.NETHERITE_INGOT);
+    //   });
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;
     private final int durabilityMultiplier;

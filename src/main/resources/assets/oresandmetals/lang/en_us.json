@@ -70,6 +70,10 @@
   "item.oresandmetals.rune_chestplate": "Rune Chestplate",
   "item.oresandmetals.rune_leggings": "Rune Leggings",
   "item.oresandmetals.rune_boots": "Rune Boots",
+  "item.oresandmetals.orikalkum_helmet": "Orikalkum Helmet",
+  "item.oresandmetals.orikalkum_chestplate": "Orikalkum Chestplate",
+  "item.oresandmetals.orikalkum_leggings": "Orikalkum Leggings",
+  "item.oresandmetals.orikalkum_boots": "Orikalkum Boots",
   "item.oresandmetals.bronze_arrow": "Bronze Arrow",
   "item.oresandmetals.iron_arrow": "Iron Arrow",
   "item.oresandmetals.steel_arrow": "Steel Arrow",
@@ -100,5 +104,9 @@
   "block.oresandmetals.orichalcite_debris": "Orichalcite Debris",
   "block.oresandmetals.raw_drakolith_block": "Block of Raw Drakolith",
   "block.oresandmetals.orikalkum_block": "Block of Orikalkum",
+  "block.oresandmetals.end_phasmatite_ore": "End Phasmatite Ore",
+  "block.oresandmetals.necrite_debris": "Necrite Debris",
+  "block.oresandmetals.raw_phasmatite_block": "Block of Raw Phasmatite",
+  "block.oresandmetals.necronium_block": "Block of Necronium",
   "itemGroup.oresandmetalsTab": "Ores and Metals Mod"
 }

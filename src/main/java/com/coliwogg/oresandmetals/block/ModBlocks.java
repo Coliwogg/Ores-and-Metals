@@ -51,6 +51,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAW_DRAKOLITH_BLOCK;
     public static final RegistryObject<Block> ORIKALKUM_BLOCK;
 
+    public static final RegistryObject<Block> NECRITE_DEBRIS;
+    public static final RegistryObject<Block> END_PHASMATITE_ORE;
+    public static final RegistryObject<Block> RAW_PHASMATITE_BLOCK;
+    public static final RegistryObject<Block> NECRONIUM_BLOCK;
+
 
     static {
         TIN_BLOCK = registerBlock("tin_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.SNOW).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
@@ -82,6 +87,12 @@ public class ModBlocks {
         NETHER_DRAKOLITH_ORE = registerBlock("nether_drakolith_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.NETHER).requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.NETHER_ORE)));
         RAW_DRAKOLITH_BLOCK = registerBlock("raw_drakolith_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_ORANGE).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
         ORIKALKUM_BLOCK = registerBlock("orikalkum_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.NETHER).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
+        NECRITE_DEBRIS = registerBlock("necrite_debris", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_GREEN).requiresCorrectToolForDrops().strength(30.0F, 12000.0F).sound(SoundType.ANCIENT_DEBRIS)));
+        END_PHASMATITE_ORE = registerBlock("end_phasmatite_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.SAND).requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
+        RAW_PHASMATITE_BLOCK = registerBlock("raw_phasmatite_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_LIGHT_GREEN).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
+        NECRONIUM_BLOCK = registerBlock("necronium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_GREEN).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
+
 
     }
 

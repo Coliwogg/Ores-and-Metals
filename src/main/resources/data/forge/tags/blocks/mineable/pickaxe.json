@@ -24,6 +24,10 @@
     "oresandmetals:orichalcite_debris",
     "oresandmetals:nether_drakolith_ore",
     "oresandmetals:raw_drakolith_block",
-    "oresandmetals:orikalkum_block"
+    "oresandmetals:orikalkum_block",
+    "oresandmetals:end_phasmatite_ore",
+    "oresandmetals:necrite_debris",
+    "oresandmetals:raw_phasmatite_block",
+    "oresandmetals:necronium_block"
   ]
 }
