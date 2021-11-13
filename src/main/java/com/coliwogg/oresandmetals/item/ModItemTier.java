@@ -21,7 +21,8 @@ public enum ModItemTier implements Tier {
             Ingredient.of(ModItems.RUNITE_INGOT.get())),
     ORIKALKUM(ItemTierConfig.orikalkum_level.get(), ItemTierConfig.orikalkum_uses.get(), ItemTierConfig.orikalkum_speed.get().floatValue(), ItemTierConfig.orikalkum_damage.get().floatValue(), ItemTierConfig.orikalkum_enchantment_value.get(), () ->
             Ingredient.of(ModItems.ORIKALKUM_INGOT.get())),
-    ;
+    NECRONIUM(ItemTierConfig.necronium_level.get(), ItemTierConfig.necronium_uses.get(), ItemTierConfig.necronium_speed.get().floatValue(), ItemTierConfig.necronium_damage.get().floatValue(), ItemTierConfig.necronium_enchantment_value.get(), () ->
+            Ingredient.of(ModItems.NECRONIUM_INGOT.get()));
 
     private final int level;
     private final int uses;

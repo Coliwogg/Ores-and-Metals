@@ -2,11 +2,11 @@ package com.coliwogg.oresandmetals.world.gen;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
 import com.coliwogg.oresandmetals.block.ModBlocks;
+import com.coliwogg.oresandmetals.config.OreGenConfig;
 import com.google.common.collect.ImmutableList;
 import net.minecraft.core.Registry;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.data.worldgen.Features;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.block.Block;
@@ -76,36 +76,45 @@ public class ModOreGeneration {
         if (event.getCategory().equals(Biome.BiomeCategory.NETHER)) {
             ConfiguredFeature<?, ?> ORE_DRAKOLITH_NETHER =
                     register(ModBlocks.NETHER_DRAKOLITH_ORE.get(), Feature.ORE.configured(
-                                    new OreConfiguration(OreConfiguration.Predicates.NETHERRACK, ModBlocks.NETHER_DRAKOLITH_ORE.get().defaultBlockState(), 3))
+                                    new OreConfiguration(OreConfiguration.Predicates.NETHERRACK, ModBlocks.NETHER_DRAKOLITH_ORE.get().defaultBlockState(), OreGenConfig.nether_drakolith_vein_size.get()))
                             .range(Features.Decorators.RANGE_10_10).squared());
             ConfiguredFeature<?, ?> ORE_DEBRIS_ORICHALCITE_LARGE = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, "ore_debris_orichalcite_large",
                     Feature.SCATTERED_ORE.configured(new OreConfiguration(OreConfiguration.Predicates.NETHER_ORE_REPLACEABLES, ModBlocks.ORICHALCITE_DEBRIS.get().defaultBlockState(),
-                            3, 1.0F)).rangeTriangle(VerticalAnchor.absolute(8), VerticalAnchor.absolute(24)).squared());
+                            OreGenConfig.orichalcite_debris_vein_size.get(), 1.0F)).rangeTriangle(VerticalAnchor.absolute(OreGenConfig.orichalcite_debris_min_height.get()), VerticalAnchor.absolute(OreGenConfig.orichalcite_debris_max_height.get())).squared());
             ConfiguredFeature<?, ?> ORE_DEBRIS_ORICHALCITE_SMALL = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, "ore_debris_orichalcite_small",
                     Feature.SCATTERED_ORE.configured(new OreConfiguration(OreConfiguration.Predicates.NETHER_ORE_REPLACEABLES, ModBlocks.ORICHALCITE_DEBRIS.get().defaultBlockState(),
-                            2, 1.0F)).range(Features.Decorators.RANGE_8_8).squared());
+                            OreGenConfig.orichalcite_debris_vein_size.get() - 1, 1.0F)).range(Features.Decorators.RANGE_8_8).squared());
 
-            generateOre(event.getGeneration(), ORE_DEBRIS_ORICHALCITE_LARGE);
-            generateOre(event.getGeneration(), ORE_DEBRIS_ORICHALCITE_SMALL);
-            generateOre(event.getGeneration(), ORE_DRAKOLITH_NETHER);
+            if (OreGenConfig.generate_nether_drakolith.get()) {
+                generateOre(event.getGeneration(), ORE_DRAKOLITH_NETHER);
+            }
+
+            if (OreGenConfig.generate_orichalcite_debris.get()) {
+                generateOre(event.getGeneration(), ORE_DEBRIS_ORICHALCITE_LARGE);
+                generateOre(event.getGeneration(), ORE_DEBRIS_ORICHALCITE_SMALL);
+            }
         }
 
         if (event.getCategory().equals(Biome.BiomeCategory.THEEND)) {
             ConfiguredFeature<?, ?> ORE_PHASMATITE_END =
                     register(ModBlocks.END_PHASMATITE_ORE.get(), Feature.ORE.configured(
-                                    new OreConfiguration(END_TEST, ModBlocks.END_PHASMATITE_ORE.get().defaultBlockState(), 3))
-                            .rangeUniform(VerticalAnchor.absolute(20), VerticalAnchor.absolute(65)).squared().count(5));
-
+                                    new OreConfiguration(END_TEST, ModBlocks.END_PHASMATITE_ORE.get().defaultBlockState(), OreGenConfig.end_phasmatite_vein_size.get()))
+                            .rangeUniform(VerticalAnchor.absolute(OreGenConfig.end_phasmatite_min_height.get()), VerticalAnchor.absolute(OreGenConfig.end_phasmatite_max_height.get())).squared().count(OreGenConfig.end_phasmatite_count.get()));
             ConfiguredFeature<?, ?> ORE_DEBRIS_NECRITE_LARGE = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, "ore_debris_necrite_large",
-                    Feature.SCATTERED_ORE.configured(new OreConfiguration(END_TEST, ModBlocks.NECRITE_DEBRIS.get().defaultBlockState(),3, 1.0F))
-                            .rangeTriangle(VerticalAnchor.absolute(8), VerticalAnchor.absolute(48)).squared());
+                    Feature.SCATTERED_ORE.configured(new OreConfiguration(END_TEST, ModBlocks.NECRITE_DEBRIS.get().defaultBlockState(), OreGenConfig.necrite_debris_vein_size.get(), 1.0F))
+                            .rangeTriangle(VerticalAnchor.absolute(OreGenConfig.necrite_debris_min_height.get()), VerticalAnchor.absolute(OreGenConfig.necrite_debris_max_height.get())).squared());
             ConfiguredFeature<?, ?> ORE_DEBRIS_NECRITE_SMALL = Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, "ore_debris_necrite_small",
-                    Feature.SCATTERED_ORE.configured(new OreConfiguration(END_TEST, ModBlocks.NECRITE_DEBRIS.get().defaultBlockState(),2, 1.0F))
+                    Feature.SCATTERED_ORE.configured(new OreConfiguration(END_TEST, ModBlocks.NECRITE_DEBRIS.get().defaultBlockState(), OreGenConfig.necrite_debris_vein_size.get() - 1, 1.0F))
                             .range(Features.Decorators.RANGE_8_8).squared());
 
-            generateOre(event.getGeneration(), ORE_DEBRIS_NECRITE_LARGE);
-            generateOre(event.getGeneration(), ORE_DEBRIS_NECRITE_SMALL);
-            generateOre(event.getGeneration(), ORE_PHASMATITE_END);
+            if (OreGenConfig.generate_end_phasmatite.get()) {
+                generateOre(event.getGeneration(), ORE_PHASMATITE_END);
+            }
+
+            if (OreGenConfig.generate_necrite_debris.get()) {
+                generateOre(event.getGeneration(), ORE_DEBRIS_NECRITE_LARGE);
+                generateOre(event.getGeneration(), ORE_DEBRIS_NECRITE_SMALL);
+            }
         }
     }
 

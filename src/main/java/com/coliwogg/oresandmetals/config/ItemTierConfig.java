@@ -33,6 +33,12 @@ public class ItemTierConfig {
     public static ForgeConfigSpec.ConfigValue<Double> orikalkum_speed;
     public static ForgeConfigSpec.ConfigValue<Double> orikalkum_damage;
     public static ForgeConfigSpec.ConfigValue<Integer> orikalkum_enchantment_value;
+    public static ForgeConfigSpec.ConfigValue<Integer> necronium_level;
+    public static ForgeConfigSpec.ConfigValue<Integer> necronium_uses;
+    public static ForgeConfigSpec.ConfigValue<Double> necronium_speed;
+    public static ForgeConfigSpec.ConfigValue<Double> necronium_damage;
+    public static ForgeConfigSpec.ConfigValue<Integer> necronium_enchantment_value;
+
     public static void init(ForgeConfigSpec.Builder builder) {
         builder.comment("Bronze Item Tier");
 
@@ -141,6 +147,24 @@ public class ItemTierConfig {
         orikalkum_enchantment_value = builder
                 .comment("Enchantment Value of Orikalkum Tools. Default value is 16.")
                 .defineInRange("item_tier.orikalkum.orikalkum_enchantment_value", 16, 0, 1000);
+
+        builder.comment("Necronium Item Tier");
+
+        necronium_level = builder
+                .comment("Harvest Level of Necronium Tools. Default value is 4.")
+                .defineInRange("item_tier.necronium.necronium_level", 4, 0, 4);
+        necronium_uses = builder
+                .comment("Max Uses of Necronium Tools. Default value is 2561.")
+                .defineInRange("item_tier.necronium.necronium_uses", 2561, 0, 10000);
+        necronium_speed = builder
+                .comment("Mining Speed of Necronium Tools. Default value is 10.0.")
+                .defineInRange("item_tier.necronium.necronium_speed", 10.0, 0.0, 1000.0);
+        necronium_damage = builder
+                .comment("Attack Damage of Necronium Tools. Default value is 5.0.")
+                .defineInRange("item_tier.necronium.necronium_damage", 5.0, 0.0, 1000.0);
+        necronium_enchantment_value = builder
+                .comment("Enchantment Value of Necronium Tools. Default value is 17.")
+                .defineInRange("item_tier.necronium.necronium_enchantment_value", 17, 0, 1000);
 
     }
 }

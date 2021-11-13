@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "steel_ingot",
+  "group": "orikalkum_ingot",
   "ingredients": [
     {
       "item": "oresandmetals:orikalkum_block"

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "steel_ingot",
+  "group": "necronium_ingot",
   "ingredients": [
     {
       "item": "oresandmetals:necronium_block"

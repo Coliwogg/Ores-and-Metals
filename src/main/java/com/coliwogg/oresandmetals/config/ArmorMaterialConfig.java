@@ -50,6 +50,23 @@ public class ArmorMaterialConfig {
     public static ForgeConfigSpec.ConfigValue<Integer> rune_leggings;
     public static ForgeConfigSpec.ConfigValue<Integer> rune_boots;
 
+    public static ForgeConfigSpec.ConfigValue<Integer> orikalkum_durability_multiplier;
+    public static ForgeConfigSpec.ConfigValue<Integer> orikalkum_enchantment_value;
+    public static ForgeConfigSpec.ConfigValue<Double> orikalkum_toughness;
+    public static ForgeConfigSpec.ConfigValue<Double> orikalkum_knockback_resistance;
+    public static ForgeConfigSpec.ConfigValue<Integer> orikalkum_helmet;
+    public static ForgeConfigSpec.ConfigValue<Integer> orikalkum_chestplate;
+    public static ForgeConfigSpec.ConfigValue<Integer> orikalkum_leggings;
+    public static ForgeConfigSpec.ConfigValue<Integer> orikalkum_boots;
+
+    public static ForgeConfigSpec.ConfigValue<Integer> necronium_durability_multiplier;
+    public static ForgeConfigSpec.ConfigValue<Integer> necronium_enchantment_value;
+    public static ForgeConfigSpec.ConfigValue<Double> necronium_toughness;
+    public static ForgeConfigSpec.ConfigValue<Double> necronium_knockback_resistance;
+    public static ForgeConfigSpec.ConfigValue<Integer> necronium_helmet;
+    public static ForgeConfigSpec.ConfigValue<Integer> necronium_chestplate;
+    public static ForgeConfigSpec.ConfigValue<Integer> necronium_leggings;
+    public static ForgeConfigSpec.ConfigValue<Integer> necronium_boots;
 
     public static void init(ForgeConfigSpec.Builder builder) {
         builder.comment("Bronze Armor Material");
@@ -186,6 +203,61 @@ public class ArmorMaterialConfig {
         rune_boots = builder
                 .comment("Slot Protection for Rune Boots. Default value is 3.")
                 .defineInRange("armor_material.rune.slot_protections.rune_boots", 3, 0, 13);
+
+        builder.comment("Orikalkum Armor Material");
+
+        orikalkum_durability_multiplier = builder
+                .comment("Durability Multiplier of Orikalkum Armor. Default value is 38.")
+                .defineInRange("armor_material.orikalkum.orikalkum_durability_multiplier", 38, 0, 1000);
+        orikalkum_enchantment_value = builder
+                .comment("Enchantment Value of Orikalkum Armor. Default value is 17.")
+                .defineInRange("armor_material.orikalkum.orikalkum_enchantment_value", 17, 0, 1000);
+        orikalkum_toughness = builder
+                .comment("Toughness Value of Orikalkum Armor. Default value is 3.5F.")
+                .defineInRange("armor_material.orikalkum.orikalkum_toughness", 3.5F, 0.0, 100.0);
+        orikalkum_knockback_resistance = builder
+                .comment("Knockback Resistance Value of Orikalkum Armor. Default value is 0.2")
+                .defineInRange("armor_material.orikalkum.orikalkum_knockback_resistance", 0.2, 0.0, 10.0);
+        orikalkum_helmet = builder
+                .comment("Slot Protection for Orikalkum Helmet. Default value is 4.")
+                .defineInRange("armor_material.orikalkum.slot_protections.orikalkum_helmet", 4, 0, 11);
+        orikalkum_chestplate = builder
+                .comment("Slot Protection for Orikalkum Chestplate. Default value is 9.")
+                .defineInRange("armor_material.orikalkum.slot_protections.orikalkum_chestplate", 9, 0, 16);
+        orikalkum_leggings = builder
+                .comment("Slot Protection for Orikalkum Leggings. Default value is 7.")
+                .defineInRange("armor_material.orikalkum.slot_protections.orikalkum_leggings", 7, 0, 15);
+        orikalkum_boots = builder
+                .comment("Slot Protection for Orikalkum Boots. Default value is 4.")
+                .defineInRange("armor_material.orikalkum.slot_protections.orikalkum_boots", 4, 0, 13);
+
+
+        builder.comment("Necronium Armor Material");
+
+        necronium_durability_multiplier = builder
+                .comment("Durability Multiplier of Necronium Armor. Default value is 39.")
+                .defineInRange("armor_material.necronium.necronium_durability_multiplier", 39, 0, 1000);
+        necronium_enchantment_value = builder
+                .comment("Enchantment Value of Necronium Armor. Default value is 18.")
+                .defineInRange("armor_material.necronium.necronium_enchantment_value", 18, 0, 1000);
+        necronium_toughness = builder
+                .comment("Toughness Value of Necronium Armor. Default value is 4.0.")
+                .defineInRange("armor_material.necronium.necronium_toughness", 4.0, 0.0, 100.0);
+        necronium_knockback_resistance = builder
+                .comment("Knockback Resistance Value of Necronium Armor. Default value is 0.3")
+                .defineInRange("armor_material.necronium.necronium_knockback_resistance", 0.3, 0.0, 10.0);
+        necronium_helmet = builder
+                .comment("Slot Protection for Necronium Helmet. Default value is 4.")
+                .defineInRange("armor_material.necronium.slot_protections.necronium_helmet", 4, 0, 11);
+        necronium_chestplate = builder
+                .comment("Slot Protection for Necronium Chestplate. Default value is 9.")
+                .defineInRange("armor_material.necronium.slot_protections.necronium_chestplate", 9, 0, 16);
+        necronium_leggings = builder
+                .comment("Slot Protection for Necronium Leggings. Default value is 7.")
+                .defineInRange("armor_material.necronium.slot_protections.necronium_leggings", 7, 0, 15);
+        necronium_boots = builder
+                .comment("Slot Protection for Necronium Boots. Default value is 4.")
+                .defineInRange("armor_material.necronium.slot_protections.necronium_boots", 4, 0, 13);
 
     }
 }

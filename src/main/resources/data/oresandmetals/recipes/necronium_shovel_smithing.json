@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "oresandmetals:orikalkum_shovel"
+  },
+  "addition": {
+    "item": "oresandmetals:necronium_ingot"
+  },
+  "result": {
+    "item": "oresandmetals:necronium_shovel"
+  }
+}

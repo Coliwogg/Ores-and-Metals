@@ -20,15 +20,21 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_MITHRIL;
     public static final RegistryObject<Item> RAW_ADAMANTITE;
     public static final RegistryObject<Item> RAW_RUNITE;
+    public static final RegistryObject<Item> RAW_DRAKOLITH;
+    public static final RegistryObject<Item> RAW_PHASMATITE;
     public static final RegistryObject<Item> MITHRIL_SCRAP;
     public static final RegistryObject<Item> ADAMANTITE_SCRAP;
     public static final RegistryObject<Item> RUNITE_SCRAP;
+    public static final RegistryObject<Item> ORICHALCITE_SCRAP;
+    public static final RegistryObject<Item> NECRITE_SCRAP;
     public static final RegistryObject<Item> TIN_INGOT;
     public static final RegistryObject<Item> BRONZE_INGOT;
     public static final RegistryObject<Item> STEEL_INGOT;
     public static final RegistryObject<Item> MITHRIL_INGOT;
     public static final RegistryObject<Item> ADAMANTITE_INGOT;
     public static final RegistryObject<Item> RUNITE_INGOT;
+    public static final RegistryObject<Item> ORIKALKUM_INGOT;
+    public static final RegistryObject<Item> NECRONIUM_INGOT;
     public static final RegistryObject<Item> BRONZE_SWORD;
     public static final RegistryObject<Item> BRONZE_SHOVEL;
     public static final RegistryObject<Item> BRONZE_PICKAXE;
@@ -54,6 +60,16 @@ public class ModItems {
     public static final RegistryObject<Item> RUNE_PICKAXE;
     public static final RegistryObject<Item> RUNE_AXE;
     public static final RegistryObject<Item> RUNE_HOE;
+    public static final RegistryObject<Item> ORIKALKUM_SWORD;
+    public static final RegistryObject<Item> ORIKALKUM_SHOVEL;
+    public static final RegistryObject<Item> ORIKALKUM_PICKAXE;
+    public static final RegistryObject<Item> ORIKALKUM_AXE;
+    public static final RegistryObject<Item> ORIKALKUM_HOE;
+    public static final RegistryObject<Item> NECRONIUM_SWORD;
+    public static final RegistryObject<Item> NECRONIUM_SHOVEL;
+    public static final RegistryObject<Item> NECRONIUM_PICKAXE;
+    public static final RegistryObject<Item> NECRONIUM_AXE;
+    public static final RegistryObject<Item> NECRONIUM_HOE;
     public static final RegistryObject<Item> BRONZE_HELMET;
     public static final RegistryObject<Item> BRONZE_CHESTPLATE;
     public static final RegistryObject<Item> BRONZE_LEGGINGS;
@@ -74,30 +90,20 @@ public class ModItems {
     public static final RegistryObject<Item> RUNE_CHESTPLATE;
     public static final RegistryObject<Item> RUNE_LEGGINGS;
     public static final RegistryObject<Item> RUNE_BOOTS;
+    public static final RegistryObject<Item> ORIKALKUM_HELMET;
+    public static final RegistryObject<Item> ORIKALKUM_CHESTPLATE;
+    public static final RegistryObject<Item> ORIKALKUM_LEGGINGS;
+    public static final RegistryObject<Item> ORIKALKUM_BOOTS;
+    public static final RegistryObject<Item> NECRONIUM_HELMET;
+    public static final RegistryObject<Item> NECRONIUM_CHESTPLATE;
+    public static final RegistryObject<Item> NECRONIUM_LEGGINGS;
+    public static final RegistryObject<Item> NECRONIUM_BOOTS;
     public static final RegistryObject<Item> BRONZE_ARROW;
     public static final RegistryObject<Item> IRON_ARROW;
     public static final RegistryObject<Item> STEEL_ARROW;
     public static final RegistryObject<Item> MITHRIL_ARROW;
     public static final RegistryObject<Item> ADAMANT_ARROW;
     public static final RegistryObject<Item> RUNE_ARROW;
-    public static final RegistryObject<Item> RAW_DRAKOLITH;
-    public static final RegistryObject<Item> ORICHALCITE_SCRAP;
-    public static final RegistryObject<Item> ORIKALKUM_INGOT;
-    public static final RegistryObject<Item> ORIKALKUM_SWORD;
-    public static final RegistryObject<Item> ORIKALKUM_SHOVEL;
-    public static final RegistryObject<Item> ORIKALKUM_PICKAXE;
-    public static final RegistryObject<Item> ORIKALKUM_AXE;
-    public static final RegistryObject<Item> ORIKALKUM_HOE;
-    public static final RegistryObject<Item> ORIKALKUM_HELMET;
-    public static final RegistryObject<Item> ORIKALKUM_CHESTPLATE;
-    public static final RegistryObject<Item> ORIKALKUM_LEGGINGS;
-    public static final RegistryObject<Item> ORIKALKUM_BOOTS;
-
-
-    public static final RegistryObject<Item> RAW_PHASMATITE;
-    public static final RegistryObject<Item> NECRITE_SCRAP;
-    public static final RegistryObject<Item> NECRONIUM_INGOT;
-
 
     static {
         RAW_TIN = ITEMS.register("raw_tin", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TAB)));
@@ -151,6 +157,11 @@ public class ModItems {
         ORIKALKUM_PICKAXE = ITEMS.register("orikalkum_pickaxe", () -> new PickaxeItem(ModItemTier.ORIKALKUM, 1, -2.8F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ORIKALKUM_AXE = ITEMS.register("orikalkum_axe", () -> new AxeItem(ModItemTier.ORIKALKUM, 5.0F, -2.9F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ORIKALKUM_HOE = ITEMS.register("orikalkum_hoe", () -> new HoeItem(ModItemTier.ORIKALKUM, -4, 0.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRONIUM_SWORD = ITEMS.register("necronium_sword", () -> new SwordItem(ModItemTier.NECRONIUM, 3, -2.4F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRONIUM_SHOVEL = ITEMS.register("necronium_shovel", () -> new ShovelItem(ModItemTier.NECRONIUM, 1.5F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRONIUM_PICKAXE = ITEMS.register("necronium_pickaxe", () -> new PickaxeItem(ModItemTier.NECRONIUM, 1, -2.8F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRONIUM_AXE = ITEMS.register("necronium_axe", () -> new AxeItem(ModItemTier.NECRONIUM, 5.0F, -3.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRONIUM_HOE = ITEMS.register("necronium_hoe", () -> new HoeItem(ModItemTier.NECRONIUM, -4, 0.0F, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_HELMET = ITEMS.register("bronze_helmet", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_CHESTPLATE = ITEMS.register("bronze_chestplate", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_LEGGINGS = ITEMS.register("bronze_leggings", () -> new ArmorItem(ModArmorMaterial.BRONZE, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.TAB)));
@@ -175,6 +186,10 @@ public class ModItems {
         ORIKALKUM_CHESTPLATE = ITEMS.register("orikalkum_chestplate", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ORIKALKUM_LEGGINGS = ITEMS.register("orikalkum_leggings", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         ORIKALKUM_BOOTS = ITEMS.register("orikalkum_boots", () -> new ArmorItem(ModArmorMaterial.ORIKALKUM, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRONIUM_HELMET = ITEMS.register("necronium_helmet", () -> new ArmorItem(ModArmorMaterial.NECRONIUM, EquipmentSlot.HEAD, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRONIUM_CHESTPLATE = ITEMS.register("necronium_chestplate", () -> new ArmorItem(ModArmorMaterial.NECRONIUM, EquipmentSlot.CHEST, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRONIUM_LEGGINGS = ITEMS.register("necronium_leggings", () -> new ArmorItem(ModArmorMaterial.NECRONIUM, EquipmentSlot.LEGS, new Item.Properties().tab(ModCreativeModeTab.TAB)));
+        NECRONIUM_BOOTS = ITEMS.register("necronium_boots", () -> new ArmorItem(ModArmorMaterial.NECRONIUM, EquipmentSlot.FEET, new Item.Properties().tab(ModCreativeModeTab.TAB)));
         BRONZE_ARROW = ITEMS.register("bronze_arrow", () -> new BronzeArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.bronze_arrow_damage.get().floatValue()));
         IRON_ARROW = ITEMS.register("iron_arrow", () -> new IronArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.iron_arrow_damage.get().floatValue()));
         STEEL_ARROW = ITEMS.register("steel_arrow", () -> new SteelArrowItem(new Item.Properties().tab(ModCreativeModeTab.TAB), ArrowConfig.steel_arrow_damage.get().floatValue()));
