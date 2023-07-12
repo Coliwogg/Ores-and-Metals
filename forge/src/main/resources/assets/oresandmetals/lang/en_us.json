@@ -1,5 +1,8 @@
 {
   "item.oresandmetals.bronze_ingot": "Bronze Ingot",
 
+  "block.oresandmetals.bronze_block": "Block of Bronze",
+  "block.oresandmetals.tin_ore": "Tin Ore",
+
   "creativetab.oresandmetals_tab": "Ores and Metals"
 }

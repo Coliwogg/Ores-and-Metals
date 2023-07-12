@@ -1,5 +1,6 @@
 package com.coliwogg.oresandmetals;
 
+import com.coliwogg.oresandmetals.block.ModBlocks;
 import com.coliwogg.oresandmetals.item.ModCreativeModeTabs;
 import com.coliwogg.oresandmetals.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -30,6 +31,7 @@ public class OresAndMetals {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -46,6 +48,14 @@ public class OresAndMetals {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BRONZE_INGOT);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BRONZE_BLOCK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.TIN_ORE);
         }
     }
 

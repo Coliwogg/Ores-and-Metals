@@ -24,7 +24,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        OresAndMetals.LOGGER.info("Registering Mod Items for " + OresAndMetals.MOD_ID);
+        OresAndMetals.LOGGER.info("Registering ModItems for " + OresAndMetals.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
     }

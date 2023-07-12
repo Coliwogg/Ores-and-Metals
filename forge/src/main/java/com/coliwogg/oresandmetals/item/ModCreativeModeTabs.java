@@ -1,6 +1,7 @@
 package com.coliwogg.oresandmetals.item;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
+import com.coliwogg.oresandmetals.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,6 +19,9 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.oresandmetals_tab"))
                     .displayItems(((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BRONZE_INGOT.get());
+
+                        pOutput.accept(ModBlocks.BRONZE_BLOCK.get());
+                        pOutput.accept(ModBlocks.TIN_ORE.get());
                     }))
                     .build());
 

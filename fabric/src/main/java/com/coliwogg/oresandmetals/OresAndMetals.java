@@ -1,5 +1,6 @@
 package com.coliwogg.oresandmetals;
 
+import com.coliwogg.oresandmetals.block.ModBlocks;
 import com.coliwogg.oresandmetals.item.ModItemGroups;
 import com.coliwogg.oresandmetals.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -15,5 +16,6 @@ public class OresAndMetals implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
