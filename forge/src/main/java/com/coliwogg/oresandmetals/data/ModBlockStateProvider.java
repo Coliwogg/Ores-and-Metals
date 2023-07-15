@@ -15,8 +15,26 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        blockWithItem(ModBlocks.TIN_BLOCK);
         blockWithItem(ModBlocks.BRONZE_BLOCK);
+        blockWithItem(ModBlocks.STEEL_BLOCK);
+        blockWithItem(ModBlocks.MITHRIL_BLOCK);
+        blockWithItem(ModBlocks.ADAMANTITE_BLOCK);
+        blockWithItem(ModBlocks.RUNITE_BLOCK);
+        blockWithItem(ModBlocks.RAW_TIN_BLOCK);
+        blockWithItem(ModBlocks.RAW_BRONZE_BLOCK);
+        blockWithItem(ModBlocks.RAW_STEEL_BLOCK);
+        blockWithItem(ModBlocks.RAW_MITHRIL_BLOCK);
+        blockWithItem(ModBlocks.RAW_ADAMANTITE_BLOCK);
+        blockWithItem(ModBlocks.RAW_RUNITE_BLOCK);
         blockWithItem(ModBlocks.TIN_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_TIN_ORE);
+        blockWithItem(ModBlocks.MITHRIL_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_MITHRIL_ORE);
+        blockWithItem(ModBlocks.ADAMANTITE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_ADAMANTITE_ORE);
+        blockWithItem(ModBlocks.RUNITE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_RUNITE_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

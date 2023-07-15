@@ -22,9 +22,27 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        addDrop(ModBlocks.TIN_BLOCK);
         addDrop(ModBlocks.BRONZE_BLOCK);
+        addDrop(ModBlocks.STEEL_BLOCK);
+        addDrop(ModBlocks.MITHRIL_BLOCK);
+        addDrop(ModBlocks.ADAMANTITE_BLOCK);
+        addDrop(ModBlocks.RUNITE_BLOCK);
+        addDrop(ModBlocks.RAW_TIN_BLOCK);
+        addDrop(ModBlocks.RAW_BRONZE_BLOCK);
+        addDrop(ModBlocks.RAW_STEEL_BLOCK);
+        addDrop(ModBlocks.RAW_MITHRIL_BLOCK);
+        addDrop(ModBlocks.RAW_ADAMANTITE_BLOCK);
+        addDrop(ModBlocks.RAW_RUNITE_BLOCK);
 
         addDrop(ModBlocks.TIN_ORE, tinOreDrops(ModBlocks.TIN_ORE));
+        addDrop(ModBlocks.DEEPSLATE_TIN_ORE, tinOreDrops(ModBlocks.DEEPSLATE_TIN_ORE));
+        addDrop(ModBlocks.MITHRIL_ORE, oreDrops(ModBlocks.MITHRIL_ORE, ModItems.RAW_MITHRIL));
+        addDrop(ModBlocks.DEEPSLATE_MITHRIL_ORE, oreDrops(ModBlocks.DEEPSLATE_MITHRIL_ORE, ModItems.RAW_MITHRIL));
+        addDrop(ModBlocks.ADAMANTITE_ORE, oreDrops(ModBlocks.ADAMANTITE_ORE, ModItems.RAW_ADAMANTITE));
+        addDrop(ModBlocks.DEEPSLATE_ADAMANTITE_ORE, oreDrops(ModBlocks.DEEPSLATE_ADAMANTITE_ORE, ModItems.RAW_ADAMANTITE));
+        addDrop(ModBlocks.RUNITE_ORE, oreDrops(ModBlocks.RUNITE_ORE, ModItems.RAW_RUNITE));
+        addDrop(ModBlocks.DEEPSLATE_RUNITE_ORE, oreDrops(ModBlocks.DEEPSLATE_RUNITE_ORE, ModItems.RAW_RUNITE));
     }
 
     public LootTable.Builder tinOreDrops(Block drop) {

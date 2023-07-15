@@ -1,3 +1,16 @@
-// 1.20.1	2023-07-12T15:52:57.1531431	Item Models: oresandmetals
+// 1.20.1	2023-07-15T11:12:22.8082458	Item Models: oresandmetals
+b6dc0383ffe7a63166fe3fc30cd65c6dc1f364ad assets/oresandmetals/models/item/adamantite_ingot.json
+03f178c47145b96c91856f03bb81423df2c98902 assets/oresandmetals/models/item/adamantite_scrap.json
 009da8d836b8ca062000bd8dfde1da13cf24f159 assets/oresandmetals/models/item/bronze_ingot.json
+72e31bad47a2515a37d425ab0129de9b11897d90 assets/oresandmetals/models/item/mithril_ingot.json
+01059de871c2828a7d87e0bf4654078c92196324 assets/oresandmetals/models/item/mithril_scrap.json
+8506e32c60a2e743a76638844096f99e9c8b81cc assets/oresandmetals/models/item/raw_adamantite.json
+7c40cd373cfde5a4af3a863e9cdaa87ce86d0f77 assets/oresandmetals/models/item/raw_bronze.json
+d1affc735729dcc886cb4648b6fa7813d78482c2 assets/oresandmetals/models/item/raw_mithril.json
+a84a7ab88b78fb1d3c05bb75c960a020b86a4ba6 assets/oresandmetals/models/item/raw_runite.json
+2ce967473020b748fda42d0199a896eeceb50c97 assets/oresandmetals/models/item/raw_steel.json
 553e5efc90b9f054495d875b20c8e37d3a793cca assets/oresandmetals/models/item/raw_tin.json
+41c6ceaf55d211198fdcde36bd2b380642b48cf7 assets/oresandmetals/models/item/runite_ingot.json
+09a6d92bce880b99538e0dea8890947f139d72cc assets/oresandmetals/models/item/runite_scrap.json
+79f732c21cc759c930ca35978d3aa4c87f48ee73 assets/oresandmetals/models/item/steel_ingot.json
+44ca4b56c9bcdb5254c694219b1615a609445734 assets/oresandmetals/models/item/tin_ingot.json

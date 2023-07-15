@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "mithril",
+  "ingredient": {
+    "item": "oresandmetals:deepslate_mithril_ore"
+  },
+  "result": "oresandmetals:mithril_scrap"
+}

@@ -47,15 +47,47 @@ public class OresAndMetals {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RAW_TIN);
+            event.accept(ModItems.RAW_BRONZE);
+            event.accept(ModItems.RAW_STEEL);
+            event.accept(ModItems.RAW_MITHRIL);
+            event.accept(ModItems.RAW_ADAMANTITE);
+            event.accept(ModItems.RAW_RUNITE);
+            event.accept(ModItems.TIN_INGOT);
             event.accept(ModItems.BRONZE_INGOT);
+            event.accept(ModItems.STEEL_INGOT);
+            event.accept(ModItems.MITHRIL_SCRAP);
+            event.accept(ModItems.MITHRIL_INGOT);
+            event.accept(ModItems.ADAMANTITE_SCRAP);
+            event.accept(ModItems.ADAMANTITE_INGOT);
+            event.accept(ModItems.RUNITE_SCRAP);
+            event.accept(ModItems.RUNITE_INGOT);
         }
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.TIN_BLOCK);
             event.accept(ModBlocks.BRONZE_BLOCK);
+            event.accept(ModBlocks.STEEL_BLOCK);
+            event.accept(ModBlocks.MITHRIL_BLOCK);
+            event.accept(ModBlocks.ADAMANTITE_BLOCK);
+            event.accept(ModBlocks.RUNITE_BLOCK);
         }
 
-        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.RAW_TIN_BLOCK);
+            event.accept(ModBlocks.RAW_BRONZE_BLOCK);
+            event.accept(ModBlocks.RAW_STEEL_BLOCK);
+            event.accept(ModBlocks.RAW_MITHRIL_BLOCK);
+            event.accept(ModBlocks.RAW_ADAMANTITE_BLOCK);
+            event.accept(ModBlocks.RAW_RUNITE_BLOCK);
             event.accept(ModBlocks.TIN_ORE);
+            event.accept(ModBlocks.DEEPSLATE_TIN_ORE);
+            event.accept(ModBlocks.MITHRIL_ORE);
+            event.accept(ModBlocks.DEEPSLATE_MITHRIL_ORE);
+            event.accept(ModBlocks.ADAMANTITE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_ADAMANTITE_ORE);
+            event.accept(ModBlocks.RUNITE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_RUNITE_ORE);
         }
     }
 

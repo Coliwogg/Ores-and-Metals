@@ -17,8 +17,21 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.BRONZE_INGOT);
         simpleItem(ModItems.RAW_TIN);
+        simpleItem(ModItems.RAW_BRONZE);
+        simpleItem(ModItems.RAW_STEEL);
+        simpleItem(ModItems.RAW_MITHRIL);
+        simpleItem(ModItems.RAW_ADAMANTITE);
+        simpleItem(ModItems.RAW_RUNITE);
+        simpleItem(ModItems.TIN_INGOT);
+        simpleItem(ModItems.BRONZE_INGOT);
+        simpleItem(ModItems.STEEL_INGOT);
+        simpleItem(ModItems.MITHRIL_SCRAP);
+        simpleItem(ModItems.MITHRIL_INGOT);
+        simpleItem(ModItems.ADAMANTITE_SCRAP);
+        simpleItem(ModItems.ADAMANTITE_INGOT);
+        simpleItem(ModItems.RUNITE_SCRAP);
+        simpleItem(ModItems.RUNITE_INGOT);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

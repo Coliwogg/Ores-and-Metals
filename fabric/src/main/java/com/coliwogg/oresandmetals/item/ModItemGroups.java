@@ -16,10 +16,41 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.oresandmetals"))
                     .icon(() -> new ItemStack(ModItems.BRONZE_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_TIN);
+                        entries.add(ModItems.RAW_BRONZE);
+                        entries.add(ModItems.RAW_STEEL);
+                        entries.add(ModItems.RAW_MITHRIL);
+                        entries.add(ModItems.RAW_ADAMANTITE);
+                        entries.add(ModItems.RAW_RUNITE);
+                        entries.add(ModItems.TIN_INGOT);
                         entries.add(ModItems.BRONZE_INGOT);
+                        entries.add(ModItems.STEEL_INGOT);
+                        entries.add(ModItems.MITHRIL_SCRAP);
+                        entries.add(ModItems.MITHRIL_INGOT);
+                        entries.add(ModItems.ADAMANTITE_SCRAP);
+                        entries.add(ModItems.ADAMANTITE_INGOT);
+                        entries.add(ModItems.RUNITE_SCRAP);
+                        entries.add(ModItems.RUNITE_INGOT);
 
+                        entries.add(ModBlocks.TIN_BLOCK);
                         entries.add(ModBlocks.BRONZE_BLOCK);
+                        entries.add(ModBlocks.STEEL_BLOCK);
+                        entries.add(ModBlocks.MITHRIL_BLOCK);
+                        entries.add(ModBlocks.ADAMANTITE_BLOCK);
+                        entries.add(ModBlocks.RUNITE_BLOCK);
+                        entries.add(ModBlocks.RAW_TIN_BLOCK);
+                        entries.add(ModBlocks.RAW_BRONZE_BLOCK);
+                        entries.add(ModBlocks.RAW_STEEL_BLOCK);
+                        entries.add(ModBlocks.RAW_MITHRIL_BLOCK);
+                        entries.add(ModBlocks.RAW_ADAMANTITE_BLOCK);
+                        entries.add(ModBlocks.RAW_RUNITE_BLOCK);
                         entries.add(ModBlocks.TIN_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_TIN_ORE);
+                        entries.add(ModBlocks.MITHRIL_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_MITHRIL_ORE);
+                        entries.add(ModBlocks.ADAMANTITE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_ADAMANTITE_ORE);
+                        entries.add(ModBlocks.RUNITE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_RUNITE_ORE);
 
                     }).build());
 
