@@ -31,6 +31,32 @@ public class ModItemGroups {
                         entries.add(ModItems.RUNITE_SCRAP);
                         entries.add(ModItems.RUNITE_INGOT);
 
+                        entries.add(ModItems.BRONZE_AXE);
+                        entries.add(ModItems.BRONZE_SWORD);
+                        entries.add(ModItems.BRONZE_SHOVEL);
+                        entries.add(ModItems.BRONZE_HOE);
+                        entries.add(ModItems.BRONZE_PICKAXE);
+                        entries.add(ModItems.STEEL_AXE);
+                        entries.add(ModItems.STEEL_SWORD);
+                        entries.add(ModItems.STEEL_SHOVEL);
+                        entries.add(ModItems.STEEL_HOE);
+                        entries.add(ModItems.STEEL_PICKAXE);
+                        entries.add(ModItems.MITHRIL_AXE);
+                        entries.add(ModItems.MITHRIL_SWORD);
+                        entries.add(ModItems.MITHRIL_SHOVEL);
+                        entries.add(ModItems.MITHRIL_HOE);
+                        entries.add(ModItems.MITHRIL_PICKAXE);
+                        entries.add(ModItems.ADAMANT_AXE);
+                        entries.add(ModItems.ADAMANT_SWORD);
+                        entries.add(ModItems.ADAMANT_SHOVEL);
+                        entries.add(ModItems.ADAMANT_HOE);
+                        entries.add(ModItems.ADAMANT_PICKAXE);
+                        entries.add(ModItems.RUNE_AXE);
+                        entries.add(ModItems.RUNE_SWORD);
+                        entries.add(ModItems.RUNE_SHOVEL);
+                        entries.add(ModItems.RUNE_HOE);
+                        entries.add(ModItems.RUNE_PICKAXE);
+
                         entries.add(ModBlocks.TIN_BLOCK);
                         entries.add(ModBlocks.BRONZE_BLOCK);
                         entries.add(ModBlocks.STEEL_BLOCK);
@@ -51,7 +77,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_ADAMANTITE_ORE);
                         entries.add(ModBlocks.RUNITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUNITE_ORE);
-
                     }).build());
 
     public static void registerItemGroups() {

@@ -54,5 +54,30 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ADAMANTITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUNITE_SCRAP, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUNITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BRONZE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BRONZE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BRONZE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BRONZE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STEEL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STEEL_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STEEL_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STEEL_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STEEL_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MITHRIL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MITHRIL_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MITHRIL_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MITHRIL_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.MITHRIL_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ADAMANT_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ADAMANT_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ADAMANT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ADAMANT_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ADAMANT_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RUNE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RUNE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RUNE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RUNE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RUNE_HOE, Models.HANDHELD);
     }
 }
