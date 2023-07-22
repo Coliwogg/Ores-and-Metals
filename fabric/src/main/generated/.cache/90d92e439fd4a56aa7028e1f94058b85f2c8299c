@@ -1,4 +1,4 @@
-// 1.20.1	2023-07-15T10:15:34.1514726	Ores and Metals/Model Definitions
+// 1.20.1	2023-07-16T11:55:06.9580634	Ores and Metals/Model Definitions
 41c6ceaf55d211198fdcde36bd2b380642b48cf7 assets\oresandmetals\models\item\runite_ingot.json
 b3ef7d58fdb498b8b3936332562ea09cbfea5cf1 assets\oresandmetals\models\item\tin_ore.json
 783b72995509b4e417ee88ace2173338fe922559 assets\oresandmetals\models\block\raw_steel_block.json
@@ -46,8 +46,8 @@ d23ebf42ef11e3bab6f391ade94fa8e9b86ac2c0 assets\oresandmetals\models\block\adama
 a0d4388f4f1f9e555f22f1b57a8e649bcc6fdffd assets\oresandmetals\blockstates\tin_ore.json
 553e5efc90b9f054495d875b20c8e37d3a793cca assets\oresandmetals\models\item\raw_tin.json
 2ce967473020b748fda42d0199a896eeceb50c97 assets\oresandmetals\models\item\raw_steel.json
-043668900b3e4bfdc1db4c16edafce8ddf5d1bcd assets\oresandmetals\blockstates\raw_runite_block.json
 5da72e41f123eeaefc855a50c61050d235b6280c assets\oresandmetals\blockstates\deepslate_runite_ore.json
+043668900b3e4bfdc1db4c16edafce8ddf5d1bcd assets\oresandmetals\blockstates\raw_runite_block.json
 a84a7ab88b78fb1d3c05bb75c960a020b86a4ba6 assets\oresandmetals\models\item\raw_runite.json
 50e6a03ecb1ef2b788f95c499a5ca2af3a2cbef2 assets\oresandmetals\models\item\runite_ore.json
 c64b7d897bc341b6a6630fc919c946e54fd13fc7 assets\oresandmetals\models\block\raw_tin_block.json
