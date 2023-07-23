@@ -7,10 +7,7 @@ import com.coliwogg.oresandmetals.item.custom.ModPickaxeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -56,6 +53,26 @@ public class ModItems {
     public static final Item RUNE_PICKAXE = registerItem("rune_pickaxe", new ModPickaxeItem(ModToolMaterials.RUNE, 1, -2.8f, new FabricItemSettings()));
     public static final Item RUNE_AXE = registerItem("rune_axe", new ModAxeItem(ModToolMaterials.RUNE, 5.0f, -3.0f, new FabricItemSettings()));
     public static final Item RUNE_HOE = registerItem("rune_hoe", new ModHoeItem(ModToolMaterials.RUNE, -4, -0.0f, new FabricItemSettings()));
+    public static final Item BRONZE_HELMET = registerItem("bronze_helmet", new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item BRONZE_CHESTPLATE = registerItem("bronze_chestplate", new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item BRONZE_LEGGINGS = registerItem("bronze_leggings", new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item BRONZE_BOOTS = registerItem("bronze_boots", new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item STEEL_HELMET = registerItem("steel_helmet", new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate", new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item STEEL_LEGGINGS = registerItem("steel_leggings", new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item STEEL_BOOTS = registerItem("steel_boots", new ArmorItem(ModArmorMaterials.STEEL, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item MITHRIL_HELMET = registerItem("mithril_helmet", new ArmorItem(ModArmorMaterials.MITHRIL, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item MITHRIL_CHESTPLATE = registerItem("mithril_chestplate", new ArmorItem(ModArmorMaterials.MITHRIL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item MITHRIL_LEGGINGS = registerItem("mithril_leggings", new ArmorItem(ModArmorMaterials.MITHRIL, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item MITHRIL_BOOTS = registerItem("mithril_boots", new ArmorItem(ModArmorMaterials.MITHRIL, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item ADAMANT_HELMET = registerItem("adamant_helmet", new ArmorItem(ModArmorMaterials.ADAMANT, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ADAMANT_CHESTPLATE = registerItem("adamant_chestplate", new ArmorItem(ModArmorMaterials.ADAMANT, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ADAMANT_LEGGINGS = registerItem("adamant_leggings", new ArmorItem(ModArmorMaterials.ADAMANT, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ADAMANT_BOOTS = registerItem("adamant_boots", new ArmorItem(ModArmorMaterials.ADAMANT, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item RUNE_HELMET = registerItem("rune_helmet", new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item RUNE_CHESTPLATE = registerItem("rune_chestplate", new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item RUNE_LEGGINGS = registerItem("rune_leggings", new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item RUNE_BOOTS = registerItem("rune_boots", new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RAW_TIN);
@@ -94,16 +111,36 @@ public class ModItems {
     }
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
-        entries.add(BRONZE_AXE);
         entries.add(BRONZE_SWORD);
-        entries.add(STEEL_AXE);
         entries.add(STEEL_SWORD);
-        entries.add(MITHRIL_AXE);
         entries.add(MITHRIL_SWORD);
-        entries.add(ADAMANT_AXE);
         entries.add(ADAMANT_SWORD);
-        entries.add(RUNE_AXE);
         entries.add(RUNE_SWORD);
+        entries.add(BRONZE_AXE);
+        entries.add(STEEL_AXE);
+        entries.add(MITHRIL_AXE);
+        entries.add(ADAMANT_AXE);
+        entries.add(RUNE_AXE);
+        entries.add(BRONZE_HELMET);
+        entries.add(BRONZE_CHESTPLATE);
+        entries.add(BRONZE_LEGGINGS);
+        entries.add(BRONZE_BOOTS);
+        entries.add(STEEL_HELMET);
+        entries.add(STEEL_CHESTPLATE);
+        entries.add(STEEL_LEGGINGS);
+        entries.add(STEEL_BOOTS);
+        entries.add(MITHRIL_HELMET);
+        entries.add(MITHRIL_CHESTPLATE);
+        entries.add(MITHRIL_LEGGINGS);
+        entries.add(MITHRIL_BOOTS);
+        entries.add(ADAMANT_HELMET);
+        entries.add(ADAMANT_CHESTPLATE);
+        entries.add(ADAMANT_LEGGINGS);
+        entries.add(ADAMANT_BOOTS);
+        entries.add(RUNE_HELMET);
+        entries.add(RUNE_CHESTPLATE);
+        entries.add(RUNE_LEGGINGS);
+        entries.add(RUNE_BOOTS);
     }
 
     private static Item registerItem(String name, Item item) {

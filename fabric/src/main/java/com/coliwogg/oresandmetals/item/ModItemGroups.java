@@ -57,6 +57,27 @@ public class ModItemGroups {
                         entries.add(ModItems.RUNE_HOE);
                         entries.add(ModItems.RUNE_PICKAXE);
 
+                        entries.add(ModItems.BRONZE_HELMET);
+                        entries.add(ModItems.BRONZE_CHESTPLATE);
+                        entries.add(ModItems.BRONZE_LEGGINGS);
+                        entries.add(ModItems.BRONZE_BOOTS);
+                        entries.add(ModItems.STEEL_HELMET);
+                        entries.add(ModItems.STEEL_CHESTPLATE);
+                        entries.add(ModItems.STEEL_LEGGINGS);
+                        entries.add(ModItems.STEEL_BOOTS);
+                        entries.add(ModItems.MITHRIL_HELMET);
+                        entries.add(ModItems.MITHRIL_CHESTPLATE);
+                        entries.add(ModItems.MITHRIL_LEGGINGS);
+                        entries.add(ModItems.MITHRIL_BOOTS);
+                        entries.add(ModItems.ADAMANT_HELMET);
+                        entries.add(ModItems.ADAMANT_CHESTPLATE);
+                        entries.add(ModItems.ADAMANT_LEGGINGS);
+                        entries.add(ModItems.ADAMANT_BOOTS);
+                        entries.add(ModItems.RUNE_HELMET);
+                        entries.add(ModItems.RUNE_CHESTPLATE);
+                        entries.add(ModItems.RUNE_LEGGINGS);
+                        entries.add(ModItems.RUNE_BOOTS);
+
                         entries.add(ModBlocks.TIN_BLOCK);
                         entries.add(ModBlocks.BRONZE_BLOCK);
                         entries.add(ModBlocks.STEEL_BLOCK);

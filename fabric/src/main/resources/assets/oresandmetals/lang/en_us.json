@@ -14,7 +14,6 @@
   "item.oresandmetals.adamantite_ingot": "Adamantite Ingot",
   "item.oresandmetals.runite_scrap": "Runite Scrap",
   "item.oresandmetals.runite_ingot": "Runite Ingot",
-
   "item.oresandmetals.bronze_sword": "Bronze Sword",
   "item.oresandmetals.bronze_shovel": "Bronze Shovel",
   "item.oresandmetals.bronze_pickaxe": "Bronze Pickaxe",
@@ -40,7 +39,26 @@
   "item.oresandmetals.rune_pickaxe": "Rune Pickaxe",
   "item.oresandmetals.rune_axe": "Rune Axe",
   "item.oresandmetals.rune_hoe": "Rune Hoe",
-
+  "item.oresandmetals.bronze_helmet": "Bronze Helmet",
+  "item.oresandmetals.bronze_chestplate": "Bronze Chestplate",
+  "item.oresandmetals.bronze_leggings": "Bronze Leggings",
+  "item.oresandmetals.bronze_boots": "Bronze Boots",
+  "item.oresandmetals.steel_helmet": "Steel Helmet",
+  "item.oresandmetals.steel_chestplate": "Steel Chestplate",
+  "item.oresandmetals.steel_leggings": "Steel Leggings",
+  "item.oresandmetals.steel_boots": "Steel Boots",
+  "item.oresandmetals.mithril_helmet": "Mithril Helmet",
+  "item.oresandmetals.mithril_chestplate": "Mithril Chestplate",
+  "item.oresandmetals.mithril_leggings": "Mithril Leggings",
+  "item.oresandmetals.mithril_boots": "Mithril Boots",
+  "item.oresandmetals.adamant_helmet": "Adamant Helmet",
+  "item.oresandmetals.adamant_chestplate": "Adamant Chestplate",
+  "item.oresandmetals.adamant_leggings": "Adamant Leggings",
+  "item.oresandmetals.adamant_boots": "Adamant Boots",
+  "item.oresandmetals.rune_helmet": "Rune Helmet",
+  "item.oresandmetals.rune_chestplate": "Rune Chestplate",
+  "item.oresandmetals.rune_leggings": "Rune Leggings",
+  "item.oresandmetals.rune_boots": "Rune Boots",
   "block.oresandmetals.tin_block": "Block of Tin",
   "block.oresandmetals.bronze_block": "Block of Bronze",
   "block.oresandmetals.steel_block": "Block of Steel",
@@ -61,6 +79,5 @@
   "block.oresandmetals.deepslate_adamantite_ore": "Deepslate Adamantite Ore",
   "block.oresandmetals.runite_ore": "Runite Ore",
   "block.oresandmetals.deepslate_runite_ore": "Deepslate Runite Ore",
-
   "itemgroup.oresandmetals": "Ores and Metals"
 }

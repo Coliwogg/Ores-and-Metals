@@ -79,5 +79,25 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUNE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUNE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUNE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BRONZE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BRONZE_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MITHRIL_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MITHRIL_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MITHRIL_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MITHRIL_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ADAMANT_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ADAMANT_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ADAMANT_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ADAMANT_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUNE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUNE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUNE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUNE_BOOTS, Models.GENERATED);
     }
 }
