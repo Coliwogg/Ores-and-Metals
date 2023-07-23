@@ -34,6 +34,32 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ADAMANTITE_SCRAP.get());
                         pOutput.accept(ModItems.RUNITE_SCRAP.get());
 
+                        pOutput.accept(ModItems.BRONZE_SWORD.get());
+                        pOutput.accept(ModItems.BRONZE_SHOVEL.get());
+                        pOutput.accept(ModItems.BRONZE_PICKAXE.get());
+                        pOutput.accept(ModItems.BRONZE_AXE.get());
+                        pOutput.accept(ModItems.BRONZE_HOE.get());
+                        pOutput.accept(ModItems.STEEL_SWORD.get());
+                        pOutput.accept(ModItems.STEEL_SHOVEL.get());
+                        pOutput.accept(ModItems.STEEL_PICKAXE.get());
+                        pOutput.accept(ModItems.STEEL_AXE.get());
+                        pOutput.accept(ModItems.STEEL_HOE.get());
+                        pOutput.accept(ModItems.MITHRIL_SWORD.get());
+                        pOutput.accept(ModItems.MITHRIL_SHOVEL.get());
+                        pOutput.accept(ModItems.MITHRIL_PICKAXE.get());
+                        pOutput.accept(ModItems.MITHRIL_AXE.get());
+                        pOutput.accept(ModItems.MITHRIL_HOE.get());
+                        pOutput.accept(ModItems.ADAMANT_SWORD.get());
+                        pOutput.accept(ModItems.ADAMANT_SHOVEL.get());
+                        pOutput.accept(ModItems.ADAMANT_PICKAXE.get());
+                        pOutput.accept(ModItems.ADAMANT_AXE.get());
+                        pOutput.accept(ModItems.ADAMANT_HOE.get());
+                        pOutput.accept(ModItems.RUNE_SWORD.get());
+                        pOutput.accept(ModItems.RUNE_SHOVEL.get());
+                        pOutput.accept(ModItems.RUNE_PICKAXE.get());
+                        pOutput.accept(ModItems.RUNE_AXE.get());
+                        pOutput.accept(ModItems.RUNE_HOE.get());
+
                         pOutput.accept(ModBlocks.TIN_BLOCK.get());
                         pOutput.accept(ModBlocks.BRONZE_BLOCK.get());
                         pOutput.accept(ModBlocks.STEEL_BLOCK.get());

@@ -32,6 +32,32 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ADAMANTITE_INGOT);
         simpleItem(ModItems.RUNITE_SCRAP);
         simpleItem(ModItems.RUNITE_INGOT);
+
+        handheldItem(ModItems.BRONZE_SWORD);
+        handheldItem(ModItems.BRONZE_SHOVEL);
+        handheldItem(ModItems.BRONZE_PICKAXE);
+        handheldItem(ModItems.BRONZE_AXE);
+        handheldItem(ModItems.BRONZE_HOE);
+        handheldItem(ModItems.STEEL_SWORD);
+        handheldItem(ModItems.STEEL_SHOVEL);
+        handheldItem(ModItems.STEEL_PICKAXE);
+        handheldItem(ModItems.STEEL_AXE);
+        handheldItem(ModItems.STEEL_HOE);
+        handheldItem(ModItems.MITHRIL_SWORD);
+        handheldItem(ModItems.MITHRIL_SHOVEL);
+        handheldItem(ModItems.MITHRIL_PICKAXE);
+        handheldItem(ModItems.MITHRIL_AXE);
+        handheldItem(ModItems.MITHRIL_HOE);
+        handheldItem(ModItems.ADAMANT_SWORD);
+        handheldItem(ModItems.ADAMANT_SHOVEL);
+        handheldItem(ModItems.ADAMANT_PICKAXE);
+        handheldItem(ModItems.ADAMANT_AXE);
+        handheldItem(ModItems.ADAMANT_HOE);
+        handheldItem(ModItems.RUNE_SWORD);
+        handheldItem(ModItems.RUNE_SHOVEL);
+        handheldItem(ModItems.RUNE_PICKAXE);
+        handheldItem(ModItems.RUNE_AXE);
+        handheldItem(ModItems.RUNE_HOE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

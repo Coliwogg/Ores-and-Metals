@@ -64,6 +64,37 @@ public class OresAndMetals {
             event.accept(ModItems.RUNITE_INGOT);
         }
 
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.BRONZE_SWORD);
+            event.accept(ModItems.STEEL_SWORD);
+            event.accept(ModItems.MITHRIL_SWORD);
+            event.accept(ModItems.ADAMANT_SWORD);
+            event.accept(ModItems.RUNE_SWORD);
+            event.accept(ModItems.BRONZE_AXE);
+            event.accept(ModItems.STEEL_AXE);
+            event.accept(ModItems.MITHRIL_AXE);
+            event.accept(ModItems.ADAMANT_AXE);
+            event.accept(ModItems.RUNE_AXE);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.BRONZE_SHOVEL);
+            event.accept(ModItems.BRONZE_PICKAXE);
+            event.accept(ModItems.BRONZE_HOE);
+            event.accept(ModItems.STEEL_SHOVEL);
+            event.accept(ModItems.STEEL_PICKAXE);
+            event.accept(ModItems.STEEL_HOE);
+            event.accept(ModItems.MITHRIL_SHOVEL);
+            event.accept(ModItems.MITHRIL_PICKAXE);
+            event.accept(ModItems.MITHRIL_HOE);
+            event.accept(ModItems.ADAMANT_SHOVEL);
+            event.accept(ModItems.ADAMANT_PICKAXE);
+            event.accept(ModItems.ADAMANT_HOE);
+            event.accept(ModItems.RUNE_SHOVEL);
+            event.accept(ModItems.RUNE_PICKAXE);
+            event.accept(ModItems.RUNE_HOE);
+        }
+
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.TIN_BLOCK);
             event.accept(ModBlocks.BRONZE_BLOCK);
