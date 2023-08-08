@@ -58,6 +58,27 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.RUNE_PICKAXE);
         handheldItem(ModItems.RUNE_AXE);
         handheldItem(ModItems.RUNE_HOE);
+
+        simpleItem(ModItems.BRONZE_HELMET);
+        simpleItem(ModItems.BRONZE_CHESTPLATE);
+        simpleItem(ModItems.BRONZE_LEGGINGS);
+        simpleItem(ModItems.BRONZE_BOOTS);
+        simpleItem(ModItems.STEEL_HELMET);
+        simpleItem(ModItems.STEEL_CHESTPLATE);
+        simpleItem(ModItems.STEEL_LEGGINGS);
+        simpleItem(ModItems.STEEL_BOOTS);
+        simpleItem(ModItems.MITHRIL_HELMET);
+        simpleItem(ModItems.MITHRIL_CHESTPLATE);
+        simpleItem(ModItems.MITHRIL_LEGGINGS);
+        simpleItem(ModItems.MITHRIL_BOOTS);
+        simpleItem(ModItems.ADAMANT_HELMET);
+        simpleItem(ModItems.ADAMANT_CHESTPLATE);
+        simpleItem(ModItems.ADAMANT_LEGGINGS);
+        simpleItem(ModItems.ADAMANT_BOOTS);
+        simpleItem(ModItems.RUNE_HELMET);
+        simpleItem(ModItems.RUNE_CHESTPLATE);
+        simpleItem(ModItems.RUNE_LEGGINGS);
+        simpleItem(ModItems.RUNE_BOOTS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

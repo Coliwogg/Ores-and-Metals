@@ -75,6 +75,26 @@ public class OresAndMetals {
             event.accept(ModItems.MITHRIL_AXE);
             event.accept(ModItems.ADAMANT_AXE);
             event.accept(ModItems.RUNE_AXE);
+            event.accept(ModItems.BRONZE_HELMET);
+            event.accept(ModItems.BRONZE_CHESTPLATE);
+            event.accept(ModItems.BRONZE_LEGGINGS);
+            event.accept(ModItems.BRONZE_BOOTS);
+            event.accept(ModItems.STEEL_HELMET);
+            event.accept(ModItems.STEEL_CHESTPLATE);
+            event.accept(ModItems.STEEL_LEGGINGS);
+            event.accept(ModItems.STEEL_BOOTS);
+            event.accept(ModItems.MITHRIL_HELMET);
+            event.accept(ModItems.MITHRIL_CHESTPLATE);
+            event.accept(ModItems.MITHRIL_LEGGINGS);
+            event.accept(ModItems.MITHRIL_BOOTS);
+            event.accept(ModItems.ADAMANT_HELMET);
+            event.accept(ModItems.ADAMANT_CHESTPLATE);
+            event.accept(ModItems.ADAMANT_LEGGINGS);
+            event.accept(ModItems.ADAMANT_BOOTS);
+            event.accept(ModItems.RUNE_HELMET);
+            event.accept(ModItems.RUNE_CHESTPLATE);
+            event.accept(ModItems.RUNE_LEGGINGS);
+            event.accept(ModItems.RUNE_BOOTS);
         }
 
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

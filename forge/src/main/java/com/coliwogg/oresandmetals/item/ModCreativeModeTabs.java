@@ -60,6 +60,27 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RUNE_AXE.get());
                         pOutput.accept(ModItems.RUNE_HOE.get());
 
+                        pOutput.accept(ModItems.BRONZE_HELMET.get());
+                        pOutput.accept(ModItems.BRONZE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.BRONZE_LEGGINGS.get());
+                        pOutput.accept(ModItems.BRONZE_BOOTS.get());
+                        pOutput.accept(ModItems.STEEL_HELMET.get());
+                        pOutput.accept(ModItems.STEEL_CHESTPLATE.get());
+                        pOutput.accept(ModItems.STEEL_LEGGINGS.get());
+                        pOutput.accept(ModItems.STEEL_BOOTS.get());
+                        pOutput.accept(ModItems.MITHRIL_HELMET.get());
+                        pOutput.accept(ModItems.MITHRIL_CHESTPLATE.get());
+                        pOutput.accept(ModItems.MITHRIL_LEGGINGS.get());
+                        pOutput.accept(ModItems.MITHRIL_BOOTS.get());
+                        pOutput.accept(ModItems.ADAMANT_HELMET.get());
+                        pOutput.accept(ModItems.ADAMANT_CHESTPLATE.get());
+                        pOutput.accept(ModItems.ADAMANT_LEGGINGS.get());
+                        pOutput.accept(ModItems.ADAMANT_BOOTS.get());
+                        pOutput.accept(ModItems.RUNE_HELMET.get());
+                        pOutput.accept(ModItems.RUNE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.RUNE_LEGGINGS.get());
+                        pOutput.accept(ModItems.RUNE_BOOTS.get());
+
                         pOutput.accept(ModBlocks.TIN_BLOCK.get());
                         pOutput.accept(ModBlocks.BRONZE_BLOCK.get());
                         pOutput.accept(ModBlocks.STEEL_BLOCK.get());
