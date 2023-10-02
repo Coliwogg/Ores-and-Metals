@@ -1,103 +1,84 @@
 package com.coliwogg.oresandmetals.item;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
-import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
-import java.util.EnumMap;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    BRONZE("bronze", 15, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 1);
-        map.put(ArmorItem.Type.LEGGINGS, 4);
-        map.put(ArmorItem.Type.CHESTPLATE, 5);
-        map.put(ArmorItem.Type.HELMET, 2);
-    }), 14, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ModItems.BRONZE_INGOT.get())),
-    STEEL("steel", 16, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 2);
-        map.put(ArmorItem.Type.LEGGINGS, 5);
-        map.put(ArmorItem.Type.CHESTPLATE, 6);
-        map.put(ArmorItem.Type.HELMET, 2);
-    }), 13, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ModItems.STEEL_INGOT.get())),
-    MITHRIL("mithril", 24, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 2);
-        map.put(ArmorItem.Type.LEGGINGS, 5);
-        map.put(ArmorItem.Type.CHESTPLATE, 6);
-        map.put(ArmorItem.Type.HELMET, 2);
-    }), 12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(ModItems.MITHRIL_INGOT.get())),
-    ADAMANT("adamant", 32, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 3);
-        map.put(ArmorItem.Type.LEGGINGS, 6);
-        map.put(ArmorItem.Type.CHESTPLATE, 8);
-        map.put(ArmorItem.Type.HELMET, 3);
-    }), 11, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.1F, () -> Ingredient.of(ModItems.ADAMANTITE_INGOT.get())),
-    RUNE("rune", 36, Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 3);
-        map.put(ArmorItem.Type.LEGGINGS, 6);
-        map.put(ArmorItem.Type.CHESTPLATE, 8);
-        map.put(ArmorItem.Type.HELMET, 3);
-    }), 16, SoundEvents.ARMOR_EQUIP_IRON, 2.5F, 0.1F, () -> Ingredient.of(ModItems.RUNITE_INGOT.get()));
+    BRONZE("bronze", 15, new int[]{ 2, 5, 4, 1 }, 14,
+            SoundEvents.ARMOR_EQUIP_IRON, 0, 0, () -> Ingredient.of(ModItems.BRONZE_INGOT.get())),
+    STEEL("steel", 16, new int[]{ 2, 6, 5, 2 }, 13,
+            SoundEvents.ARMOR_EQUIP_IRON, 0, 0, () -> Ingredient.of(ModItems.STEEL_INGOT.get())),
+    MITHRIL("mithril", 24, new int[]{ 2, 6, 5, 2 }, 12,
+            SoundEvents.ARMOR_EQUIP_IRON, 0, 0, () -> Ingredient.of(ModItems.MITHRIL_INGOT.get())),
+    ADAMANT("adamant", 32, new int[]{ 3, 8, 6, 3 }, 11,
+            SoundEvents.ARMOR_EQUIP_IRON, 0, 0.1f, () -> Ingredient.of(ModItems.ADAMANTITE_INGOT.get())),
+    RUNE("rune", 36, new int[]{ 3, 8, 6, 3 }, 16,
+            SoundEvents.ARMOR_EQUIP_IRON, 2.5f, 0.1f, () -> Ingredient.of(ModItems.RUNITE_INGOT.get()));
 
-    private static final EnumMap HEALTH_FUNCTION_FOR_TYPE = Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 13);
-        map.put(ArmorItem.Type.LEGGINGS, 15);
-        map.put(ArmorItem.Type.CHESTPLATE, 16);
-        map.put(ArmorItem.Type.HELMET, 11);
-    });
     private final String name;
     private final int durabilityMultiplier;
-    private final EnumMap<ArmorItem.Type, Integer> protectionFunctionForType;
+    private final int[] protectionAmounts;
     private final int enchantmentValue;
-    private final SoundEvent sound;
+    private final SoundEvent equipSound;
     private final float toughness;
     private final float knockbackResistance;
-    private final LazyLoadedValue<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
-    private ModArmorMaterials(String pName, int pDurabilityMultiplier, EnumMap pProtectionFunctionForType, int pEnchantmentValue, SoundEvent pSound, float pToughness, float pKnockbackResistance, Supplier pRepairIngredient) {
-        this.name = pName;
-        this.durabilityMultiplier = pDurabilityMultiplier;
-        this.protectionFunctionForType = pProtectionFunctionForType;
-        this.enchantmentValue = pEnchantmentValue;
-        this.sound = pSound;
-        this.toughness = pToughness;
-        this.knockbackResistance = pKnockbackResistance;
-        this.repairIngredient = new LazyLoadedValue(pRepairIngredient);
+    private static final int[] BASE_DURABILITY = { 11, 16, 15, 13 };
+
+    ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+        this.name = name;
+        this.durabilityMultiplier = durabilityMultiplier;
+        this.protectionAmounts = protectionAmounts;
+        this.enchantmentValue = enchantmentValue;
+        this.equipSound = equipSound;
+        this.toughness = toughness;
+        this.knockbackResistance = knockbackResistance;
+        this.repairIngredient = repairIngredient;
     }
 
+    @Override
     public int getDurabilityForType(ArmorItem.Type pType) {
-        return (Integer)HEALTH_FUNCTION_FOR_TYPE.get(pType) * this.durabilityMultiplier;
+        return BASE_DURABILITY[pType.ordinal()] * this.durabilityMultiplier;
     }
 
+    @Override
     public int getDefenseForType(ArmorItem.Type pType) {
-        return (Integer)this.protectionFunctionForType.get(pType);
+        return this.protectionAmounts[pType.ordinal()];
     }
 
+    @Override
     public int getEnchantmentValue() {
-        return this.enchantmentValue;
+        return enchantmentValue;
     }
 
+    @Override
     public SoundEvent getEquipSound() {
-        return this.sound;
+        return this.equipSound;
     }
 
+    @Override
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 
+    @Override
     public String getName() {
         return OresAndMetals.MOD_ID + ":" + this.name;
     }
 
+    @Override
     public float getToughness() {
         return this.toughness;
     }
 
+    @Override
     public float getKnockbackResistance() {
         return this.knockbackResistance;
     }

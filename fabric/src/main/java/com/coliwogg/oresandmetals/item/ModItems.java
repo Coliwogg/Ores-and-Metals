@@ -1,6 +1,7 @@
 package com.coliwogg.oresandmetals.item;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
+import com.coliwogg.oresandmetals.item.custom.BronzeArrowItem;
 import com.coliwogg.oresandmetals.item.custom.ModAxeItem;
 import com.coliwogg.oresandmetals.item.custom.ModHoeItem;
 import com.coliwogg.oresandmetals.item.custom.ModPickaxeItem;
@@ -73,6 +74,8 @@ public class ModItems {
     public static final Item RUNE_CHESTPLATE = registerItem("rune_chestplate", new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item RUNE_LEGGINGS = registerItem("rune_leggings", new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item RUNE_BOOTS = registerItem("rune_boots", new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item BRONZE_ARROW = registerItem("bronze_arrow", new BronzeArrowItem(1, new FabricItemSettings()));
+
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RAW_TIN);

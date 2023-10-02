@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "oresandmetals:runite_block",
+    "oresandmetals:raw_runite_block",
+    "oresandmetals:runite_ore",
+    "oresandmetals:deepslate_runite_ore"
+  ]
+}

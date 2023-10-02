@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -79,25 +80,26 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUNE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUNE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUNE_HOE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.BRONZE_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BRONZE_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BRONZE_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BRONZE_BOOTS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.STEEL_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.STEEL_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.STEEL_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.STEEL_BOOTS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MITHRIL_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MITHRIL_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MITHRIL_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MITHRIL_BOOTS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ADAMANT_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ADAMANT_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ADAMANT_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ADAMANT_BOOTS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RUNE_HELMET, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RUNE_CHESTPLATE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RUNE_LEGGINGS, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RUNE_BOOTS, Models.GENERATED);
+        itemModelGenerator.registerArmor((ArmorItem)  ModItems.BRONZE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.BRONZE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.BRONZE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.BRONZE_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.MITHRIL_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.MITHRIL_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.MITHRIL_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.MITHRIL_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ADAMANT_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ADAMANT_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ADAMANT_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ADAMANT_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.RUNE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.RUNE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.RUNE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.RUNE_BOOTS);
+        itemModelGenerator.register(ModItems.BRONZE_ARROW, Models.GENERATED);
     }
 }

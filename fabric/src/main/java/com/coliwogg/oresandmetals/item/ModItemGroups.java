@@ -98,6 +98,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_ADAMANTITE_ORE);
                         entries.add(ModBlocks.RUNITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUNITE_ORE);
+
+                        entries.add(ModItems.BRONZE_ARROW);
                     }).build());
 
     public static void registerItemGroups() {
