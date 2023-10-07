@@ -16,6 +16,8 @@ public class ModEntityTypeTagProvider extends FabricTagProvider.EntityTypeTagPro
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(EntityTypeTags.ARROWS)
-                .add(ModEntities.BRONZE_ARROW);
+                .add(ModEntities.BRONZE_ARROW)
+                .add(ModEntities.IRON_ARROW)
+                .add(ModEntities.STEEL_ARROW);
     }
 }

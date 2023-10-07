@@ -2,7 +2,6 @@ package com.coliwogg.oresandmetals.item;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
@@ -18,7 +17,7 @@ public enum ModToolMaterials implements ToolMaterial {
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
-    private final Lazy<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
     private ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
@@ -26,7 +25,7 @@ public enum ModToolMaterials implements ToolMaterial {
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        this.repairIngredient = new Lazy<Ingredient>(repairIngredient);
+        this.repairIngredient = repairIngredient;
     }
 
     @Override

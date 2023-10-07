@@ -22,6 +22,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.RUNE_HELMET, ModItems.RUNE_CHESTPLATE, ModItems.RUNE_LEGGINGS, ModItems.RUNE_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.ARROWS)
-                .add(ModItems.BRONZE_ARROW);
+                .add(ModItems.BRONZE_ARROW)
+                .add(ModItems.IRON_ARROW)
+                .add(ModItems.STEEL_ARROW);
     }
 }

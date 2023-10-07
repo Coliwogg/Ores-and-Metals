@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "oresandmetals:bronze_arrow"
+    "oresandmetals:bronze_arrow",
+    "oresandmetals:iron_arrow",
+    "oresandmetals:steel_arrow"
   ]
 }

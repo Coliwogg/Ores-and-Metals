@@ -100,6 +100,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_RUNITE_ORE);
 
                         entries.add(ModItems.BRONZE_ARROW);
+                        entries.add(ModItems.IRON_ARROW);
+                        entries.add(ModItems.STEEL_ARROW);
                     }).build());
 
     public static void registerItemGroups() {
