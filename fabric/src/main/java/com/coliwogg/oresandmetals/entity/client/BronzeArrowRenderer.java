@@ -10,12 +10,14 @@ import net.minecraft.util.Identifier;
 
 @Environment(value=EnvType.CLIENT)
 public class BronzeArrowRenderer extends ProjectileEntityRenderer<BronzeArrowEntity> {
+    private static final Identifier TEXTURE = new Identifier(OresAndMetals.MOD_ID, "textures/entity/projectiles/bronze_arrow.png");
+
     public BronzeArrowRenderer(EntityRendererFactory.Context context) {
         super(context);
     }
 
     @Override
     public Identifier getTexture(BronzeArrowEntity entity) {
-        return new Identifier(OresAndMetals.MOD_ID, "textures/entity/projectiles/bronze_arrow.png");
+        return TEXTURE;
     }
 }

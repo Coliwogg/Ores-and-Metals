@@ -1,9 +1,7 @@
 package com.coliwogg.oresandmetals.item;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
-import com.coliwogg.oresandmetals.item.custom.BronzeArrowItem;
-import com.coliwogg.oresandmetals.item.custom.IronArrowItem;
-import com.coliwogg.oresandmetals.item.custom.SteelArrowItem;
+import com.coliwogg.oresandmetals.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -76,6 +74,9 @@ public class ModItems {
     public static final Item BRONZE_ARROW = registerItem("bronze_arrow", new BronzeArrowItem(1.1f, new FabricItemSettings()));
     public static final Item IRON_ARROW = registerItem("iron_arrow", new IronArrowItem(1.2f, new FabricItemSettings()));
     public static final Item STEEL_ARROW = registerItem("steel_arrow", new SteelArrowItem(1.3f, new FabricItemSettings()));
+    public static final Item MITHRIL_ARROW = registerItem("mithril_arrow", new MithrilArrowItem(1.4f, new FabricItemSettings()));
+    public static final Item ADAMANT_ARROW = registerItem("adamant_arrow", new AdamantArrowItem(1.5f, new FabricItemSettings()));
+    public static final Item RUNE_ARROW = registerItem("rune_arrow", new RuneArrowItem(1.6f, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
@@ -145,6 +146,12 @@ public class ModItems {
         entries.add(RUNE_CHESTPLATE);
         entries.add(RUNE_LEGGINGS);
         entries.add(RUNE_BOOTS);
+        entries.add(BRONZE_ARROW);
+        entries.add(IRON_ARROW);
+        entries.add(STEEL_ARROW);
+        entries.add(MITHRIL_ARROW);
+        entries.add(ADAMANT_ARROW);
+        entries.add(RUNE_ARROW);
     }
 
     private static Item registerItem(String name, Item item) {

@@ -102,6 +102,9 @@ public class ModItemGroups {
                         entries.add(ModItems.BRONZE_ARROW);
                         entries.add(ModItems.IRON_ARROW);
                         entries.add(ModItems.STEEL_ARROW);
+                        entries.add(ModItems.MITHRIL_ARROW);
+                        entries.add(ModItems.ADAMANT_ARROW);
+                        entries.add(ModItems.RUNE_ARROW);
                     }).build());
 
     public static void registerItemGroups() {

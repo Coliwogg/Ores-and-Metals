@@ -18,6 +18,9 @@ public class ModEntityTypeTagProvider extends FabricTagProvider.EntityTypeTagPro
         getOrCreateTagBuilder(EntityTypeTags.ARROWS)
                 .add(ModEntities.BRONZE_ARROW)
                 .add(ModEntities.IRON_ARROW)
-                .add(ModEntities.STEEL_ARROW);
+                .add(ModEntities.STEEL_ARROW)
+                .add(ModEntities.MITHRIL_ARROW)
+                .add(ModEntities.ADAMANT_ARROW)
+                .add(ModEntities.RUNE_ARROW);
     }
 }

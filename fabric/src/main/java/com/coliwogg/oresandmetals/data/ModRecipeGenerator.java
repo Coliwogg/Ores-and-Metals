@@ -86,17 +86,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(Items.COAL), FabricRecipeProvider.conditionsFromItem(Items.COAL))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUNITE_INGOT)));
 
-/*
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_TIN)
-                .pattern("SSS")
-                .pattern("SCS")
-                .pattern("SSS")
-                .input('S', Items.STONE)
-                .input('C', ModItems.RAW_TIN)
-                .criterion(FabricRecipeProvider.hasItem(Items.STONE), FabricRecipeProvider.conditionsFromItem(Items.STONE))
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RAW_TIN), FabricRecipeProvider.conditionsFromItem(ModItems.RAW_TIN))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RAW_TIN)));
-*/
+        offerArrowRecipe(exporter, ModItems.BRONZE_ARROW, ModItems.BRONZE_INGOT);
+        offerArrowRecipe(exporter, ModItems.IRON_ARROW, Items.IRON_INGOT);
+        offerArrowRecipe(exporter, ModItems.STEEL_ARROW, ModItems.STEEL_INGOT);
+        offerArrowRecipe(exporter, ModItems.MITHRIL_ARROW, ModItems.MITHRIL_INGOT);
+        offerArrowRecipe(exporter, ModItems.ADAMANT_ARROW, ModItems.ADAMANTITE_INGOT);
+        offerArrowRecipe(exporter, ModItems.RUNE_ARROW, ModItems.RUNITE_INGOT);
     }
 
     public static void offerReversibleCompactingRecipesWithBlockName(Consumer<RecipeJsonProvider> exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem) {
@@ -106,5 +101,19 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     public static void offerReversibleCompactingRecipes(Consumer<RecipeJsonProvider> exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem, String compactingId, @Nullable String compactingGroup, String reverseId, @Nullable String reverseGroup) {
         ShapelessRecipeJsonBuilder.create(reverseCategory, baseItem, 9).input(compactItem).group(reverseGroup).criterion(RecipeProvider.hasItem(compactItem), RecipeProvider.conditionsFromItem(compactItem)).offerTo(exporter, new Identifier(reverseId + "_from_" + RecipeProvider.getItemPath(compactItem)));
         ShapedRecipeJsonBuilder.create(compactingCategory, compactItem).input(Character.valueOf('#'), baseItem).pattern("###").pattern("###").pattern("###").group(compactingGroup).criterion(RecipeProvider.hasItem(baseItem), RecipeProvider.conditionsFromItem(baseItem)).offerTo(exporter, new Identifier(compactingId));
+    }
+
+    private static void offerArrowRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output,4)
+                .pattern("X")
+                .pattern("|")
+                .pattern("Y")
+                .input('X', input)
+                .input('|', Items.STICK)
+                .input('Y', Items.FEATHER)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(Items.FEATHER), conditionsFromItem(Items.FEATHER))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
     }
 }

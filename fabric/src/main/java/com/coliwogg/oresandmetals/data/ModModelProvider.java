@@ -103,5 +103,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BRONZE_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MITHRIL_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ADAMANT_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUNE_ARROW, Models.GENERATED);
     }
 }
