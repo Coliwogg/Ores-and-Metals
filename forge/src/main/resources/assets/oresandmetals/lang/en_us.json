@@ -60,6 +60,14 @@
   "item.oresandmetals.rune_helmet": "Rune Helmet",
   "item.oresandmetals.rune_chestplate": "Rune Chestplate",
   "item.oresandmetals.rune_leggings": "Rune Leggings",
+  "item.oresandmetals.rune_boots": "Rune Boots",
+
+  "item.oresandmetals.bronze_arrow": "Bronze Arrow",
+  "item.oresandmetals.iron_arrow": "Iron Arrow",
+  "item.oresandmetals.steel_arrow": "Steel Arrow",
+  "item.oresandmetals.mithril_arrow": "Mithril Arrow",
+  "item.oresandmetals.adamant_arrow": "Adamant Arrow",
+  "item.oresandmetals.rune_arrow": "Rune Arrow",
 
   "block.oresandmetals.tin_block": "Block of Tin",
   "block.oresandmetals.bronze_block": "Block of Bronze",

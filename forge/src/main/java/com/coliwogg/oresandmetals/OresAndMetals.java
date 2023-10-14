@@ -1,9 +1,12 @@
 package com.coliwogg.oresandmetals;
 
 import com.coliwogg.oresandmetals.block.ModBlocks;
+import com.coliwogg.oresandmetals.entity.ModEntities;
+import com.coliwogg.oresandmetals.entity.client.BronzeArrowRenderer;
 import com.coliwogg.oresandmetals.item.ModCreativeModeTabs;
 import com.coliwogg.oresandmetals.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -32,6 +35,7 @@ public class OresAndMetals {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -150,11 +154,10 @@ public class OresAndMetals {
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.BRONZE_ARROW.get(), BronzeArrowRenderer::new);
         }
     }
 }

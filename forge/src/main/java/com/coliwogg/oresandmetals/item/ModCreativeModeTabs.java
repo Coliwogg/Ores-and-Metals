@@ -81,6 +81,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RUNE_LEGGINGS.get());
                         pOutput.accept(ModItems.RUNE_BOOTS.get());
 
+                        pOutput.accept(ModItems.BRONZE_ARROW.get());
+
                         pOutput.accept(ModBlocks.TIN_BLOCK.get());
                         pOutput.accept(ModBlocks.BRONZE_BLOCK.get());
                         pOutput.accept(ModBlocks.STEEL_BLOCK.get());

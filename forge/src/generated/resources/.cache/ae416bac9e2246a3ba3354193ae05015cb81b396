@@ -1,0 +1,5 @@
+// 1.20.1	2023-10-14T11:11:31.1683711	Tags for minecraft:block mod id oresandmetals
+d760b8c67100a30544f9a309176ac0fda8802448 data/minecraft/tags/blocks/mineable/pickaxe.json
+afc4e7597deb1a1fbae4280407641b3a36fe148d data/minecraft/tags/blocks/needs_diamond_tool.json
+5d9939356bb03b28e3cfb55c987c9893f618020e data/minecraft/tags/blocks/needs_iron_tool.json
+7e6b6558846e3e1b52af1d5a52ead1f18ae25ada data/minecraft/tags/blocks/needs_stone_tool.json
