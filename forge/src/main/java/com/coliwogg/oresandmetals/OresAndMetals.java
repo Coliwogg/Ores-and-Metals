@@ -2,8 +2,7 @@ package com.coliwogg.oresandmetals;
 
 import com.coliwogg.oresandmetals.block.ModBlocks;
 import com.coliwogg.oresandmetals.entity.ModEntities;
-import com.coliwogg.oresandmetals.entity.client.BronzeArrowRenderer;
-import com.coliwogg.oresandmetals.entity.client.IronArrowRenderer;
+import com.coliwogg.oresandmetals.entity.client.*;
 import com.coliwogg.oresandmetals.item.ModCreativeModeTabs;
 import com.coliwogg.oresandmetals.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -102,6 +101,10 @@ public class OresAndMetals {
             event.accept(ModItems.RUNE_BOOTS);
             event.accept(ModItems.BRONZE_ARROW);
             event.accept(ModItems.IRON_ARROW);
+            event.accept(ModItems.STEEL_ARROW);
+            event.accept(ModItems.MITHRIL_ARROW);
+            event.accept(ModItems.ADAMANT_ARROW);
+            event.accept(ModItems.RUNE_ARROW);
         }
 
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
@@ -162,6 +165,10 @@ public class OresAndMetals {
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.BRONZE_ARROW.get(), BronzeArrowRenderer::new);
             EntityRenderers.register(ModEntities.IRON_ARROW.get(), IronArrowRenderer::new);
+            EntityRenderers.register(ModEntities.STEEL_ARROW.get(), SteelArrowRenderer::new);
+            EntityRenderers.register(ModEntities.MITHRIL_ARROW.get(), MithrilArrowRenderer::new);
+            EntityRenderers.register(ModEntities.ADAMANT_ARROW.get(), AdamantArrowRenderer::new);
+            EntityRenderers.register(ModEntities.RUNE_ARROW.get(), RuneArrowRenderer::new);
         }
     }
 }

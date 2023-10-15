@@ -83,6 +83,10 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModItems.BRONZE_ARROW.get());
                         pOutput.accept(ModItems.IRON_ARROW.get());
+                        pOutput.accept(ModItems.STEEL_ARROW.get());
+                        pOutput.accept(ModItems.MITHRIL_ARROW.get());
+                        pOutput.accept(ModItems.ADAMANT_ARROW.get());
+                        pOutput.accept(ModItems.RUNE_ARROW.get());
 
                         pOutput.accept(ModBlocks.TIN_BLOCK.get());
                         pOutput.accept(ModBlocks.BRONZE_BLOCK.get());

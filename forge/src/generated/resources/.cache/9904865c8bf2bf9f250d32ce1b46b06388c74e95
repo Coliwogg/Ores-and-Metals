@@ -1,6 +1,7 @@
-// 1.20.1	2023-10-15T10:02:53.0209016	Item Models: oresandmetals
+// 1.20.1	2023-10-15T10:24:47.2134045	Item Models: oresandmetals
 b6dc0383ffe7a63166fe3fc30cd65c6dc1f364ad assets/oresandmetals/models/item/adamantite_ingot.json
 03f178c47145b96c91856f03bb81423df2c98902 assets/oresandmetals/models/item/adamantite_scrap.json
+2254db1930bb95018ea634a4aacaed666cd6dc84 assets/oresandmetals/models/item/adamant_arrow.json
 7fe5bb1c94ac44b032e9728655d74d24177c896a assets/oresandmetals/models/item/adamant_axe.json
 1ffa9b8bb28ed308a9c9b52a6f40e1bbc0c818c6 assets/oresandmetals/models/item/adamant_boots.json
 a50e72a98430ec26d8ffbb7980c0386ff195601a assets/oresandmetals/models/item/adamant_boots_amethyst_trim.json
@@ -102,6 +103,7 @@ f990b3262ebb915727ae68e3aecc1bb9421206b5 assets/oresandmetals/models/item/bronze
 1ca708ec027b45ce0b85528b5fccc7bfc3573fe6 assets/oresandmetals/models/item/bronze_shovel.json
 ef6c04efe865d652d36f56e1fdf326f8ddb069b2 assets/oresandmetals/models/item/bronze_sword.json
 bbac06215223165fdaa512556c55cc6d851be424 assets/oresandmetals/models/item/iron_arrow.json
+4b7ea0c074d0b01449bb1c7ed32e75e0cd8b5948 assets/oresandmetals/models/item/mithril_arrow.json
 88c0e3c5e85f5e72a15bdb966ab99c0809c13402 assets/oresandmetals/models/item/mithril_axe.json
 614f55e3e60e878c21622bb036759d9455d21778 assets/oresandmetals/models/item/mithril_boots.json
 e19c20a249efbae6c61e520875c4c85a66c9c17c assets/oresandmetals/models/item/mithril_boots_amethyst_trim.json
@@ -159,6 +161,7 @@ d1affc735729dcc886cb4648b6fa7813d78482c2 assets/oresandmetals/models/item/raw_mi
 a84a7ab88b78fb1d3c05bb75c960a020b86a4ba6 assets/oresandmetals/models/item/raw_runite.json
 2ce967473020b748fda42d0199a896eeceb50c97 assets/oresandmetals/models/item/raw_steel.json
 553e5efc90b9f054495d875b20c8e37d3a793cca assets/oresandmetals/models/item/raw_tin.json
+de420401175f90fbad9457b1bee0a56ba73f3523 assets/oresandmetals/models/item/rune_arrow.json
 26cb5ebb7fce9119dbd207dd0a08c8e80c9522e5 assets/oresandmetals/models/item/rune_axe.json
 261b76ab1a8270e8f17c2372280e7615efed0462 assets/oresandmetals/models/item/rune_boots.json
 e569b95bbd747c49eb6ea68adb21812e9b76a08c assets/oresandmetals/models/item/rune_boots_amethyst_trim.json
@@ -210,6 +213,7 @@ a2220fbbcee163a1e114e861512fa0c5e1e5cca2 assets/oresandmetals/models/item/rune_l
 fcd6727c1282390603c295867a7ef09eac840273 assets/oresandmetals/models/item/rune_sword.json
 41c6ceaf55d211198fdcde36bd2b380642b48cf7 assets/oresandmetals/models/item/runite_ingot.json
 09a6d92bce880b99538e0dea8890947f139d72cc assets/oresandmetals/models/item/runite_scrap.json
+cfed62d9b5f449382ba25d5a6a024b2c637fa32b assets/oresandmetals/models/item/steel_arrow.json
 4c2d56aa9128236f8e4433334bca493d91803da6 assets/oresandmetals/models/item/steel_axe.json
 47589593494cfe0e22ad137e049fba5c59860cf8 assets/oresandmetals/models/item/steel_boots.json
 8797e614c62c1eb137a47fd1bbe355b49a09b4d8 assets/oresandmetals/models/item/steel_boots_amethyst_trim.json

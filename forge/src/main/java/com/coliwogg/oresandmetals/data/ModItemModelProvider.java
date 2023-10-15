@@ -103,7 +103,10 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.BRONZE_ARROW);
         simpleItem(ModItems.IRON_ARROW);
-
+        simpleItem(ModItems.STEEL_ARROW);
+        simpleItem(ModItems.MITHRIL_ARROW);
+        simpleItem(ModItems.ADAMANT_ARROW);
+        simpleItem(ModItems.RUNE_ARROW);
     }
 
     // Shoutout to El_Redstoniano for making this

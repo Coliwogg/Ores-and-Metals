@@ -44,6 +44,10 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         this.tag(ItemTags.ARROWS)
                 .add(ModItems.BRONZE_ARROW.get(),
-                        ModItems.IRON_ARROW.get());
+                        ModItems.IRON_ARROW.get(),
+                        ModItems.STEEL_ARROW.get(),
+                        ModItems.MITHRIL_ARROW.get(),
+                        ModItems.ADAMANT_ARROW.get(),
+                        ModItems.RUNE_ARROW.get());
     }
 }

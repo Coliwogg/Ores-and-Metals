@@ -88,6 +88,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         offerArrowRecipe(consumer, ModItems.BRONZE_ARROW.get(), ModItems.BRONZE_INGOT.get());
         offerArrowRecipe(consumer, ModItems.IRON_ARROW.get(), Items.IRON_INGOT.asItem());
+        offerArrowRecipe(consumer, ModItems.STEEL_ARROW.get(), ModItems.STEEL_INGOT.get());
+        offerArrowRecipe(consumer, ModItems.MITHRIL_ARROW.get(), ModItems.MITHRIL_INGOT.get());
+        offerArrowRecipe(consumer, ModItems.ADAMANT_ARROW.get(), ModItems.ADAMANTITE_INGOT.get());
+        offerArrowRecipe(consumer, ModItems.RUNE_ARROW.get(), ModItems.RUNITE_INGOT.get());
 
         offerAxeRecipe(consumer, ModItems.BRONZE_AXE.get(), ModItems.BRONZE_INGOT.get());
         offerAxeRecipe(consumer, ModItems.STEEL_AXE.get(), ModItems.STEEL_INGOT.get());

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "oresandmetals:adamantite_ingot"
+    },
+    "Y": {
+      "item": "minecraft:feather"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "X",
+    "|",
+    "Y"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oresandmetals:adamant_arrow"
+  },
+  "show_notification": true
+}

@@ -20,6 +20,10 @@ public class ModEntityTypeTagsProvider extends EntityTypeTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(EntityTypeTags.ARROWS)
                 .add(ModEntities.BRONZE_ARROW.get(),
-                        ModEntities.IRON_ARROW.get());
+                        ModEntities.IRON_ARROW.get(),
+                        ModEntities.STEEL_ARROW.get(),
+                        ModEntities.MITHRIL_ARROW.get(),
+                        ModEntities.ADAMANT_ARROW.get(),
+                        ModEntities.RUNE_ARROW.get());
     }
 }

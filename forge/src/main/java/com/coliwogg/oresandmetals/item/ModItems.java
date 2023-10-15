@@ -1,8 +1,7 @@
 package com.coliwogg.oresandmetals.item;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
-import com.coliwogg.oresandmetals.item.custom.BronzeArrowItem;
-import com.coliwogg.oresandmetals.item.custom.IronArrowItem;
+import com.coliwogg.oresandmetals.item.custom.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -74,6 +73,10 @@ public class ModItems {
     public static final RegistryObject<Item> RUNE_BOOTS = ITEMS.register("rune_boots", () -> new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.BOOTS, new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_ARROW = ITEMS.register("bronze_arrow", () -> new BronzeArrowItem(1.1f, new Item.Properties()));
     public static final RegistryObject<Item> IRON_ARROW = ITEMS.register("iron_arrow", () -> new IronArrowItem(1.2f, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_ARROW = ITEMS.register("steel_arrow", () -> new SteelArrowItem(1.3f, new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_ARROW = ITEMS.register("mithril_arrow", () -> new MithrilArrowItem(1.4f, new Item.Properties()));
+    public static final RegistryObject<Item> ADAMANT_ARROW = ITEMS.register("adamant_arrow", () -> new AdamantArrowItem(1.5f, new Item.Properties()));
+    public static final RegistryObject<Item> RUNE_ARROW = ITEMS.register("rune_arrow", () -> new RuneArrowItem(1.6f, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
