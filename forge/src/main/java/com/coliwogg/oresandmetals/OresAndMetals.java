@@ -3,6 +3,7 @@ package com.coliwogg.oresandmetals;
 import com.coliwogg.oresandmetals.block.ModBlocks;
 import com.coliwogg.oresandmetals.entity.ModEntities;
 import com.coliwogg.oresandmetals.entity.client.BronzeArrowRenderer;
+import com.coliwogg.oresandmetals.entity.client.IronArrowRenderer;
 import com.coliwogg.oresandmetals.item.ModCreativeModeTabs;
 import com.coliwogg.oresandmetals.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -99,6 +100,8 @@ public class OresAndMetals {
             event.accept(ModItems.RUNE_CHESTPLATE);
             event.accept(ModItems.RUNE_LEGGINGS);
             event.accept(ModItems.RUNE_BOOTS);
+            event.accept(ModItems.BRONZE_ARROW);
+            event.accept(ModItems.IRON_ARROW);
         }
 
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
@@ -158,6 +161,7 @@ public class OresAndMetals {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.BRONZE_ARROW.get(), BronzeArrowRenderer::new);
+            EntityRenderers.register(ModEntities.IRON_ARROW.get(), IronArrowRenderer::new);
         }
     }
 }

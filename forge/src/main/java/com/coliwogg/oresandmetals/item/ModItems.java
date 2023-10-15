@@ -2,6 +2,7 @@ package com.coliwogg.oresandmetals.item;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
 import com.coliwogg.oresandmetals.item.custom.BronzeArrowItem;
+import com.coliwogg.oresandmetals.item.custom.IronArrowItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -72,6 +73,7 @@ public class ModItems {
     public static final RegistryObject<Item> RUNE_LEGGINGS = ITEMS.register("rune_leggings", () -> new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> RUNE_BOOTS = ITEMS.register("rune_boots", () -> new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.BOOTS, new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_ARROW = ITEMS.register("bronze_arrow", () -> new BronzeArrowItem(1.1f, new Item.Properties()));
+    public static final RegistryObject<Item> IRON_ARROW = ITEMS.register("iron_arrow", () -> new IronArrowItem(1.2f, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

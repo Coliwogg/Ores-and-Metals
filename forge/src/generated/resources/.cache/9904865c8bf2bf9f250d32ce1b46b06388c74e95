@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-14T11:11:31.1683711	Item Models: oresandmetals
+// 1.20.1	2023-10-15T10:02:53.0209016	Item Models: oresandmetals
 b6dc0383ffe7a63166fe3fc30cd65c6dc1f364ad assets/oresandmetals/models/item/adamantite_ingot.json
 03f178c47145b96c91856f03bb81423df2c98902 assets/oresandmetals/models/item/adamantite_scrap.json
 7fe5bb1c94ac44b032e9728655d74d24177c896a assets/oresandmetals/models/item/adamant_axe.json
@@ -101,6 +101,7 @@ fc548bb6e616295e0697893c24494b15b95b6701 assets/oresandmetals/models/item/bronze
 f990b3262ebb915727ae68e3aecc1bb9421206b5 assets/oresandmetals/models/item/bronze_pickaxe.json
 1ca708ec027b45ce0b85528b5fccc7bfc3573fe6 assets/oresandmetals/models/item/bronze_shovel.json
 ef6c04efe865d652d36f56e1fdf326f8ddb069b2 assets/oresandmetals/models/item/bronze_sword.json
+bbac06215223165fdaa512556c55cc6d851be424 assets/oresandmetals/models/item/iron_arrow.json
 88c0e3c5e85f5e72a15bdb966ab99c0809c13402 assets/oresandmetals/models/item/mithril_axe.json
 614f55e3e60e878c21622bb036759d9455d21778 assets/oresandmetals/models/item/mithril_boots.json
 e19c20a249efbae6c61e520875c4c85a66c9c17c assets/oresandmetals/models/item/mithril_boots_amethyst_trim.json

@@ -102,6 +102,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.RUNE_BOOTS);
 
         simpleItem(ModItems.BRONZE_ARROW);
+        simpleItem(ModItems.IRON_ARROW);
 
     }
 

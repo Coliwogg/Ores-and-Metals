@@ -19,6 +19,7 @@ public class ModEntityTypeTagsProvider extends EntityTypeTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(EntityTypeTags.ARROWS)
-                .add(ModEntities.BRONZE_ARROW.get());
+                .add(ModEntities.BRONZE_ARROW.get(),
+                        ModEntities.IRON_ARROW.get());
     }
 }

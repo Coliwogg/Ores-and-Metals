@@ -43,6 +43,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                         ModItems.RUNE_BOOTS.get());
 
         this.tag(ItemTags.ARROWS)
-                .add(ModItems.BRONZE_ARROW.get());
+                .add(ModItems.BRONZE_ARROW.get(),
+                        ModItems.IRON_ARROW.get());
     }
 }

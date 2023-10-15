@@ -2,6 +2,7 @@ package com.coliwogg.oresandmetals.entity;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
 import com.coliwogg.oresandmetals.entity.custom.BronzeArrowEntity;
+import com.coliwogg.oresandmetals.entity.custom.IronArrowEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -17,6 +18,9 @@ public class ModEntities {
     public static final RegistryObject<EntityType<BronzeArrowEntity>> BRONZE_ARROW =
             ENTITY_TYPES.register("bronze_arrow", () -> EntityType.Builder.<BronzeArrowEntity>of(BronzeArrowEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).clientTrackingRange(4).updateInterval(20).build("bronze_arrow"));
+    public static final RegistryObject<EntityType<IronArrowEntity>> IRON_ARROW =
+                ENTITY_TYPES.register("iron_arrow", () -> EntityType.Builder.<IronArrowEntity>of(IronArrowEntity::new, MobCategory.MISC)
+                        .sized(0.5f, 0.5f).clientTrackingRange(4).updateInterval(20).build("iron_arrow"));
 
 
     public static void register(IEventBus eventBus) {
