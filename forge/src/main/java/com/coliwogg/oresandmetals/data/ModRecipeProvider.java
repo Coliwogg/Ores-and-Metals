@@ -67,24 +67,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_ADAMANTITE.get(), RecipeCategory.MISC, ModBlocks.RAW_ADAMANTITE_BLOCK.get());
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_RUNITE.get(), RecipeCategory.MISC, ModBlocks.RAW_RUNITE_BLOCK.get());
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get())
-                .requires(ModItems.MITHRIL_SCRAP.get())
-                .requires(Ingredient.of(ItemTags.COALS), 4)
-                .unlockedBy("has_mithril_scrap", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.MITHRIL_SCRAP.get()).build()))
-                .unlockedBy("has_coal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemTags.COALS).build()))
-                .save(consumer);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ADAMANTITE_INGOT.get())
-                .requires(ModItems.ADAMANTITE_SCRAP.get())
-                .requires(Ingredient.of(ItemTags.COALS), 6)
-                .unlockedBy("has_adamantite_scrap", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.ADAMANTITE_SCRAP.get()).build()))
-                .unlockedBy("has_coal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemTags.COALS).build()))
-                .save(consumer);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RUNITE_INGOT.get())
-                .requires(ModItems.RUNITE_SCRAP.get())
-                .requires(Ingredient.of(ItemTags.COALS), 8)
-                .unlockedBy("has_runite_scrap", inventoryTrigger(ItemPredicate.Builder.item().of(ModItems.RUNITE_SCRAP.get()).build()))
-                .unlockedBy("has_coal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemTags.COALS).build()))
-                .save(consumer);
+        offerIngotRecipe(consumer, ModItems.MITHRIL_INGOT.get(), 4, ModItems.MITHRIL_SCRAP.get());
+        offerIngotRecipe(consumer, ModItems.ADAMANTITE_INGOT.get(), 6, ModItems.ADAMANTITE_SCRAP.get());
+        offerIngotRecipe(consumer, ModItems.RUNITE_INGOT.get(), 8, ModItems.RUNITE_SCRAP.get());
 
         offerArrowRecipe(consumer, ModItems.BRONZE_ARROW.get(), ModItems.BRONZE_INGOT.get());
         offerArrowRecipe(consumer, ModItems.IRON_ARROW.get(), Items.IRON_INGOT.asItem());
@@ -146,6 +131,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         offerSwordRecipe(consumer, ModItems.MITHRIL_SWORD.get(), ModItems.MITHRIL_INGOT.get());
         offerSwordRecipe(consumer, ModItems.ADAMANT_SWORD.get(), ModItems.ADAMANTITE_INGOT.get());
         offerSwordRecipe(consumer, ModItems.RUNE_SWORD.get(), ModItems.RUNITE_INGOT.get());
+    }
+
+    protected static void offerIngotRecipe(Consumer<FinishedRecipe> finishedRecipe, ItemLike output, int coalQuantity, ItemLike input) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output)
+                .requires(input)
+                .requires(Ingredient.of(ItemTags.COALS), coalQuantity)
+                .unlockedBy(getHasName(input), has(input))
+                .unlockedBy("has_coal", has(ItemTags.COALS))
+                .save(finishedRecipe);
     }
 
     protected static void offerArrowRecipe(Consumer<FinishedRecipe> finishedRecipe, ItemLike output, ItemLike input) {

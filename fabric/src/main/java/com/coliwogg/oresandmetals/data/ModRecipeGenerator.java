@@ -67,24 +67,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_ADAMANTITE, RecipeCategory.DECORATIONS, ModBlocks.RAW_ADAMANTITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_RUNITE, RecipeCategory.DECORATIONS, ModBlocks.RAW_RUNITE_BLOCK);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MITHRIL_INGOT)
-                .input(Ingredient.fromTag(ItemTags.COALS), 4)
-                .input(ModItems.MITHRIL_SCRAP)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.MITHRIL_SCRAP), FabricRecipeProvider.conditionsFromItem(ModItems.MITHRIL_SCRAP))
-                .criterion(FabricRecipeProvider.hasItem(Items.COAL), FabricRecipeProvider.conditionsFromItem(Items.COAL))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.MITHRIL_INGOT)));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ADAMANTITE_INGOT)
-                .input(Ingredient.fromTag(ItemTags.COALS), 6)
-                .input(ModItems.ADAMANTITE_SCRAP)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.ADAMANTITE_SCRAP), FabricRecipeProvider.conditionsFromItem(ModItems.ADAMANTITE_SCRAP))
-                .criterion(FabricRecipeProvider.hasItem(Items.COAL), FabricRecipeProvider.conditionsFromItem(Items.COAL))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.ADAMANTITE_INGOT)));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RUNITE_INGOT)
-                .input(Ingredient.fromTag(ItemTags.COALS), 8)
-                .input(ModItems.RUNITE_SCRAP)
-                .criterion(FabricRecipeProvider.hasItem(ModItems.RUNITE_SCRAP), FabricRecipeProvider.conditionsFromItem(ModItems.RUNITE_SCRAP))
-                .criterion(FabricRecipeProvider.hasItem(Items.COAL), FabricRecipeProvider.conditionsFromItem(Items.COAL))
-                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RUNITE_INGOT)));
+        offerIngotRecipe(exporter, ModItems.MITHRIL_INGOT, 4, ModItems.MITHRIL_SCRAP);
+        offerIngotRecipe(exporter, ModItems.ADAMANTITE_INGOT, 6, ModItems.ADAMANTITE_SCRAP);
+        offerIngotRecipe(exporter, ModItems.RUNITE_INGOT, 8, ModItems.RUNITE_SCRAP);
 
         offerSwordRecipe(exporter, ModItems.BRONZE_SWORD, ModItems.BRONZE_INGOT);
         offerSwordRecipe(exporter, ModItems.STEEL_SWORD, ModItems.STEEL_INGOT);
@@ -155,6 +140,15 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     public static void offerReversibleCompactingRecipes(Consumer<RecipeJsonProvider> exporter, RecipeCategory reverseCategory, ItemConvertible baseItem, RecipeCategory compactingCategory, ItemConvertible compactItem, String compactingId, @Nullable String compactingGroup, String reverseId, @Nullable String reverseGroup) {
         ShapelessRecipeJsonBuilder.create(reverseCategory, baseItem, 9).input(compactItem).group(reverseGroup).criterion(RecipeProvider.hasItem(compactItem), RecipeProvider.conditionsFromItem(compactItem)).offerTo(exporter, new Identifier(reverseId + "_from_" + RecipeProvider.getItemPath(compactItem)));
         ShapedRecipeJsonBuilder.create(compactingCategory, compactItem).input(Character.valueOf('#'), baseItem).pattern("###").pattern("###").pattern("###").group(compactingGroup).criterion(RecipeProvider.hasItem(baseItem), RecipeProvider.conditionsFromItem(baseItem)).offerTo(exporter, new Identifier(compactingId));
+    }
+
+    public static void offerIngotRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, int coalCount, ItemConvertible input) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, output)
+                .input(Ingredient.fromTag(ItemTags.COALS), coalCount)
+                .input(input)
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .criterion("has_coal", conditionsFromTag(ItemTags.COALS))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
     }
 
     public static void offerAxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
