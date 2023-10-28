@@ -21,6 +21,8 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_MITHRIL);
                         entries.add(ModItems.RAW_ADAMANTITE);
                         entries.add(ModItems.RAW_RUNITE);
+                        entries.add(ModItems.RAW_DRAKOLITH);
+                        entries.add(ModItems.RAW_PHASMATITE);
                         entries.add(ModItems.TIN_INGOT);
                         entries.add(ModItems.BRONZE_INGOT);
                         entries.add(ModItems.STEEL_INGOT);
@@ -30,6 +32,10 @@ public class ModItemGroups {
                         entries.add(ModItems.ADAMANTITE_INGOT);
                         entries.add(ModItems.RUNITE_SCRAP);
                         entries.add(ModItems.RUNITE_INGOT);
+                        entries.add(ModItems.ORICHALCITE_SCRAP);
+                        entries.add(ModItems.ORIKALKUM_INGOT);
+                        entries.add(ModItems.NECRITE_SCRAP);
+                        entries.add(ModItems.NECRONIUM_INGOT);
 
                         entries.add(ModItems.BRONZE_AXE);
                         entries.add(ModItems.BRONZE_SWORD);
@@ -84,12 +90,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MITHRIL_BLOCK);
                         entries.add(ModBlocks.ADAMANTITE_BLOCK);
                         entries.add(ModBlocks.RUNITE_BLOCK);
+                        entries.add(ModBlocks.ORIKALKUM_BLOCK);
+                        entries.add(ModBlocks.NECRONIUM_BLOCK);
                         entries.add(ModBlocks.RAW_TIN_BLOCK);
                         entries.add(ModBlocks.RAW_BRONZE_BLOCK);
                         entries.add(ModBlocks.RAW_STEEL_BLOCK);
                         entries.add(ModBlocks.RAW_MITHRIL_BLOCK);
                         entries.add(ModBlocks.RAW_ADAMANTITE_BLOCK);
                         entries.add(ModBlocks.RAW_RUNITE_BLOCK);
+                        entries.add(ModBlocks.RAW_DRAKOLITH_BLOCK);
+                        entries.add(ModBlocks.RAW_PHASMATITE_BLOCK);
                         entries.add(ModBlocks.TIN_ORE);
                         entries.add(ModBlocks.DEEPSLATE_TIN_ORE);
                         entries.add(ModBlocks.MITHRIL_ORE);
@@ -98,6 +108,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_ADAMANTITE_ORE);
                         entries.add(ModBlocks.RUNITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUNITE_ORE);
+                        entries.add(ModBlocks.NETHER_DRAKOLITH_ORE);
+                        entries.add(ModBlocks.ORICHALCITE_DEBRIS);
+                        entries.add(ModBlocks.END_PHASMATITE_ORE);
+                        entries.add(ModBlocks.NECRITE_DEBRIS);
 
                         entries.add(ModItems.BRONZE_ARROW);
                         entries.add(ModItems.IRON_ARROW);

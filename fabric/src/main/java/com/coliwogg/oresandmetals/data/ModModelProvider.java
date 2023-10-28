@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TexturedModel;
 import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -22,12 +23,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MITHRIL_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ADAMANTITE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUNITE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ORIKALKUM_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NECRONIUM_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_TIN_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_BRONZE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_STEEL_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_MITHRIL_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_ADAMANTITE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_RUNITE_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_DRAKOLITH_BLOCK);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RAW_PHASMATITE_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TIN_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_TIN_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MITHRIL_ORE);
@@ -36,6 +41,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_ADAMANTITE_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUNITE_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_RUNITE_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.NETHER_DRAKOLITH_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.END_PHASMATITE_ORE);
+        blockStateModelGenerator.registerSingleton(ModBlocks.ORICHALCITE_DEBRIS, TexturedModel.CUBE_COLUMN);
+        blockStateModelGenerator.registerSingleton(ModBlocks.NECRITE_DEBRIS, TexturedModel.CUBE_COLUMN);
     }
 
     @Override
@@ -46,6 +55,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_MITHRIL, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_ADAMANTITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_RUNITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_DRAKOLITH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_PHASMATITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TIN_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRONZE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
@@ -55,6 +66,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ADAMANTITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUNITE_SCRAP, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUNITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORICHALCITE_SCRAP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORIKALKUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NECRITE_SCRAP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NECRONIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BRONZE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BRONZE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.BRONZE_PICKAXE, Models.HANDHELD);

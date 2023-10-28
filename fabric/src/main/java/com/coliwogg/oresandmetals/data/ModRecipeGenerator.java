@@ -53,6 +53,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerBlasting(exporter, List.of(ModBlocks.RUNITE_ORE), RecipeCategory.MISC, ModItems.RUNITE_SCRAP, 2.0f, 100, "runite");
         offerSmelting(exporter, List.of(ModBlocks.DEEPSLATE_RUNITE_ORE), RecipeCategory.MISC, ModItems.RUNITE_SCRAP, 2.0f, 200, "runite");
         offerBlasting(exporter, List.of(ModBlocks.DEEPSLATE_RUNITE_ORE), RecipeCategory.MISC, ModItems.RUNITE_SCRAP, 2.0f, 100, "runite");
+        offerSmelting(exporter, List.of(ModBlocks.ORICHALCITE_DEBRIS), RecipeCategory.MISC, ModItems.ORICHALCITE_SCRAP, 2.0f, 200, "orichalcite");
+        offerBlasting(exporter, List.of(ModBlocks.ORICHALCITE_DEBRIS), RecipeCategory.MISC, ModItems.ORICHALCITE_SCRAP, 2.0f, 100, "orichalcite");
+        offerSmelting(exporter, List.of(ModBlocks.NECRITE_DEBRIS), RecipeCategory.MISC, ModItems.NECRITE_SCRAP, 2.0f, 200, "necrite");
+        offerBlasting(exporter, List.of(ModBlocks.NECRITE_DEBRIS), RecipeCategory.MISC, ModItems.NECRITE_SCRAP, 2.0f, 100, "necrite");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.TIN_INGOT, RecipeCategory.DECORATIONS, ModBlocks.TIN_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BRONZE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.BRONZE_BLOCK);
@@ -60,16 +64,22 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerReversibleCompactingRecipesWithBlockName(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MITHRIL_INGOT, RecipeCategory.DECORATIONS, ModBlocks.MITHRIL_BLOCK);
         offerReversibleCompactingRecipesWithBlockName(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ADAMANTITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.ADAMANTITE_BLOCK);
         offerReversibleCompactingRecipesWithBlockName(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUNITE_INGOT, RecipeCategory.DECORATIONS, ModBlocks.RUNITE_BLOCK);
+        offerReversibleCompactingRecipesWithBlockName(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ORIKALKUM_INGOT, RecipeCategory.DECORATIONS, ModBlocks.ORIKALKUM_BLOCK);
+        offerReversibleCompactingRecipesWithBlockName(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.NECRONIUM_INGOT, RecipeCategory.DECORATIONS, ModBlocks.NECRONIUM_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_TIN, RecipeCategory.DECORATIONS, ModBlocks.RAW_TIN_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_BRONZE, RecipeCategory.DECORATIONS, ModBlocks.RAW_BRONZE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_STEEL, RecipeCategory.DECORATIONS, ModBlocks.RAW_STEEL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_MITHRIL, RecipeCategory.DECORATIONS, ModBlocks.RAW_MITHRIL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_ADAMANTITE, RecipeCategory.DECORATIONS, ModBlocks.RAW_ADAMANTITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_RUNITE, RecipeCategory.DECORATIONS, ModBlocks.RAW_RUNITE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_DRAKOLITH, RecipeCategory.DECORATIONS, ModBlocks.RAW_DRAKOLITH_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_PHASMATITE, RecipeCategory.DECORATIONS, ModBlocks.RAW_PHASMATITE_BLOCK);
 
         offerIngotRecipe(exporter, ModItems.MITHRIL_INGOT, 4, ModItems.MITHRIL_SCRAP);
         offerIngotRecipe(exporter, ModItems.ADAMANTITE_INGOT, 6, ModItems.ADAMANTITE_SCRAP);
         offerIngotRecipe(exporter, ModItems.RUNITE_INGOT, 8, ModItems.RUNITE_SCRAP);
+        offerSpecialIngotRecipe(exporter, ModItems.ORIKALKUM_INGOT, ModItems.ORICHALCITE_SCRAP, ModItems.RAW_DRAKOLITH);
+        offerSpecialIngotRecipe(exporter, ModItems.NECRONIUM_INGOT, ModItems.NECRITE_SCRAP, ModItems.RAW_PHASMATITE);
 
         offerSwordRecipe(exporter, ModItems.BRONZE_SWORD, ModItems.BRONZE_INGOT);
         offerSwordRecipe(exporter, ModItems.STEEL_SWORD, ModItems.STEEL_INGOT);
@@ -148,6 +158,15 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input(input)
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .criterion("has_coal", conditionsFromTag(ItemTags.COALS))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+    }
+
+    public static void offerSpecialIngotRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input1, ItemConvertible input2) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, output)
+                .input(input1,4)
+                .input(input2,4)
+                .criterion(hasItem(input1), conditionsFromItem(input1))
+                .criterion(hasItem(input2), conditionsFromItem(input2))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
     }
 

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_orichalcite_debris": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oresandmetals:orichalcite_debris"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:orichalcite_scrap_from_blasting_orichalcite_debris"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_orichalcite_debris",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:orichalcite_scrap_from_blasting_orichalcite_debris"
+    ]
+  },
+  "sends_telemetry_event": false
+}

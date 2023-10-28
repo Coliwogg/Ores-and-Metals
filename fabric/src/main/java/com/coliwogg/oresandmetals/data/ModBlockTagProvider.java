@@ -7,6 +7,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -37,7 +38,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RUNITE_BLOCK)
                 .add(ModBlocks.RAW_RUNITE_BLOCK)
                 .add(ModBlocks.RUNITE_ORE)
-                .add(ModBlocks.DEEPSLATE_RUNITE_ORE);
+                .add(ModBlocks.DEEPSLATE_RUNITE_ORE)
+                .add(ModBlocks.ORICHALCITE_DEBRIS)
+                .add(ModBlocks.NETHER_DRAKOLITH_ORE)
+                .add(ModBlocks.RAW_DRAKOLITH_BLOCK)
+                .add(ModBlocks.ORIKALKUM_BLOCK)
+                .add(ModBlocks.END_PHASMATITE_ORE)
+                .add(ModBlocks.NECRITE_DEBRIS)
+                .add(ModBlocks.RAW_PHASMATITE_BLOCK)
+                .add(ModBlocks.NECRONIUM_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.TIN_ORE)
@@ -64,5 +73,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_RUNITE_BLOCK)
                 .add(ModBlocks.RUNITE_ORE)
                 .add(ModBlocks.DEEPSLATE_RUNITE_ORE);
+
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
+                .add(ModBlocks.ORICHALCITE_DEBRIS)
+                .add(ModBlocks.NETHER_DRAKOLITH_ORE)
+                .add(ModBlocks.RAW_DRAKOLITH_BLOCK)
+                .add(ModBlocks.ORIKALKUM_BLOCK)
+                .add(ModBlocks.END_PHASMATITE_ORE)
+                .add(ModBlocks.NECRITE_DEBRIS)
+                .add(ModBlocks.RAW_PHASMATITE_BLOCK)
+                .add(ModBlocks.NECRONIUM_BLOCK);
     }
 }

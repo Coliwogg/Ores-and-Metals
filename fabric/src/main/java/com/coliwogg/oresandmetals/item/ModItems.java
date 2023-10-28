@@ -17,6 +17,8 @@ public class ModItems {
     public static final Item RAW_MITHRIL = registerItem("raw_mithril", new Item(new FabricItemSettings()));
     public static final Item RAW_ADAMANTITE = registerItem("raw_adamantite", new Item(new FabricItemSettings()));
     public static final Item RAW_RUNITE = registerItem("raw_runite", new Item(new FabricItemSettings()));
+    public static final Item RAW_DRAKOLITH = registerItem("raw_drakolith", new Item(new FabricItemSettings()));
+    public static final Item RAW_PHASMATITE = registerItem("raw_phasmatite", new Item(new FabricItemSettings()));
     public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new FabricItemSettings()));
     public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new FabricItemSettings()));
     public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new FabricItemSettings()));
@@ -26,6 +28,10 @@ public class ModItems {
     public static final Item ADAMANTITE_INGOT = registerItem("adamantite_ingot", new Item(new FabricItemSettings()));
     public static final Item RUNITE_SCRAP = registerItem("runite_scrap", new Item(new FabricItemSettings()));
     public static final Item RUNITE_INGOT = registerItem("runite_ingot", new Item(new FabricItemSettings()));
+    public static final Item ORICHALCITE_SCRAP = registerItem("orichalcite_scrap", new Item(new FabricItemSettings()));
+    public static final Item ORIKALKUM_INGOT = registerItem("orikalkum_ingot", new Item(new FabricItemSettings()));
+     public static final Item NECRITE_SCRAP = registerItem("necrite_scrap", new Item(new FabricItemSettings()));
+    public static final Item NECRONIUM_INGOT = registerItem("necronium_ingot", new Item(new FabricItemSettings()));
     public static final Item BRONZE_SWORD = registerItem("bronze_sword", new SwordItem(ModToolMaterials.BRONZE, 2, -2.4f, new FabricItemSettings()));
     public static final Item BRONZE_SHOVEL = registerItem("bronze_shovel", new ShovelItem(ModToolMaterials.BRONZE, 0.5f, -3, new FabricItemSettings()));
     public static final Item BRONZE_PICKAXE = registerItem("bronze_pickaxe", new PickaxeItem(ModToolMaterials.BRONZE, 0, -2.8f, new FabricItemSettings()));
@@ -86,15 +92,21 @@ public class ModItems {
         entries.add(RAW_MITHRIL);
         entries.add(RAW_ADAMANTITE);
         entries.add(RAW_RUNITE);
+        entries.add(RAW_DRAKOLITH);
+        entries.add(RAW_PHASMATITE);
         entries.add(TIN_INGOT);
         entries.add(BRONZE_INGOT);
         entries.add(STEEL_INGOT);
         entries.add(MITHRIL_INGOT);
         entries.add(ADAMANTITE_INGOT);
         entries.add(RUNITE_INGOT);
+        entries.add(ORIKALKUM_INGOT);
+        entries.add(NECRONIUM_INGOT);
         entries.add(MITHRIL_SCRAP);
         entries.add(ADAMANTITE_SCRAP);
         entries.add(RUNITE_SCRAP);
+        entries.add(ORICHALCITE_SCRAP);
+        entries.add(NECRITE_SCRAP);
     }
 
     private static void addItemsToToolTabItemGroup(FabricItemGroupEntries entries) {
