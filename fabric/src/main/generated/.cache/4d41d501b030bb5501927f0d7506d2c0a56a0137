@@ -1,6 +1,7 @@
-// 1.20.1	2023-10-28T10:53:44.3531451	Ores and Metals/Tags for minecraft:block
+// 1.20.1	2023-11-05T11:41:34.4934039	Ores and Metals/Tags for minecraft:block
 a03c1638134b5a5e65574d72f970d8b5d0452c5c data\minecraft\tags\blocks\needs_diamond_tool.json
-144034bbc6a4823c2636665a6edc5b35fd9b54a7 data\fabric\tags\blocks\needs_tool_level_4.json
+d247a8f7399f558267b8f69c797d7e8c2684b8d0 data\fabric\tags\blocks\needs_tool_level_5.json
+e7cd9be5fdf08a579124a378ffc0b38174534cf3 data\fabric\tags\blocks\needs_tool_level_4.json
 f58110c5f51dffdb0f0d5243d5e679406e4333fc data\minecraft\tags\blocks\needs_iron_tool.json
-59f4964001a558d19b5638d02a47a905ff2c6255 data\minecraft\tags\blocks\needs_stone_tool.json
 7538641ce54768da26bf9f3fefab37f421d86451 data\minecraft\tags\blocks\mineable\pickaxe.json
+59f4964001a558d19b5638d02a47a905ff2c6255 data\minecraft\tags\blocks\needs_stone_tool.json

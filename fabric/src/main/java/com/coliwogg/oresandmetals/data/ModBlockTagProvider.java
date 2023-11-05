@@ -78,7 +78,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ORICHALCITE_DEBRIS)
                 .add(ModBlocks.NETHER_DRAKOLITH_ORE)
                 .add(ModBlocks.RAW_DRAKOLITH_BLOCK)
-                .add(ModBlocks.ORIKALKUM_BLOCK)
+                .add(ModBlocks.ORIKALKUM_BLOCK);
+
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
                 .add(ModBlocks.END_PHASMATITE_ORE)
                 .add(ModBlocks.NECRITE_DEBRIS)
                 .add(ModBlocks.RAW_PHASMATITE_BLOCK)

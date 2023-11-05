@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "oresandmetals:orikalkum_ingot"
+  },
+  "base": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "result": {
+    "item": "oresandmetals:orikalkum_pickaxe"
+  },
+  "template": {
+    "item": "oresandmetals:orikalkum_upgrade_smithing_template"
+  }
+}

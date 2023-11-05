@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "oresandmetals:necronium_ingot"
+  },
+  "base": {
+    "item": "oresandmetals:orikalkum_hoe"
+  },
+  "result": {
+    "item": "oresandmetals:necronium_hoe"
+  },
+  "template": {
+    "item": "oresandmetals:necronium_upgrade_smithing_template"
+  }
+}

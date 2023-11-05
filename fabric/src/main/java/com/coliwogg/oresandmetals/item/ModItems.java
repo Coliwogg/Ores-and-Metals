@@ -57,6 +57,16 @@ public class ModItems {
     public static final Item RUNE_PICKAXE = registerItem("rune_pickaxe", new PickaxeItem(ModToolMaterials.RUNE, 1, -2.8f, new FabricItemSettings()));
     public static final Item RUNE_AXE = registerItem("rune_axe", new AxeItem(ModToolMaterials.RUNE, 5, -3, new FabricItemSettings()));
     public static final Item RUNE_HOE = registerItem("rune_hoe", new HoeItem(ModToolMaterials.RUNE, -4, 0, new FabricItemSettings()));
+    public static final Item ORIKALKUM_SWORD = registerItem("orikalkum_sword", new SwordItem(ModToolMaterials.ORIKALKUM, 3, -2.4f, new FabricItemSettings()));
+    public static final Item ORIKALKUM_SHOVEL = registerItem("orikalkum_shovel", new ShovelItem(ModToolMaterials.ORIKALKUM, 1.5f, -3, new FabricItemSettings()));
+    public static final Item ORIKALKUM_PICKAXE = registerItem("orikalkum_pickaxe", new PickaxeItem(ModToolMaterials.ORIKALKUM, 1, -2.8f, new FabricItemSettings()));
+    public static final Item ORIKALKUM_AXE = registerItem("orikalkum_axe", new AxeItem(ModToolMaterials.ORIKALKUM, 5, -2.9f, new FabricItemSettings()));
+    public static final Item ORIKALKUM_HOE = registerItem("orikalkum_hoe", new HoeItem(ModToolMaterials.ORIKALKUM, -4, 0, new FabricItemSettings()));
+    public static final Item NECRONIUM_SWORD = registerItem("necronium_sword", new SwordItem(ModToolMaterials.NECRONIUM, 3, -2.4f, new FabricItemSettings()));
+    public static final Item NECRONIUM_SHOVEL = registerItem("necronium_shovel", new ShovelItem(ModToolMaterials.NECRONIUM, 1.5f, -3, new FabricItemSettings()));
+    public static final Item NECRONIUM_PICKAXE = registerItem("necronium_pickaxe", new PickaxeItem(ModToolMaterials.NECRONIUM, 1, -2.8f, new FabricItemSettings()));
+    public static final Item NECRONIUM_AXE = registerItem("necronium_axe", new AxeItem(ModToolMaterials.NECRONIUM, 5, -3, new FabricItemSettings()));
+    public static final Item NECRONIUM_HOE = registerItem("necronium_hoe", new HoeItem(ModToolMaterials.NECRONIUM, -4, 0, new FabricItemSettings()));
     public static final Item BRONZE_HELMET = registerItem("bronze_helmet", new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item BRONZE_CHESTPLATE = registerItem("bronze_chestplate", new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item BRONZE_LEGGINGS = registerItem("bronze_leggings", new ArmorItem(ModArmorMaterials.BRONZE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
@@ -83,7 +93,9 @@ public class ModItems {
     public static final Item MITHRIL_ARROW = registerItem("mithril_arrow", new MithrilArrowItem(1.4f, new FabricItemSettings()));
     public static final Item ADAMANT_ARROW = registerItem("adamant_arrow", new AdamantArrowItem(1.5f, new FabricItemSettings()));
     public static final Item RUNE_ARROW = registerItem("rune_arrow", new RuneArrowItem(1.6f, new FabricItemSettings()));
-
+    // TODO: Add custom tooltip text to orikalkum and necronium upgrade smithing templates.
+    public static final Item ORIKALKUM_UPGRADE_SMITHING_TEMPLATE = registerItem("orikalkum_upgrade_smithing_template", ModSmithingTemplateItem.createOrikalkumUpgrade());
+    public static final Item NECRONIUM_UPGRADE_SMITHING_TEMPLATE = registerItem("necronium_upgrade_smithing_template", ModSmithingTemplateItem.createNecroniumUpgrade());
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RAW_TIN);
@@ -107,6 +119,8 @@ public class ModItems {
         entries.add(RUNITE_SCRAP);
         entries.add(ORICHALCITE_SCRAP);
         entries.add(NECRITE_SCRAP);
+        entries.add(ORIKALKUM_UPGRADE_SMITHING_TEMPLATE);
+        entries.add(NECRONIUM_UPGRADE_SMITHING_TEMPLATE);
     }
 
     private static void addItemsToToolTabItemGroup(FabricItemGroupEntries entries) {
@@ -125,6 +139,12 @@ public class ModItems {
         entries.add(RUNE_SHOVEL);
         entries.add(RUNE_HOE);
         entries.add(RUNE_PICKAXE);
+        entries.add(ORIKALKUM_SHOVEL);
+        entries.add(ORIKALKUM_HOE);
+        entries.add(ORIKALKUM_PICKAXE);
+        entries.add(NECRONIUM_SHOVEL);
+        entries.add(NECRONIUM_HOE);
+        entries.add(NECRONIUM_PICKAXE);
     }
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
@@ -133,11 +153,15 @@ public class ModItems {
         entries.add(MITHRIL_SWORD);
         entries.add(ADAMANT_SWORD);
         entries.add(RUNE_SWORD);
+        entries.add(ORIKALKUM_SWORD);
+        entries.add(NECRONIUM_SWORD);
         entries.add(BRONZE_AXE);
         entries.add(STEEL_AXE);
         entries.add(MITHRIL_AXE);
         entries.add(ADAMANT_AXE);
         entries.add(RUNE_AXE);
+        entries.add(ORIKALKUM_AXE);
+        entries.add(NECRONIUM_AXE);
         entries.add(BRONZE_HELMET);
         entries.add(BRONZE_CHESTPLATE);
         entries.add(BRONZE_LEGGINGS);

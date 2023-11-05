@@ -4,10 +4,8 @@ import com.coliwogg.oresandmetals.block.ModBlocks;
 import com.coliwogg.oresandmetals.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.RecipeProvider;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.*;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -80,6 +78,18 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerIngotRecipe(exporter, ModItems.RUNITE_INGOT, 8, ModItems.RUNITE_SCRAP);
         offerSpecialIngotRecipe(exporter, ModItems.ORIKALKUM_INGOT, ModItems.ORICHALCITE_SCRAP, ModItems.RAW_DRAKOLITH);
         offerSpecialIngotRecipe(exporter, ModItems.NECRONIUM_INGOT, ModItems.NECRITE_SCRAP, ModItems.RAW_PHASMATITE);
+
+        offerOrikalkumUpgradeRecipe(exporter, Items.DIAMOND_SWORD, RecipeCategory.COMBAT, ModItems.ORIKALKUM_SWORD);
+        offerOrikalkumUpgradeRecipe(exporter, Items.DIAMOND_AXE, RecipeCategory.TOOLS, ModItems.ORIKALKUM_AXE);
+        offerOrikalkumUpgradeRecipe(exporter, Items.DIAMOND_PICKAXE, RecipeCategory.TOOLS, ModItems.ORIKALKUM_PICKAXE);
+        offerOrikalkumUpgradeRecipe(exporter, Items.DIAMOND_HOE, RecipeCategory.TOOLS, ModItems.ORIKALKUM_HOE);
+        offerOrikalkumUpgradeRecipe(exporter, Items.DIAMOND_SHOVEL, RecipeCategory.TOOLS, ModItems.ORIKALKUM_SHOVEL);
+
+        offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_SWORD, RecipeCategory.COMBAT, ModItems.NECRONIUM_SWORD);
+        offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_AXE, RecipeCategory.TOOLS, ModItems.NECRONIUM_AXE);
+        offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_PICKAXE, RecipeCategory.TOOLS, ModItems.NECRONIUM_PICKAXE);
+        offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_HOE, RecipeCategory.TOOLS, ModItems.NECRONIUM_HOE);
+        offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_SHOVEL, RecipeCategory.TOOLS, ModItems.NECRONIUM_SHOVEL);
 
         offerSwordRecipe(exporter, ModItems.BRONZE_SWORD, ModItems.BRONZE_INGOT);
         offerSwordRecipe(exporter, ModItems.STEEL_SWORD, ModItems.STEEL_INGOT);
@@ -168,6 +178,18 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(input1), conditionsFromItem(input1))
                 .criterion(hasItem(input2), conditionsFromItem(input2))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
+    }
+
+    public static void offerOrikalkumUpgradeRecipe(Consumer<RecipeJsonProvider> exporter, Item input, RecipeCategory category, Item result) {
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(input), Ingredient.ofItems(ModItems.ORIKALKUM_INGOT), category, result)
+                .criterion(hasItem(ModItems.ORIKALKUM_INGOT), conditionsFromItem(ModItems.ORIKALKUM_INGOT))
+                .offerTo(exporter, getItemPath(result) + "_smithing");
+    }
+
+    public static void offerNecroniumUpgradeRecipe(Consumer<RecipeJsonProvider> exporter, Item input, RecipeCategory category, Item result) {
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(input), Ingredient.ofItems(ModItems.NECRONIUM_INGOT), category, result)
+                .criterion(hasItem(ModItems.NECRONIUM_INGOT), conditionsFromItem(ModItems.NECRONIUM_INGOT))
+                .offerTo(exporter, getItemPath(result) + "_smithing");
     }
 
     public static void offerAxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {

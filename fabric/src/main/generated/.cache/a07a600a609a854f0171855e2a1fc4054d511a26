@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-28T10:53:44.3561452	Ores and Metals/Block Loot Tables
+// 1.20.1	2023-11-05T11:41:34.5004044	Ores and Metals/Block Loot Tables
 09ac83c8de0f27314523e0328fd25f9d9a326a6b data\oresandmetals\loot_tables\blocks\deepslate_runite_ore.json
 d50a95713614c9d5561bb4ceee2dafc3bd77b536 data\oresandmetals\loot_tables\blocks\raw_mithril_block.json
 f761bcd2d2306d6e8caad708499676b0b64344f5 data\oresandmetals\loot_tables\blocks\steel_block.json
@@ -8,8 +8,8 @@ c3b43f8ddcdd101337dd2a1aca1f43e65f872a74 data\oresandmetals\loot_tables\blocks\r
 6e025c4f77858babff3a33f71f497124d8d674a6 data\oresandmetals\loot_tables\blocks\runite_block.json
 aeafa413ec254b741ca6d1f29fce8251d5364236 data\oresandmetals\loot_tables\blocks\adamantite_ore.json
 55b50d399df53068a9c6cd252884d3b9cbb8c231 data\oresandmetals\loot_tables\blocks\raw_tin_block.json
-3bb72776dcc1e0f02a14e9ab9cf5a7d005c1b586 data\oresandmetals\loot_tables\blocks\bronze_block.json
 06f06fb243c751bf000317dee3046196d98c2cf6 data\oresandmetals\loot_tables\blocks\orichalcite_debris.json
+3bb72776dcc1e0f02a14e9ab9cf5a7d005c1b586 data\oresandmetals\loot_tables\blocks\bronze_block.json
 8fbc54ab4a7f09ab3a8e9d77196d8f09b95bd4f3 data\oresandmetals\loot_tables\blocks\raw_runite_block.json
 b9de7dbd254bd89c8eed245e5b17e2ba3289002d data\oresandmetals\loot_tables\blocks\deepslate_adamantite_ore.json
 51b514ab9d96a5ba7e6cf03d49ab42d32f41eb1b data\oresandmetals\loot_tables\blocks\necrite_debris.json

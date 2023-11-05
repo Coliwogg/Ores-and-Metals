@@ -95,6 +95,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RUNE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUNE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUNE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ORIKALKUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ORIKALKUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ORIKALKUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ORIKALKUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ORIKALKUM_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NECRONIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NECRONIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NECRONIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NECRONIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NECRONIUM_HOE, Models.HANDHELD);
         itemModelGenerator.registerArmor((ArmorItem)  ModItems.BRONZE_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.BRONZE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.BRONZE_LEGGINGS);
@@ -121,5 +131,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MITHRIL_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.ADAMANT_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUNE_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
     }
 }

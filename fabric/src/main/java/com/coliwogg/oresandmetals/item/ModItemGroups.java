@@ -62,6 +62,16 @@ public class ModItemGroups {
                         entries.add(ModItems.RUNE_SHOVEL);
                         entries.add(ModItems.RUNE_HOE);
                         entries.add(ModItems.RUNE_PICKAXE);
+                        entries.add(ModItems.ORIKALKUM_AXE);
+                        entries.add(ModItems.ORIKALKUM_SWORD);
+                        entries.add(ModItems.ORIKALKUM_SHOVEL);
+                        entries.add(ModItems.ORIKALKUM_HOE);
+                        entries.add(ModItems.ORIKALKUM_PICKAXE);
+                        entries.add(ModItems.NECRONIUM_AXE);
+                        entries.add(ModItems.NECRONIUM_SWORD);
+                        entries.add(ModItems.NECRONIUM_SHOVEL);
+                        entries.add(ModItems.NECRONIUM_HOE);
+                        entries.add(ModItems.NECRONIUM_PICKAXE);
 
                         entries.add(ModItems.BRONZE_HELMET);
                         entries.add(ModItems.BRONZE_CHESTPLATE);
@@ -119,6 +129,9 @@ public class ModItemGroups {
                         entries.add(ModItems.MITHRIL_ARROW);
                         entries.add(ModItems.ADAMANT_ARROW);
                         entries.add(ModItems.RUNE_ARROW);
+
+                        entries.add(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE);
+                        entries.add(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE);
                     }).build());
 
     public static void registerItemGroups() {
