@@ -41,18 +41,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(consumer, List.of(ModBlocks.TIN_ORE.get()), RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 0.7f, 100, "tin");
         oreSmelting(consumer, List.of(ModBlocks.DEEPSLATE_TIN_ORE.get()), RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 0.7f, 200, "tin");
         oreBlasting(consumer, List.of(ModBlocks.DEEPSLATE_TIN_ORE.get()), RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 0.7f, 100, "tin");
-        oreSmelting(consumer, List.of(ModBlocks.MITHRIL_ORE.get()), RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 0.7f, 200, "mithril");
-        oreBlasting(consumer, List.of(ModBlocks.MITHRIL_ORE.get()), RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 0.7f, 100, "mithril");
-        oreSmelting(consumer, List.of(ModBlocks.DEEPSLATE_MITHRIL_ORE.get()), RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 0.7f, 200, "mithril");
-        oreBlasting(consumer, List.of(ModBlocks.DEEPSLATE_MITHRIL_ORE.get()), RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 0.7f, 100, "mithril");
-        oreSmelting(consumer, List.of(ModBlocks.ADAMANTITE_ORE.get()), RecipeCategory.MISC, ModItems.ADAMANTITE_INGOT.get(), 0.7f, 200, "adamantite");
-        oreBlasting(consumer, List.of(ModBlocks.ADAMANTITE_ORE.get()), RecipeCategory.MISC, ModItems.ADAMANTITE_INGOT.get(), 0.7f, 100, "adamantite");
-        oreSmelting(consumer, List.of(ModBlocks.DEEPSLATE_ADAMANTITE_ORE.get()), RecipeCategory.MISC, ModItems.ADAMANTITE_INGOT.get(), 0.7f, 200, "adamantite");
-        oreBlasting(consumer, List.of(ModBlocks.DEEPSLATE_ADAMANTITE_ORE.get()), RecipeCategory.MISC, ModItems.ADAMANTITE_INGOT.get(), 0.7f, 100, "adamantite");
-        oreSmelting(consumer, List.of(ModBlocks.RUNITE_ORE.get()), RecipeCategory.MISC, ModItems.RUNITE_INGOT.get(), 0.7f, 200, "runite");
-        oreBlasting(consumer, List.of(ModBlocks.RUNITE_ORE.get()), RecipeCategory.MISC, ModItems.RUNITE_INGOT.get(), 0.7f, 100, "runite");
-        oreSmelting(consumer, List.of(ModBlocks.DEEPSLATE_RUNITE_ORE.get()), RecipeCategory.MISC, ModItems.RUNITE_INGOT.get(), 0.7f, 200, "runite");
-        oreBlasting(consumer, List.of(ModBlocks.DEEPSLATE_RUNITE_ORE.get()), RecipeCategory.MISC, ModItems.RUNITE_INGOT.get(), 0.7f, 100, "runite");
+        oreSmelting(consumer, List.of(ModBlocks.MITHRIL_ORE.get()), RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 1.0f, 200, "mithril");
+        oreBlasting(consumer, List.of(ModBlocks.MITHRIL_ORE.get()), RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 1.0f, 100, "mithril");
+        oreSmelting(consumer, List.of(ModBlocks.DEEPSLATE_MITHRIL_ORE.get()), RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 1.0f, 200, "mithril");
+        oreBlasting(consumer, List.of(ModBlocks.DEEPSLATE_MITHRIL_ORE.get()), RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 1.0f, 100, "mithril");
+        oreSmelting(consumer, List.of(ModBlocks.ADAMANTITE_ORE.get()), RecipeCategory.MISC, ModItems.ADAMANTITE_INGOT.get(), 1.4f, 200, "adamantite");
+        oreBlasting(consumer, List.of(ModBlocks.ADAMANTITE_ORE.get()), RecipeCategory.MISC, ModItems.ADAMANTITE_INGOT.get(), 1.4f, 100, "adamantite");
+        oreSmelting(consumer, List.of(ModBlocks.DEEPSLATE_ADAMANTITE_ORE.get()), RecipeCategory.MISC, ModItems.ADAMANTITE_INGOT.get(), 1.4f, 200, "adamantite");
+        oreBlasting(consumer, List.of(ModBlocks.DEEPSLATE_ADAMANTITE_ORE.get()), RecipeCategory.MISC, ModItems.ADAMANTITE_INGOT.get(), 1.4f, 100, "adamantite");
+        oreSmelting(consumer, List.of(ModBlocks.RUNITE_ORE.get()), RecipeCategory.MISC, ModItems.RUNITE_INGOT.get(), 2.0f, 200, "runite");
+        oreBlasting(consumer, List.of(ModBlocks.RUNITE_ORE.get()), RecipeCategory.MISC, ModItems.RUNITE_INGOT.get(), 2.0f, 100, "runite");
+        oreSmelting(consumer, List.of(ModBlocks.DEEPSLATE_RUNITE_ORE.get()), RecipeCategory.MISC, ModItems.RUNITE_INGOT.get(), 2.0f, 200, "runite");
+        oreBlasting(consumer, List.of(ModBlocks.DEEPSLATE_RUNITE_ORE.get()), RecipeCategory.MISC, ModItems.RUNITE_INGOT.get(), 2.0f, 100, "runite");
+        oreSmelting(consumer, List.of(ModBlocks.ORICHALCITE_DEBRIS.get()), RecipeCategory.MISC, ModItems.ORICHALCITE_SCRAP.get(), 2.0f, 200, "orichalcite");
+        oreBlasting(consumer, List.of(ModBlocks.ORICHALCITE_DEBRIS.get()), RecipeCategory.MISC, ModItems.ORICHALCITE_SCRAP.get(), 2.0f, 100, "orichalcite");
+        oreSmelting(consumer, List.of(ModBlocks.NECRITE_DEBRIS.get()), RecipeCategory.MISC, ModItems.NECRITE_SCRAP.get(), 2.0f, 200, "necrite");
+        oreBlasting(consumer, List.of(ModBlocks.NECRITE_DEBRIS.get()), RecipeCategory.MISC, ModItems.NECRITE_SCRAP.get(), 2.0f, 100, "necrite");
 
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.TIN_INGOT.get(), RecipeCategory.MISC, ModBlocks.TIN_BLOCK.get());
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.BRONZE_INGOT.get(), RecipeCategory.MISC, ModBlocks.BRONZE_BLOCK.get());
@@ -60,16 +64,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipesWithBlockName(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.MITHRIL_INGOT.get(), RecipeCategory.MISC, ModBlocks.MITHRIL_BLOCK.get());
         nineBlockStorageRecipesWithBlockName(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.ADAMANTITE_INGOT.get(), RecipeCategory.MISC, ModBlocks.ADAMANTITE_BLOCK.get());
         nineBlockStorageRecipesWithBlockName(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RUNITE_INGOT.get(), RecipeCategory.MISC, ModBlocks.RUNITE_BLOCK.get());
+        nineBlockStorageRecipesWithBlockName(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.ORIKALKUM_INGOT.get(), RecipeCategory.MISC, ModBlocks.ORIKALKUM_BLOCK.get());
+        nineBlockStorageRecipesWithBlockName(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.NECRONIUM_INGOT.get(), RecipeCategory.MISC, ModBlocks.NECRONIUM_BLOCK.get());
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_TIN.get(), RecipeCategory.MISC, ModBlocks.RAW_TIN_BLOCK.get());
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_BRONZE.get(), RecipeCategory.MISC, ModBlocks.RAW_BRONZE_BLOCK.get());
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_STEEL.get(), RecipeCategory.MISC, ModBlocks.RAW_STEEL_BLOCK.get());
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_MITHRIL.get(), RecipeCategory.MISC, ModBlocks.RAW_MITHRIL_BLOCK.get());
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_ADAMANTITE.get(), RecipeCategory.MISC, ModBlocks.RAW_ADAMANTITE_BLOCK.get());
         nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_RUNITE.get(), RecipeCategory.MISC, ModBlocks.RAW_RUNITE_BLOCK.get());
+        nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_DRAKOLITH.get(), RecipeCategory.MISC, ModBlocks.RAW_DRAKOLITH_BLOCK.get());
+        nineBlockStorageRecipes(consumer, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_PHASMATITE.get(), RecipeCategory.MISC, ModBlocks.RAW_PHASMATITE_BLOCK.get());
 
         offerIngotRecipe(consumer, ModItems.MITHRIL_INGOT.get(), 4, ModItems.MITHRIL_SCRAP.get());
         offerIngotRecipe(consumer, ModItems.ADAMANTITE_INGOT.get(), 6, ModItems.ADAMANTITE_SCRAP.get());
         offerIngotRecipe(consumer, ModItems.RUNITE_INGOT.get(), 8, ModItems.RUNITE_SCRAP.get());
+        offerSpecialIngotRecipe(consumer, ModItems.ORIKALKUM_INGOT.get(), ModItems.ORICHALCITE_SCRAP.get(), ModItems.RAW_DRAKOLITH.get());
+        offerSpecialIngotRecipe(consumer, ModItems.NECRONIUM_INGOT.get(), ModItems.NECRITE_SCRAP.get(), ModItems.RAW_PHASMATITE.get());
 
         offerArrowRecipe(consumer, ModItems.BRONZE_ARROW.get(), ModItems.BRONZE_INGOT.get());
         offerArrowRecipe(consumer, ModItems.IRON_ARROW.get(), Items.IRON_INGOT.asItem());
@@ -139,6 +149,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Ingredient.of(ItemTags.COALS), coalQuantity)
                 .unlockedBy(getHasName(input), has(input))
                 .unlockedBy("has_coal", has(ItemTags.COALS))
+                .save(finishedRecipe);
+    }
+    protected static void offerSpecialIngotRecipe(Consumer<FinishedRecipe> finishedRecipe, ItemLike output, ItemLike input1, ItemLike input2) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output)
+                .requires(input1, 4)
+                .requires(input2, 4)
+                .unlockedBy(getHasName(input1), has(input1))
+                .unlockedBy(getHasName(input2), has(input2))
                 .save(finishedRecipe);
     }
 

@@ -57,6 +57,8 @@ public class OresAndMetals {
             event.accept(ModItems.RAW_MITHRIL);
             event.accept(ModItems.RAW_ADAMANTITE);
             event.accept(ModItems.RAW_RUNITE);
+            event.accept(ModItems.RAW_DRAKOLITH);
+            event.accept(ModItems.RAW_PHASMATITE);
             event.accept(ModItems.TIN_INGOT);
             event.accept(ModItems.BRONZE_INGOT);
             event.accept(ModItems.STEEL_INGOT);
@@ -66,6 +68,10 @@ public class OresAndMetals {
             event.accept(ModItems.ADAMANTITE_INGOT);
             event.accept(ModItems.RUNITE_SCRAP);
             event.accept(ModItems.RUNITE_INGOT);
+            event.accept(ModItems.ORICHALCITE_SCRAP);
+            event.accept(ModItems.ORIKALKUM_INGOT);
+            event.accept(ModItems.NECRITE_SCRAP);
+            event.accept(ModItems.NECRONIUM_INGOT);
         }
 
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
@@ -132,6 +138,8 @@ public class OresAndMetals {
             event.accept(ModBlocks.MITHRIL_BLOCK);
             event.accept(ModBlocks.ADAMANTITE_BLOCK);
             event.accept(ModBlocks.RUNITE_BLOCK);
+            event.accept(ModBlocks.ORIKALKUM_BLOCK);
+            event.accept(ModBlocks.NECRONIUM_BLOCK);
         }
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -141,6 +149,8 @@ public class OresAndMetals {
             event.accept(ModBlocks.RAW_MITHRIL_BLOCK);
             event.accept(ModBlocks.RAW_ADAMANTITE_BLOCK);
             event.accept(ModBlocks.RAW_RUNITE_BLOCK);
+            event.accept(ModBlocks.RAW_DRAKOLITH_BLOCK);
+            event.accept(ModBlocks.RAW_PHASMATITE_BLOCK);
             event.accept(ModBlocks.TIN_ORE);
             event.accept(ModBlocks.DEEPSLATE_TIN_ORE);
             event.accept(ModBlocks.MITHRIL_ORE);
@@ -149,6 +159,10 @@ public class OresAndMetals {
             event.accept(ModBlocks.DEEPSLATE_ADAMANTITE_ORE);
             event.accept(ModBlocks.RUNITE_ORE);
             event.accept(ModBlocks.DEEPSLATE_RUNITE_ORE);
+            event.accept(ModBlocks.NETHER_DRAKOLITH_ORE);
+            event.accept(ModBlocks.ORICHALCITE_DEBRIS);
+            event.accept(ModBlocks.END_PHASMATITE_ORE);
+            event.accept(ModBlocks.NECRITE_DEBRIS);
         }
     }
 

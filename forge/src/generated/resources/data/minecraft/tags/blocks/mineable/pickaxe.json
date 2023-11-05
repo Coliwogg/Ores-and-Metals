@@ -19,6 +19,14 @@
     "oresandmetals:runite_ore",
     "oresandmetals:deepslate_runite_ore",
     "oresandmetals:runite_block",
-    "oresandmetals:raw_runite_block"
+    "oresandmetals:raw_runite_block",
+    "oresandmetals:orichalcite_debris",
+    "oresandmetals:nether_drakolith_ore",
+    "oresandmetals:orikalkum_block",
+    "oresandmetals:raw_drakolith_block",
+    "oresandmetals:necrite_debris",
+    "oresandmetals:end_phasmatite_ore",
+    "oresandmetals:necronium_block",
+    "oresandmetals:raw_phasmatite_block"
   ]
 }

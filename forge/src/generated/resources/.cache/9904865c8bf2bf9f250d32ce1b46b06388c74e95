@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-15T10:24:47.2134045	Item Models: oresandmetals
+// 1.20.1	2023-10-29T14:23:17.6427674	Item Models: oresandmetals
 b6dc0383ffe7a63166fe3fc30cd65c6dc1f364ad assets/oresandmetals/models/item/adamantite_ingot.json
 03f178c47145b96c91856f03bb81423df2c98902 assets/oresandmetals/models/item/adamantite_scrap.json
 2254db1930bb95018ea634a4aacaed666cd6dc84 assets/oresandmetals/models/item/adamant_arrow.json
@@ -155,9 +155,15 @@ dba0dc532bd2b0025707fa7375aa59ae3234b7b3 assets/oresandmetals/models/item/mithri
 01059de871c2828a7d87e0bf4654078c92196324 assets/oresandmetals/models/item/mithril_scrap.json
 25f38e8326d54654b2c20ca22d5718c9a76dabf0 assets/oresandmetals/models/item/mithril_shovel.json
 e1d9c6830aafaab6fad9a6a4e6e864b1746e9a23 assets/oresandmetals/models/item/mithril_sword.json
+1a17dea05029dcfe02e13e2c6cde530cf5d4cc44 assets/oresandmetals/models/item/necrite_scrap.json
+0c341a55b31cb44a395fe02a4617224f14f049e3 assets/oresandmetals/models/item/necronium_ingot.json
+1ace9436da17efcb4c8154f519ba515b791a1653 assets/oresandmetals/models/item/orichalcite_scrap.json
+d7e8487711e4142144f15758ce2e20c391047db2 assets/oresandmetals/models/item/orikalkum_ingot.json
 8506e32c60a2e743a76638844096f99e9c8b81cc assets/oresandmetals/models/item/raw_adamantite.json
 7c40cd373cfde5a4af3a863e9cdaa87ce86d0f77 assets/oresandmetals/models/item/raw_bronze.json
+f0e7d4bd4000a0ae211815c25a8d71c6a52690d9 assets/oresandmetals/models/item/raw_drakolith.json
 d1affc735729dcc886cb4648b6fa7813d78482c2 assets/oresandmetals/models/item/raw_mithril.json
+81fcfa47296646d9bcda9cce55cef11c503ce6e5 assets/oresandmetals/models/item/raw_phasmatite.json
 a84a7ab88b78fb1d3c05bb75c960a020b86a4ba6 assets/oresandmetals/models/item/raw_runite.json
 2ce967473020b748fda42d0199a896eeceb50c97 assets/oresandmetals/models/item/raw_steel.json
 553e5efc90b9f054495d875b20c8e37d3a793cca assets/oresandmetals/models/item/raw_tin.json

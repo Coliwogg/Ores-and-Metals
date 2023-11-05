@@ -5,6 +5,7 @@ import com.coliwogg.oresandmetals.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -38,7 +39,15 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                         ModBlocks.RUNITE_ORE.get(),
                         ModBlocks.DEEPSLATE_RUNITE_ORE.get(),
                         ModBlocks.RUNITE_BLOCK.get(),
-                        ModBlocks.RAW_RUNITE_BLOCK.get());
+                        ModBlocks.RAW_RUNITE_BLOCK.get(),
+                        ModBlocks.ORICHALCITE_DEBRIS.get(),
+                        ModBlocks.NETHER_DRAKOLITH_ORE.get(),
+                        ModBlocks.ORIKALKUM_BLOCK.get(),
+                        ModBlocks.RAW_DRAKOLITH_BLOCK.get(),
+                        ModBlocks.NECRITE_DEBRIS.get(),
+                        ModBlocks.END_PHASMATITE_ORE.get(),
+                        ModBlocks.NECRONIUM_BLOCK.get(),
+                        ModBlocks.RAW_PHASMATITE_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.TIN_ORE.get(),
@@ -65,5 +74,15 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_RUNITE_ORE.get(),
                         ModBlocks.RUNITE_BLOCK.get(),
                         ModBlocks.RAW_RUNITE_BLOCK.get());
+
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.ORICHALCITE_DEBRIS.get(),
+                        ModBlocks.NETHER_DRAKOLITH_ORE.get(),
+                        ModBlocks.ORIKALKUM_BLOCK.get(),
+                        ModBlocks.RAW_DRAKOLITH_BLOCK.get(),
+                        ModBlocks.NECRITE_DEBRIS.get(),
+                        ModBlocks.END_PHASMATITE_ORE.get(),
+                        ModBlocks.NECRONIUM_BLOCK.get(),
+                        ModBlocks.RAW_PHASMATITE_BLOCK.get());
     }
 }

@@ -44,6 +44,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_MITHRIL);
         simpleItem(ModItems.RAW_ADAMANTITE);
         simpleItem(ModItems.RAW_RUNITE);
+        simpleItem(ModItems.RAW_DRAKOLITH);
+        simpleItem(ModItems.RAW_PHASMATITE);
         simpleItem(ModItems.TIN_INGOT);
         simpleItem(ModItems.BRONZE_INGOT);
         simpleItem(ModItems.STEEL_INGOT);
@@ -53,6 +55,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ADAMANTITE_INGOT);
         simpleItem(ModItems.RUNITE_SCRAP);
         simpleItem(ModItems.RUNITE_INGOT);
+        simpleItem(ModItems.ORICHALCITE_SCRAP);
+        simpleItem(ModItems.ORIKALKUM_INGOT);
+        simpleItem(ModItems.NECRITE_SCRAP);
+        simpleItem(ModItems.NECRONIUM_INGOT);
 
         handheldItem(ModItems.BRONZE_SWORD);
         handheldItem(ModItems.BRONZE_SHOVEL);

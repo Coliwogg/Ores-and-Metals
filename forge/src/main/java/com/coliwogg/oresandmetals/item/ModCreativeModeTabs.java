@@ -24,15 +24,21 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RAW_MITHRIL.get());
                         pOutput.accept(ModItems.RAW_ADAMANTITE.get());
                         pOutput.accept(ModItems.RAW_RUNITE.get());
+                        pOutput.accept(ModItems.RAW_DRAKOLITH.get());
+                        pOutput.accept(ModItems.RAW_PHASMATITE.get());
                         pOutput.accept(ModItems.TIN_INGOT.get());
                         pOutput.accept(ModItems.BRONZE_INGOT.get());
                         pOutput.accept(ModItems.STEEL_INGOT.get());
                         pOutput.accept(ModItems.MITHRIL_INGOT.get());
                         pOutput.accept(ModItems.ADAMANTITE_INGOT.get());
                         pOutput.accept(ModItems.RUNITE_INGOT.get());
+                        pOutput.accept(ModItems.ORIKALKUM_INGOT.get());
+                        pOutput.accept(ModItems.NECRONIUM_INGOT.get());
                         pOutput.accept(ModItems.MITHRIL_SCRAP.get());
                         pOutput.accept(ModItems.ADAMANTITE_SCRAP.get());
                         pOutput.accept(ModItems.RUNITE_SCRAP.get());
+                        pOutput.accept(ModItems.ORICHALCITE_SCRAP.get());
+                        pOutput.accept(ModItems.NECRITE_SCRAP.get());
 
                         pOutput.accept(ModItems.BRONZE_SWORD.get());
                         pOutput.accept(ModItems.BRONZE_SHOVEL.get());
@@ -94,12 +100,16 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.MITHRIL_BLOCK.get());
                         pOutput.accept(ModBlocks.ADAMANTITE_BLOCK.get());
                         pOutput.accept(ModBlocks.RUNITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ORIKALKUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.NECRONIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_TIN_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_BRONZE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_STEEL_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_MITHRIL_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_ADAMANTITE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_RUNITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_DRAKOLITH_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_PHASMATITE_BLOCK.get());
                         pOutput.accept(ModBlocks.TIN_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_TIN_ORE.get());
                         pOutput.accept(ModBlocks.MITHRIL_ORE.get());
@@ -108,6 +118,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DEEPSLATE_ADAMANTITE_ORE.get());
                         pOutput.accept(ModBlocks.RUNITE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_RUNITE_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_DRAKOLITH_ORE.get());
+                        pOutput.accept(ModBlocks.ORICHALCITE_DEBRIS.get());
+                        pOutput.accept(ModBlocks.END_PHASMATITE_ORE.get());
+                        pOutput.accept(ModBlocks.NECRITE_DEBRIS.get());
                     }))
                     .build());
 
