@@ -30,7 +30,7 @@ public class ModItems {
     public static final Item RUNITE_INGOT = registerItem("runite_ingot", new Item(new FabricItemSettings()));
     public static final Item ORICHALCITE_SCRAP = registerItem("orichalcite_scrap", new Item(new FabricItemSettings()));
     public static final Item ORIKALKUM_INGOT = registerItem("orikalkum_ingot", new Item(new FabricItemSettings()));
-     public static final Item NECRITE_SCRAP = registerItem("necrite_scrap", new Item(new FabricItemSettings()));
+    public static final Item NECRITE_SCRAP = registerItem("necrite_scrap", new Item(new FabricItemSettings()));
     public static final Item NECRONIUM_INGOT = registerItem("necronium_ingot", new Item(new FabricItemSettings()));
     public static final Item BRONZE_SWORD = registerItem("bronze_sword", new SwordItem(ModToolMaterials.BRONZE, 2, -2.4f, new FabricItemSettings()));
     public static final Item BRONZE_SHOVEL = registerItem("bronze_shovel", new ShovelItem(ModToolMaterials.BRONZE, 0.5f, -3, new FabricItemSettings()));
@@ -87,13 +87,20 @@ public class ModItems {
     public static final Item RUNE_CHESTPLATE = registerItem("rune_chestplate", new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item RUNE_LEGGINGS = registerItem("rune_leggings", new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item RUNE_BOOTS = registerItem("rune_boots", new ArmorItem(ModArmorMaterials.RUNE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item ORIKALKUM_HELMET = registerItem("orikalkum_helmet", new ArmorItem(ModArmorMaterials.ORIKALKUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ORIKALKUM_CHESTPLATE = registerItem("orikalkum_chestplate", new ArmorItem(ModArmorMaterials.ORIKALKUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ORIKALKUM_LEGGINGS = registerItem("orikalkum_leggings", new ArmorItem(ModArmorMaterials.ORIKALKUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ORIKALKUM_BOOTS = registerItem("orikalkum_boots", new ArmorItem(ModArmorMaterials.ORIKALKUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item NECRONIUM_HELMET = registerItem("necronium_helmet", new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item NECRONIUM_CHESTPLATE = registerItem("necronium_chestplate", new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item NECRONIUM_LEGGINGS = registerItem("necronium_leggings", new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item NECRONIUM_BOOTS = registerItem("necronium_boots", new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item BRONZE_ARROW = registerItem("bronze_arrow", new BronzeArrowItem(1.1f, new FabricItemSettings()));
     public static final Item IRON_ARROW = registerItem("iron_arrow", new IronArrowItem(1.2f, new FabricItemSettings()));
     public static final Item STEEL_ARROW = registerItem("steel_arrow", new SteelArrowItem(1.3f, new FabricItemSettings()));
     public static final Item MITHRIL_ARROW = registerItem("mithril_arrow", new MithrilArrowItem(1.4f, new FabricItemSettings()));
     public static final Item ADAMANT_ARROW = registerItem("adamant_arrow", new AdamantArrowItem(1.5f, new FabricItemSettings()));
     public static final Item RUNE_ARROW = registerItem("rune_arrow", new RuneArrowItem(1.6f, new FabricItemSettings()));
-    // TODO: Add custom tooltip text to orikalkum and necronium upgrade smithing templates.
     public static final Item ORIKALKUM_UPGRADE_SMITHING_TEMPLATE = registerItem("orikalkum_upgrade_smithing_template", ModSmithingTemplateItem.createOrikalkumUpgrade());
     public static final Item NECRONIUM_UPGRADE_SMITHING_TEMPLATE = registerItem("necronium_upgrade_smithing_template", ModSmithingTemplateItem.createNecroniumUpgrade());
 
@@ -182,6 +189,14 @@ public class ModItems {
         entries.add(RUNE_CHESTPLATE);
         entries.add(RUNE_LEGGINGS);
         entries.add(RUNE_BOOTS);
+        entries.add(ORIKALKUM_HELMET);
+        entries.add(ORIKALKUM_CHESTPLATE);
+        entries.add(ORIKALKUM_LEGGINGS);
+        entries.add(ORIKALKUM_BOOTS);
+        entries.add(NECRONIUM_HELMET);
+        entries.add(NECRONIUM_CHESTPLATE);
+        entries.add(NECRONIUM_LEGGINGS);
+        entries.add(NECRONIUM_BOOTS);
         entries.add(BRONZE_ARROW);
         entries.add(IRON_ARROW);
         entries.add(STEEL_ARROW);

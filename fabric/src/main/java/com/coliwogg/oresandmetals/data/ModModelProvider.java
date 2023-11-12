@@ -125,6 +125,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.RUNE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.RUNE_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.RUNE_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ORIKALKUM_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ORIKALKUM_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ORIKALKUM_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ORIKALKUM_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.NECRONIUM_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.NECRONIUM_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.NECRONIUM_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.NECRONIUM_BOOTS);
         itemModelGenerator.register(ModItems.BRONZE_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_ARROW, Models.GENERATED);

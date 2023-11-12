@@ -93,6 +93,14 @@ public class ModItemGroups {
                         entries.add(ModItems.RUNE_CHESTPLATE);
                         entries.add(ModItems.RUNE_LEGGINGS);
                         entries.add(ModItems.RUNE_BOOTS);
+                        entries.add(ModItems.ORIKALKUM_HELMET);
+                        entries.add(ModItems.ORIKALKUM_CHESTPLATE);
+                        entries.add(ModItems.ORIKALKUM_LEGGINGS);
+                        entries.add(ModItems.ORIKALKUM_BOOTS);
+                        entries.add(ModItems.NECRONIUM_HELMET);
+                        entries.add(ModItems.NECRONIUM_CHESTPLATE);
+                        entries.add(ModItems.NECRONIUM_LEGGINGS);
+                        entries.add(ModItems.NECRONIUM_BOOTS);
 
                         entries.add(ModBlocks.TIN_BLOCK);
                         entries.add(ModBlocks.BRONZE_BLOCK);

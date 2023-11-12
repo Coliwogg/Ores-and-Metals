@@ -19,7 +19,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STEEL_HELMET, ModItems.STEEL_CHESTPLATE, ModItems.STEEL_LEGGINGS, ModItems.STEEL_BOOTS)
                 .add(ModItems.MITHRIL_HELMET, ModItems.MITHRIL_CHESTPLATE, ModItems.MITHRIL_LEGGINGS, ModItems.MITHRIL_BOOTS)
                 .add(ModItems.ADAMANT_HELMET, ModItems.ADAMANT_CHESTPLATE, ModItems.ADAMANT_LEGGINGS, ModItems.ADAMANT_BOOTS)
-                .add(ModItems.RUNE_HELMET, ModItems.RUNE_CHESTPLATE, ModItems.RUNE_LEGGINGS, ModItems.RUNE_BOOTS);
+                .add(ModItems.RUNE_HELMET, ModItems.RUNE_CHESTPLATE, ModItems.RUNE_LEGGINGS, ModItems.RUNE_BOOTS)
+                .add(ModItems.ORIKALKUM_HELMET, ModItems.ORIKALKUM_CHESTPLATE, ModItems.ORIKALKUM_LEGGINGS, ModItems.ORIKALKUM_BOOTS)
+                .add(ModItems.NECRONIUM_HELMET, ModItems.NECRONIUM_CHESTPLATE, ModItems.NECRONIUM_LEGGINGS, ModItems.NECRONIUM_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.ARROWS)
                 .add(ModItems.BRONZE_ARROW)

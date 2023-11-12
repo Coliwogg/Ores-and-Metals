@@ -4,7 +4,7 @@
     "item": "oresandmetals:orikalkum_ingot"
   },
   "base": {
-    "item": "minecraft:diamond_pickaxe"
+    "item": "oresandmetals:rune_pickaxe"
   },
   "result": {
     "item": "oresandmetals:orikalkum_pickaxe"

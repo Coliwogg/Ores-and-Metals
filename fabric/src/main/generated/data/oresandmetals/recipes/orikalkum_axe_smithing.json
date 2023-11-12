@@ -4,7 +4,7 @@
     "item": "oresandmetals:orikalkum_ingot"
   },
   "base": {
-    "item": "minecraft:diamond_axe"
+    "item": "oresandmetals:rune_axe"
   },
   "result": {
     "item": "oresandmetals:orikalkum_axe"

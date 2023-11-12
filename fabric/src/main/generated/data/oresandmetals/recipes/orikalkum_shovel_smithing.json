@@ -4,7 +4,7 @@
     "item": "oresandmetals:orikalkum_ingot"
   },
   "base": {
-    "item": "minecraft:diamond_shovel"
+    "item": "oresandmetals:rune_shovel"
   },
   "result": {
     "item": "oresandmetals:orikalkum_shovel"

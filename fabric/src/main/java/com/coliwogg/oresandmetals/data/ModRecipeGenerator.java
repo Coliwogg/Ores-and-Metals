@@ -79,17 +79,25 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerSpecialIngotRecipe(exporter, ModItems.ORIKALKUM_INGOT, ModItems.ORICHALCITE_SCRAP, ModItems.RAW_DRAKOLITH);
         offerSpecialIngotRecipe(exporter, ModItems.NECRONIUM_INGOT, ModItems.NECRITE_SCRAP, ModItems.RAW_PHASMATITE);
 
-        offerOrikalkumUpgradeRecipe(exporter, Items.DIAMOND_SWORD, RecipeCategory.COMBAT, ModItems.ORIKALKUM_SWORD);
-        offerOrikalkumUpgradeRecipe(exporter, Items.DIAMOND_AXE, RecipeCategory.TOOLS, ModItems.ORIKALKUM_AXE);
-        offerOrikalkumUpgradeRecipe(exporter, Items.DIAMOND_PICKAXE, RecipeCategory.TOOLS, ModItems.ORIKALKUM_PICKAXE);
-        offerOrikalkumUpgradeRecipe(exporter, Items.DIAMOND_HOE, RecipeCategory.TOOLS, ModItems.ORIKALKUM_HOE);
-        offerOrikalkumUpgradeRecipe(exporter, Items.DIAMOND_SHOVEL, RecipeCategory.TOOLS, ModItems.ORIKALKUM_SHOVEL);
+        offerOrikalkumUpgradeRecipe(exporter, ModItems.RUNE_SWORD, RecipeCategory.COMBAT, ModItems.ORIKALKUM_SWORD);
+        offerOrikalkumUpgradeRecipe(exporter, ModItems.RUNE_AXE, RecipeCategory.TOOLS, ModItems.ORIKALKUM_AXE);
+        offerOrikalkumUpgradeRecipe(exporter, ModItems.RUNE_PICKAXE, RecipeCategory.TOOLS, ModItems.ORIKALKUM_PICKAXE);
+        offerOrikalkumUpgradeRecipe(exporter, ModItems.RUNE_HOE, RecipeCategory.TOOLS, ModItems.ORIKALKUM_HOE);
+        offerOrikalkumUpgradeRecipe(exporter, ModItems.RUNE_SHOVEL, RecipeCategory.TOOLS, ModItems.ORIKALKUM_SHOVEL);
+        offerOrikalkumUpgradeRecipe(exporter, ModItems.RUNE_HELMET, RecipeCategory.COMBAT, ModItems.ORIKALKUM_HELMET);
+        offerOrikalkumUpgradeRecipe(exporter, ModItems.RUNE_CHESTPLATE, RecipeCategory.COMBAT, ModItems.ORIKALKUM_CHESTPLATE);
+        offerOrikalkumUpgradeRecipe(exporter, ModItems.RUNE_LEGGINGS, RecipeCategory.COMBAT, ModItems.ORIKALKUM_LEGGINGS);
+        offerOrikalkumUpgradeRecipe(exporter, ModItems.RUNE_BOOTS, RecipeCategory.COMBAT, ModItems.ORIKALKUM_BOOTS);
 
         offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_SWORD, RecipeCategory.COMBAT, ModItems.NECRONIUM_SWORD);
         offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_AXE, RecipeCategory.TOOLS, ModItems.NECRONIUM_AXE);
         offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_PICKAXE, RecipeCategory.TOOLS, ModItems.NECRONIUM_PICKAXE);
         offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_HOE, RecipeCategory.TOOLS, ModItems.NECRONIUM_HOE);
         offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_SHOVEL, RecipeCategory.TOOLS, ModItems.NECRONIUM_SHOVEL);
+        offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_HELMET, RecipeCategory.COMBAT, ModItems.NECRONIUM_HELMET);
+        offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_CHESTPLATE, RecipeCategory.COMBAT, ModItems.NECRONIUM_CHESTPLATE);
+        offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_LEGGINGS, RecipeCategory.COMBAT, ModItems.NECRONIUM_LEGGINGS);
+        offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_BOOTS, RecipeCategory.COMBAT, ModItems.NECRONIUM_BOOTS);
 
         offerSwordRecipe(exporter, ModItems.BRONZE_SWORD, ModItems.BRONZE_INGOT);
         offerSwordRecipe(exporter, ModItems.STEEL_SWORD, ModItems.STEEL_INGOT);

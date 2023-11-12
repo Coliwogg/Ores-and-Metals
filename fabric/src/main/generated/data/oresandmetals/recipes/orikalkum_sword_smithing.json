@@ -4,7 +4,7 @@
     "item": "oresandmetals:orikalkum_ingot"
   },
   "base": {
-    "item": "minecraft:diamond_sword"
+    "item": "oresandmetals:rune_sword"
   },
   "result": {
     "item": "oresandmetals:orikalkum_sword"

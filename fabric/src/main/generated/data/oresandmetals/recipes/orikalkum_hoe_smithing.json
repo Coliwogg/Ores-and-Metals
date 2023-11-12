@@ -4,7 +4,7 @@
     "item": "oresandmetals:orikalkum_ingot"
   },
   "base": {
-    "item": "minecraft:diamond_hoe"
+    "item": "oresandmetals:rune_hoe"
   },
   "result": {
     "item": "oresandmetals:orikalkum_hoe"
