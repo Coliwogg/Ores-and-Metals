@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oresandmetals:block/raw_phasmatite_block"
-  }
-}
