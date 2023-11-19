@@ -19,7 +19,11 @@ public enum ModArmorMaterials implements ArmorMaterial {
     ADAMANT("adamant", 32, new int[]{ 3, 8, 6, 3 }, 11,
             SoundEvents.ARMOR_EQUIP_IRON, 0, 0.1f, () -> Ingredient.of(ModItems.ADAMANTITE_INGOT.get())),
     RUNE("rune", 36, new int[]{ 3, 8, 6, 3 }, 16,
-            SoundEvents.ARMOR_EQUIP_IRON, 2.5f, 0.1f, () -> Ingredient.of(ModItems.RUNITE_INGOT.get()));
+            SoundEvents.ARMOR_EQUIP_IRON, 2.5f, 0.1f, () -> Ingredient.of(ModItems.RUNITE_INGOT.get())),
+    ORIKALKUM("orikalkum", 38,  new int[] { 4, 9, 7, 4 }, 17,
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 3.5f, 0.1f, () -> Ingredient.of(ModItems.ORIKALKUM_INGOT.get())),
+    NECRONIUM("necronium", 39, new int[] { 4, 9, 7, 4 },18,
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0f, 0.1f, () -> Ingredient.of(ModItems.NECRONIUM_INGOT.get()));
 
     private final String name;
     private final int durabilityMultiplier;

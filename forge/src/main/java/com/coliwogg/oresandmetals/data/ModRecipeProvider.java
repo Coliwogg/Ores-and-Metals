@@ -8,11 +8,13 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import javax.annotation.Nullable;
@@ -80,6 +82,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         offerIngotRecipe(consumer, ModItems.RUNITE_INGOT.get(), 8, ModItems.RUNITE_SCRAP.get());
         offerSpecialIngotRecipe(consumer, ModItems.ORIKALKUM_INGOT.get(), ModItems.ORICHALCITE_SCRAP.get(), ModItems.RAW_DRAKOLITH.get());
         offerSpecialIngotRecipe(consumer, ModItems.NECRONIUM_INGOT.get(), ModItems.NECRITE_SCRAP.get(), ModItems.RAW_PHASMATITE.get());
+
+        orikalkumSmithing(consumer, ModItems.RUNE_SWORD.get(), RecipeCategory.COMBAT, ModItems.ORIKALKUM_SWORD.get());
+        orikalkumSmithing(consumer, ModItems.RUNE_AXE.get(), RecipeCategory.TOOLS, ModItems.ORIKALKUM_AXE.get());
+        orikalkumSmithing(consumer, ModItems.RUNE_PICKAXE.get(), RecipeCategory.TOOLS, ModItems.ORIKALKUM_PICKAXE.get());
+        orikalkumSmithing(consumer, ModItems.RUNE_HOE.get(), RecipeCategory.TOOLS, ModItems.ORIKALKUM_HOE.get());
+        orikalkumSmithing(consumer, ModItems.RUNE_SHOVEL.get(), RecipeCategory.TOOLS, ModItems.ORIKALKUM_SHOVEL.get());
+        orikalkumSmithing(consumer, ModItems.RUNE_HELMET.get(), RecipeCategory.TOOLS, ModItems.ORIKALKUM_HELMET.get());
+        orikalkumSmithing(consumer, ModItems.RUNE_CHESTPLATE.get(), RecipeCategory.TOOLS, ModItems.ORIKALKUM_CHESTPLATE.get());
+        orikalkumSmithing(consumer, ModItems.RUNE_LEGGINGS.get(), RecipeCategory.TOOLS, ModItems.ORIKALKUM_LEGGINGS.get());
+        orikalkumSmithing(consumer, ModItems.RUNE_BOOTS.get(), RecipeCategory.TOOLS, ModItems.ORIKALKUM_BOOTS.get());
+
+        necroniumSmithing(consumer, ModItems.ORIKALKUM_SWORD.get(), RecipeCategory.COMBAT, ModItems.NECRONIUM_SWORD.get());
+        necroniumSmithing(consumer, ModItems.ORIKALKUM_AXE.get(), RecipeCategory.TOOLS, ModItems.NECRONIUM_AXE.get());
+        necroniumSmithing(consumer, ModItems.ORIKALKUM_PICKAXE.get(), RecipeCategory.TOOLS, ModItems.NECRONIUM_PICKAXE.get());
+        necroniumSmithing(consumer, ModItems.ORIKALKUM_HOE.get(), RecipeCategory.TOOLS, ModItems.NECRONIUM_HOE.get());
+        necroniumSmithing(consumer, ModItems.ORIKALKUM_SHOVEL.get(), RecipeCategory.TOOLS, ModItems.NECRONIUM_SHOVEL.get());
+        necroniumSmithing(consumer, ModItems.ORIKALKUM_HELMET.get(), RecipeCategory.TOOLS, ModItems.NECRONIUM_HELMET.get());
+        necroniumSmithing(consumer, ModItems.ORIKALKUM_CHESTPLATE.get(), RecipeCategory.TOOLS, ModItems.NECRONIUM_CHESTPLATE.get());
+        necroniumSmithing(consumer, ModItems.ORIKALKUM_LEGGINGS.get(), RecipeCategory.TOOLS, ModItems.NECRONIUM_LEGGINGS.get());
+        necroniumSmithing(consumer, ModItems.ORIKALKUM_BOOTS.get(), RecipeCategory.TOOLS, ModItems.NECRONIUM_BOOTS.get());
+
+        offerSmithingTemplate(consumer, ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE.get(),
+                ModItems.RAW_DRAKOLITH.get(), ModItems.ORICHALCITE_SCRAP.get(), ModItems.RUNITE_INGOT.get());
+        offerSmithingTemplate(consumer, ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE.get(),
+                ModItems.RAW_PHASMATITE.get(), ModItems.NECRITE_SCRAP.get(), ModItems.ORIKALKUM_INGOT.get());
 
         offerArrowRecipe(consumer, ModItems.BRONZE_ARROW.get(), ModItems.BRONZE_INGOT.get());
         offerArrowRecipe(consumer, ModItems.IRON_ARROW.get(), Items.IRON_INGOT.asItem());
@@ -157,6 +184,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(input2, 4)
                 .unlockedBy(getHasName(input1), has(input1))
                 .unlockedBy(getHasName(input2), has(input2))
+                .save(finishedRecipe);
+    }
+
+    protected static void orikalkumSmithing(Consumer<FinishedRecipe> pFinishedRecipeConsumer, Item pIngredientItem, RecipeCategory pCategory, Item pResultItem) {
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(pIngredientItem),
+                        Ingredient.of(ModItems.ORIKALKUM_INGOT.get()), pCategory, pResultItem)
+                .unlocks(getHasName(ModItems.ORIKALKUM_INGOT.get()), has(ModItems.ORIKALKUM_INGOT.get()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(OresAndMetals.MOD_ID, getItemName(pResultItem) + "_smithing"));
+    }
+
+    protected static void necroniumSmithing(Consumer<FinishedRecipe> pFinishedRecipeConsumer, Item pIngredientItem, RecipeCategory pCategory, Item pResultItem) {
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(pIngredientItem),
+                        Ingredient.of(ModItems.NECRONIUM_INGOT.get()), pCategory, pResultItem)
+                .unlocks(getHasName(ModItems.NECRONIUM_INGOT.get()), has(ModItems.NECRONIUM_INGOT.get()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(OresAndMetals.MOD_ID, getItemName(pResultItem) + "_smithing"));
+    }
+
+    private void offerSmithingTemplate(Consumer<FinishedRecipe> finishedRecipe, ItemLike output, ItemLike input1, ItemLike input2, ItemLike input3) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output)
+                .pattern("XYX")
+                .pattern("XZX")
+                .pattern("XXX")
+                .define('X', input1)
+                .define('Y', input2)
+                .define('Z', input3)
+                .unlockedBy(getHasName(input1), has(input1))
+                .unlockedBy(getHasName(input2), has(input2))
+                .unlockedBy(getHasName(input3), has(input3))
                 .save(finishedRecipe);
     }
 

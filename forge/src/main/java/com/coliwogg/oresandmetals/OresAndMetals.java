@@ -24,7 +24,8 @@ import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(OresAndMetals.MOD_ID)
-public class OresAndMetals {
+public class
+OresAndMetals {
     public static final String MOD_ID = "oresandmetals";
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -72,6 +73,8 @@ public class OresAndMetals {
             event.accept(ModItems.ORIKALKUM_INGOT);
             event.accept(ModItems.NECRITE_SCRAP);
             event.accept(ModItems.NECRONIUM_INGOT);
+            event.accept(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE);
+            event.accept(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE);
         }
 
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
@@ -80,11 +83,15 @@ public class OresAndMetals {
             event.accept(ModItems.MITHRIL_SWORD);
             event.accept(ModItems.ADAMANT_SWORD);
             event.accept(ModItems.RUNE_SWORD);
+            event.accept(ModItems.ORIKALKUM_SWORD);
+            event.accept(ModItems.NECRONIUM_SWORD);
             event.accept(ModItems.BRONZE_AXE);
             event.accept(ModItems.STEEL_AXE);
             event.accept(ModItems.MITHRIL_AXE);
             event.accept(ModItems.ADAMANT_AXE);
             event.accept(ModItems.RUNE_AXE);
+            event.accept(ModItems.ORIKALKUM_AXE);
+            event.accept(ModItems.NECRONIUM_AXE);
             event.accept(ModItems.BRONZE_HELMET);
             event.accept(ModItems.BRONZE_CHESTPLATE);
             event.accept(ModItems.BRONZE_LEGGINGS);
@@ -105,6 +112,14 @@ public class OresAndMetals {
             event.accept(ModItems.RUNE_CHESTPLATE);
             event.accept(ModItems.RUNE_LEGGINGS);
             event.accept(ModItems.RUNE_BOOTS);
+            event.accept(ModItems.ORIKALKUM_HELMET);
+            event.accept(ModItems.ORIKALKUM_CHESTPLATE);
+            event.accept(ModItems.ORIKALKUM_LEGGINGS);
+            event.accept(ModItems.ORIKALKUM_BOOTS);
+            event.accept(ModItems.NECRONIUM_HELMET);
+            event.accept(ModItems.NECRONIUM_CHESTPLATE);
+            event.accept(ModItems.NECRONIUM_LEGGINGS);
+            event.accept(ModItems.NECRONIUM_BOOTS);
             event.accept(ModItems.BRONZE_ARROW);
             event.accept(ModItems.IRON_ARROW);
             event.accept(ModItems.STEEL_ARROW);
@@ -129,6 +144,12 @@ public class OresAndMetals {
             event.accept(ModItems.RUNE_SHOVEL);
             event.accept(ModItems.RUNE_PICKAXE);
             event.accept(ModItems.RUNE_HOE);
+            event.accept(ModItems.ORIKALKUM_SHOVEL);
+            event.accept(ModItems.ORIKALKUM_PICKAXE);
+            event.accept(ModItems.ORIKALKUM_HOE);
+            event.accept(ModItems.NECRONIUM_SHOVEL);
+            event.accept(ModItems.NECRONIUM_PICKAXE);
+            event.accept(ModItems.NECRONIUM_HOE);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {

@@ -26,6 +26,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RAW_RUNITE.get());
                         pOutput.accept(ModItems.RAW_DRAKOLITH.get());
                         pOutput.accept(ModItems.RAW_PHASMATITE.get());
+                        pOutput.accept(ModItems.MITHRIL_SCRAP.get());
+                        pOutput.accept(ModItems.ADAMANTITE_SCRAP.get());
+                        pOutput.accept(ModItems.RUNITE_SCRAP.get());
+                        pOutput.accept(ModItems.ORICHALCITE_SCRAP.get());
+                        pOutput.accept(ModItems.NECRITE_SCRAP.get());
                         pOutput.accept(ModItems.TIN_INGOT.get());
                         pOutput.accept(ModItems.BRONZE_INGOT.get());
                         pOutput.accept(ModItems.STEEL_INGOT.get());
@@ -34,12 +39,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RUNITE_INGOT.get());
                         pOutput.accept(ModItems.ORIKALKUM_INGOT.get());
                         pOutput.accept(ModItems.NECRONIUM_INGOT.get());
-                        pOutput.accept(ModItems.MITHRIL_SCRAP.get());
-                        pOutput.accept(ModItems.ADAMANTITE_SCRAP.get());
-                        pOutput.accept(ModItems.RUNITE_SCRAP.get());
-                        pOutput.accept(ModItems.ORICHALCITE_SCRAP.get());
-                        pOutput.accept(ModItems.NECRITE_SCRAP.get());
-
                         pOutput.accept(ModItems.BRONZE_SWORD.get());
                         pOutput.accept(ModItems.BRONZE_SHOVEL.get());
                         pOutput.accept(ModItems.BRONZE_PICKAXE.get());
@@ -65,7 +64,16 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RUNE_PICKAXE.get());
                         pOutput.accept(ModItems.RUNE_AXE.get());
                         pOutput.accept(ModItems.RUNE_HOE.get());
-
+                        pOutput.accept(ModItems.ORIKALKUM_SWORD.get());
+                        pOutput.accept(ModItems.ORIKALKUM_SHOVEL.get());
+                        pOutput.accept(ModItems.ORIKALKUM_PICKAXE.get());
+                        pOutput.accept(ModItems.ORIKALKUM_AXE.get());
+                        pOutput.accept(ModItems.ORIKALKUM_HOE.get());
+                        pOutput.accept(ModItems.NECRONIUM_SWORD.get());
+                        pOutput.accept(ModItems.NECRONIUM_SHOVEL.get());
+                        pOutput.accept(ModItems.NECRONIUM_PICKAXE.get());
+                        pOutput.accept(ModItems.NECRONIUM_AXE.get());
+                        pOutput.accept(ModItems.NECRONIUM_HOE.get());
                         pOutput.accept(ModItems.BRONZE_HELMET.get());
                         pOutput.accept(ModItems.BRONZE_CHESTPLATE.get());
                         pOutput.accept(ModItems.BRONZE_LEGGINGS.get());
@@ -86,14 +94,22 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RUNE_CHESTPLATE.get());
                         pOutput.accept(ModItems.RUNE_LEGGINGS.get());
                         pOutput.accept(ModItems.RUNE_BOOTS.get());
-
+                        pOutput.accept(ModItems.ORIKALKUM_HELMET.get());
+                        pOutput.accept(ModItems.ORIKALKUM_CHESTPLATE.get());
+                        pOutput.accept(ModItems.ORIKALKUM_LEGGINGS.get());
+                        pOutput.accept(ModItems.ORIKALKUM_BOOTS.get());
+                        pOutput.accept(ModItems.NECRONIUM_HELMET.get());
+                        pOutput.accept(ModItems.NECRONIUM_CHESTPLATE.get());
+                        pOutput.accept(ModItems.NECRONIUM_LEGGINGS.get());
+                        pOutput.accept(ModItems.NECRONIUM_BOOTS.get());
                         pOutput.accept(ModItems.BRONZE_ARROW.get());
                         pOutput.accept(ModItems.IRON_ARROW.get());
                         pOutput.accept(ModItems.STEEL_ARROW.get());
                         pOutput.accept(ModItems.MITHRIL_ARROW.get());
                         pOutput.accept(ModItems.ADAMANT_ARROW.get());
                         pOutput.accept(ModItems.RUNE_ARROW.get());
-
+                        pOutput.accept(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE.get());
+                        pOutput.accept(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE.get());
                         pOutput.accept(ModBlocks.TIN_BLOCK.get());
                         pOutput.accept(ModBlocks.BRONZE_BLOCK.get());
                         pOutput.accept(ModBlocks.STEEL_BLOCK.get());

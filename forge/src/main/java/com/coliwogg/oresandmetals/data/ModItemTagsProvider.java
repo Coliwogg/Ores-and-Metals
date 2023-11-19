@@ -40,7 +40,15 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                         ModItems.RUNE_HELMET.get(),
                         ModItems.RUNE_CHESTPLATE.get(),
                         ModItems.RUNE_LEGGINGS.get(),
-                        ModItems.RUNE_BOOTS.get());
+                        ModItems.RUNE_BOOTS.get(),
+                        ModItems.ORIKALKUM_HELMET.get(),
+                        ModItems.ORIKALKUM_CHESTPLATE.get(),
+                        ModItems.ORIKALKUM_LEGGINGS.get(),
+                        ModItems.ORIKALKUM_BOOTS.get(),
+                        ModItems.NECRONIUM_HELMET.get(),
+                        ModItems.NECRONIUM_CHESTPLATE.get(),
+                        ModItems.NECRONIUM_LEGGINGS.get(),
+                        ModItems.NECRONIUM_BOOTS.get());
 
         this.tag(ItemTags.ARROWS)
                 .add(ModItems.BRONZE_ARROW.get(),

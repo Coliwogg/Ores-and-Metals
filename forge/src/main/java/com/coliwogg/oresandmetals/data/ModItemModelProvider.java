@@ -59,7 +59,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ORIKALKUM_INGOT);
         simpleItem(ModItems.NECRITE_SCRAP);
         simpleItem(ModItems.NECRONIUM_INGOT);
-
         handheldItem(ModItems.BRONZE_SWORD);
         handheldItem(ModItems.BRONZE_SHOVEL);
         handheldItem(ModItems.BRONZE_PICKAXE);
@@ -85,7 +84,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.RUNE_PICKAXE);
         handheldItem(ModItems.RUNE_AXE);
         handheldItem(ModItems.RUNE_HOE);
-
+        handheldItem(ModItems.ORIKALKUM_SWORD);
+        handheldItem(ModItems.ORIKALKUM_SHOVEL);
+        handheldItem(ModItems.ORIKALKUM_PICKAXE);
+        handheldItem(ModItems.ORIKALKUM_AXE);
+        handheldItem(ModItems.ORIKALKUM_HOE);
+        handheldItem(ModItems.NECRONIUM_SWORD);
+        handheldItem(ModItems.NECRONIUM_SHOVEL);
+        handheldItem(ModItems.NECRONIUM_PICKAXE);
+        handheldItem(ModItems.NECRONIUM_AXE);
+        handheldItem(ModItems.NECRONIUM_HOE);
         trimmedArmorItem(ModItems.BRONZE_HELMET);
         trimmedArmorItem(ModItems.BRONZE_CHESTPLATE);
         trimmedArmorItem(ModItems.BRONZE_LEGGINGS);
@@ -106,13 +114,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.RUNE_CHESTPLATE);
         trimmedArmorItem(ModItems.RUNE_LEGGINGS);
         trimmedArmorItem(ModItems.RUNE_BOOTS);
-
+        trimmedArmorItem(ModItems.ORIKALKUM_HELMET);
+        trimmedArmorItem(ModItems.ORIKALKUM_CHESTPLATE);
+        trimmedArmorItem(ModItems.ORIKALKUM_LEGGINGS);
+        trimmedArmorItem(ModItems.ORIKALKUM_BOOTS);
+        trimmedArmorItem(ModItems.NECRONIUM_HELMET);
+        trimmedArmorItem(ModItems.NECRONIUM_CHESTPLATE);
+        trimmedArmorItem(ModItems.NECRONIUM_LEGGINGS);
+        trimmedArmorItem(ModItems.NECRONIUM_BOOTS);
         simpleItem(ModItems.BRONZE_ARROW);
         simpleItem(ModItems.IRON_ARROW);
         simpleItem(ModItems.STEEL_ARROW);
         simpleItem(ModItems.MITHRIL_ARROW);
         simpleItem(ModItems.ADAMANT_ARROW);
         simpleItem(ModItems.RUNE_ARROW);
+        simpleItem(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE);
+        simpleItem(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE);
     }
 
     // Shoutout to El_Redstoniano for making this
