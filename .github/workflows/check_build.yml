@@ -26,7 +26,18 @@ jobs:
         uses: gradle/gradle-build-action@v2.0.1
         with:
           gradle-version: 7.2
-
+      - name: Build Forge Project
+        if: ${{ runner.os != 'Windows' }}
+        run: |
+          cd forge
+          chmod +x ./gradlew
+          ./gradlew build
+      - name: Build Fabric Project
+        if: ${{ runner.os != 'Windows' }}
+        run: |
+          cd fabric
+          chmod +x ./gradlew
+          ./gradlew build
       - name: Capture build artifacts
         uses: actions/upload-artifact@v2
         with:
