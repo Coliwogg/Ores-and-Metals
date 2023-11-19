@@ -1,36 +1,36 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_orichalcite_scrap": {
+    "has_necrite_scrap": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresandmetals:orichalcite_scrap"
+              "oresandmetals:necrite_scrap"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_raw_drakolith": {
+    "has_orikalkum_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresandmetals:raw_drakolith"
+              "oresandmetals:orikalkum_ingot"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_runite_ingot": {
+    "has_raw_phasmatite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "oresandmetals:runite_ingot"
+              "oresandmetals:raw_phasmatite"
             ]
           }
         ]
@@ -39,22 +39,22 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "oresandmetals:orikalkum_upgrade_smithing_template"
+        "recipe": "minecraft:necronium_upgrade_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_raw_drakolith",
-      "has_runite_ingot",
-      "has_orichalcite_scrap",
+      "has_raw_phasmatite",
+      "has_orikalkum_ingot",
+      "has_necrite_scrap",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "oresandmetals:orikalkum_upgrade_smithing_template"
+      "minecraft:necronium_upgrade_smithing_template"
     ]
   },
   "sends_telemetry_event": false

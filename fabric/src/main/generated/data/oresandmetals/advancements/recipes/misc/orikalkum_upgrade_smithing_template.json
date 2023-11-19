@@ -39,7 +39,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "oresandmetals:orikalkum_upgrade_smithing_template"
+        "recipe": "minecraft:orikalkum_upgrade_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -54,7 +54,7 @@
   ],
   "rewards": {
     "recipes": [
-      "oresandmetals:orikalkum_upgrade_smithing_template"
+      "minecraft:orikalkum_upgrade_smithing_template"
     ]
   },
   "sends_telemetry_event": false

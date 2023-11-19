@@ -23,20 +23,21 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUNITE);
                         entries.add(ModItems.RAW_DRAKOLITH);
                         entries.add(ModItems.RAW_PHASMATITE);
+                        entries.add(ModItems.MITHRIL_SCRAP);
+                        entries.add(ModItems.ADAMANTITE_SCRAP);
+                        entries.add(ModItems.RUNITE_SCRAP);
+                        entries.add(ModItems.ORICHALCITE_SCRAP);
+                        entries.add(ModItems.NECRITE_SCRAP);
                         entries.add(ModItems.TIN_INGOT);
                         entries.add(ModItems.BRONZE_INGOT);
                         entries.add(ModItems.STEEL_INGOT);
-                        entries.add(ModItems.MITHRIL_SCRAP);
                         entries.add(ModItems.MITHRIL_INGOT);
-                        entries.add(ModItems.ADAMANTITE_SCRAP);
                         entries.add(ModItems.ADAMANTITE_INGOT);
-                        entries.add(ModItems.RUNITE_SCRAP);
                         entries.add(ModItems.RUNITE_INGOT);
-                        entries.add(ModItems.ORICHALCITE_SCRAP);
                         entries.add(ModItems.ORIKALKUM_INGOT);
-                        entries.add(ModItems.NECRITE_SCRAP);
                         entries.add(ModItems.NECRONIUM_INGOT);
-
+                        entries.add(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE);
+                        entries.add(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE);
                         entries.add(ModItems.BRONZE_AXE);
                         entries.add(ModItems.BRONZE_SWORD);
                         entries.add(ModItems.BRONZE_SHOVEL);
@@ -72,7 +73,6 @@ public class ModItemGroups {
                         entries.add(ModItems.NECRONIUM_SHOVEL);
                         entries.add(ModItems.NECRONIUM_HOE);
                         entries.add(ModItems.NECRONIUM_PICKAXE);
-
                         entries.add(ModItems.BRONZE_HELMET);
                         entries.add(ModItems.BRONZE_CHESTPLATE);
                         entries.add(ModItems.BRONZE_LEGGINGS);
@@ -101,7 +101,6 @@ public class ModItemGroups {
                         entries.add(ModItems.NECRONIUM_CHESTPLATE);
                         entries.add(ModItems.NECRONIUM_LEGGINGS);
                         entries.add(ModItems.NECRONIUM_BOOTS);
-
                         entries.add(ModBlocks.TIN_BLOCK);
                         entries.add(ModBlocks.BRONZE_BLOCK);
                         entries.add(ModBlocks.STEEL_BLOCK);
@@ -130,16 +129,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ORICHALCITE_DEBRIS);
                         entries.add(ModBlocks.END_PHASMATITE_ORE);
                         entries.add(ModBlocks.NECRITE_DEBRIS);
-
                         entries.add(ModItems.BRONZE_ARROW);
                         entries.add(ModItems.IRON_ARROW);
                         entries.add(ModItems.STEEL_ARROW);
                         entries.add(ModItems.MITHRIL_ARROW);
                         entries.add(ModItems.ADAMANT_ARROW);
                         entries.add(ModItems.RUNE_ARROW);
-
-                        entries.add(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE);
-                        entries.add(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE);
                     }).build());
 
     public static void registerItemGroups() {

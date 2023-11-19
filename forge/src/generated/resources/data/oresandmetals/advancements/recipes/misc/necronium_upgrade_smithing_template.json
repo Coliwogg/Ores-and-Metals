@@ -47,8 +47,8 @@
   "requirements": [
     [
       "has_raw_phasmatite",
-      "has_necrite_scrap",
       "has_orikalkum_ingot",
+      "has_necrite_scrap",
       "has_the_recipe"
     ]
   ],

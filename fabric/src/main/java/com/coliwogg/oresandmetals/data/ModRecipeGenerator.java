@@ -99,6 +99,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_LEGGINGS, RecipeCategory.COMBAT, ModItems.NECRONIUM_LEGGINGS);
         offerNecroniumUpgradeRecipe(exporter, ModItems.ORIKALKUM_BOOTS, RecipeCategory.COMBAT, ModItems.NECRONIUM_BOOTS);
 
+        offerSmithingTemplateRecipe(exporter, ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE, ModItems.RAW_DRAKOLITH, ModItems.RUNITE_INGOT, ModItems.ORICHALCITE_SCRAP);
+        offerSmithingTemplateRecipe(exporter, ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE, ModItems.RAW_PHASMATITE, ModItems.ORIKALKUM_INGOT, ModItems.NECRITE_SCRAP);
+
         offerSwordRecipe(exporter, ModItems.BRONZE_SWORD, ModItems.BRONZE_INGOT);
         offerSwordRecipe(exporter, ModItems.STEEL_SWORD, ModItems.STEEL_INGOT);
         offerSwordRecipe(exporter, ModItems.MITHRIL_SWORD, ModItems.MITHRIL_INGOT);
@@ -181,10 +184,24 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
     public static void offerSpecialIngotRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input1, ItemConvertible input2) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, output)
-                .input(input1,4)
-                .input(input2,4)
+                .input(input1, 4)
+                .input(input2, 4)
                 .criterion(hasItem(input1), conditionsFromItem(input1))
                 .criterion(hasItem(input2), conditionsFromItem(input2))
+                .offerTo(exporter, new Identifier(getRecipeName(output)));
+    }
+
+    private void offerSmithingTemplateRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input1, ItemConvertible input2, ItemConvertible input3) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output, 1)
+                .pattern("#S#")
+                .pattern("#C#")
+                .pattern("###")
+                .input('#', input1)
+                .input('C', input2)
+                .input('S', input3)
+                .criterion(hasItem(input1), conditionsFromItem(input1))
+                .criterion(hasItem(input2), conditionsFromItem(input2))
+                .criterion(hasItem(input3), conditionsFromItem(input3))
                 .offerTo(exporter, new Identifier(getRecipeName(output)));
     }
 
@@ -299,7 +316,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     }
 
     private static void offerArrowRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output,4)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 4)
                 .pattern("X")
                 .pattern("|")
                 .pattern("Y")

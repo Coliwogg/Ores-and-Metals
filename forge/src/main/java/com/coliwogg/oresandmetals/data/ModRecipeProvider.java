@@ -3,7 +3,6 @@ package com.coliwogg.oresandmetals.data;
 import com.coliwogg.oresandmetals.OresAndMetals;
 import com.coliwogg.oresandmetals.block.ModBlocks;
 import com.coliwogg.oresandmetals.item.ModItems;
-import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -14,7 +13,6 @@ import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import javax.annotation.Nullable;
@@ -103,10 +101,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         necroniumSmithing(consumer, ModItems.ORIKALKUM_LEGGINGS.get(), RecipeCategory.TOOLS, ModItems.NECRONIUM_LEGGINGS.get());
         necroniumSmithing(consumer, ModItems.ORIKALKUM_BOOTS.get(), RecipeCategory.TOOLS, ModItems.NECRONIUM_BOOTS.get());
 
-        offerSmithingTemplate(consumer, ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE.get(),
-                ModItems.RAW_DRAKOLITH.get(), ModItems.ORICHALCITE_SCRAP.get(), ModItems.RUNITE_INGOT.get());
-        offerSmithingTemplate(consumer, ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE.get(),
-                ModItems.RAW_PHASMATITE.get(), ModItems.NECRITE_SCRAP.get(), ModItems.ORIKALKUM_INGOT.get());
+        offerSmithingTemplate(consumer, ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE.get(), ModItems.RAW_DRAKOLITH.get(), ModItems.RUNITE_INGOT.get(), ModItems.ORICHALCITE_SCRAP.get());
+        offerSmithingTemplate(consumer, ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE.get(), ModItems.RAW_PHASMATITE.get(), ModItems.ORIKALKUM_INGOT.get(), ModItems.NECRITE_SCRAP.get());
 
         offerArrowRecipe(consumer, ModItems.BRONZE_ARROW.get(), ModItems.BRONZE_INGOT.get());
         offerArrowRecipe(consumer, ModItems.IRON_ARROW.get(), Items.IRON_INGOT.asItem());
@@ -178,6 +174,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_coal", has(ItemTags.COALS))
                 .save(finishedRecipe);
     }
+
     protected static void offerSpecialIngotRecipe(Consumer<FinishedRecipe> finishedRecipe, ItemLike output, ItemLike input1, ItemLike input2) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, output)
                 .requires(input1, 4)
@@ -205,12 +202,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     private void offerSmithingTemplate(Consumer<FinishedRecipe> finishedRecipe, ItemLike output, ItemLike input1, ItemLike input2, ItemLike input3) {
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, output)
-                .pattern("XYX")
-                .pattern("XZX")
-                .pattern("XXX")
-                .define('X', input1)
-                .define('Y', input2)
-                .define('Z', input3)
+                .pattern("#S#")
+                .pattern("#C#")
+                .pattern("###")
+                .define('#', input1)
+                .define('C', input2)
+                .define('S', input3)
                 .unlockedBy(getHasName(input1), has(input1))
                 .unlockedBy(getHasName(input2), has(input2))
                 .unlockedBy(getHasName(input3), has(input3))
@@ -338,18 +335,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     protected static void oreCooking(Consumer<FinishedRecipe> p_250791_, RecipeSerializer<? extends AbstractCookingRecipe> p_251817_, List<ItemLike> p_249619_, RecipeCategory p_251154_, ItemLike p_250066_, float p_251871_, int p_251316_, String p_251450_, String p_249236_) {
-        for(ItemLike itemlike : p_249619_) {
+        for (ItemLike itemlike : p_249619_) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), p_251154_, p_250066_, p_251871_, p_251316_, p_251817_).group(p_251450_)
                     .unlockedBy(getHasName(itemlike), has(itemlike)).save(p_250791_, new ResourceLocation(OresAndMetals.MOD_ID, getItemName(p_250066_)) + p_249236_ + "_" + getItemName(itemlike));
         }
     }
 
     protected static void nineBlockStorageRecipes(Consumer<FinishedRecipe> p_249580_, RecipeCategory p_251203_, ItemLike p_251689_, RecipeCategory p_251376_, ItemLike p_248771_) {
-        nineBlockStorageRecipes(p_249580_, p_251203_, p_251689_, p_251376_, p_248771_, getSimpleRecipeName(p_248771_), (String)null, getSimpleRecipeName(p_251689_), (String)null);
+        nineBlockStorageRecipes(p_249580_, p_251203_, p_251689_, p_251376_, p_248771_, getSimpleRecipeName(p_248771_), (String) null, getSimpleRecipeName(p_251689_), (String) null);
     }
 
     protected static void nineBlockStorageRecipesWithBlockName(Consumer<FinishedRecipe> p_249580_, RecipeCategory p_251203_, ItemLike p_251689_, RecipeCategory p_251376_, ItemLike p_248771_) {
-        nineBlockStorageRecipesWithBlockName(p_249580_, p_251203_, p_251689_, p_251376_, p_248771_, getSimpleRecipeName(p_248771_), (String)null, getSimpleRecipeName(p_251689_), (String)null);
+        nineBlockStorageRecipesWithBlockName(p_249580_, p_251203_, p_251689_, p_251376_, p_248771_, getSimpleRecipeName(p_248771_), (String) null, getSimpleRecipeName(p_251689_), (String) null);
     }
 
     protected static void nineBlockStorageRecipes(Consumer<FinishedRecipe> p_250423_, RecipeCategory p_250083_, ItemLike p_250042_,
@@ -362,8 +359,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     protected static void nineBlockStorageRecipesWithBlockName(Consumer<FinishedRecipe> p_250423_, RecipeCategory p_250083_, ItemLike p_250042_,
-                                                  RecipeCategory p_248977_, ItemLike p_251911_, String p_250475_, @Nullable String p_248641_,
-                                                  String p_252237_, @Nullable String p_250414_) {
+                                                               RecipeCategory p_248977_, ItemLike p_251911_, String p_250475_, @Nullable String p_248641_,
+                                                               String p_252237_, @Nullable String p_250414_) {
         ShapelessRecipeBuilder.shapeless(p_250083_, p_250042_, 9).requires(p_251911_).group(p_250414_).unlockedBy(getHasName(p_251911_), has(p_251911_))
                 .save(p_250423_, new ResourceLocation(OresAndMetals.MOD_ID, p_252237_ + "_from_" + p_250475_));
         ShapedRecipeBuilder.shaped(p_248977_, p_251911_).define('#', p_250042_).pattern("###").pattern("###").pattern("###").group(p_248641_)

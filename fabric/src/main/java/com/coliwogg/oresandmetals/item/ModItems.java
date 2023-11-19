@@ -113,6 +113,11 @@ public class ModItems {
         entries.add(RAW_RUNITE);
         entries.add(RAW_DRAKOLITH);
         entries.add(RAW_PHASMATITE);
+        entries.add(MITHRIL_SCRAP);
+        entries.add(ADAMANTITE_SCRAP);
+        entries.add(RUNITE_SCRAP);
+        entries.add(ORICHALCITE_SCRAP);
+        entries.add(NECRITE_SCRAP);
         entries.add(TIN_INGOT);
         entries.add(BRONZE_INGOT);
         entries.add(STEEL_INGOT);
@@ -121,37 +126,39 @@ public class ModItems {
         entries.add(RUNITE_INGOT);
         entries.add(ORIKALKUM_INGOT);
         entries.add(NECRONIUM_INGOT);
-        entries.add(MITHRIL_SCRAP);
-        entries.add(ADAMANTITE_SCRAP);
-        entries.add(RUNITE_SCRAP);
-        entries.add(ORICHALCITE_SCRAP);
-        entries.add(NECRITE_SCRAP);
         entries.add(ORIKALKUM_UPGRADE_SMITHING_TEMPLATE);
         entries.add(NECRONIUM_UPGRADE_SMITHING_TEMPLATE);
     }
 
     private static void addItemsToToolTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(BRONZE_SHOVEL);
-        entries.add(BRONZE_HOE);
         entries.add(BRONZE_PICKAXE);
+        entries.add(BRONZE_AXE);
+        entries.add(BRONZE_HOE);
         entries.add(STEEL_SHOVEL);
-        entries.add(STEEL_HOE);
         entries.add(STEEL_PICKAXE);
+        entries.add(STEEL_AXE);
+        entries.add(STEEL_HOE);
         entries.add(MITHRIL_SHOVEL);
-        entries.add(MITHRIL_HOE);
         entries.add(MITHRIL_PICKAXE);
+        entries.add(MITHRIL_AXE);
+        entries.add(MITHRIL_HOE);
         entries.add(ADAMANT_SHOVEL);
-        entries.add(ADAMANT_HOE);
         entries.add(ADAMANT_PICKAXE);
+        entries.add(ADAMANT_AXE);
+        entries.add(ADAMANT_HOE);
         entries.add(RUNE_SHOVEL);
-        entries.add(RUNE_HOE);
         entries.add(RUNE_PICKAXE);
+        entries.add(RUNE_AXE);
+        entries.add(RUNE_HOE);
         entries.add(ORIKALKUM_SHOVEL);
-        entries.add(ORIKALKUM_HOE);
         entries.add(ORIKALKUM_PICKAXE);
+        entries.add(ORIKALKUM_AXE);
+        entries.add(ORIKALKUM_HOE);
         entries.add(NECRONIUM_SHOVEL);
-        entries.add(NECRONIUM_HOE);
         entries.add(NECRONIUM_PICKAXE);
+        entries.add(NECRONIUM_AXE);
+        entries.add(NECRONIUM_HOE);
     }
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries) {
