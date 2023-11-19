@@ -34,7 +34,11 @@ jobs:
           path: forge/build/libs/
 
   build_fabric:
-    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        java: [ 17 ]
+        os: [ ubuntu-20.04 ]
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
