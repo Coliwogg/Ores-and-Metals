@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "oresandmetals:block/orichalcite_debris_top",
-    "side": "oresandmetals:block/orichalcite_debris_side"
-  }
-}

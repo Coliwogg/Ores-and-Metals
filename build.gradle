@@ -1,112 +1,85 @@
-buildscript {
+plugins {
+    // Required for NeoGradle
+    id "org.jetbrains.gradle.plugin.idea-ext" version "1.1.7"
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+    java.withSourcesJar()
+    java.withJavadocJar()
+        
+    jar {
+        from(rootProject.file("LICENSE")) {
+            rename { "${it}_${mod_name}" }
+        }
+        manifest {
+            attributes([
+                'Specification-Title'     : mod_name,
+                'Specification-Vendor'    : mod_author,
+                'Specification-Version'   : project.jar.archiveVersion,
+                'Implementation-Title'    : project.name,
+                'Implementation-Version'  : project.jar.archiveVersion,
+                'Implementation-Vendor'   : mod_author,
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+                'Timestamp'               : System.currentTimeMillis(),
+                'Built-On-Java'           : "${System.getProperty('java.vm.version')} (${System.getProperty('java.vm.vendor')})",
+                'Built-On-Minecraft'      : minecraft_version
+            ])
+        }
+    }
+
+    sourcesJar {
+        from(rootProject.file("LICENSE")) {
+            rename { "${it}_${mod_name}" }
+        }
+    }
+
     repositories {
-        maven { url = 'https://maven.minecraftforge.net' }
-        maven { url = 'https://maven.parchmentmc.org' }
         mavenCentral()
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        classpath 'org.parchmentmc:librarian:1.+'
-    }
-}
-apply plugin: 'net.minecraftforge.gradle'
-apply plugin: 'org.parchmentmc.librarian.forgegradle'
-apply plugin: 'eclipse'
-apply plugin: 'maven-publish'
-
-version = '1.17.1-1.2.0'
-group = 'com.coliwogg.oresandmetals'
-archivesBaseName = 'Ores-and-Metals'
-
-java.toolchain.languageVersion = JavaLanguageVersion.of(16)
-
-println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
-minecraft {
-    mappings channel: 'parchment', version: '2021.10.31-1.17.1'
-
-    runs {
-        client {
-            workingDirectory project.file('run')
-
-            property 'forge.logging.markers', 'REGISTRIES'
-
-            property 'forge.logging.console.level', 'debug'
-
-            mods {
-                oresandmetals {
-                    source sourceSets.main
-                }
-            }
-        }
-
-        server {
-            workingDirectory project.file('run')
-
-            property 'forge.logging.markers', 'REGISTRIES'
-
-            property 'forge.logging.console.level', 'debug'
-
-            mods {
-                oresandmetals {
-                    source sourceSets.main
-                }
-            }
-        }
-
-        data {
-            workingDirectory project.file('run')
-
-            property 'forge.logging.markers', 'REGISTRIES'
-
-            property 'forge.logging.console.level', 'debug'
-
-            // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'oresandmetals', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
-
-            mods {
-                oresandmetals {
-                    source sourceSets.main
-                }
-            }
-        }
-    }
-}
-
-sourceSets.main.resources { srcDir 'src/generated/resources' }
-
-repositories {
-
-}
-
-dependencies {
-    minecraft 'net.minecraftforge:forge:1.17.1-37.0.109'
-}
-
-jar {
-    manifest {
-        attributes([
-                "Specification-Title"     : "oresandmetals",
-                "Specification-Vendor"    : "oresandmetalssareus",
-                "Specification-Version"   : "1",
-                "Implementation-Title"    : project.name,
-                "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "oresandmetalssareus",
-                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
-        ])
-    }
-}
-
-jar.finalizedBy('reobfJar')
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact jar
-        }
-    }
-    repositories {
         maven {
-            url "file://${project.projectDir}/mcmodsrepo"
+            name = 'Sponge / Mixin'
+            url = 'https://repo.spongepowered.org/repository/maven-public/'
         }
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+    
+        it.options.encoding = 'UTF-8'
+        it.options.getRelease().set(17)
+    }
+
+    processResources {
+        def expandProps = [
+                "version": version,
+                "group": project.group, //Else we target the task's group.
+                "minecraft_version": minecraft_version,
+                "forge_version": forge_version,
+                "forge_loader_version_range": forge_loader_version_range,
+                "forge_version_range": forge_version_range,
+                "minecraft_version_range": minecraft_version_range,
+                "fabric_version": fabric_version,
+                "fabric_loader_version": fabric_loader_version,
+                "mod_name": mod_name,
+                "mod_author": mod_author,
+                "mod_id": mod_id,
+                "license": license,
+                "description": project.description,
+                "credits": credits
+        ]
+
+        filesMatching(['pack.mcmeta', 'fabric.mod.json', 'META-INF/mods.toml', '*.mixins.json']) {
+            expand expandProps
+        }
+        inputs.properties(expandProps)
+    }
+
+    // Disables Gradle's custom module metadata from being published to maven. The
+    // metadata includes mapped dependencies which are not reasonably consumable by
+    // other mod developers.
+    tasks.withType(GenerateModuleMetadata).configureEach {
+
+        enabled = false
     }
 }
