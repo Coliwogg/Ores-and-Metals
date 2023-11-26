@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_orichalcite_scrap": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oresandmetals:orichalcite_scrap"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_raw_drakolith": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oresandmetals:raw_drakolith"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "oresandmetals:orikalkum_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_orichalcite_scrap",
+      "has_raw_drakolith",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oresandmetals:orikalkum_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

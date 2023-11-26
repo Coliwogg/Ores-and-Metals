@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_necrite_debris": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oresandmetals:necrite_debris"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "oresandmetals:necrite_scrap_from_smelting_necrite_debris"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_necrite_debris",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oresandmetals:necrite_scrap_from_smelting_necrite_debris"
+    ]
+  },
+  "sends_telemetry_event": false
+}

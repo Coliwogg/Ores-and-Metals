@@ -1,0 +1,9 @@
+// 1.20.1	2023-11-19T10:14:16.8532562	Tags for minecraft:block mod id oresandmetals
+4e147bef3f151baffcc97fde5ef0974351e82871 data/minecraft/tags/blocks/mineable/pickaxe.json
+5dc836fafe109126fde7269788163a73bb9554d3 data/minecraft/tags/blocks/needs_iron_tool.json
+afc4e7597deb1a1fbae4280407641b3a36fe148d data/oresandmetals/tags/blocks/needs_adamant_tool.json
+7e6b6558846e3e1b52af1d5a52ead1f18ae25ada data/oresandmetals/tags/blocks/needs_bronze_tool.json
+8e29fba349f7e1f17736dd8965e0e1e59a460835 data/oresandmetals/tags/blocks/needs_mithril_tool.json
+1303776c68e021b509a18f8cad6c37e4271aaa93 data/oresandmetals/tags/blocks/needs_orikalkum_tool.json
+ee227b5a6fce36a3c16dd3c82184742d65dec79e data/oresandmetals/tags/blocks/needs_rune_tool.json
+3487d5898bcf6aa54ba95352ae0f1477ac67ea5f data/oresandmetals/tags/blocks/needs_steel_tool.json

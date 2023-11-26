@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "oresandmetals:end_phasmatite_ore",
+    "oresandmetals:necrite_debris",
+    "oresandmetals:raw_phasmatite_block",
+    "oresandmetals:necronium_block"
+  ]
+}

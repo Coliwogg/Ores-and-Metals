@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "oresandmetals:raw_drakolith"
+    },
+    "C": {
+      "item": "oresandmetals:runite_ingot"
+    },
+    "S": {
+      "item": "oresandmetals:orichalcite_scrap"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "item": "oresandmetals:orikalkum_upgrade_smithing_template"
+  },
+  "show_notification": true
+}

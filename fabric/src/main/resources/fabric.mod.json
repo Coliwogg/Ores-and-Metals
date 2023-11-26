@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "oresandmetals",
+	"version": "${version}",
+	"name": "Ores and Metals",
+	"description": "This mod adds new ores, metals, tools, and armor inspired by the game RuneScape to Minecraft!",
+	"authors": [
+		"Coliwogg"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/ores-and-metals",
+		"sources": "https://github.com/Coliwogg/Ores-and-Metals"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/oresandmetals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.coliwogg.oresandmetals.OresAndMetals"
+		],
+		"client": [
+			"com.coliwogg.oresandmetals.OresAndMetalsClient"
+		],
+		"fabric-datagen": [
+			"com.coliwogg.oresandmetals.OresAndMetalsDataGenerator"
+		]
+	},
+	"mixins": [
+		"oresandmetals.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

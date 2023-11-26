@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "oresandmetals:block/orichalcite_debris_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "oresandmetals:block/orichalcite_debris"
+    },
+    "axis=z": {
+      "model": "oresandmetals:block/orichalcite_debris_horizontal",
+      "x": 90
+    }
+  }
+}

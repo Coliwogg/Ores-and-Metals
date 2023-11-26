@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "oresandmetals:raw_phasmatite"
+    },
+    "C": {
+      "item": "oresandmetals:orikalkum_ingot"
+    },
+    "S": {
+      "item": "oresandmetals:necrite_scrap"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "item": "oresandmetals:necronium_upgrade_smithing_template"
+  },
+  "show_notification": true
+}

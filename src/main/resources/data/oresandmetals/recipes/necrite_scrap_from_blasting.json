@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "oresandmetals:necrite_debris"
-  },
-  "result": "oresandmetals:necrite_scrap",
-  "experience": 2.0,
-  "cookingtime": 100
-}

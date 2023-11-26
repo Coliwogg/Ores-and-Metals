@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "oresandmetals:orikalkum_ingot"
+  },
+  "base": {
+    "item": "oresandmetals:rune_boots"
+  },
+  "result": {
+    "item": "oresandmetals:orikalkum_boots"
+  },
+  "template": {
+    "item": "oresandmetals:orikalkum_upgrade_smithing_template"
+  }
+}

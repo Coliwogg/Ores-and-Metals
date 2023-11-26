@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "oresandmetals:mithril_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "oresandmetals:mithril_ingot"
+  }
+}

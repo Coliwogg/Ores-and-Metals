@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_adamantite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oresandmetals:raw_adamantite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:adamantite_scrap_from_smelting_raw_adamantite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_adamantite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:adamantite_scrap_from_smelting_raw_adamantite"
+    ]
+  },
+  "sends_telemetry_event": false
+}
