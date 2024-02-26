@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-19T11:13:43.7442292	Ores and Metals/Block Loot Tables
+// 1.20.1	2024-02-26T10:08:52.7150431	Ores and Metals/Block Loot Tables
 09ac83c8de0f27314523e0328fd25f9d9a326a6b data\oresandmetals\loot_tables\blocks\deepslate_runite_ore.json
 d50a95713614c9d5561bb4ceee2dafc3bd77b536 data\oresandmetals\loot_tables\blocks\raw_mithril_block.json
 f761bcd2d2306d6e8caad708499676b0b64344f5 data\oresandmetals\loot_tables\blocks\steel_block.json
@@ -23,7 +23,7 @@ b9de7dbd254bd89c8eed245e5b17e2ba3289002d data\oresandmetals\loot_tables\blocks\d
 5676cbbbe3280ead6fdf14cba1e4c4a5ab09adf6 data\oresandmetals\loot_tables\blocks\nether_drakolith_ore.json
 8720bb0492ece5d7311fddfccd8e064d1f32bb31 data\oresandmetals\loot_tables\blocks\raw_bronze_block.json
 80c52a74338f287b288c2fd2f093177e303be045 data\oresandmetals\loot_tables\blocks\mithril_block.json
-8a35d6a8949105018a6fceb5a56cb4b4699f90ad data\oresandmetals\loot_tables\blocks\deepslate_tin_ore.json
 6afae57e680443b2352c59671f43a5bee44c45ed data\oresandmetals\loot_tables\blocks\adamantite_block.json
+8a35d6a8949105018a6fceb5a56cb4b4699f90ad data\oresandmetals\loot_tables\blocks\deepslate_tin_ore.json
 faf131749f4b688d247e5ba797ae68db49064ef1 data\oresandmetals\loot_tables\blocks\runite_ore.json
 30c14d1b9ff8db968bbab156dd9040fa4df2ef73 data\oresandmetals\loot_tables\blocks\raw_drakolith_block.json
