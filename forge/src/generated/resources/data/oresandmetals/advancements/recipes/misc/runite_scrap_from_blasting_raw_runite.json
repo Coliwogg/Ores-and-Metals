@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_runite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oresandmetals:raw_runite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "oresandmetals:runite_scrap_from_blasting_raw_runite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_runite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oresandmetals:runite_scrap_from_blasting_raw_runite"
+    ]
+  },
+  "sends_telemetry_event": false
+}
