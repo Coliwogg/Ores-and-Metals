@@ -24,6 +24,20 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_BRONZE)
+                .input(ModItems.RAW_TIN)
+                .input(Items.RAW_COPPER)
+                .criterion(hasItem(ModItems.RAW_TIN), conditionsFromItem(ModItems.RAW_TIN))
+                .criterion(hasItem(Items.RAW_COPPER), conditionsFromItem(Items.RAW_COPPER))
+                .offerTo(exporter, getItemPath(ModItems.RAW_BRONZE) + "_from_crafting");
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_STEEL)
+                .input(Items.RAW_IRON)
+                .input(Ingredient.fromTag(ItemTags.COALS), 2)
+                .criterion(hasItem(Items.RAW_IRON), conditionsFromItem(Items.RAW_IRON))
+                .criterion("has_coal", conditionsFromTag(ItemTags.COALS))
+                .offerTo(exporter, getItemPath(ModItems.RAW_STEEL) + "_from_crafting");
+
         offerSmelting(exporter, List.of(ModItems.RAW_BRONZE), RecipeCategory.MISC, ModItems.BRONZE_INGOT, 0.7f, 200, "bronze");
         offerBlasting(exporter, List.of(ModItems.RAW_BRONZE), RecipeCategory.MISC, ModItems.BRONZE_INGOT, 0.7f, 100, "bronze");
         offerSmelting(exporter, List.of(ModItems.RAW_STEEL), RecipeCategory.MISC, ModItems.STEEL_INGOT, 0.7f, 200, "steel");
