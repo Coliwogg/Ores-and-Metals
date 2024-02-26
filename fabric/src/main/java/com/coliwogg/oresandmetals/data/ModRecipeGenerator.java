@@ -38,6 +38,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion("has_coal", conditionsFromTag(ItemTags.COALS))
                 .offerTo(exporter, getItemPath(ModItems.RAW_STEEL) + "_from_crafting");
 
+        offerSmelting(exporter, List.of(ModItems.RAW_TIN), RecipeCategory.MISC, ModItems.TIN_INGOT, 0.7f, 200, "tin");
+        offerBlasting(exporter, List.of(ModItems.RAW_TIN), RecipeCategory.MISC, ModItems.TIN_INGOT, 0.7f, 100, "tin");
         offerSmelting(exporter, List.of(ModItems.RAW_BRONZE), RecipeCategory.MISC, ModItems.BRONZE_INGOT, 0.7f, 200, "bronze");
         offerBlasting(exporter, List.of(ModItems.RAW_BRONZE), RecipeCategory.MISC, ModItems.BRONZE_INGOT, 0.7f, 100, "bronze");
         offerSmelting(exporter, List.of(ModItems.RAW_STEEL), RecipeCategory.MISC, ModItems.STEEL_INGOT, 0.7f, 200, "steel");
