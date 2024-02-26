@@ -40,6 +40,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_coal", has(ItemTags.COALS))
                 .save(consumer, new ResourceLocation(OresAndMetals.MOD_ID, getItemName(ModItems.RAW_STEEL.get())) + "_from_crafting");
 
+        oreSmelting(consumer, List.of(ModItems.RAW_TIN.get()), RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 0.7f, 200, "tin");
+        oreBlasting(consumer, List.of(ModItems.RAW_TIN.get()), RecipeCategory.MISC, ModItems.TIN_INGOT.get(), 0.7f, 100, "tin");
         oreSmelting(consumer, List.of(ModItems.RAW_BRONZE.get()), RecipeCategory.MISC, ModItems.BRONZE_INGOT.get(), 0.7f, 200, "bronze");
         oreBlasting(consumer, List.of(ModItems.RAW_BRONZE.get()), RecipeCategory.MISC, ModItems.BRONZE_INGOT.get(), 0.7f, 100, "bronze");
         oreSmelting(consumer, List.of(ModItems.RAW_STEEL.get()), RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 0.7f, 200, "steel");
