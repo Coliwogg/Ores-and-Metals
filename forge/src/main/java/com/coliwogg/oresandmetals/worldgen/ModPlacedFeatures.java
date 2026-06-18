@@ -29,30 +29,34 @@ public class ModPlacedFeatures {
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        register(context, TIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TIN_ORE_KEY),
+        register(context, TIN_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TIN_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(16,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-16), VerticalAnchor.absolute(112))));
-        register(context, MITHRIL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MITHRIL_ORE_KEY),
+        register(context, MITHRIL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_MITHRIL_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(10,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-24), VerticalAnchor.absolute(56))));
-        register(context, ADAMANTITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ADAMANTITE_ORE_KEY),
+        register(context, ADAMANTITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ADAMANTITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(7,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(32))));
-        register(context, RUNITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RUNITE_ORE_KEY),
+        register(context, RUNITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUNITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(6,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(0))));
         register(context, NETHER_DRAKOLITH_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_DRAKOLITH_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(4, PlacementUtils.RANGE_10_10));
-        register(context, ORICHALCHITE_DEBRIS_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORICHALCITE_DEBRIS_LARGE_KEY),
-                InSquarePlacement.spread(), HeightRangePlacement.triangle(VerticalAnchor.absolute(8), VerticalAnchor.absolute(24)), BiomeFilter.biome());
-        register(context, ORICHALCHITE_DEBRIS_SMALL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ORICHALCITE_DEBRIS_SMALL_KEY),
-                InSquarePlacement.spread(), PlacementUtils.RANGE_8_8, BiomeFilter.biome());
+        register(context, ORICHALCHITE_DEBRIS_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_ORICHALCITE_DEBRIS_LARGE_KEY),
+                ModOrePlacement.commonOrePlacement(2,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, ORICHALCHITE_DEBRIS_SMALL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_ORICHALCITE_DEBRIS_SMALL_KEY),
+                ModOrePlacement.commonOrePlacement(3,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
         register(context, END_PHASMATITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_PHASMATITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(6, PlacementUtils.RANGE_10_10));
-        register(context, NECRITE_DEBRIS_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NECRITE_DEBRIS_LARGE_KEY),
-                InSquarePlacement.spread(), HeightRangePlacement.triangle(VerticalAnchor.absolute(20), VerticalAnchor.absolute(64)), BiomeFilter.biome());
-        register(context, NECRITE_DEBRIS_SMALL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NECRITE_DEBRIS_SMALL_KEY),
-                InSquarePlacement.spread(), PlacementUtils.RANGE_8_8, BiomeFilter.biome());
+        register(context, NECRITE_DEBRIS_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_NECRITE_DEBRIS_LARGE_KEY),
+                ModOrePlacement.commonOrePlacement(2,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, NECRITE_DEBRIS_SMALL_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_NECRITE_DEBRIS_SMALL_KEY),
+                ModOrePlacement.commonOrePlacement(3,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     }
 
     private static ResourceKey<PlacedFeature> createKey(String name) {

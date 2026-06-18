@@ -12,8 +12,8 @@
           }
         },
         "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "minecraft:base_stone_nether"
+          "block": "minecraft:end_stone",
+          "predicate_type": "minecraft:block_match"
         }
       }
     ]

@@ -8,10 +8,7 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
-import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
 
@@ -30,30 +27,34 @@ public class ModPlacedFeatures {
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-        register(context, TIN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TIN_ORE_KEY),
+        register(context, TIN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.OVERWORLD_TIN_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(16,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-16), YOffset.fixed(112))));
-        register(context, MITHRIL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MITHRIL_ORE_KEY),
+        register(context, MITHRIL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.OVERWORLD_MITHRIL_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(10,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-24), YOffset.fixed(56))));
-        register(context, ADAMANTITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ADAMANTITE_ORE_KEY),
+        register(context, ADAMANTITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.OVERWORLD_ADAMANTITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(7,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-64), YOffset.fixed(32))));
-        register(context, RUNITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.RUNITE_ORE_KEY),
+        register(context, RUNITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUNITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(6,
                                 HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(0))));
         register(context, NETHER_DRAKOLITH_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_DRAKOLITH_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(4, PlacedFeatures.TEN_ABOVE_AND_BELOW_RANGE));
-        register(context, ORICHALCHITE_DEBRIS_LARGE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORICHALCITE_DEBRIS_LARGE_KEY),
-                HeightRangePlacementModifier.trapezoid(YOffset.fixed(8), YOffset.fixed(24)), BiomePlacementModifier.of());
-        register(context, ORICHALCHITE_DEBRIS_SMALL_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ORICHALCITE_DEBRIS_SMALL_KEY),
-                SquarePlacementModifier.of(), PlacedFeatures.EIGHT_ABOVE_AND_BELOW_RANGE, BiomePlacementModifier.of());
+        register(context, ORICHALCHITE_DEBRIS_LARGE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_ORICHALCITE_DEBRIS_LARGE_KEY),
+                ModOrePlacement.modifiersWithCount(2, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, ORICHALCHITE_DEBRIS_SMALL_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_ORICHALCITE_DEBRIS_SMALL_KEY),
+                ModOrePlacement.modifiersWithCount(3, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
         register(context, END_PHASMATITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.END_PHASMATITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(6, PlacedFeatures.TEN_ABOVE_AND_BELOW_RANGE));
-        register(context, NECRITE_DEBRIS_LARGE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NECRITE_DEBRIS_LARGE_KEY),
-                HeightRangePlacementModifier.trapezoid(YOffset.fixed(20), YOffset.fixed(64)), BiomePlacementModifier.of());
-        register(context, NECRITE_DEBRIS_SMALL_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NECRITE_DEBRIS_SMALL_KEY),
-                SquarePlacementModifier.of(), PlacedFeatures.EIGHT_ABOVE_AND_BELOW_RANGE, BiomePlacementModifier.of());
+        register(context, NECRITE_DEBRIS_LARGE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.END_NECRITE_DEBRIS_LARGE_KEY),
+                ModOrePlacement.modifiersWithCount(2, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+        register(context, NECRITE_DEBRIS_SMALL_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.END_NECRITE_DEBRIS_SMALL_KEY),
+                ModOrePlacement.modifiersWithCount(3, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
