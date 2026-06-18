@@ -2,14 +2,21 @@
   "feature": "oresandmetals:necrite_debris_large",
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": 2
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
       "type": "minecraft:height_range",
       "height": {
-        "type": "minecraft:trapezoid",
+        "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 64
+          "absolute": 80
         },
         "min_inclusive": {
-          "absolute": 20
+          "absolute": -80
         }
       }
     },

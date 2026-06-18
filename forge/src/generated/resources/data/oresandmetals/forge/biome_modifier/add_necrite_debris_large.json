@@ -2,5 +2,5 @@
   "type": "forge:add_features",
   "biomes": "#minecraft:is_end",
   "features": "oresandmetals:necrite_debris_large_placed",
-  "step": "underground_decoration"
+  "step": "underground_ores"
 }

@@ -2,6 +2,10 @@
   "feature": "oresandmetals:orichalcite_debris_small",
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": 3
+    },
+    {
       "type": "minecraft:in_square"
     },
     {
@@ -9,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "below_top": 8
+          "absolute": 80
         },
         "min_inclusive": {
-          "above_bottom": 8
+          "absolute": -64
         }
       }
     },

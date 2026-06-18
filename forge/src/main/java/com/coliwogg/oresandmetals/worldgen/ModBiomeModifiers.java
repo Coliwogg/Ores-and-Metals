@@ -13,16 +13,16 @@ import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModBiomeModifiers {
-    public static final ResourceKey<BiomeModifier> ADD_TIN_ORE = registerKey("tin_ore");
-    public static final ResourceKey<BiomeModifier> ADD_MITHRIL_ORE = registerKey("mithril_ore");
-    public static final ResourceKey<BiomeModifier> ADD_ADAMANTITE_ORE = registerKey("adamantite_ore");
-    public static final ResourceKey<BiomeModifier> ADD_RUNITE_ORE = registerKey("runite_ore");
-    public static final ResourceKey<BiomeModifier> ADD_NETHER_DRAKOLITH_ORE = registerKey("nether_drakolith_ore");
-    public static final ResourceKey<BiomeModifier> ADD_ORICHALCITE_DEBRIS_LARGE = registerKey("orichalcite_debris_large");
-    public static final ResourceKey<BiomeModifier> ADD_ORICHALCITE_DEBRIS_SMALL = registerKey("orichalcite_debris_small");
-    public static final ResourceKey<BiomeModifier> ADD_END_PHASMATITE_ORE = registerKey("end_phasmatite_ore");
-    public static final ResourceKey<BiomeModifier> ADD_NECRITE_DEBRIS_LARGE = registerKey("necrite_debris_large");
-    public static final ResourceKey<BiomeModifier> ADD_NECRITE_DEBRIS_SMALL = registerKey("necrite_debris_small");
+    public static final ResourceKey<BiomeModifier> ADD_TIN_ORE = registerKey("add_tin_ore");
+    public static final ResourceKey<BiomeModifier> ADD_MITHRIL_ORE = registerKey("add_mithril_ore");
+    public static final ResourceKey<BiomeModifier> ADD_ADAMANTITE_ORE = registerKey("add_adamantite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_RUNITE_ORE = registerKey("add_runite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_DRAKOLITH_ORE = registerKey("add_nether_drakolith_ore");
+    public static final ResourceKey<BiomeModifier> ADD_ORICHALCITE_DEBRIS_LARGE = registerKey("add_orichalcite_debris_large");
+    public static final ResourceKey<BiomeModifier> ADD_ORICHALCITE_DEBRIS_SMALL = registerKey("add_orichalcite_debris_small");
+    public static final ResourceKey<BiomeModifier> ADD_END_PHASMATITE_ORE = registerKey("add_end_phasmatite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NECRITE_DEBRIS_LARGE = registerKey("add_necrite_debris_large");
+    public static final ResourceKey<BiomeModifier> ADD_NECRITE_DEBRIS_SMALL = registerKey("add_necrite_debris_small");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -56,12 +56,12 @@ public class ModBiomeModifiers {
         context.register(ADD_ORICHALCITE_DEBRIS_LARGE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_NETHER),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ORICHALCHITE_DEBRIS_LARGE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_DECORATION));
+                GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_ORICHALCITE_DEBRIS_SMALL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_NETHER),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.ORICHALCHITE_DEBRIS_SMALL_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_DECORATION));
+                GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_END_PHASMATITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
@@ -71,12 +71,12 @@ public class ModBiomeModifiers {
         context.register(ADD_NECRITE_DEBRIS_LARGE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NECRITE_DEBRIS_LARGE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_DECORATION));
+                GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_NECRITE_DEBRIS_SMALL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NECRITE_DEBRIS_SMALL_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_DECORATION));
+                GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {
