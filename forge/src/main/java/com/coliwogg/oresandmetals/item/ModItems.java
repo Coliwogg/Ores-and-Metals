@@ -1,6 +1,7 @@
 package com.coliwogg.oresandmetals.item;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
+import com.coliwogg.oresandmetals.entity.ArrowMaterial;
 import com.coliwogg.oresandmetals.item.custom.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -95,12 +96,12 @@ public class ModItems {
     public static final RegistryObject<Item> NECRONIUM_CHESTPLATE = ITEMS.register("necronium_chestplate", () -> new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> NECRONIUM_LEGGINGS = ITEMS.register("necronium_leggings", () -> new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> NECRONIUM_BOOTS = ITEMS.register("necronium_boots", () -> new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
-    public static final RegistryObject<Item> BRONZE_ARROW = ITEMS.register("bronze_arrow", () -> new BronzeArrowItem(1.1f, new Item.Properties()));
-    public static final RegistryObject<Item> IRON_ARROW = ITEMS.register("iron_arrow", () -> new IronArrowItem(1.2f, new Item.Properties()));
-    public static final RegistryObject<Item> STEEL_ARROW = ITEMS.register("steel_arrow", () -> new SteelArrowItem(1.3f, new Item.Properties()));
-    public static final RegistryObject<Item> MITHRIL_ARROW = ITEMS.register("mithril_arrow", () -> new MithrilArrowItem(1.4f, new Item.Properties()));
-    public static final RegistryObject<Item> ADAMANT_ARROW = ITEMS.register("adamant_arrow", () -> new AdamantArrowItem(1.5f, new Item.Properties()));
-    public static final RegistryObject<Item> RUNE_ARROW = ITEMS.register("rune_arrow", () -> new RuneArrowItem(1.6f, new Item.Properties()));
+    public static final RegistryObject<Item> BRONZE_ARROW = ITEMS.register("bronze_arrow", () -> new ModArrowItem(ArrowMaterial.BRONZE, 1.1f, new Item.Properties()));
+    public static final RegistryObject<Item> IRON_ARROW = ITEMS.register("iron_arrow", () -> new ModArrowItem(ArrowMaterial.IRON, 1.2f, new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_ARROW = ITEMS.register("steel_arrow", () -> new ModArrowItem(ArrowMaterial.STEEL, 1.3f, new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_ARROW = ITEMS.register("mithril_arrow", () -> new ModArrowItem(ArrowMaterial.MITHRIL, 1.4f, new Item.Properties()));
+    public static final RegistryObject<Item> ADAMANT_ARROW = ITEMS.register("adamant_arrow", () -> new ModArrowItem(ArrowMaterial.ADAMANT, 1.5f, new Item.Properties()));
+    public static final RegistryObject<Item> RUNE_ARROW = ITEMS.register("rune_arrow", () -> new ModArrowItem(ArrowMaterial.RUNE, 1.6f, new Item.Properties()));
     public static final RegistryObject<Item> ORIKALKUM_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("orikalkum_upgrade_smithing_template", ModSmithingTemplateItem::createOrikalkumUpgrade);
     public static final RegistryObject<Item> NECRONIUM_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("necronium_upgrade_smithing_template", ModSmithingTemplateItem::createNecroniumUpgrade);
 

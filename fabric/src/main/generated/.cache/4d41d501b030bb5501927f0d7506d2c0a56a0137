@@ -1,4 +1,4 @@
-// 1.20.1	2026-06-18T09:59:59.4451407	Ores and Metals/Tags for minecraft:block
+// 1.20.1	2026-06-27T14:43:24.8866527	Ores and Metals/Tags for minecraft:block
 e7cd9be5fdf08a579124a378ffc0b38174534cf3 data\fabric\tags\blocks\needs_tool_level_4.json
 59f4964001a558d19b5638d02a47a905ff2c6255 data\minecraft\tags\blocks\needs_stone_tool.json
 7538641ce54768da26bf9f3fefab37f421d86451 data\minecraft\tags\blocks\mineable\pickaxe.json
