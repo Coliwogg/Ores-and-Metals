@@ -6,7 +6,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ArrowItem;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 
 public class ModArrowItem extends ArrowItem {
@@ -20,7 +19,7 @@ public class ModArrowItem extends ArrowItem {
     }
 
     @Override
-    public AbstractArrow getArrow(Level level, ItemStack stack, LivingEntity shooter) {
+    public AbstractArrow createArrow(Level level, ItemStack stack, LivingEntity shooter) {
         ModArrowEntity arrow = new ModArrowEntity(this.material, shooter, level);
         arrow.setBaseDamage(this.damage);
         return arrow;
