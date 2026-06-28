@@ -23,6 +23,51 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ORIKALKUM_HELMET, ModItems.ORIKALKUM_CHESTPLATE, ModItems.ORIKALKUM_LEGGINGS, ModItems.ORIKALKUM_BOOTS)
                 .add(ModItems.NECRONIUM_HELMET, ModItems.NECRONIUM_CHESTPLATE, ModItems.NECRONIUM_LEGGINGS, ModItems.NECRONIUM_BOOTS);
 
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.BRONZE_SWORD)
+                .add(ModItems.STEEL_SWORD)
+                .add(ModItems.MITHRIL_SWORD)
+                .add(ModItems.ADAMANT_SWORD)
+                .add(ModItems.RUNE_SWORD)
+                .add(ModItems.ORIKALKUM_SWORD)
+                .add(ModItems.NECRONIUM_SWORD);
+
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.BRONZE_PICKAXE)
+                .add(ModItems.STEEL_PICKAXE)
+                .add(ModItems.MITHRIL_PICKAXE)
+                .add(ModItems.ADAMANT_PICKAXE)
+                .add(ModItems.RUNE_PICKAXE)
+                .add(ModItems.ORIKALKUM_PICKAXE)
+                .add(ModItems.NECRONIUM_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.BRONZE_SHOVEL)
+                .add(ModItems.STEEL_SHOVEL)
+                .add(ModItems.MITHRIL_SHOVEL)
+                .add(ModItems.ADAMANT_SHOVEL)
+                .add(ModItems.RUNE_SHOVEL)
+                .add(ModItems.ORIKALKUM_SHOVEL)
+                .add(ModItems.NECRONIUM_SHOVEL);
+
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.BRONZE_AXE)
+                .add(ModItems.STEEL_AXE)
+                .add(ModItems.MITHRIL_AXE)
+                .add(ModItems.ADAMANT_AXE)
+                .add(ModItems.RUNE_AXE)
+                .add(ModItems.ORIKALKUM_AXE)
+                .add(ModItems.NECRONIUM_AXE);
+
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.BRONZE_HOE)
+                .add(ModItems.STEEL_HOE)
+                .add(ModItems.MITHRIL_HOE)
+                .add(ModItems.ADAMANT_HOE)
+                .add(ModItems.RUNE_HOE)
+                .add(ModItems.ORIKALKUM_HOE)
+                .add(ModItems.NECRONIUM_HOE);
+
         getOrCreateTagBuilder(ItemTags.ARROWS)
                 .add(ModItems.BRONZE_ARROW)
                 .add(ModItems.IRON_ARROW)

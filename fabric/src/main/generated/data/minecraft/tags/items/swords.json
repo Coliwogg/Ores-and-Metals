@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "oresandmetals:bronze_sword",
+    "oresandmetals:steel_sword",
+    "oresandmetals:mithril_sword",
+    "oresandmetals:adamant_sword",
+    "oresandmetals:rune_sword",
+    "oresandmetals:orikalkum_sword",
+    "oresandmetals:necronium_sword"
+  ]
+}

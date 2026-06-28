@@ -1,7 +1,7 @@
-// 1.20.1	2026-06-27T14:43:24.9020558	Ores and Metals/Block Loot Tables
+// 1.20.1	2026-06-28T15:30:38.5211987	Ores and Metals/Block Loot Tables
 6afae57e680443b2352c59671f43a5bee44c45ed data\oresandmetals\loot_tables\blocks\adamantite_block.json
-faf131749f4b688d247e5ba797ae68db49064ef1 data\oresandmetals\loot_tables\blocks\runite_ore.json
 9dd90e82e91c071f6f56aa28cd2925d0b7857137 data\oresandmetals\loot_tables\blocks\necronium_block.json
+faf131749f4b688d247e5ba797ae68db49064ef1 data\oresandmetals\loot_tables\blocks\runite_ore.json
 84e87e8eac1c43f75e518a5c0ccf96f056fd2c54 data\oresandmetals\loot_tables\blocks\raw_adamantite_block.json
 0e91ecfabd11284ac39cd50b7f3dce790b6ada79 data\oresandmetals\loot_tables\blocks\end_phasmatite_ore.json
 57c01a1f9d580713a3e12056adaef66273d2b9fe data\oresandmetals\loot_tables\blocks\tin_block.json
