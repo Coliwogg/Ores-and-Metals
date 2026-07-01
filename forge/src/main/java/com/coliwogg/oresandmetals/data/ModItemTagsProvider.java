@@ -50,6 +50,51 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                         ModItems.NECRONIUM_LEGGINGS.get(),
                         ModItems.NECRONIUM_BOOTS.get());
 
+        this.tag(ItemTags.SWORDS)
+                .add(ModItems.BRONZE_SWORD.get())
+                .add(ModItems.STEEL_SWORD.get())
+                .add(ModItems.MITHRIL_SWORD.get())
+                .add(ModItems.ADAMANT_SWORD.get())
+                .add(ModItems.RUNE_SWORD.get())
+                .add(ModItems.ORIKALKUM_SWORD.get())
+                .add(ModItems.NECRONIUM_SWORD.get());
+
+        this.tag(ItemTags.PICKAXES)
+                .add(ModItems.BRONZE_PICKAXE.get())
+                .add(ModItems.STEEL_PICKAXE.get())
+                .add(ModItems.MITHRIL_PICKAXE.get())
+                .add(ModItems.ADAMANT_PICKAXE.get())
+                .add(ModItems.RUNE_PICKAXE.get())
+                .add(ModItems.ORIKALKUM_PICKAXE.get())
+                .add(ModItems.NECRONIUM_PICKAXE.get());
+
+        this.tag(ItemTags.SHOVELS)
+                .add(ModItems.BRONZE_SHOVEL.get())
+                .add(ModItems.STEEL_SHOVEL.get())
+                .add(ModItems.MITHRIL_SHOVEL.get())
+                .add(ModItems.ADAMANT_SHOVEL.get())
+                .add(ModItems.RUNE_SHOVEL.get())
+                .add(ModItems.ORIKALKUM_SHOVEL.get())
+                .add(ModItems.NECRONIUM_SHOVEL.get());
+
+        this.tag(ItemTags.AXES)
+                .add(ModItems.BRONZE_AXE.get())
+                .add(ModItems.STEEL_AXE.get())
+                .add(ModItems.MITHRIL_AXE.get())
+                .add(ModItems.ADAMANT_AXE.get())
+                .add(ModItems.RUNE_AXE.get())
+                .add(ModItems.ORIKALKUM_AXE.get())
+                .add(ModItems.NECRONIUM_AXE.get());
+
+        this.tag(ItemTags.HOES)
+                .add(ModItems.BRONZE_HOE.get())
+                .add(ModItems.STEEL_HOE.get())
+                .add(ModItems.MITHRIL_HOE.get())
+                .add(ModItems.ADAMANT_HOE.get())
+                .add(ModItems.RUNE_HOE.get())
+                .add(ModItems.ORIKALKUM_HOE.get())
+                .add(ModItems.NECRONIUM_HOE.get());
+
         this.tag(ItemTags.ARROWS)
                 .add(ModItems.BRONZE_ARROW.get(),
                         ModItems.IRON_ARROW.get(),

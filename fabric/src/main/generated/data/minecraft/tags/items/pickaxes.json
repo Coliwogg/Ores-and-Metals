@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "oresandmetals:bronze_pickaxe",
+    "oresandmetals:steel_pickaxe",
+    "oresandmetals:mithril_pickaxe",
+    "oresandmetals:adamant_pickaxe",
+    "oresandmetals:rune_pickaxe",
+    "oresandmetals:orikalkum_pickaxe",
+    "oresandmetals:necronium_pickaxe"
+  ]
+}

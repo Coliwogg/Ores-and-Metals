@@ -198,12 +198,12 @@ OresAndMetals {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            EntityRenderers.register(ModEntities.BRONZE_ARROW.get(), BronzeArrowRenderer::new);
-            EntityRenderers.register(ModEntities.IRON_ARROW.get(), IronArrowRenderer::new);
-            EntityRenderers.register(ModEntities.STEEL_ARROW.get(), SteelArrowRenderer::new);
-            EntityRenderers.register(ModEntities.MITHRIL_ARROW.get(), MithrilArrowRenderer::new);
-            EntityRenderers.register(ModEntities.ADAMANT_ARROW.get(), AdamantArrowRenderer::new);
-            EntityRenderers.register(ModEntities.RUNE_ARROW.get(), RuneArrowRenderer::new);
+            EntityRenderers.register(ModEntities.BRONZE_ARROW.get(), ModArrowRenderer::new);
+            EntityRenderers.register(ModEntities.IRON_ARROW.get(), ModArrowRenderer::new);
+            EntityRenderers.register(ModEntities.STEEL_ARROW.get(), ModArrowRenderer::new);
+            EntityRenderers.register(ModEntities.MITHRIL_ARROW.get(), ModArrowRenderer::new);
+            EntityRenderers.register(ModEntities.ADAMANT_ARROW.get(), ModArrowRenderer::new);
+            EntityRenderers.register(ModEntities.RUNE_ARROW.get(), ModArrowRenderer::new);
         }
     }
 }

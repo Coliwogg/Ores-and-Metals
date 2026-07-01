@@ -1,6 +1,7 @@
 package com.coliwogg.oresandmetals.item;
 
 import com.coliwogg.oresandmetals.OresAndMetals;
+import com.coliwogg.oresandmetals.entity.ArrowMaterial;
 import com.coliwogg.oresandmetals.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -95,12 +96,12 @@ public class ModItems {
     public static final Item NECRONIUM_CHESTPLATE = registerItem("necronium_chestplate", new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item NECRONIUM_LEGGINGS = registerItem("necronium_leggings", new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item NECRONIUM_BOOTS = registerItem("necronium_boots", new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
-    public static final Item BRONZE_ARROW = registerItem("bronze_arrow", new BronzeArrowItem(1.1f, new FabricItemSettings()));
-    public static final Item IRON_ARROW = registerItem("iron_arrow", new IronArrowItem(1.2f, new FabricItemSettings()));
-    public static final Item STEEL_ARROW = registerItem("steel_arrow", new SteelArrowItem(1.3f, new FabricItemSettings()));
-    public static final Item MITHRIL_ARROW = registerItem("mithril_arrow", new MithrilArrowItem(1.4f, new FabricItemSettings()));
-    public static final Item ADAMANT_ARROW = registerItem("adamant_arrow", new AdamantArrowItem(1.5f, new FabricItemSettings()));
-    public static final Item RUNE_ARROW = registerItem("rune_arrow", new RuneArrowItem(1.6f, new FabricItemSettings()));
+    public static final Item BRONZE_ARROW = registerItem("bronze_arrow", new ModArrowItem(ArrowMaterial.BRONZE, 1.1f, new FabricItemSettings()));
+    public static final Item IRON_ARROW = registerItem("iron_arrow", new ModArrowItem(ArrowMaterial.IRON, 1.2f, new FabricItemSettings()));
+    public static final Item STEEL_ARROW = registerItem("steel_arrow", new ModArrowItem(ArrowMaterial.STEEL, 1.3f, new FabricItemSettings()));
+    public static final Item MITHRIL_ARROW = registerItem("mithril_arrow", new ModArrowItem(ArrowMaterial.MITHRIL, 1.4f, new FabricItemSettings()));
+    public static final Item ADAMANT_ARROW = registerItem("adamant_arrow", new ModArrowItem(ArrowMaterial.ADAMANT, 1.5f, new FabricItemSettings()));
+    public static final Item RUNE_ARROW = registerItem("rune_arrow", new ModArrowItem(ArrowMaterial.RUNE, 1.6f, new FabricItemSettings()));
     public static final Item ORIKALKUM_UPGRADE_SMITHING_TEMPLATE = registerItem("orikalkum_upgrade_smithing_template", ModSmithingTemplateItem.createOrikalkumUpgrade());
     public static final Item NECRONIUM_UPGRADE_SMITHING_TEMPLATE = registerItem("necronium_upgrade_smithing_template", ModSmithingTemplateItem.createNecroniumUpgrade());
 

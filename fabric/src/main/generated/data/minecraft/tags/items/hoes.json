@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "oresandmetals:bronze_hoe",
+    "oresandmetals:steel_hoe",
+    "oresandmetals:mithril_hoe",
+    "oresandmetals:adamant_hoe",
+    "oresandmetals:rune_hoe",
+    "oresandmetals:orikalkum_hoe",
+    "oresandmetals:necronium_hoe"
+  ]
+}
