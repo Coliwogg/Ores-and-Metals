@@ -1,0 +1,12 @@
+// 1.21.1	2026-06-30T13:36:01.5438815	Tags for minecraft:item mod id oresandmetals
+aed7edf8497adcd61e226c14dc3393a40d866981 data/minecraft/tags/item/arrows.json
+436092d33276e6cb2c053f0b1a8ff32e239a8f69 data/minecraft/tags/item/axes.json
+98329106595f864a005024e8ebc4787020488901 data/minecraft/tags/item/chest_armor.json
+eb50a36bdd484e27c3530f85bb7777982be4d57f data/minecraft/tags/item/foot_armor.json
+4db8e6c0f9adabe27c263618a08ae441cc79022a data/minecraft/tags/item/head_armor.json
+1b7c094211ba009723ba402ebeaa8718febb27de data/minecraft/tags/item/hoes.json
+649dee6038b9b224332566f945f000abc38e2edd data/minecraft/tags/item/leg_armor.json
+9ae905c1a179fe75d6c33d5e23be876f293f2c76 data/minecraft/tags/item/pickaxes.json
+e72ce34090ac737647dcbb4f9ee88b43f2cde789 data/minecraft/tags/item/shovels.json
+6775b68dfe4b53f1f739ed3b4263d83bd1ccdfef data/minecraft/tags/item/swords.json
+b94d7c457e512cd993845c05a73b66c898a27508 data/minecraft/tags/item/trimmable_armor.json

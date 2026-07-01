@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#oresandmetals:needs_adamant_tool",
+    "#minecraft:needs_diamond_tool",
+    "#oresandmetals:needs_rune_tool",
+    "#oresandmetals:needs_orikalkum_tool",
+    "#oresandmetals:needs_necronium_tool"
+  ]
+}

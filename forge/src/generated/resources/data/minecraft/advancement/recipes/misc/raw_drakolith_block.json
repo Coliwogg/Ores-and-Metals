@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_drakolith": {
+      "conditions": {
+        "items": [
+          {
+            "items": "oresandmetals:raw_drakolith"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:raw_drakolith_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_drakolith"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:raw_drakolith_block"
+    ]
+  }
+}

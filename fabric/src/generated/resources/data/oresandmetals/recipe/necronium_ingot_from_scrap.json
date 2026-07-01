@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oresandmetals:necrite_scrap"
+    },
+    {
+      "item": "oresandmetals:necrite_scrap"
+    },
+    {
+      "item": "oresandmetals:necrite_scrap"
+    },
+    {
+      "item": "oresandmetals:necrite_scrap"
+    },
+    {
+      "item": "oresandmetals:raw_phasmatite"
+    },
+    {
+      "item": "oresandmetals:raw_phasmatite"
+    },
+    {
+      "item": "oresandmetals:raw_phasmatite"
+    },
+    {
+      "item": "oresandmetals:raw_phasmatite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "oresandmetals:necronium_ingot"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.4,
+  "group": "adamantite",
+  "ingredient": {
+    "item": "oresandmetals:raw_adamantite"
+  },
+  "result": {
+    "count": 1,
+    "id": "oresandmetals:adamantite_scrap"
+  }
+}

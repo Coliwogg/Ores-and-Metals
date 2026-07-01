@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "oresandmetals:block/end_phasmatite_ore"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "oresandmetals:item/necronium_upgrade_smithing_template"
+  }
+}

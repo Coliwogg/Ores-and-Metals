@@ -1,0 +1,14 @@
+{
+  "values": [
+    "oresandmetals:steel_block",
+    "oresandmetals:raw_steel_block",
+    "oresandmetals:mithril_block",
+    "oresandmetals:raw_mithril_block",
+    "oresandmetals:mithril_ore",
+    "oresandmetals:deepslate_mithril_ore",
+    "oresandmetals:adamantite_block",
+    "oresandmetals:raw_adamantite_block",
+    "oresandmetals:adamantite_ore",
+    "oresandmetals:deepslate_adamantite_ore"
+  ]
+}
