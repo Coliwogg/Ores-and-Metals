@@ -4,13 +4,18 @@ plugins {
 }
 
 base {
-    archivesName = "${mod_id}-${project.name}-${minecraft_version}"
+    archivesName = "${mod_id}-${project.name}+${minecraft_version}"
 }
 
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(java_version)
     withSourcesJar()
     withJavadocJar()
+}
+
+tasks.withType(Jar).configureEach {
+    archiveBaseName.set(mod_id)
+    archiveVersion.set("${version}-${project.name}+${minecraft_version}")
 }
 
 repositories {
@@ -64,6 +69,9 @@ sourcesJar {
 }
 
 jar {
+    archiveBaseName.set(mod_id)
+    archiveVersion.set("${version}-${project.name}+${minecraft_version}")
+
     from(rootProject.file('LICENSE')) {
         rename { "${it}_${mod_name}" }
     }
