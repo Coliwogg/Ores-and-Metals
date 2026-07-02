@@ -105,8 +105,8 @@ public class ModCreativeModeTabs {
                     output.accept(ModItems.MITHRIL_ARROW.get());
                     output.accept(ModItems.ADAMANT_ARROW.get());
                     output.accept(ModItems.RUNE_ARROW.get());
-//                    output.accept(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE.get());
-//                    output.accept(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE.get());
+                    output.accept(ModItems.ORIKALKUM_UPGRADE_SMITHING_TEMPLATE.get());
+                    output.accept(ModItems.NECRONIUM_UPGRADE_SMITHING_TEMPLATE.get());
                     output.accept(ModBlocks.TIN_BLOCK.get());
                     output.accept(ModBlocks.BRONZE_BLOCK.get());
                     output.accept(ModBlocks.STEEL_BLOCK.get());

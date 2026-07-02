@@ -8,24 +8,22 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class ModArrowEntity extends AbstractArrow {
-    private final ArrowMaterial material;
 
     public ModArrowEntity(EntityType<? extends AbstractArrow> entityType, Level level) {
         super(entityType, level);
-        this.material = ArrowMaterial.fromType(entityType);
     }
 
     public ModArrowEntity(ArrowMaterial material, LivingEntity owner, Level level) {
-        super(material.getEntityType(), owner, level, material.getItemStack(), ItemStack.EMPTY);
-        this.material = material;
+        super(material.getEntityType(), owner, level, material.getItemStack(), owner.getUseItem());
     }
 
     public ArrowMaterial getMaterial() {
-        return material;
+        return ArrowMaterial.fromType(getType());
     }
 
     @Override
     protected ItemStack getDefaultPickupItem() {
+        ArrowMaterial material = ArrowMaterial.fromType(getType());
         return material.getItemStack();
     }
 }

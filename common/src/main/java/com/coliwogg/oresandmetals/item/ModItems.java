@@ -182,7 +182,7 @@ public class ModItems {
     public static final Supplier<Item> NECRONIUM_LEGGINGS = Services.REGISTRY.registerItem("necronium_leggings", () -> new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final Supplier<Item> NECRONIUM_BOOTS = Services.REGISTRY.registerItem("necronium_boots", () -> new ArmorItem(ModArmorMaterials.NECRONIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final Supplier<Item> BRONZE_ARROW = Services.REGISTRY.registerItem("bronze_arrow", () -> new ModArrowItem(ArrowMaterial.BRONZE, 2.0f, new Item.Properties()));
+    public static final Supplier<Item> BRONZE_ARROW = Services.REGISTRY.registerItem("bronze_arrow", () -> new ModArrowItem(ArrowMaterial.BRONZE, 1.5f, new Item.Properties()));
     public static final Supplier<Item> IRON_ARROW = Services.REGISTRY.registerItem("iron_arrow", () -> new ModArrowItem(ArrowMaterial.IRON, 2.0f, new Item.Properties()));
     public static final Supplier<Item> STEEL_ARROW = Services.REGISTRY.registerItem("steel_arrow", () -> new ModArrowItem(ArrowMaterial.STEEL, 2.5f, new Item.Properties()));
     public static final Supplier<Item> MITHRIL_ARROW = Services.REGISTRY.registerItem("mithril_arrow", () -> new ModArrowItem(ArrowMaterial.MITHRIL, 3.0f, new Item.Properties()));

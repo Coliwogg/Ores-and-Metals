@@ -64,7 +64,7 @@ public enum ArrowMaterial {
         }
     }
 
-    public static ArrowMaterial fromType(EntityType<? extends AbstractArrow> type) {
+    public static ArrowMaterial fromType(EntityType<?> type) {
         if (type == ModEntities.BRONZE_ARROW.get()) {
             return BRONZE;
         }
