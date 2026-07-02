@@ -1,8 +1,0 @@
-// 1.20.1	2026-06-28T15:30:38.5196403	Ores and Metals/Tags for minecraft:item
-cf0a83f30bcc867540ed44d009c7f12faa7d2c30 data\minecraft\tags\items\axes.json
-b27cf83919f6d00ce085f939d6cde24281fe41f8 data\minecraft\tags\items\pickaxes.json
-b8e3ffb61500c3241929182d1356851fc88a4835 data\minecraft\tags\items\arrows.json
-84b97ac8954ab584f9eaaecd8a3f1ad0f9060ee5 data\minecraft\tags\items\swords.json
-1563706682a965a14c756dbabf21e30b99d3693d data\minecraft\tags\items\hoes.json
-e8f8e33a06991acbe42b28bcbee609b460cf4d04 data\minecraft\tags\items\trimmable_armor.json
-a3380529cafc42ac221c809e3a0b36fca658190b data\minecraft\tags\items\shovels.json

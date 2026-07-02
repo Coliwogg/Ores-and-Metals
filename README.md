@@ -2,4 +2,6 @@
 
 https://www.curseforge.com/minecraft/mc-mods/ores-and-metals
 
+https://modrinth.com/mod/ores-and-metals
+
 ![header](https://i.imgur.com/fBhqGdJ.png)

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "group": "runite",
+  "ingredient": {
+    "item": "oresandmetals:raw_runite"
+  },
+  "result": {
+    "id": "oresandmetals:runite_scrap"
+  }
+}

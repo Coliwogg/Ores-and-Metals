@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.4,
+  "group": "adamantite",
+  "ingredient": {
+    "item": "oresandmetals:deepslate_adamantite_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "oresandmetals:adamantite_scrap"
+  }
+}

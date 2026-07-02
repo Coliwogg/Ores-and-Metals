@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "oresandmetals:orikalkum_ingot"
+  },
+  "base": {
+    "item": "oresandmetals:rune_shovel"
+  },
+  "result": {
+    "count": 1,
+    "id": "oresandmetals:orikalkum_shovel"
+  },
+  "template": {
+    "item": "oresandmetals:orikalkum_upgrade_smithing_template"
+  }
+}

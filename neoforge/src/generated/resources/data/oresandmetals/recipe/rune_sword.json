@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "oresandmetals:runite_ingot"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "|"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oresandmetals:rune_sword"
+  }
+}

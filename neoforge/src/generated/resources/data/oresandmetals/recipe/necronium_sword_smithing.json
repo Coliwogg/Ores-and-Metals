@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "oresandmetals:necronium_ingot"
+  },
+  "base": {
+    "item": "oresandmetals:orikalkum_sword"
+  },
+  "result": {
+    "count": 1,
+    "id": "oresandmetals:necronium_sword"
+  },
+  "template": {
+    "item": "oresandmetals:necronium_upgrade_smithing_template"
+  }
+}

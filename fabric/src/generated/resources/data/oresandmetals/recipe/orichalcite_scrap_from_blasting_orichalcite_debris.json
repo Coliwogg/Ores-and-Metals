@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 2.0,
+  "group": "orichalcite",
+  "ingredient": {
+    "item": "oresandmetals:orichalcite_debris"
+  },
+  "result": {
+    "id": "oresandmetals:orichalcite_scrap"
+  }
+}
